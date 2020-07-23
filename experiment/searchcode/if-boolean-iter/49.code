@@ -1,7 +1,0 @@
-package com.functional.java;
-
-public class Any {
-public static <T> boolean of(Iterable<T> iter, Predicate<T> predicate) {
-for (T value : iter) {
-if (predicate.invoke(value)) {
-

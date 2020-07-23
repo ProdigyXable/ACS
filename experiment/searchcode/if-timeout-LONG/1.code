@@ -1,7 +1,0 @@
-public final class TimeoutTrigger implements ActivityTrigger, Comparable<TimeoutTrigger> {
-
-private final long mTimeout;
-
-public TimeoutTrigger(final long timeout) {
-mTimeout = timeout;
-

@@ -1,8 +1,0 @@
-private final ThreadLocal<Boolean> holdingThreads;
-
-public ReleasableLock(Lock lock) {
-this.lock = lock;
-boolean useHoldingThreads = false;
-assert (useHoldingThreads = true);
-if (useHoldingThreads) {
-

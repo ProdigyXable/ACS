@@ -1,8 +1,0 @@
-public class MissingValueFilter extends Filter implements java.io.Serializable  {
-private double[] missingValue;
-private int[] minimumElementNumber;
-
-public MissingValueFilter() {
-this.missingValue = new double[]{};
-this.minimumElementNumber = new int[]{};
-

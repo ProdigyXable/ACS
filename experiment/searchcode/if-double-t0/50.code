@@ -1,9 +1,0 @@
-public Thermo addSegment(double t0, Segment segment) {
-Thermo clone = new Thermo(this);
-clone.shomates.add(segment);
-clone.temperatureBreaks.add(t0);
-return clone;
-}
-
-public Thermo addSegment(double t0, double Cp) {
-

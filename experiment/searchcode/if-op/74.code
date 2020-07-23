@@ -1,5 +1,0 @@
-public Boolean checkOpTab(String value) {
-for (int i = 0; i < opTab.size(); i++) {
-if(value.equals(opTab.get(i).mnemonic)) {
-for (int i = 0; i < opTab.size(); i++) {
-

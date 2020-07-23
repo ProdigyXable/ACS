@@ -1,8 +1,0 @@
-LOGGER.error(&quot;Load properties file failure&quot;, e);
-} finally {
-if (inputStream != null) {
-boolean value = defaultValue;
-
-if (properties.containsKey(key)) {
-value = CastUtil.castBoolean(properties.getProperty(key));
-

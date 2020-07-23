@@ -1,5 +1,0 @@
-this.ensureSendCapacityRemains(Network.kDoubleSize * values.length);
-int currentPosition = sendBuffer.position();
-this.ensureSendCapacityRemains(Network.kDoubleSize);
-this.sendBuffer.putDouble(value);
-

@@ -1,4 +1,0 @@
-private ODESolver solver = new Euler(this);
-private boolean isAtPhiMax = false;
-private IPID<Double,FixedStepIntegrator<Double,FixedStepIntegrationArguments<Double>>,FixedStepIntegrationArguments<Double>,FixedStepBackwardDifferentiator<Double>,FixedStepBackwardDiffentiatorArguments<Double>> pidController = null;
-

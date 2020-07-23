@@ -1,9 +1,0 @@
-middle = left + (right - left) / 2;
-if (A[middle] == target)
-{
-return true;
-}
-if (A[left] == A[right])
-{
-left++ ;
-

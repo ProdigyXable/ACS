@@ -1,6 +1,0 @@
-public class AutoBoxing {
-public void booleanTest() {
-boolean flag = true;
-if (flag || (4 > 3)) {
-System.out.println(&quot;booleanTest&quot;);
-

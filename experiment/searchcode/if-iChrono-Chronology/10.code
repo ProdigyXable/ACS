@@ -1,8 +1,0 @@
-* @return the new formatter
-*/
-public DateTimeFormatter withChronology(Chronology chrono) {
-if (iChrono == chrono) {
-private Chronology selectChronology(Chronology chrono) {
-chrono = DateTimeUtils.getChronology(chrono);
-if (iChrono != null) {
-

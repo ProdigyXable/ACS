@@ -1,9 +1,0 @@
-public class BigDecimalToBooleanConverter implements Converter<Boolean, java.math.BigDecimal>{
-
-@Override
-// TODO Auto-generated method stub
-if(value == null || !value.booleanValue()) {
-return BigDecimal.ZERO;
-}
-return BigDecimal.ONE;
-

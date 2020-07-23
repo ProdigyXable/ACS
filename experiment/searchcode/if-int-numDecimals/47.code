@@ -1,7 +1,0 @@
-return new GML3GeometryTranslator(handler);
-}
-
-protected GeometryTranslator createGeometryTranslator(ContentHandler handler,
-int numDecimals) {
-return new GML3GeometryTranslator(handler, numDecimals);
-

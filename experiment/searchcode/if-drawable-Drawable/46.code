@@ -1,9 +1,0 @@
-import android.content.Context;
-import android.graphics.drawable.Drawable;
-
-import ir.javan.messenger.R;
-
-public class ResourceLoader {
-public static void loadRecources(Context context) {
-if (backgroundDrawableIn == null) {
-

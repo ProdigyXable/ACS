@@ -1,8 +1,0 @@
-import org.totalboumboum.configuration.game.quickstart.QuickStartConfigurationLoader;
-import org.totalboumboum.configuration.game.tournament.TournamentConfigurationLoader;
-result.setQuickMatchConfiguration(QuickMatchConfigurationLoader.loadQuickMatchConfiguration());
-result.setQuickStartConfiguration(QuickStartConfigurationLoader.loadQuickStartConfiguration());
-return result;
-}
-}
-

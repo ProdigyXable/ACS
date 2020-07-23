@@ -1,9 +1,0 @@
-public Map.Entry<User, Double> getMapEntry() {
-return mapEntry;
-}
-
-public double getValue() {
-return value;
-//Loop through nearestNeighbours TreeMap and get lowest similarity
-for (Map.Entry<User, Double> entry : nearestNeighbours.entrySet()) {
-

@@ -1,9 +1,0 @@
-return strict_eq(x, y);
-}
-
-public static boolean strict_eq(Byte x, Byte y) {
-if (x == y) {
-public static boolean strict_eq(Character x, Character y) {
-if (x == y) {
-return false;
-

@@ -1,8 +1,0 @@
-State oldState;
-do {
-oldState = this.state;
-if (!oldState.isUnsubscribed) {
-oldState = this.state;
-if (oldState.isUnsubscribed) {
-s.unsubscribe();
-

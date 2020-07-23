@@ -1,8 +1,0 @@
-@SuppressWarnings(&quot;unchecked&quot;)
-public GenericBaseRepository()
-{
-Type genericSuperclass = this.getClass().getGenericSuperclass();
-&quot;arguments because generic superclass neither &quot; +
-&quot;parameterized type nor class.&quot;);
-if(genericSuperclass == GenericBaseRepository.class)
-

@@ -1,8 +1,0 @@
-//import com.google.common.cache.RemovalNotification;
-//
-//public class BackFillCache extends DataStore<AbstractBackFill> {
-//
-//	public BackFillCache(long maxSize, String expireAfterWrite,
-//			String expireAfterAccess) {
-//		super(maxSize, expireAfterWrite, expireAfterAccess);
-

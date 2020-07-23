@@ -1,9 +1,0 @@
-* @return the default datetime zone object
-*/
-public static DateTimeZone getDefault() {
-DateTimeZone zone = cDefault;
-if (zone == null) {
-public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
-if (newZone == null) {
-newZone = DateTimeZone.getDefault();
-

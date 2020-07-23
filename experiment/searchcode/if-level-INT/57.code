@@ -1,3 +1,0 @@
-private void moveRight(int[][] matrix, int i, int j, int cnt, int level, int n) {
-matrix[i][j] = cnt;
-

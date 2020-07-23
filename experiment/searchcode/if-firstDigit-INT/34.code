@@ -1,9 +1,0 @@
-public class FirstDigitDistribution
-{
-private int [] counters;
-
-public FirstDigitDistribution()
-int value = seq.next();
-value = Math.abs(value);
-int firstDigit=value;
-

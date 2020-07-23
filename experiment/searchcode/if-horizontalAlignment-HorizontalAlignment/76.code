@@ -1,9 +1,0 @@
-public abstract class AlignedColumn<T, C> extends Column<T, C> {
-
-public AlignedColumn(Cell<C> cell, HorizontalAlignmentConstant horizontalAlignment) {
-public AlignedColumn(Cell<C> cell, HorizontalAlignmentConstant horizontalAlignment, VerticalAlignmentConstant verticalAlignment) {
-super(cell);
-if(horizontalAlignment != null)
-setHorizontalAlignment(horizontalAlignment);
-if(verticalAlignment != null)
-

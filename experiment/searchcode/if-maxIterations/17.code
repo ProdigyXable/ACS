@@ -1,8 +1,0 @@
-* Maximum number of iterations before stopping
-*/
-protected int maxIterations;
-public void setMaxIterations(
-final int maxIterations)
-{
-if (maxIterations <= 0)
-

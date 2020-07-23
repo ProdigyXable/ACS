@@ -1,5 +1,0 @@
-String key = mContext.getString(R.string.googletime);
-OkHttpClient client = new OkHttpClient.Builder().build();
-
-HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;https://maps.googleapis.com/maps/api/timezone/json&quot;).newBuilder();
-

@@ -1,6 +1,0 @@
-public abstract class AbstractJavaServiceGenerator extends AbstractJavaGenerator {
-private boolean requiresXMLGenerator;
-
-public AbstractJavaServiceGenerator(boolean requiresXMLGenerator) {
-super();
-

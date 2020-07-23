@@ -1,6 +1,0 @@
-public String check(int number) {
-boolean multipleOfThree = isMultipleOfThree(number);
-boolean multipleOfFive = isMultipleOfFive(number);
-boolean containsNumberThree = containsNumberThree(number);
-boolean containsNumberFive = containsNumberFive(number);
-

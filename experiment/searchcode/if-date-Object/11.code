@@ -1,6 +1,0 @@
-String operationType = record.getOperationType();
-if (operationType.equalsIgnoreCase(&quot;insert&quot;)) {
-Object fromDateObject = record.getValue(&quot;fromdate&quot;);
-Object toDateObject = record.getValue(&quot;todate&quot;);
-if (fromDateObject != null &amp;&amp; toDateObject != null) {
-

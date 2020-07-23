@@ -1,7 +1,0 @@
-final ContentHandler contentHandler = handlerContext.getController().getOutput();
-final boolean isConcreteControl = textControl != null;
-
-if (isConcreteControl) {
-final String externalValue = textControl.getExternalValue();
-if (externalValue != null &amp;&amp; externalValue.length() > 0)
-

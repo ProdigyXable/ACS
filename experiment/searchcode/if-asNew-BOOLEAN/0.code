@@ -1,5 +1,0 @@
-import codeOrchestra.actionscript.wizards.settings.ASNewProjectRootSettings.ASNewProjectSettingsState;
-import jetbrains.mps.util.PathManager;
-private ASNewProjectRootConfigurationPage getConfigurationPage() {
-if (configurationPage == null) {
-

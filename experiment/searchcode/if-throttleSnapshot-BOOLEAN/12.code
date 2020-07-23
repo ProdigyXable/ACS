@@ -1,7 +1,0 @@
-ListenableActionFuture<FlushResponse> flushResponseFuture = null;
-if (randomBoolean()) {
-ArrayList<String> indicesToFlush = new ArrayList<>();
-Path repositoryLocation = randomRepoPath();
-boolean throttleSnapshot = randomBoolean();
-boolean throttleRestore = randomBoolean();
-

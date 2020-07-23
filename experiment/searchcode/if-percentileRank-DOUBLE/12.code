@@ -1,9 +1,0 @@
-return percentileRank(state, value);
-}
-
-@Override
-public String percentAsString(double value) {
-static double percentileRank(TDigestState state, double value) {
-double percentileRank = state.cdf(value);
-if (percentileRank < 0) {
-

@@ -1,8 +1,0 @@
-private String mSpeakers;
-
-private boolean mStarred;
-private boolean mInitStarred;
-private boolean mDismissedWatchLivestreamCard = false;
-private boolean mHasLivestream = false;
-private MenuItem mSocialStreamMenuItem;
-

@@ -1,8 +1,0 @@
-private ArrayList<Button> buttons = new ArrayList<Button>();
-protected MouseWrapper mouse;
-
-protected GUIState parentState;
-
-public GUIOverlay(GUIState parentState, MouseWrapper mouse){
-this.parentState = parentState;
-

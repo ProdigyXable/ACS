@@ -1,5 +1,0 @@
-for (Enumeration<InetAddress> ipAddr = intf.getInetAddresses(); ipAddr
-.hasMoreElements();) {
-InetAddress inetAddress = ipAddr.nextElement();
-if (!inetAddress.isLoopbackAddress()) {
-

@@ -1,8 +1,0 @@
-String s;
-double time = solve.time;
-if(solve.isPlus2) time += 2;
-if(time>=60 &amp;&amp; showMinutes){
-int index = size+i-12;
-double time = getTime(index);
-if(time <= solve.rollingFastestTime){
-

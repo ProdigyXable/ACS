@@ -1,8 +1,0 @@
-for (String key : params.keySet()) {
-formBuilder.add(key, params.get(key));
-}
-RequestBody formBody = formBuilder.build();
-builder.post(formBody);
-}
-builder.url(url);
-

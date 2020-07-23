@@ -1,7 +1,0 @@
-for (String key : params.keySet()) {
-String value = params.get(key);
-if (value != null) {
-builder.addFormDataPart(key, value);
-
-mBuilder.append(key);
-

@@ -1,8 +1,0 @@
-package quartz.factory;
-
-import org.quartz.Scheduler;
-import org.quartz.impl.StdSchedulerFactory;
-public Scheduler getObject() throws Exception {
-if (scheduler == null) {
-scheduler = new StdSchedulerFactory().getScheduler();
-

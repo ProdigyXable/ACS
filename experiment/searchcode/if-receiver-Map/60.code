@@ -1,7 +1,0 @@
-public class MicroBus {
-public interface BusEventReceiver {
-void onBusEvent(Object event);
-}
-
-private HashMap<Class<?>, ArrayList<BusEventReceiver>> receivers = new HashMap<Class<?>, ArrayList<BusEventReceiver>>();
-

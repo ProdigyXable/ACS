@@ -1,9 +1,0 @@
-* @param context
-* @return boolean value
-*/
-public static boolean isNetworkConnectionAvailable(Context context)
-{
-boolean isNetworkConnectionAvailable = false;
-
-ConnectivityManager connectivityManager = (ConnectivityManager)context.getSystemService(&quot;connectivity&quot;);
-

@@ -1,9 +1,0 @@
-this.otherBucketKey = otherBucketKey;
-if (showOtherBucket) {
-this.totalNumKeys = keys.length + 1;
-} else {
-matched = true;
-}
-}
-if (showOtherBucket &amp;&amp; !matched) {
-

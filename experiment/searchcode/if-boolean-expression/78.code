@@ -1,7 +1,0 @@
-// &quot;Simplify boolean expression&quot; &quot;true&quot;
-class X {
-void f(boolean b, boolean c) {
-if (b &amp;&amp; tr<caret>ue &amp;&amp; c) return;
-}
-}
-

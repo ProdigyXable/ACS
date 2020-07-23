@@ -1,7 +1,0 @@
-short lhsActionId = getAuditActionId();
-short rhsActionId = rhs.getAuditActionId();
-if( lhsActionId != rhsActionId ) {
-short lhsAuditActionId = getAuditActionId();
-short rhsAuditActionId = rhs.getAuditActionId();
-if( lhsAuditActionId < rhsAuditActionId ) {
-

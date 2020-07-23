@@ -1,8 +1,0 @@
-private List<TypeDeclaration> subTypes;
-private boolean hasParams = false;
-
-private CompilationUnit compUnit;
-
-public TypeDeclaration(String pack, String name, boolean hasParams,
-CompilationUnit compUnit) {
-

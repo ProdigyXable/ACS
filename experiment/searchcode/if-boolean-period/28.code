@@ -1,8 +1,0 @@
-for (; period < s.length(); ++period) {
-if (s.length() % period == 0) {
-int shift = period;
-boolean isPeriod = true;
-for (int i = 0; i < period; ++i) {
-if (s.charAt(i) != s.charAt(i + shift)) {
-isPeriod = false;
-

@@ -1,5 +1,0 @@
-public static ResponseCode fromString(String responseCode) {
-if (responseCode != null) {
-for (ResponseCode rc : ResponseCode.values()) {
-if (responseCode.equals(String.valueOf(rc.responseCode))) {
-

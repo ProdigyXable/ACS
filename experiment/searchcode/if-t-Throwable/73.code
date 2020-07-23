@@ -1,8 +1,0 @@
-public ThrowableAssertion(String message, Class<? extends Throwable> throwableType)
-{
-try
-{ code(); }
-catch(Throwable e)
-{
-if(!throwableType.isInstance(e))
-

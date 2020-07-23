@@ -1,6 +1,0 @@
-/*  22:    */   protected void checkValidity(List<Integer> chromosomeRepresentation)
-/*  23:    */     throws InvalidRepresentationException
-/*  24:    */   {
-/*  25: 58 */     for (Iterator i$ = chromosomeRepresentation.iterator(); i$.hasNext();)
-/*  26:    */     {
-

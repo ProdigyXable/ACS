@@ -1,8 +1,0 @@
-private ArrayList<Contributor> contributors;
-
-public GameController(int numberOfRounds, float potMultiplyer, boolean percentageReward, boolean minimumBet, float bestContributorBonus, float flatPunishment) {
-float individualPayout;
-ArrayList<Contributor> highestContributors = getHighestContributors();
-
-if(percentageReward) {
-

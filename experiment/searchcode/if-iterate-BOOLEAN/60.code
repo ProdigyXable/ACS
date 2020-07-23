@@ -1,9 +1,0 @@
-public String getName() {
-return iterateBy.name();
-}
-
-@Override
-public boolean isValid() {
-public Iterator<? extends Object> createIterator() {
-if (iterateBy == IterateBy.indexes) {
-

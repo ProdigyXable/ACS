@@ -1,7 +1,0 @@
-public String notString(String str) {
-
-if(str.startsWith(&quot;not&quot;)) return str;
-else return &quot;not &quot;+str;
-
-}
-

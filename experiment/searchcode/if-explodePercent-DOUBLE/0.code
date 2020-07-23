@@ -1,9 +1,0 @@
-Double explodePercent = super.getExplodePercent(key);
-if (explodePercent == null)
-{
-explodePercent = Double.valueOf(0.00D);
-super.setSectionOutlinePaint(key, paint);
-
-Double explodePercent = adapter.getExplodePercent(key);
-if (explodePercent == null)
-

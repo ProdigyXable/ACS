@@ -1,5 +1,0 @@
-protected RestGetStoredScriptAction(Settings settings, RestController controller, boolean registerDefaultHandlers) {
-super(settings);
-if (registerDefaultHandlers) {
-controller.registerHandler(GET, &quot;/_scripts/{lang}/{id}&quot;, this);
-

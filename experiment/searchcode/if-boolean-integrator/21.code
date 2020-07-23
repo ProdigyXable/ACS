@@ -1,9 +1,0 @@
-import com.io7m.jcamera.JCameraFPSStyleIntegrator;
-import com.io7m.jcamera.JCameraFPSStyleIntegratorType;
-import com.io7m.jcamera.JCameraFPSStyleSnapshot;
-* pointer back to the center of the screen.
-*/
-
-if (this.cameraIsEnabled()) {
-this.integrator.integrate(this.integrator_time_seconds);
-

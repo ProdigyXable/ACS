@@ -1,9 +1,0 @@
-package com.kimson.library.ui.fragment;
-
-import com.kimson.library.loader.AsyncLoader;
-this.destroyLoader();
-}
-
-protected void ensureLoaderManager() {
-if (mLoaderManager == null) {
-

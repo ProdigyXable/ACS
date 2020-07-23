@@ -1,6 +1,0 @@
-if (rs != null) {
-if (rs.next()) {
-wmcount = rs.getInt(&quot;numWm&quot;);
-//Deletes the country given by cid. Returns true if deletion was successful and false otherwise.
-public boolean deleteCountry(int cid) {
-

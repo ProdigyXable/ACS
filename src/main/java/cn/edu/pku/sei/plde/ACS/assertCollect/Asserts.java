@@ -1,19 +1,19 @@
 package cn.edu.pku.sei.plde.ACS.assertCollect;
+
 import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.slice.StaticSlice;
 import cn.edu.pku.sei.plde.ACS.utils.*;
-import javassist.NotFoundException;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.SystemUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import javassist.NotFoundException;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by yanrunfa on 16/3/11.
  */
 public class Asserts {
+
     private String _trueClassPath = "";
     public String _classpath;
     public String _srcPath;
@@ -31,7 +31,7 @@ public class Asserts {
     public int _assertNums;
     public List<String> _asserts;
     public Map<String, Integer> _assertLineMap;
-    public Map<Integer,List<String>> _thrownExceptionMap = new HashMap<>();
+    public Map<Integer, List<String>> _thrownExceptionMap = new HashMap<>();
     public String _project;
     public boolean timeout = false;
 
@@ -46,25 +46,23 @@ public class Asserts {
         _project = project;
         _code = FileUtils.getCodeFromFile(_testSrcPath, _testClassname);
 
-
-        if (!_code.contains(_testMethodName) && _code.contains(" extends ")){
+        if (!_code.contains(_testMethodName) && _code.contains(" extends ")) {
             String extendsClass = _code.split(" extends ")[1].substring(0, _code.split(" extends ")[1].indexOf("{"));
             String className = CodeUtils.getClassNameOfImportClass(_code, extendsClass);
-            if (className.equals("")){
-                className = CodeUtils.getPackageName(_code)+"."+extendsClass;
+            if (className.equals("")) {
+                className = CodeUtils.getPackageName(_code) + "." + extendsClass;
             }
             String extendsCode = FileUtils.getCodeFromFile(testSrcPath, className.trim());
-            if (!extendsCode.equals("")){
+            if (!extendsCode.equals("")) {
                 _code = extendsCode;
             }
         }
-        _methodCode = FileUtils.getTestFunctionCodeFromCode(_code,_testMethodName, _testSrcPath);
-        List<Integer> methodLines = CodeUtils.getSingleMethodLine(_code,_testMethodName);
-        if (methodLines.size() == 2){
-            _methodStartLine =methodLines.get(0);
+        _methodCode = FileUtils.getTestFunctionCodeFromCode(_code, _testMethodName, _testSrcPath);
+        List<Integer> methodLines = CodeUtils.getSingleMethodLine(_code, _testMethodName);
+        if (methodLines.size() == 2) {
+            _methodStartLine = methodLines.get(0);
             _methodEndLine = methodLines.get(1);
-        }
-        else {
+        } else {
             _methodStartLine = 0;
             _methodEndLine = 0;
         }
@@ -74,38 +72,38 @@ public class Asserts {
         _errorAssertLines = getErrorAssertLine();
     }
 
-    public Asserts(String classpath, String srcPath,  String testClasspath, String testSrcPath, String testClassname, String testMethodName, String project){
+    public Asserts(String classpath, String srcPath, String testClasspath, String testSrcPath, String testClassname, String testMethodName, String project) {
         this(classpath, srcPath, testClasspath, testSrcPath, testClassname, testMethodName, new ArrayList<String>(), project);
     }
 
-    private List<Integer> getErrorAssertLine(){
+    private List<Integer> getErrorAssertLine() {
         List<Integer> result = new ArrayList<>();
         File tempJavaFile = FileUtils.copyFile(
                 FileUtils.getFileAddressOfJava(_testSrcPath, _testClassname),
                 tempJavaPath(_testClassname));
         File originClassFile = new File(FileUtils.getFileAddressOfClass(_testClasspath, _testClassname));
-        File backupClassFile = FileUtils.copyFile(originClassFile.getAbsolutePath(), originClassFile.getAbsolutePath()+".AssertsBackup");
+        File backupClassFile = FileUtils.copyFile(originClassFile.getAbsolutePath(), originClassFile.getAbsolutePath() + ".AssertsBackup");
         String oldTrace = "";
-        while (true){
+        while (true) {
             int lineNum = 0;
-            try{
+            try {
                 List<String> classpaths = new ArrayList<>(_libPath);
                 classpaths.add(_classpath);
                 String trace = TestUtils.getTestTrace(classpaths, _testClasspath, _testClassname, _testMethodName);
-                if (trace == null || trace.equals(oldTrace) || trace.contains("NoClassDefFoundError") || trace.contains("NoSuchMethodError")){
+                if (trace == null || trace.equals(oldTrace) || trace.contains("NoClassDefFoundError") || trace.contains("NoSuchMethodError")) {
                     break;
                 }
-                if (trace.equals("timeout")){
+                if (trace.equals("timeout")) {
                     timeout = true;
                     break;
                 }
                 oldTrace = trace;
                 List<String> thrownExceptions = new ArrayList<>();
-                for (String line : trace.split("\n")){
-                    if (line.contains(_testClassname) && line.contains(_testMethodName) && line.contains("(") && line.contains(")") && line.contains(":")){
-                        lineNum =  Integer.valueOf(line.substring(line.lastIndexOf("(")+1,line.lastIndexOf(")")).split(":")[1]);
+                for (String line : trace.split("\n")) {
+                    if (line.contains(_testClassname) && line.contains(_testMethodName) && line.contains("(") && line.contains(")") && line.contains(":")) {
+                        lineNum = Integer.valueOf(line.substring(line.lastIndexOf("(") + 1, line.lastIndexOf(")")).split(":")[1]);
                     }
-                    if (line.contains("Exception")){
+                    if (line.contains("Exception")) {
                         thrownExceptions.add(line);
                     }
                 }
@@ -113,23 +111,22 @@ public class Asserts {
                     break;
                 }
                 String code = FileUtils.getCodeFromFile(tempJavaFile);
-                String lineString = CodeUtils.getLineFromCode(code,lineNum).trim();
-                if (AssertUtils.isAssertLine(lineString, code)){
+                String lineString = CodeUtils.getLineFromCode(code, lineNum).trim();
+                if (AssertUtils.isAssertLine(lineString, code)) {
                     _thrownExceptionMap.put(lineNum, thrownExceptions);
                     result.add(lineNum);
                 }
-                if (lineString.startsWith("fail(")){
+                if (lineString.startsWith("fail(")) {
                     int num = lineNum;
-                    while (!CodeUtils.getLineFromCode(FileUtils.getCodeFromFile(tempJavaFile),num).trim().startsWith("try")){
+                    while (!CodeUtils.getLineFromCode(FileUtils.getCodeFromFile(tempJavaFile), num).trim().startsWith("try")) {
                         SourceUtils.commentCodeInSourceFile(tempJavaFile, num);
                         num--;
                     }
-                }
-                else if (LineUtils.isLineInFailBlock(code, lineNum)){//如果在fail的语句内抛出异常
-                    for (int i=lineNum; i< _methodEndLine; i++){
-                        if (CodeUtils.getLineFromCode(code, i).trim().startsWith("fail(")){
+                } else if (LineUtils.isLineInFailBlock(code, lineNum)) {//如果在fail的语句内抛出异常
+                    for (int i = lineNum; i < _methodEndLine; i++) {
+                        if (CodeUtils.getLineFromCode(code, i).trim().startsWith("fail(")) {
                             int num = i;
-                            while (!CodeUtils.getLineFromCode(FileUtils.getCodeFromFile(tempJavaFile),num).trim().startsWith("try")){
+                            while (!CodeUtils.getLineFromCode(FileUtils.getCodeFromFile(tempJavaFile), num).trim().startsWith("try")) {
                                 SourceUtils.commentCodeInSourceFile(tempJavaFile, num);
                                 num--;
                             }
@@ -139,19 +136,16 @@ public class Asserts {
                             break;
                         }
                     }
-                }
-                else if (!AssertUtils.isAssertLine(lineString,code)){
+                } else if (!AssertUtils.isAssertLine(lineString, code)) {
                     _errorThrowLines.add(lineNum);
                     break;
                 }
-                SourceUtils.commentCodeInSourceFile(tempJavaFile,lineNum);
-                ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" -d "+_testClasspath+" "+ tempJavaFile.getAbsolutePath()));
-            }
-            catch (NotFoundException e){
+                SourceUtils.commentCodeInSourceFile(tempJavaFile, lineNum);
+                ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp " + buildClasspath(Arrays.asList(PathUtils.getJunitPath(), _testClasspath, _classpath)) + " -d " + _testClasspath + " " + tempJavaFile.getAbsolutePath()));
+            } catch (NotFoundException e) {
                 System.out.println("ERROR: Cannot Find Source File: " + _testClassname + " in temp file package\n");
                 break;
-            }
-            catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
                 break;
             }
@@ -162,52 +156,51 @@ public class Asserts {
         return result;
     }
 
-    public List<Integer> dependenceOfAssert(int assertLine){
+    public List<Integer> dependenceOfAssert(int assertLine) {
         Set<Integer> dependences = new HashSet<>();
         dependences.add(assertLine);
         Set<Integer> result = new HashSet<>();
         String assertString = CodeUtils.getLineFromCode(_code, assertLine);
-        if (assertString.startsWith("fail(")){
+        if (assertString.startsWith("fail(")) {
             boolean tryed = false;
             boolean catched = false;
-            for (int i=1; i<assertLine; i++){
-                if (tryed && catched){
+            for (int i = 1; i < assertLine; i++) {
+                if (tryed && catched) {
                     break;
                 }
-                String lastLine = CodeUtils.getLineFromCode(_code, assertLine-i);
-                String nextLine = CodeUtils.getLineFromCode(_code, assertLine+i);
+                String lastLine = CodeUtils.getLineFromCode(_code, assertLine - i);
+                String nextLine = CodeUtils.getLineFromCode(_code, assertLine + i);
 
-                if (!lastLine.contains("try") && !tryed){
-                    dependences.add(assertLine-i);
-                    result.add(assertLine-i);
-                }else {
+                if (!lastLine.contains("try") && !tryed) {
+                    dependences.add(assertLine - i);
+                    result.add(assertLine - i);
+                } else {
                     tryed = true;
                 }
-                if (!nextLine.contains("catch") && !catched){
-                    dependences.add(assertLine+i);
-                    result.add(assertLine+i);
-                }
-                else {
+                if (!nextLine.contains("catch") && !catched) {
+                    dependences.add(assertLine + i);
+                    result.add(assertLine + i);
+                } else {
                     catched = true;
                 }
             }
         }
-        int brackets = CodeUtils.countChar(assertString, '(')-CodeUtils.countChar(assertString, ')');
-        while (brackets != 0){
+        int brackets = CodeUtils.countChar(assertString, '(') - CodeUtils.countChar(assertString, ')');
+        while (brackets != 0) {
             dependences.add(++assertLine);
             assertString = CodeUtils.getLineFromCode(_code, assertLine);
             brackets += CodeUtils.countChar(assertString, '(');
             brackets -= CodeUtils.countChar(assertString, ')');
         }
-        while (dependences.size()!=0){
+        while (dependences.size() != 0) {
             result.addAll(dependences);
             Set<Integer> newDependences = new HashSet<>();
-            for (int dependence: dependences){
+            for (int dependence : dependences) {
                 newDependences.addAll(lineStaticAnalysis(dependence));
             }
             dependences.clear();
             dependences.addAll(newDependences);
-            if (result.containsAll(newDependences)){
+            if (result.containsAll(newDependences)) {
                 break;
             }
         }
@@ -216,26 +209,26 @@ public class Asserts {
         return new ArrayList<>(result);
     }
 
-    public List<Integer> lineStaticAnalysis(int analysisLine){
+    public List<Integer> lineStaticAnalysis(int analysisLine) {
         List<Integer> dependences = new ArrayList<>();
         String lineString = CodeUtils.getLineFromCode(_code, analysisLine);
-        if (lineString.contains("=")){
-            lineString = lineString.substring(lineString.indexOf("=")+1);
+        if (lineString.contains("=")) {
+            lineString = lineString.substring(lineString.indexOf("=") + 1);
         }
         List<String> params = CodeUtils.divideParameter(lineString, 2, false);
-        for (String param: params){
+        for (String param : params) {
             StaticSlice staticSlice = new StaticSlice(CodeUtils.getMethodBodyFromMethod(_methodCode), param);
             String result = staticSlice.getSliceStatements();
 
-            if (result.equals("")){
+            if (result.equals("")) {
                 continue;
             }
-            for (String line: result.split("\n")){
-                if (AssertUtils.isAssertLine(line, _code)){
+            for (String line : result.split("\n")) {
+                if (AssertUtils.isAssertLine(line, _code)) {
                     continue;
                 }
                 int lineNum = CodeUtils.getLineNumOfLineString(_code, line, _methodStartLine);
-                if (lineNum!=-1 && lineNum < analysisLine){
+                if (lineNum != -1 && lineNum < analysisLine) {
                     dependences.add(lineNum);
                 }
             }
@@ -243,40 +236,34 @@ public class Asserts {
         return dependences;
     }
 
-    public int errorAssertNum(){
+    public int errorAssertNum() {
         return _errorAssertLines.size();
     }
 
-    public int errorNum(){
-        return _errorAssertLines.size()+_errorThrowLines.size();
+    public int errorNum() {
+        return _errorAssertLines.size() + _errorThrowLines.size();
     }
 
-    public List<Integer> errorLines(){
+    public List<Integer> errorLines() {
         List<Integer> result = new ArrayList<>(_errorAssertLines);
         result.addAll(_errorThrowLines);
         return result;
     }
 
-    public int trueAssertNum(){
+    public int trueAssertNum() {
         return _assertNums - _errorAssertLines.size();
     }
 
-  
-
-
-
-    public String getTrueTestFile(){
-        if (_errorAssertLines.size()>0){
+    public String getTrueTestFile() {
+        if (_errorAssertLines.size() > 0) {
             return getTrueTestFile(_errorAssertLines);
-        }
-        else {
+        } else {
             return "";
         }
     }
 
-
-    public String getTrueTestFile(List<Integer> errorAssertLines){
-        if (!_trueClassPath.equals("")){
+    public String getTrueTestFile(List<Integer> errorAssertLines) {
+        if (!_trueClassPath.equals("")) {
             return _trueClassPath;
         }
         File tempJavaFile = FileUtils.copyFile(
@@ -284,15 +271,15 @@ public class Asserts {
                 FileUtils.tempJavaPath(_testClassname, "Asserts"));
 
         List<String> assertLines = new ArrayList<>(_asserts);
-        for (int assertLine: errorAssertLines){
+        for (int assertLine : errorAssertLines) {
             String assertString = CodeUtils.getWholeLineFromCode(_code, assertLine);
-            if (assertString.contains("fail(")){
+            if (assertString.contains("fail(")) {
                 assertString += assertLine;
             }
             assertLines.remove(assertString);
         }
         Set<Integer> lineSet = new HashSet<>();
-        for (String assrtString: assertLines){
+        for (String assrtString : assertLines) {
             int line = _assertLineMap.get(assrtString);
             lineSet.add(line);
             lineSet.addAll(dependenceOfAssert(line));
@@ -301,50 +288,50 @@ public class Asserts {
         try {
             int beginLine = _methodStartLine + 1;
             int endLine = _methodEndLine;
-            for (int i=beginLine; i<= endLine; i++){
+            for (int i = beginLine; i <= endLine; i++) {
                 String lineString = CodeUtils.getLineFromCode(_code, i);
-                if (!lineSet.contains(i) && LineUtils.isCommentable(lineString)){
+                if (!lineSet.contains(i) && LineUtils.isCommentable(lineString)) {
                     SourceUtils.commentCodeInSourceFile(tempJavaFile, i);
-                    if (lineString.contains("fail(") && LineUtils.isLineInFailBlock(_code,i)){
-                        int j = i-1;
-                        while (!CodeUtils.getLineFromCode(_code, j).contains("try {")){
+                    if (lineString.contains("fail(") && LineUtils.isLineInFailBlock(_code, i)) {
+                        int j = i - 1;
+                        while (!CodeUtils.getLineFromCode(_code, j).contains("try {")) {
                             SourceUtils.commentCodeInSourceFile(tempJavaFile, j--);
                         }
                     }
                 }
             }
-            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" "+ tempJavaFile.getAbsolutePath()));
-        } catch (IOException e){
+            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp " + buildClasspath(Arrays.asList(PathUtils.getJunitPath(), _testClasspath, _classpath)) + " " + tempJavaFile.getAbsolutePath()));
+        } catch (IOException e) {
             e.printStackTrace();
             return "";
         }
         tempJavaFile.delete();
-        _trueClassPath = tempJavaFile.getAbsolutePath().substring(0,tempJavaFile.getAbsolutePath().lastIndexOf("."))+".class";
+        _trueClassPath = tempJavaFile.getAbsolutePath().substring(0, tempJavaFile.getAbsolutePath().lastIndexOf(".")) + ".class";
         return _trueClassPath;
     }
 
-    public String buildClasspath(List<String> pathList){
+    public String buildClasspath(List<String> pathList) {
         pathList = new ArrayList<>(pathList);
-        if (_libPath!= null){
+        if (_libPath != null) {
             pathList.addAll(_libPath);
         }
         String path = "\"";
-        path += StringUtils.join(pathList,System.getProperty("path.separator"));
+        path += StringUtils.join(pathList, System.getProperty("path.separator"));
         path += "\"";
         return path;
     }
 
-    private static String tempJavaPath(String classname){
-        if (!new File(Config.TEMP_FILES_PATH+"/assert/").exists()){
-            new File(Config.TEMP_FILES_PATH+"/assert/").mkdirs();
+    private static String tempJavaPath(String classname) {
+        if (!new File(Config.TEMP_FILES_PATH + "/assert/").exists()) {
+            new File(Config.TEMP_FILES_PATH + "/assert/").mkdirs();
         }
-        return Config.TEMP_FILES_PATH+"/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".java";
+        return Config.TEMP_FILES_PATH + "/assert/" + classname.substring(classname.lastIndexOf(".") + 1) + ".java";
     }
 
-    private static String tempClassPath(String classname){
-        if (!new File(Config.TEMP_FILES_PATH+"/assert/").exists()){
-            new File(Config.TEMP_FILES_PATH+"/assert/").mkdirs();
+    private static String tempClassPath(String classname) {
+        if (!new File(Config.TEMP_FILES_PATH + "/assert/").exists()) {
+            new File(Config.TEMP_FILES_PATH + "/assert/").mkdirs();
         }
-        return Config.TEMP_FILES_PATH+"/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".class";
+        return Config.TEMP_FILES_PATH + "/assert/" + classname.substring(classname.lastIndexOf(".") + 1) + ".class";
     }
 }

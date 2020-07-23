@@ -1,6 +1,0 @@
-if (duration==null) return false;
-else {
-long deltaSeconds=duration.getDeltaSeconds();
-if ( deltaSeconds==-1) return true;
-else return true;
-

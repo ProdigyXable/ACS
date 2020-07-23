@@ -1,7 +1,0 @@
-package com.mattring.smallevo.examples;
-
-import com.mattring.smallevo.Candidate;
-import java.util.Comparator;
-public synchronized boolean addIfBest(T cand) {
-if (comparator.compare(cand, bestCandidate) > 0) {
-

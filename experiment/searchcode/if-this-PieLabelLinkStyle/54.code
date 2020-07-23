@@ -1,8 +1,0 @@
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof PieLabelLinkStyle)) {
-private Object readResolve() throws ObjectStreamException {
-Object result = null;
-if (this.equals(PieLabelLinkStyle.STANDARD)) {
-

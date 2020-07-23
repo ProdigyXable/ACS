@@ -1,7 +1,0 @@
-assertEquals(new RealMatrixImpl(reference), sub);
-if (mustFail) {
-fail(&quot;Expecting MatrixIndexException&quot;);
-assertEquals(new RealMatrixImpl(reference), new RealMatrixImpl(sub));
-if (mustFail) {
-fail(&quot;Expecting MatrixIndexException&quot;);
-

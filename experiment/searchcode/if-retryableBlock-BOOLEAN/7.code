@@ -1,7 +1,0 @@
-final boolean retryableBlock = randomBoolean();
-final boolean unblockBeforeTimeout = randomBoolean();
-}.execute(request, listener);
-
-if (retryableBlock &amp;&amp; unblockBeforeTimeout) {
-assertFalse(listener.isDone());
-

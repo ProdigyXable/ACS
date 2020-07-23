@@ -1,9 +1,0 @@
-itemPaint.setShader(shader);
-}
-
-if (base == RectangleEdge.TOP || base == RectangleEdge.BOTTOM) {
-
-bar.fill(canvas, itemPaint);
-
-} else if (base == RectangleEdge.LEFT || base == RectangleEdge.RIGHT) {
-

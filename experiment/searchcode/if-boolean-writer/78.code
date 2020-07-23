@@ -1,9 +1,0 @@
-PsiXmlElementWriter inferredInteractionWriter = createInferredInteractionWriter(streamWriter, objectIndex);
-
-if (extended){
-experimentWriter, availabilityWriter, parameterWriters, participantWriters, inferredInteractionWriter, publicationWriter,
-openCvWriter);
-}
-else if (named){
-return createNamedPsiXmlInteractionWriters(streamWriter, objectIndex, version, xmlType, interactionCategory, complexType,
-

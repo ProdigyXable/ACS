@@ -1,5 +1,0 @@
-public BooleanLatticeElement equalOperation(StringLatticeElement other) {
-if(other.equals(bottom)) return BooleanLatticeElement.bottom;
-
-if(other instanceof UIntStringLatticeElement)
-

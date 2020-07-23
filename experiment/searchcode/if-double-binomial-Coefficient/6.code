@@ -1,5 +1,0 @@
-public double binomialCoefficient(int n, int k) {
-return getBinomialCoefficient().function(n, k);
-public BinomialCoefficientI getBinomialCoefficient() {
-if (_binomialCoefficient == null)
-

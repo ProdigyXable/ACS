@@ -1,9 +1,0 @@
-setCookie(name, value, false);
-}
-
-public void setCookie(String name, String value, boolean httpOnly){
-setCookie(name, value, PATH, httpOnly);
-}
-
-public void setCookie(String name, String value, String path, boolean httpOnly){
-

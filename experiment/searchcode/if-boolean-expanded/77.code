@@ -1,6 +1,0 @@
-private boolean expanded;
-private java.awt.Image collapsedIcon = null, expandedIcon = null;
-
-public HTMLTreeIcon( boolean expanded, ImageResources i ) {
-this.expanded = expanded;
-

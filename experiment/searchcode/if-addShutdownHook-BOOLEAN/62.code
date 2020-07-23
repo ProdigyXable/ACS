@@ -1,7 +1,0 @@
-public class HttpClientFactory {
-
-public static AsyncHttpClient create(int threadNum){
-boolean followRedirects = true;
-boolean connectionPooling = true;
-ExecutorService httpExecutorService = Executors.newFixedThreadPool(threadNum);
-

@@ -1,7 +1,0 @@
-if (playlist.isRandom()) {
-int lastIndex = itemIndex;
-if (playlist.getItemSize() > 1) {
-public int previousItem(IPlaylist playlist, int itemIndex) {
-
-if (itemIndex > playlist.getItemSize()) {
-

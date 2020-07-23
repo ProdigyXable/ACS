@@ -1,8 +1,0 @@
-FileQueue queue = idToQueue.get(queueId);
-if (queue == null) {
-queue = new FileQueue(queueId, queuesDirName);
-FileQueue queue = idToQueue.get(queueId);
-if (queue != null) {
-queue.close();
-idToQueue.remove(queueId);
-

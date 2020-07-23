@@ -1,8 +1,0 @@
-ids.add(schemeId);
-List<BetSchemePO> betSchemeList = betSchemeDao.find(ids);
-BetSchemePO scheme = null;
-if (null != betSchemeList &amp;&amp; betSchemeList.size() > 0) {
-public BetScheme viewSchemeCache(Long schemeId, Long userId, int displayMode) {
-BetScheme betScheme = new BetScheme();
-if (null == schemeId || schemeId <= 0) {
-

@@ -1,7 +1,0 @@
-/** Encodes the document length in the same way as {@link TFIDFSimilarity}. */
-@Override
-public long computeNorm(FieldInvertState state) {
-final float numTerms;
-if (discountOverlaps)
-numTerms = state.getLength() - state.getNumOverlap();
-

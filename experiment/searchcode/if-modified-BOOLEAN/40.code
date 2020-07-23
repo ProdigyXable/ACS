@@ -1,6 +1,0 @@
-protected boolean fileidModified = false;
-protected boolean useridModified = false;
-protected boolean filetypeModified = false;
-protected boolean filenameModified = false;
-protected boolean filepathModified = false;
-

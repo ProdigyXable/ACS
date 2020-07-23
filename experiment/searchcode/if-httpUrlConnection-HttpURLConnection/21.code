@@ -1,9 +1,0 @@
-httpurlconnection.setDoOutput(false);
-httpurlconnection.connect();
-if(httpurlconnection.getResponseCode() == 404)
-return;
-}
-if(b == null)
-c.a = ImageIO.read(httpurlconnection.getInputStream());
-else
-

@@ -1,9 +1,0 @@
-// Methods
-// ===========================================================
-private static float mapVToRegionImpl(ITextureRegion region, float v) {
-return UVMapperUtils.mapUToRegionImpl(region, u);
-}
-
-public static float mapVToRegion(ITextureRegion region, float v) {
-if (region.isRotated())
-

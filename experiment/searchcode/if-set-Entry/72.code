@@ -1,7 +1,0 @@
-MapEntry<K,V> entry = mainArray[i];
-while (entry!=null){
-if(entry.getKey().equals(key)){
-while(entry!=null){
-if(entry.getValue().equals(value)) {
-return true;
-

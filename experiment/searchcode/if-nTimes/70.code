@@ -1,5 +1,0 @@
-if (time > timeLimit) {
-if (nTimes != 1) {
-nTimes /= 100;
-if (nTimes != 1) {
-

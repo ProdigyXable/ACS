@@ -1,8 +1,0 @@
-if (listener == null) {
-throw new IllegalArgumentException(&quot;listener == null&quot;);
-}
-if (listeners == null) {
-listeners = new LinkedList<ChangeListener>();
-}
-if (!listeners.contains(listener)) {
-

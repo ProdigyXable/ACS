@@ -1,8 +1,0 @@
-* @author user
-*/
-public class save_waypoint_scan_query extends GeneralQueryFormat {
-
-private boolean isInsert = false;
-
-public void update(ClientWaypointScan wayPoint, boolean isInsert) {
-

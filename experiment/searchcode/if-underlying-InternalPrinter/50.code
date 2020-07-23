@@ -1,8 +1,0 @@
-private final InternalPrinter underlying;
-
-static DateTimePrinter of(InternalPrinter underlying) {
-if (underlying instanceof DateTimePrinterInternalPrinter) {
-return ((DateTimePrinterInternalPrinter) underlying).getUnderlying();
-}
-if (underlying instanceof DateTimePrinter) {
-

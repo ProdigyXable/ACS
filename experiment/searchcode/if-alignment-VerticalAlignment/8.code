@@ -1,9 +1,0 @@
-return false;
-}
-
-VerticalAlignment alignment = (VerticalAlignment) obj;
-if (!this.name.equals(alignment.name)) {
-private Object readResolve() throws ObjectStreamException {
-if (this.equals(VerticalAlignment.TOP)) {
-return VerticalAlignment.TOP;
-

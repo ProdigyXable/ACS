@@ -1,9 +1,0 @@
-this.localeRepository = localeRepository;
-}
-
-@Override
-public boolean isDefaultLocale(Locale locale) {
-Optional<LocaleConfiguration> currentDefault = localeRepository.findByDefaultLocale(true);
-if (currentDefault.isPresent()) {
-currentDefault.get().setDefaultLocale(false);
-

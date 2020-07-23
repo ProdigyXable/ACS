@@ -1,8 +1,0 @@
-char[] characters = line.toCharArray();
-int numHoles = 0;
-for(char letter: characters)
-{
-if(oneHole.contains(Character.toLowerCase(letter)))
-numHoles += 1;
-else if(Character.toLowerCase(letter) == &#39;b&#39;)
-

@@ -1,9 +1,0 @@
-public boolean equals(Object obj) {
-if (obj == null) {
-return false;
-}
-if (getClass() != obj.getClass()) {
-final Margin other = (Margin) obj;
-if (this.leftMargin != other.leftMargin) {
-return false;
-

@@ -1,8 +1,0 @@
-private final DateFormat dateFormat;
-private final boolean allowEmpty;
-private final int exactDateLength;
-
-public CustomDateEditor(DateFormat dateFormat, boolean allowEmpty) {
-this.dateFormat = dateFormat;
-this.allowEmpty = allowEmpty;
-

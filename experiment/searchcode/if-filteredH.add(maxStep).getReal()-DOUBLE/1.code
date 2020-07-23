@@ -1,8 +1,0 @@
-h.abs().getReal(), minStep.getReal(), true);
-}
-}
-
-if (filteredH.subtract(maxStep).getReal() > 0) {
-filteredH = maxStep;
-} else if (filteredH.add(maxStep).getReal() < 0) {
-

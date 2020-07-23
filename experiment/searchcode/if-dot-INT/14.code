@@ -1,8 +1,0 @@
-return character;
-}
-
-public final Map<Integer, List<Dot>> getCustomDotMapping() {
-if (customDotMapping == null) {
-public final void setCustomDotMapping(final Map<Integer, List<Dot>> CUSTOM_DOT_MAPPING) {
-if (customDotMapping == null) {
-

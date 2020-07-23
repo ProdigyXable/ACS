@@ -1,9 +1,0 @@
-package designPatterns.exercises.n4_poker.gambles;
-
-public class GambleAnalyzer {
-
-private static GambleAnalyzer gambleAnalyzer;
-
-public static GambleAnalyzer instance() {
-if (gambleAnalyzer == null) {
-

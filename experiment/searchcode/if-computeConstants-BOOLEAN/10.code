@@ -1,9 +1,0 @@
-* @return boolean
-*/
-private final boolean needsUpdate() {
-for(Element el : panel3D.getElements()) if (el.hasChanged()) return true;
-* @return boolean true if frame is iconified; false otherwise
-*/
-private boolean isIconified() {
-Component c = getTopLevelAncestor();
-

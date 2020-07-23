@@ -1,9 +1,0 @@
-public class AtomicBooleanSingleton {
-private static AtomicBoolean initialized = new AtomicBoolean(false);
-private static void checkInitialized() {
-if(instance == null &amp;&amp; initialized.compareAndSet(false, true)) {
-instance = new AtomicBooleanSingleton();
-}
-}
-}
-

@@ -1,18 +1,18 @@
 package cn.edu.pku.sei.plde.ACS.localization.gzoltar;
 
-import com.gzoltar.core.components.Component;
-import com.gzoltar.core.components.Statement;
 import cn.edu.pku.sei.plde.ACS.localization.metric.Metric;
 import cn.edu.pku.sei.plde.ACS.localization.metric.Ochiai;
-import org.apache.commons.lang.StringUtils;
-
+import com.gzoltar.core.components.Component;
+import com.gzoltar.core.components.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by spirals on 24/07/15.
  */
-public class StatementExt extends Statement  {
+public class StatementExt extends Statement {
+
     private int ep;
     private int ef;
     private int np;
@@ -25,6 +25,7 @@ public class StatementExt extends Statement  {
     public StatementExt(Component c, int lN) {
         super(c, lN);
     }
+
     public StatementExt(Statement s) {
         this(s, new Ochiai());
     }
@@ -37,20 +38,21 @@ public class StatementExt extends Statement  {
         this.setLineNumber(s.getLineNumber());
     }
 
-    public void addFailTest(String test){
+    public void addFailTest(String test) {
         failTests.add(test);
     }
-    public void addTest(String test){
+
+    public void addTest(String test) {
         tests.add(test);
     }
 
-    public List<String> getTests(){
+    public List<String> getTests() {
         return tests;
     }
-    public List<String> getFailTests(){
+
+    public List<String> getFailTests() {
         return failTests;
     }
-
 
     public int getEf() {
         return ef;
@@ -86,30 +88,29 @@ public class StatementExt extends Statement  {
 
     @Override
     public double getSuspiciousness() {
-        if (this.getLabel().contains("getOffsetFromLocal")){
-            return getSuspiciousness(this.defaultMetric)*10;
+        if (this.getLabel().contains("getOffsetFromLocal")) {
+            return getSuspiciousness(this.defaultMetric) * 10;
         }
         return getSuspiciousness(this.defaultMetric);
     }
 
-    public void setSuspiciousWeight(float weight){
+    public void setSuspiciousWeight(float weight) {
         suspiciousWeight = weight;
     }
 
-
     public double getSuspiciousness(Metric metric) {
-        if (getLabel().contains("(") && getLabel().contains(")")){
-            if (StringUtils.isNumeric(getLabel().substring(getLabel().lastIndexOf("(")+1,getLabel().lastIndexOf(")")))){
-                return metric.value(ef, ep, nf, np)/4*suspiciousWeight;
+        if (getLabel().contains("(") && getLabel().contains(")")) {
+            if (StringUtils.isNumeric(getLabel().substring(getLabel().lastIndexOf("(") + 1, getLabel().lastIndexOf(")")))) {
+                return metric.value(ef, ep, nf, np) / 4 * suspiciousWeight;
             }
         }
 
-        return metric.value(ef, ep, nf, np)*suspiciousWeight;
+        return metric.value(ef, ep, nf, np) * suspiciousWeight;
     }
 
     @Override
     public int compareTo(Component s) {
-        if(s instanceof StatementExt) {
+        if (s instanceof StatementExt) {
             return (int) Math.floor(s.getSuspiciousness() - getSuspiciousness());
         }
         return super.compareTo(s);

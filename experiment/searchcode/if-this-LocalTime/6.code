@@ -1,9 +1,0 @@
-public Screen(String time, String localtime, boolean on) {
-this.time = time;
-this.localtime = localtime;
-this.on = on;
-}
-
-@Override
-public JSONObject toJSON() {
-

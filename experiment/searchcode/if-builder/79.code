@@ -1,7 +1,0 @@
-public OrderBuilder getOrderBuilder(String str) {
-OrderBuilder builder = null;
-if (str.equalsIgnoreCase(&quot;OH&quot;)) {
-builder = new OSOrdBuilder();
-} else if (str.equalsIgnoreCase(&quot;CA&quot;)) {
-builder = new CAOrdBuilder();
-

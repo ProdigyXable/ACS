@@ -1,7 +1,0 @@
-* forces the Navigation Drawer to redraw itself.
-*/
-private void populateNavDrawer() {
-//        boolean attendeeAtVenue = SettingsUtils.isAttendeeAtVenue(this);
-//        // If the attendee is on-site, show Map on the nav drawer
-//        if (attendeeAtVenue) {
-

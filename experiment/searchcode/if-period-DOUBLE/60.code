@@ -1,9 +1,0 @@
-
-public class Product {
-private String name;
-private double anualInterests;
-private int period;
-private double effective;
-
-public Product(String name, double anualInterests, int period, double effective) {
-

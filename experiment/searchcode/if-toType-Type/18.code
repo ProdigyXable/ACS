@@ -1,7 +1,0 @@
-public class TypeConverterBeanUtilsAdapter extends DefaultTypeConverter {
-
-@Override
-public Object convertValue(Map context, Object value, Class toType) {
-if (ConvertUtils.lookup(toType) == null) {
-return super.convertValue(context, value, toType);
-

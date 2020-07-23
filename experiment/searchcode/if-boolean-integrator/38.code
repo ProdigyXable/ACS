@@ -1,8 +1,0 @@
-import android.content.Context;
-
-import com.wadidejla.barcode.IntentIntegrator;
-import com.wadidejla.newscreens.IFragment;
-IntentIntegrator integrator = new IntentIntegrator((Activity)context);
-
-if(archiver)
-

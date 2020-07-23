@@ -1,5 +1,0 @@
-public final Throwable[] determineCauseChain(Throwable throwable) {
-if (throwable == null) {
-public final Throwable getFirstThrowableOfType(Class<? extends Throwable> throwableType, Throwable[] chain) {
-if (chain != null) {
-

@@ -1,7 +1,0 @@
-private final MailProviderType providerType;
-private boolean active;
-
-public AbstractProvider(MailProviderType providerType) {
-this.providerType = providerType;
-this.active = true;
-

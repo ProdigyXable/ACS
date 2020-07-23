@@ -1,8 +1,0 @@
-public void setFkCompany(CompanyBean fkcompany) {
-if (this.getUserAction().equals(UserActionEnum.NOACTION)) {
-this.setUserAction(UserActionEnum.UPDATE);
-}
-
-if (getDTO() != null) {
-if (fkcompany == null){
-

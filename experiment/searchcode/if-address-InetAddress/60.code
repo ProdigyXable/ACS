@@ -1,8 +1,0 @@
-package com.wp.basejava.socket;
-
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-String host = args[0];
-InetAddress [] addresses = InetAddress.getAllByName(host);
-for(InetAddress a : addresses){
-

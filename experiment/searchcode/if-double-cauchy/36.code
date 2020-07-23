@@ -1,4 +1,0 @@
-import net.sourceforge.cilib.math.random.CauchyDistribution;
-import net.sourceforge.cilib.math.random.ProbabilityDistributionFunction;
-double value = this.getOperatorStrategy().evaluate(chromosome.doubleValueOf(i), this.cauchy.getRandomNumber(this.location, scale));
-

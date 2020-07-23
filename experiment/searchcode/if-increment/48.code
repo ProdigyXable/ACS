@@ -1,5 +1,0 @@
-ExecutorService executorService = Executors.newFixedThreadPool(2);
-Increment incrementInstance = new Increment();
-IncrementTask incrementTask1 = new IncrementTask(incrementInstance);
-IncrementTask incrementTask2 = new IncrementTask(incrementInstance);
-

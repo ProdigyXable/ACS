@@ -1,8 +1,0 @@
-DeltaBooleanArray result = new DeltaBooleanArray() ;
-result.constant = constant;
-result.isStrictConstant = true;
-return result ;
-DeltaBooleanArray result = new DeltaBooleanArray() ;
-result.values = values ;
-result.isStrictConstant = false ;
-

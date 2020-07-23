@@ -1,7 +1,0 @@
-public StepVerifier(PositionCalculator positionCalculator) {
-this.positionCalculator = positionCalculator;
-}
-
-public String canStepOnField(long x, long y, String rawMoves) {
-DancePositions dancePositions = positionCalculator.calculatePosition(rawMoves);
-

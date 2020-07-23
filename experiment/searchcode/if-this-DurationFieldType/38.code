@@ -1,9 +1,0 @@
-unsupportedDurationField = (UnsupportedDurationField) cCache.get(durationFieldType);
-}
-if (unsupportedDurationField == null) {
-private UnsupportedDurationField(DurationFieldType durationFieldType) {
-this.iType = durationFieldType;
-}
-
-public final DurationFieldType getType() {
-

@@ -1,9 +1,0 @@
-public BundleConfiguration(String id, int startLevel, boolean autoStart) {
-this.configuration = new Element(&quot;plugin&quot;);
-
-setAutoStart(autoStart);
-}
-
-public boolean isAutoStart() {
-return Boolean.parseBoolean(configuration.getAttributeValue(&quot;autoStart&quot;));
-

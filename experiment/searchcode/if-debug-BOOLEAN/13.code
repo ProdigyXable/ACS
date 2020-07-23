@@ -1,8 +1,0 @@
-public class Debug {
-public static void print(boolean debug, String input) {
-if (debug) {
-System.out.println(&quot;[debug] &quot; + input);
-}
-}
-}
-

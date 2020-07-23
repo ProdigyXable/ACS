@@ -1,8 +1,0 @@
-public RiemannIntegrator(Integratable function) {
-this.function = function;
-}
-
-public double riemannIntegrate(double lowerBound, double upperBound) {
-public double riemannIntegrate(double lowerBound, double upperBound, long rectangles) {
-if (lowerBound > upperBound) {
-

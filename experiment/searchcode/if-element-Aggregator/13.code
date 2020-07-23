@@ -1,5 +1,0 @@
-public Object getSelection() {
-SelectionAggregator aggregator = getServiceAggregator();
-if (aggregator != null) {
-return aggregator.getSelection();
-

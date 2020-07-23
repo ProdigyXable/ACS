@@ -1,6 +1,0 @@
-while ((line = reader.readLine()) != null &amp;&amp; !&quot;/ec/&quot;.equals(line)) {
-
-if (line.contains(OLD_DATE_TIME_FORMATS)) {
-String strippedString = line.substring(OLD_DATE_TIME_FORMATS.length(), line.length());
-if (strippedString.length() > 0) {
-

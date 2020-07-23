@@ -9,19 +9,17 @@ import cn.edu.pku.sei.plde.ACS.visible.MethodCollect;
 import cn.edu.pku.sei.plde.ACS.visible.VariableCollect;
 import cn.edu.pku.sei.plde.ACS.visible.model.MethodInfo;
 import cn.edu.pku.sei.plde.ACS.visible.model.VariableInfo;
-import javassist.NotFoundException;
-
-
 import java.io.*;
 import java.util.*;
+import javassist.NotFoundException;
 
 /**
  * Created by yanrunfa on 16/2/25.
  */
-public class Suspicious implements Serializable{
+public class Suspicious implements Serializable {
+
     private static final int MAX_TRACE_RESULT_COUNT = 50;
     private static final int MAX_TRACE_TEST_COUNT = 10;
-
 
     public final String _classpath;
     public List<String> _libPath = new ArrayList<>();
@@ -43,7 +41,7 @@ public class Suspicious implements Serializable{
     private int _defaultErrorLine = -1;
     public int trueMethodCallNumFromTest = 0;
 
-    public Suspicious(String classpath, String testClasspath, String srcPath, String testSrcPath, String classname, String function){
+    public Suspicious(String classpath, String testClasspath, String srcPath, String testSrcPath, String classname, String function) {
         this(classpath,
                 testClasspath,
                 srcPath,
@@ -57,30 +55,29 @@ public class Suspicious implements Serializable{
     }
 
     public Suspicious(String classpath,
-                      String testClasspath,
-                      String srcPath,
-                      String testSrcPath,
-                      String classname,
-                      String function,
-                      double suspiciousness,
-                      List<String> tests,
-                      List<String> failTests,
-                      List<String> lines) {
-        this(classpath, testClasspath,srcPath, testSrcPath, classname, function, suspiciousness, tests, failTests, lines, new ArrayList<String>());
+            String testClasspath,
+            String srcPath,
+            String testSrcPath,
+            String classname,
+            String function,
+            double suspiciousness,
+            List<String> tests,
+            List<String> failTests,
+            List<String> lines) {
+        this(classpath, testClasspath, srcPath, testSrcPath, classname, function, suspiciousness, tests, failTests, lines, new ArrayList<String>());
     }
 
-
     public Suspicious(String classpath,
-                      String testClasspath,
-                      String srcPath,
-                      String testSrcPath,
-                      String classname,
-                      String function,
-                      double suspiciousness,
-                      List<String> tests,
-                      List<String> failTests,
-                      List<String> lines,
-                      List<String> libPaths){
+            String testClasspath,
+            String srcPath,
+            String testSrcPath,
+            String classname,
+            String function,
+            double suspiciousness,
+            List<String> tests,
+            List<String> failTests,
+            List<String> lines,
+            List<String> libPaths) {
         _classpath = classpath;
         _testClasspath = testClasspath;
         _classname = classname;
@@ -95,40 +92,39 @@ public class Suspicious implements Serializable{
         _isConstructor = CodeUtils.isConstructor(_classname, _function);
     }
 
-    public int errorAssertNums(){
+    public int errorAssertNums() {
         int errAssertNum = 0;
-        for (Asserts asserts: _assertsMap.values()){
+        for (Asserts asserts : _assertsMap.values()) {
             errAssertNum += asserts.errorAssertNum();
         }
         return errAssertNum;
     }
 
-    public int trueAssertNums(){
+    public int trueAssertNums() {
         return trueMethodCallNumFromTest;
     }
 
-    public int trueTestNums(){
+    public int trueTestNums() {
         return _tests.size() - _failTests.size();
     }
 
-    public Set<Integer> errorLines(){
-        if (_assertsMap.size() == 0){
+    public Set<Integer> errorLines() {
+        if (_assertsMap.size() == 0) {
             return new HashSet<>();
         }
         Set<Integer> result = new HashSet<>();
-        for (Map.Entry<String, List<Integer>> entry: _errorLineMap.entrySet()){
+        for (Map.Entry<String, List<Integer>> entry : _errorLineMap.entrySet()) {
             result.addAll(entry.getValue());
         }
         return result;
     }
 
-    public void setErrorLines(Set<Integer> lines){
+    public void setErrorLines(Set<Integer> lines) {
         this._lines.clear();
-        for (int line: lines){
+        for (int line : lines) {
             this._lines.add(String.valueOf(line));
         }
     }
-
 
     public int getDefaultErrorLine() {
         //如果是构造函数,则重新寻找错误行
@@ -136,18 +132,18 @@ public class Suspicious implements Serializable{
             for (String test : _tests) {
                 try {
                     String testTrace = TestUtils.getTestTrace(_classpath, _testClasspath, test.split("#")[0], test.split("#")[1]);
-                    if (testTrace == null){
+                    if (testTrace == null) {
                         continue;
                     }
                     for (String line : testTrace.split("\n")) {
-                        if (line.contains(classname()+".") && line.contains("(") && line.contains(")")) {
-                            if (_defaultErrorLine!= -1){
+                        if (line.contains(classname() + ".") && line.contains("(") && line.contains(")")) {
+                            if (_defaultErrorLine != -1) {
                                 continue;
                             }
                             _defaultErrorLine = Integer.valueOf(line.substring(line.indexOf("(") + 1, line.indexOf(")")).split(":")[1]);
                         }
                     }
-                }catch(NotFoundException e){
+                } catch (NotFoundException e) {
                     e.printStackTrace();
                 }
             }
@@ -163,38 +159,37 @@ public class Suspicious implements Serializable{
         return _defaultErrorLine;
     }
 
-    public String classname(){
-        String className =  _classname.trim().replace(";","");
-        if (className.contains("$")){
+    public String classname() {
+        String className = _classname.trim().replace(";", "");
+        if (className.contains("$")) {
             className = className.substring(0, className.indexOf("$"));
         }
         return className;
     }
 
-    public String functionname(){
-        if (_function.contains("[")){
+    public String functionname() {
+        if (_function.contains("[")) {
             return _function.substring(0, _function.lastIndexOf("["));
         }
-        return _function.replace("\\","");
+        return _function.replace("\\", "");
     }
 
-    public String functionnameWithoutParam(){
+    public String functionnameWithoutParam() {
         return _function.substring(0, _function.indexOf("("));
     }
 
-
-    public List<String> getTestClassAndFunction(){
+    public List<String> getTestClassAndFunction() {
         return _tests;
     }
 
-    public List<String> getFailedTest(){
+    public List<String> getFailedTest() {
         return _failTests;
     }
 
-    public List<String> getTestClasses(){
+    public List<String> getTestClasses() {
         List<String> classes = new ArrayList<String>();
-        for (String test: _tests){
-            if (!test.contains("#")){
+        for (String test : _tests) {
+            if (!test.contains("#")) {
                 continue;
             }
             classes.add(test.split("#")[0]);
@@ -202,47 +197,43 @@ public class Suspicious implements Serializable{
         return classes;
     }
 
-    public String getClassSrcPath(String classSrc){
+    public String getClassSrcPath(String classSrc) {
         String classname = classname();
-        if (_classname.contains("$")){
+        if (_classname.contains("$")) {
             classname = _classname.substring(0, _classname.lastIndexOf('$'));
         }
-        String result =  classSrc + System.getProperty("file.separator") + classname.replace(".",System.getProperty("file.separator")) + ".java";
-        return result.replace(" ","").replace("//","/");
+        String result = classSrc + System.getProperty("file.separator") + classname.replace(".", System.getProperty("file.separator")) + ".java";
+        return result.replace(" ", "").replace("//", "/");
     }
 
-
-    public String getClassSrcIndex(String classSrc){
+    public String getClassSrcIndex(String classSrc) {
         String classSrcPath = getClassSrcPath(classSrc);
-        return classSrcPath.substring(0,classSrcPath.lastIndexOf(System.getProperty("file.separator"))).replace(" ","").replace("//","/");
+        return classSrcPath.substring(0, classSrcPath.lastIndexOf(System.getProperty("file.separator"))).replace(" ", "").replace("//", "/");
     }
 
-
-
-    public List<VariableInfo> getAllInfo(){
+    public List<VariableInfo> getAllInfo() {
         return InfoUtils.filterBannedVariable(InfoUtils.AddMethodInfoListToVariableInfoList(_variableInfo, _methodInfo));
     }
 
-
-    public List<VariableInfo> getVariableInfo(int line){
-         return getVariableInfo(this._srcPath, line);
+    public List<VariableInfo> getVariableInfo(int line) {
+        return getVariableInfo(this._srcPath, line);
     }
 
-    private List<VariableInfo> getVariableInfo(String classSrc, int line){
-        if (_variableInfo == null){
+    private List<VariableInfo> getVariableInfo(String classSrc, int line) {
+        if (_variableInfo == null) {
             _variableInfo = new ArrayList<>();
         }
         List<VariableInfo> variableInfos = new ArrayList<VariableInfo>();
         String classSrcPath = getClassSrcPath(classSrc);
         VariableCollect variableCollect = VariableCollect.GetInstance(getClassSrcIndex(classSrc));
         List<VariableInfo> locals = variableCollect.getVisibleLocalInMethodList(classSrcPath, line);
-        if (locals.size() == 0){
-            locals = variableCollect.getVisibleLocalInMethodList(classSrcPath, line-1);
+        if (locals.size() == 0) {
+            locals = variableCollect.getVisibleLocalInMethodList(classSrcPath, line - 1);
         }
-        for (VariableInfo local: locals){
+        for (VariableInfo local : locals) {
             local.isLocalVariable = true;
-            List<VariableInfo> subVariableInfo = InfoUtils.getSubInfoOfComplexVariable(local,classSrc, classSrcPath);
-            for (VariableInfo info: subVariableInfo){
+            List<VariableInfo> subVariableInfo = InfoUtils.getSubInfoOfComplexVariable(local, classSrc, classSrcPath);
+            for (VariableInfo info : subVariableInfo) {
                 info.isLocalVariable = true;
             }
             variableInfos.addAll(subVariableInfo);
@@ -250,58 +241,58 @@ public class Suspicious implements Serializable{
         variableInfos.addAll(locals);
         variableCollect = VariableCollect.GetInstance(getClassSrcIndex(classSrc));
         List<VariableInfo> parameters = variableCollect.getVisibleParametersInMethodList(classSrcPath, line);
-        for (VariableInfo param: parameters){
+        for (VariableInfo param : parameters) {
             param.isParameter = true;
-            List<VariableInfo> subVariableInfo = InfoUtils.getSubInfoOfComplexVariable(param,classSrc, classSrcPath);
-            for (VariableInfo info: subVariableInfo){
+            List<VariableInfo> subVariableInfo = InfoUtils.getSubInfoOfComplexVariable(param, classSrc, classSrcPath);
+            for (VariableInfo info : subVariableInfo) {
                 info.isParameter = true;
             }
             variableInfos.addAll(subVariableInfo);
         }
         variableInfos.addAll(parameters);
 
-        if (!_isConstructor){
+        if (!_isConstructor) {
             variableCollect = VariableCollect.GetInstance(getClassSrcIndex(classSrc));
             LinkedHashMap<String, ArrayList<VariableInfo>> classvars = variableCollect.getVisibleFieldInAllClassMap(classSrcPath);
-            if (classvars.containsKey(classSrcPath)){
+            if (classvars.containsKey(classSrcPath)) {
                 List<VariableInfo> fields = classvars.get(classSrcPath);
                 // remove the static variable when in a static method.
                 List<VariableInfo> staticVars = new ArrayList<>();
-                if (MethodCollect.checkIsStaticMethod(getClassSrcPath(classSrc),_function.substring(0, _function.indexOf("(")))){
-                    for (VariableInfo info: fields){
-                        if (!info.isStatic){
+                if (MethodCollect.checkIsStaticMethod(getClassSrcPath(classSrc), _function.substring(0, _function.indexOf("(")))) {
+                    for (VariableInfo info : fields) {
+                        if (!info.isStatic) {
                             staticVars.add(info);
                         }
                     }
                 }
                 String code = FileUtils.getCodeFromFile(_srcPath, _classname);
                 List<VariableInfo> innerVars = new ArrayList<>();
-                if (!MethodUtils.isInnerMethod(code,functionnameWithoutParam())){
-                    for (VariableInfo info: fields){
-                        if (!CodeUtils.hasField(code, info.variableName)){
+                if (!MethodUtils.isInnerMethod(code, functionnameWithoutParam())) {
+                    for (VariableInfo info : fields) {
+                        if (!CodeUtils.hasField(code, info.variableName)) {
                             innerVars.add(info);
                         }
                     }
                 }
                 fields.removeAll(staticVars);
                 fields.removeAll(innerVars);
-                for (VariableInfo field: fields){
+                for (VariableInfo field : fields) {
                     field.isFieldVariable = true;
                 }
                 variableInfos.addAll(fields);
             }
         }
         List<VariableInfo> addonVariableInfos = addonVariableInfos(line, parameters);
-        for (VariableInfo info: addonVariableInfos){
+        for (VariableInfo info : addonVariableInfos) {
             boolean isAdd = true;
-            for (VariableInfo existsInfo: variableInfos){
-                if (info.variableName.equals(existsInfo.variableName) && info.isExpression){
+            for (VariableInfo existsInfo : variableInfos) {
+                if (info.variableName.equals(existsInfo.variableName) && info.isExpression) {
                     existsInfo.isExpression = true;
                     isAdd = false;
                     break;
                 }
             }
-            if (isAdd){
+            if (isAdd) {
                 variableInfos.add(info);
             }
         }
@@ -311,20 +302,20 @@ public class Suspicious implements Serializable{
         return InfoUtils.filterBannedVariable(variableInfos);
     }
 
-    private List<VariableInfo> addonVariableInfos(int line, List<VariableInfo> parameters){
+    private List<VariableInfo> addonVariableInfos(int line, List<VariableInfo> parameters) {
         List<VariableInfo> infos = new ArrayList<>();
         String code = FileUtils.getCodeFromFile(_srcPath, _classname);
         //"this" variable
-        VariableInfo thisInfo = new VariableInfo("this", null, false, classname().substring(classname().lastIndexOf(".")+1));
+        VariableInfo thisInfo = new VariableInfo("this", null, false, classname().substring(classname().lastIndexOf(".") + 1));
         thisInfo.isAddon = true;
         infos.add(thisInfo);
         //if expression
-        if (LineUtils.isLineInIf(code, line)){
-            for (int i=line; i>0; i--){
+        if (LineUtils.isLineInIf(code, line)) {
+            for (int i = line; i > 0; i--) {
                 String lineIString = CodeUtils.getLineFromCode(code, i);
-                if (LineUtils.isIfAndElseIfLine(lineIString)){
+                if (LineUtils.isIfAndElseIfLine(lineIString)) {
                     List<VariableInfo> ifAddon = InfoUtils.getVariableInIfStatement(lineIString, functionnameWithoutParam());
-                    if (ifAddon != null){
+                    if (ifAddon != null) {
                         infos.addAll(ifAddon);
                     }
                     break;
@@ -334,26 +325,25 @@ public class Suspicious implements Serializable{
         return infos;
     }
 
-
-    public List<MethodInfo> getMethodInfo(String classSrc){
-        if (_methodInfo != null){
+    public List<MethodInfo> getMethodInfo(String classSrc) {
+        if (_methodInfo != null) {
             return _methodInfo;
         }
-        if (_isConstructor){
+        if (_isConstructor) {
             _methodInfo = new ArrayList<>();
             return _methodInfo;
         }
         MethodCollect methodCollect = MethodCollect.GetInstance(getClassSrcIndex(classSrc));
         LinkedHashMap<String, ArrayList<MethodInfo>> methods = methodCollect.getVisibleMethodWithoutParametersInAllClassMap(getClassSrcPath(classSrc));
         _methodInfo = methods.get(getClassSrcPath(classSrc));
-        if (_methodInfo == null){
+        if (_methodInfo == null) {
             _methodInfo = new ArrayList<>();
         }
         //remove static methods when the suspicious method is not static
         List<MethodInfo> staticMethod = new ArrayList<>();
-        if (MethodCollect.checkIsStaticMethod(getClassSrcPath(classSrc),_function.substring(0, _function.indexOf("(")))){
-            for (MethodInfo info: _methodInfo){
-                if (!info.isStatic){
+        if (MethodCollect.checkIsStaticMethod(getClassSrcPath(classSrc), _function.substring(0, _function.indexOf("(")))) {
+            for (MethodInfo info : _methodInfo) {
+                if (!info.isStatic) {
                     staticMethod.add(info);
                 }
             }
@@ -362,16 +352,16 @@ public class Suspicious implements Serializable{
         //remove inner class methods
         List<MethodInfo> innerMethod = new ArrayList<>();
         String code = FileUtils.getCodeFromFile(_srcPath, classname());
-        for (MethodInfo info: _methodInfo){
-            if (MethodUtils.isInnerMethod(code, info.methodName)){
+        for (MethodInfo info : _methodInfo) {
+            if (MethodUtils.isInnerMethod(code, info.methodName)) {
                 innerMethod.add(info);
             }
         }
 
         //remove methods would call suspicious method in its statement.
         List<MethodInfo> loopCallMethod = new ArrayList<>();
-        for (MethodInfo info: _methodInfo){
-            if (MethodUtils.isLoopCall(functionnameWithoutParam(),info.methodName,code)){
+        for (MethodInfo info : _methodInfo) {
+            if (MethodUtils.isLoopCall(functionnameWithoutParam(), info.methodName, code)) {
                 loopCallMethod.add(info);
             }
         }
@@ -382,7 +372,7 @@ public class Suspicious implements Serializable{
         return _methodInfo;
     }
 
-    public List<TraceResult> getTraceResult(String project){
+    public List<TraceResult> getTraceResult(String project) {
         return getTraceResult(project, TimeLine.NEVER_TIMEOUT);
     }
 
@@ -392,58 +382,58 @@ public class Suspicious implements Serializable{
         List<String> trueTests = new ArrayList<>(_tests);
         trueTests.removeAll(_failTests);
         int tracedTestCount = 0;
-        for (String testclass: trueTests){
-            if (!_failTests.contains(testclass) && !testFilter(_testSrcPath, testclass.split("#")[0], testclass.split("#")[1])){
+        for (String testclass : trueTests) {
+            if (!_failTests.contains(testclass) && !testFilter(_testSrcPath, testclass.split("#")[0], testclass.split("#")[1])) {
                 continue;
             }
-            try{
+            try {
                 traceResults.addAll(tracer.trace(classname(), functionname(), testclass.split("#")[0], testclass.split("#")[1], getDefaultErrorLine(), true));
-            } catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-            tracedTestCount ++;
-            if (traceResults.size()> MAX_TRACE_RESULT_COUNT || tracedTestCount > MAX_TRACE_TEST_COUNT){
+            tracedTestCount++;
+            if (traceResults.size() > MAX_TRACE_RESULT_COUNT || tracedTestCount > MAX_TRACE_TEST_COUNT) {
                 break;
             }
-            if (timeLine.isTimeout()){
+            if (timeLine.isTimeout()) {
                 return new ArrayList<>();
             }
         }
-        for (String testclass: _failTests){
-            try{
+        for (String testclass : _failTests) {
+            try {
                 traceResults.addAll(tracer.trace(classname(), functionname(), testclass.split("#")[0], testclass.split("#")[1], getDefaultErrorLine(), false));
-            } catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (traceResults.size()> MAX_TRACE_RESULT_COUNT){
+            if (traceResults.size() > MAX_TRACE_RESULT_COUNT) {
                 break;
             }
-            if (timeLine.isTimeout()){
+            if (timeLine.isTimeout()) {
                 return new ArrayList<>();
             }
         }
         return traceResults;
     }
 
-    private boolean testFilter(String testSrcPath, String testClassname, String testMethodName){
+    private boolean testFilter(String testSrcPath, String testClassname, String testMethodName) {
         String code = FileUtils.getCodeFromFile(testSrcPath, testClassname);
-        String methodCode = FileUtils.getTestFunctionCodeFromCode(code, testMethodName,testSrcPath);
-        if (methodCode.equals("")){
+        String methodCode = FileUtils.getTestFunctionCodeFromCode(code, testMethodName, testSrcPath);
+        if (methodCode.equals("")) {
             return false;
         }
         List<String> assertLines = CodeUtils.getAssertInTest(testSrcPath, testClassname, testMethodName);
-        if (assertLines.size() != 1){
+        if (assertLines.size() != 1) {
             return true;
         }
         String assertLine = assertLines.get(0);
-        if (!assertLine.trim().startsWith("Assert.assertEquals(") && !assertLine.trim().startsWith("TestUtils.assertEquals(") ){
+        if (!assertLine.trim().startsWith("Assert.assertEquals(") && !assertLine.trim().startsWith("TestUtils.assertEquals(")) {
             return true;
         }
-        List<String> params = CodeUtils.divideParameter(assertLine,1);
+        List<String> params = CodeUtils.divideParameter(assertLine, 1);
         String param1 = params.get(0);
         String param2 = params.get(1);
-        if (param1.contains(".") && param1.contains("(") && param2.contains(".") && param2.contains("(")){
-            if (param1.substring(param1.indexOf("."), param1.indexOf("(")).equals(param2.substring(param2.indexOf("."), param2.indexOf("(")))){
+        if (param1.contains(".") && param1.contains("(") && param2.contains(".") && param2.contains("(")) {
+            if (param1.substring(param1.indexOf("."), param1.indexOf("(")).equals(param2.substring(param2.indexOf("."), param2.indexOf("(")))) {
                 return false;
             }
         }

@@ -1,9 +1,0 @@
-private String currentPass;
-private String email;
-@Inject
-private User user;
-@Inject
-public String updateEmail() {
-try {
-int result = dao.updateEmail(email, user);
-

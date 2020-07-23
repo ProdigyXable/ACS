@@ -1,8 +1,0 @@
-public class AstTypeParameter {
-public final String name;
-public final List<AstType> upperBounds;
-
-public AstTypeParameter(String name, List<AstType> upperBounds) {
-this.name = name;
-this.upperBounds = upperBounds;
-

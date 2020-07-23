@@ -1,7 +1,0 @@
-protected DelegatedDurationField(DurationField durationField, DurationFieldType durationFieldType) {
-if (durationField == null) {
-throw new IllegalArgumentException(&quot;The field must not be null&quot;);
-}
-this.iField = durationField;
-if (durationFieldType == null) {
-

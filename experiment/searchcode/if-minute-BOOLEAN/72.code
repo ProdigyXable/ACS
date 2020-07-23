@@ -1,8 +1,0 @@
-// Wenn die Minuten des übergebenen Objektes kleiner sind
-if(o.minute < minute) {
-return 1;
-}
-// Wenn die Minuten des übergebenen Objektes größer sind
-if(o.minute > minute) {
-return -1;
-

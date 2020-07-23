@@ -1,6 +1,0 @@
-// Use the current date as the default date in the picker
-int year;
-int monthOfYear;
-localDate = localDate.withYear(getArguments().getInt(YEAR));
-if (getArguments().containsKey(MONTH))
-

@@ -1,8 +1,0 @@
-this.optionsName = optionsName;
-}
-
-public Object getOptionsValue() {
-Object obj = null;
-if(optionsType!=null &amp;&amp; optionsValue!=null){
-if(optionsType.equals(&quot;Boolean&quot;)){
-

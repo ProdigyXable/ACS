@@ -1,9 +1,0 @@
-import com.laconic.gos.member.component.GosMemberMgr;
-import com.laconic.gos.member.component.MemberType;
-
-
-public class MemberTypeListTag extends BodyTagSupport {
-
-protected Iterator iterator;
-private MemberType memberType;
-

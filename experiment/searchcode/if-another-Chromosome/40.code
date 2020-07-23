@@ -1,9 +1,0 @@
-customer = Problem.getCustomer(gene);
-if (gene != chromosome.get(1)) {
-currentLength += Problem.getCustomer(prevGene).distanceTo(
-customer = Problem.getCustomer(gene);
-customerPrev = Problem.getCustomer(prevGene);
-if (customer == customerPrev){
-
-chromosome.set(prevGene, gene);
-

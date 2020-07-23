@@ -1,6 +1,0 @@
-public String getPopupDisplayString()
-{
-if(null == _replacement)
-{
-return getNonGeneratedPopupDisplay();
-

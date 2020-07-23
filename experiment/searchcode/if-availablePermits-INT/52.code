@@ -1,7 +1,0 @@
-private final AtomicInteger availablePermits;
-
-public AsyncSemaphore(int initialPermits) {
-availablePermits = new AtomicInteger(initialPermits);
-next = waitQueue.pollFirst();
-if (next == null) availablePermits.incrementAndGet();
-

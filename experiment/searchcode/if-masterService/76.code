@@ -1,7 +1,0 @@
-try
-{
-managerList=masterService.getManagerDetails();
-if(managerList.size()>0)
-{
-model.addAttribute(&quot;managerLis&quot;, managerList);
-

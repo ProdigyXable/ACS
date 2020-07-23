@@ -1,7 +1,0 @@
-return false;
-if (maximumWeight == null) {
-if (other.maximumWeight != null)
-return false;
-} else if (!maximumWeight.equals(other.maximumWeight))
-return false;
-

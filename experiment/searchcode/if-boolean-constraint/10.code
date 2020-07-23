@@ -1,9 +1,0 @@
-public class AcceptedListConstraintPredicate<T> implements
-AttributeConstraintPredicate<T> {
-
-public boolean acceptValue(AcceptedListConstraint constraint, T value) {
-if (value == null) {
-return false;
-}
-List acceptedValues = constraint.getValues();
-

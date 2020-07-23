@@ -1,8 +1,0 @@
-public class CommonUtil {
-
-public static boolean equals(Object object1, Object object2) {
-if (object1 == object2) {
-return true;
-}
-if ((object1 == null) || (object2 == null)) {
-

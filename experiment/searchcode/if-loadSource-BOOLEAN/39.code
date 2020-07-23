@@ -1,8 +1,0 @@
-@Override
-public Source loadSource(String url) throws IOException {
-return this.loadSource(url, true);
-}
-
-@Override
-public Source loadSource(String url, boolean useCache) throws IOException {
-

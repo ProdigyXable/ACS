@@ -1,7 +1,0 @@
-public boolean lt( Value rhs )
-{
-IntVal d;
-checkBadComparison(this, rhs);
-if ( rhs instanceof IntVal ) d = (IntVal)rhs;
-checkBadComparison(this, rhs);
-

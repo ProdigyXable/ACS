@@ -1,9 +1,0 @@
-this.props = attrs.props;
-}
-
-public boolean getBooleanExtendedAttribute(String name) {
-String value = props.getProperty(name);
-boolean ret = false;
-
-if (!TextUtils.isEmpty(value)) {
-

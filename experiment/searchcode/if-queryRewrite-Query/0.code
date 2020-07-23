@@ -1,5 +1,0 @@
-import odra.sbql.optimizers.queryrewrite.auxiliaryNames.AuxiliaryNamesRemover;
-import odra.sbql.optimizers.queryrewrite.deadquery.SBQLDeadQueryOptimizer;
-import odra.sbql.optimizers.queryrewrite.distributed.DistributedQueryOptimizer;
-import odra.sbql.optimizers.queryrewrite.distributed.parallel.DistributedParallelQueryOptimizer;
-

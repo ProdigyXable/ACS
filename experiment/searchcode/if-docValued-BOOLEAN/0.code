@@ -1,4 +1,0 @@
-boolean indexed, boolean docValued, boolean stored) {
-List<Field> fields = new ArrayList<>();
-if (indexed) {
-

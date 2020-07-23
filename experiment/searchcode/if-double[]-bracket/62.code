@@ -1,5 +1,0 @@
-//Add operands to tree
-while(position< positionCloseBracket){
-if(expression.startsWith(OPEN_BRACKET, position)) inBracket++;
-if(expression.startsWith(CLOSE_BRACKET, position)) inBracket--;
-

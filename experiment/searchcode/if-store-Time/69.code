@@ -1,4 +1,0 @@
-tddStoreGoodsEvaluation.setStoreId(storeId);
-tddStoreGoodsEvaluation.setAddTime(currDate.getTime()/1000);
-tddStoreGoodsEvaluation.setIfShow(1);
-

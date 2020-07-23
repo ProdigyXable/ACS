@@ -1,7 +1,0 @@
-String theOutput = DefaultValues.ERROR_WORD + DefaultValues.SEPARATOR_WORD + &quot;unknow command&quot;;
-
-if (theInput == null) {
-theOutput = DefaultValues.ERROR_WORD + DefaultValues.SEPARATOR_WORD + &quot;null command&quot;;
-}
-if(DefaultValues.isItCommand(theInput, DefaultValues.START_WORD)) {
-

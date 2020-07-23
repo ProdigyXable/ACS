@@ -1,8 +1,0 @@
-public class Solution {
-public int trap(int[] A) {
-if (A.length == 0)
-return 0;
-
-int[] maxLeft = new int[A.length];
-int[] maxRight = new int[A.length];
-

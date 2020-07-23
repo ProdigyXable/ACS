@@ -1,8 +1,0 @@
-@Override
-void perData(String foundKey, String foundData) {
-if (!prevKey.equals(&quot;&quot;)) {
-void perData(String foundKey, String foundData)
-throws DatabaseException {
-
-if (foundKey.equals(whenFoundDoInsert)) {
-

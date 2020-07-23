@@ -1,7 +1,0 @@
-public CategoryLabelPosition getLabelPosition(RectangleEdge rectangleEdge) {
-CategoryLabelPosition categoryLabelPosition = null;
-if (rectangleEdge == RectangleEdge.TOP) {
-return this.positionForAxisAtTop;
-}
-if (rectangleEdge == RectangleEdge.BOTTOM) {
-

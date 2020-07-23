@@ -1,7 +1,0 @@
-ent = file.getNextEntry();
-while(ent != null) {
-if(ent.getName().contains(&quot;Minecraft.class&quot;)) {
-StringBuilder sb = new StringBuilder();
-String requiredVersion = ModPack.getSelectedPack().getMcVersion();
-if(Settings.getSettings().getForceUpdate()) {
-

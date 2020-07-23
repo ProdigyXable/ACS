@@ -1,9 +1,0 @@
-private long totalBytes;
-
-public StorageNotificationInfo(@NonNull String fileName,
-return identityKeyId;
-}
-
-public void setProgress(long doneBytes, long totalBytes) {
-this.doneBytes = doneBytes;
-

@@ -1,9 +1,0 @@
-temp = tempCluster
-.computerClusterDistance(clusterChilds.get(j));
-
-if (temp > maxValue) {
-clusterChilds.remove(cluster2);
-// 就近分配簇
-for (Cluster c : clusterChilds) {
-if (cluster1.computerClusterDistance(c) < cluster2
-

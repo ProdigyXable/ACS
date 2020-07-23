@@ -1,5 +1,0 @@
-// do not pass in calendar directly, this will cause TimeZone of FastDatePrinter to be ignored
-return format(calendar.getTime(), buf);
-// do not pass in calendar directly, this will cause TimeZone of FastDatePrinter to be ignored
-if(!calendar.getTimeZone().equals(mTimeZone)) {
-

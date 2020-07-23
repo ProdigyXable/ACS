@@ -1,9 +1,0 @@
-public boolean shouldProcess(Node<Point> node) {
-boolean shouldProcess = node.contains(point.x, point.y);
-
-if (shouldProcess) {
-node.count--;
-}
-
-return shouldProcess;
-

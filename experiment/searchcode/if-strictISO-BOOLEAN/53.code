@@ -1,6 +1,0 @@
-boolean extended,
-boolean strictISO) {
-
-boolean reducedPrec = false;
-if (fields.remove(DateTimeFieldType.year())) {
-

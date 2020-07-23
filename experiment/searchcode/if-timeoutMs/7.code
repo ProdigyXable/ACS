@@ -1,8 +1,0 @@
-private String timerId;
-private long timeoutMS;
-private boolean reSchedule = false;
-
-public ScheduleTimerEvent(String timerId, long timeoutMS) {
-this.timerId = timerId;
-this.timeoutMS = timeoutMS;
-

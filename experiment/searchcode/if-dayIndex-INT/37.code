@@ -1,9 +1,0 @@
-return totaNumberOfParentalLeaves;
-}
-
-int getTotalMinutesWorkedOnDay(int dayIndex) {
-return week.get(dayIndex).getTotalMinutesWorked();
-}
-
-int getTotalOfficeMinutesForDay(int dayIndex) {
-

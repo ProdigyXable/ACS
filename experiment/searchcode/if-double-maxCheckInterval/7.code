@@ -1,8 +1,0 @@
-/** Maximal time interval between events handler checks. */
-private final double maxCheckInterval;
-
-/** Convergence threshold for event localization. */
-* the event time search
-*/
-public EventState(final EventHandler handler, final double maxCheckInterval,
-

@@ -1,5 +1,0 @@
-public class QueryVisitor<T> {
-public void visit(Query<T> query) {
-if (query instanceof And<?>) visitAnd((And<T>) query);
-else if (query instanceof Between<?, ?>) visitBetween((Between<T, ?>) query);
-

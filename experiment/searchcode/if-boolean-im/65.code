@@ -1,7 +1,0 @@
-public static class ImSpecies extends ImBase {
-public ImMath diffusionConstant;
-public boolean individual;
-public ImDriftDiffusivity       driftDiffusivity;
-
-// goes through all reactions and checks if reactants/products have duplicates
-

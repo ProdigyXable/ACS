@@ -1,8 +1,0 @@
-private StringBuilder unformatted = new StringBuilder();
-
-private List<Format> formats = new ArrayList<Format>();
-@Override
-public FormattableText insert(String toInsert, int atIndex) {
-
-if (atIndex > unformatted.length()){
-

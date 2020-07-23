@@ -1,6 +1,0 @@
-private boolean suspendedIssuesVisible;
-private boolean closedIssuesVisible;
-
-public void setSuspendedIssuesVisible(boolean suspendedIssuesVisible) {
-this.suspendedIssuesVisible = suspendedIssuesVisible;
-

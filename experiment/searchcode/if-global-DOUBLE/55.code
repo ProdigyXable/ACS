@@ -1,5 +1,0 @@
-public int compare(StrategyResult data, StrategyResult globalData) {
-StrategyResult globalDataInput = globalData;
-if (data != null) {
-if (globalData == null || data.getCosts() < globalData.getCosts()) {
-

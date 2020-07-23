@@ -1,8 +1,0 @@
-public OpenMapRealVector ebeMultiply(RealVector v) throws IllegalArgumentException {
-checkVectorDimensions(v.getDimension());
-return res;
-}
-
-/** {@inheritDoc} */
-public OpenMapRealVector ebeMultiply(double[] v) throws IllegalArgumentException {
-

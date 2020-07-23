@@ -1,8 +1,0 @@
-final int firstByte = inputStream.readUnsignedByte();
-
-int result;
-if (firstByte < 0x80) {
-result = firstByte;
-} else {
-result = readIntData(firstByte, inputStream);
-

@@ -1,8 +1,0 @@
-* Read from a stream.
-*/
-public IncludeExclude(StreamInput in) throws IOException {
-if (in.readBoolean()) {
-boolean regexBased = isRegexBased();
-out.writeBoolean(regexBased);
-if (regexBased) {
-

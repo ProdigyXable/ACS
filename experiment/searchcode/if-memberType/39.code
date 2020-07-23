@@ -1,5 +1,0 @@
-if (id != that.id) return false;
-if (userid != that.userid) return false;
-if (membertype != null ? !membertype.equals(that.membertype) : that.membertype != null) return false;
-if (teamid != null ? !teamid.equals(that.teamid) : that.teamid != null) return false;
-

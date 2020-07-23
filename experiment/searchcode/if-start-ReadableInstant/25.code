@@ -1,9 +1,0 @@
-return getStartMillis() > j;
-}
-
-public boolean isAfter(ReadableInstant readableInstant) {
-return readableInstant == null ? isAfterNow() : isAfter(readableInstant.getMillis());
-long startMillis = getStartMillis();
-long endMillis = getEndMillis();
-if (readableInterval == null) {
-

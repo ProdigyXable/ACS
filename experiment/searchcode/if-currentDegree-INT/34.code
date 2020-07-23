@@ -1,8 +1,0 @@
-Class[] interfaces = fromInterfaceType.getInterfaces();
-currentDegree++;
-for (int i = 0; i < interfaces.length; i++)
-{
-if (interfaces[i] == toInterfaceType)
-{
-return currentDegree;
-

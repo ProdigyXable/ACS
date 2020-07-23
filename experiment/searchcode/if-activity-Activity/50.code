@@ -1,7 +1,0 @@
-public static ActivityUtil getInstance() {
-if (instance == null) {
-instance = new ActivityUtil();
-public Activity currentActivity() {
-Activity activity = null;
-if (null != activityStack &amp;&amp; !activityStack.empty())
-

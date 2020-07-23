@@ -1,6 +1,0 @@
-long __functionAddress = getInstance().GetnMapdvARB;
-if ( LWJGLUtil.CHECKS )
-checkFunctionAddress(__functionAddress);
-public static void glGetnMapdvARB(int target, int query, int bufSize, ByteBuffer data) {
-if ( LWJGLUtil.CHECKS )
-

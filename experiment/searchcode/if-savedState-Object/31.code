@@ -1,6 +1,0 @@
-@Override
-protected Object onGetDefaultValue(TypedArray a, int index) {
-return getContext().getResources().getIdentifier(
-protected void onRestoreInstanceState(Parcelable state) {
-if (state == null || !state.getClass().equals(SavedState.class)) {
-

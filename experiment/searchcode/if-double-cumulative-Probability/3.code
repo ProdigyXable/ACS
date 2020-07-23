@@ -1,6 +1,0 @@
-public class DataPopularityProfile {
-private Map<Integer, Double> zipf_cumulative_probability_map;
-
-public DataPopularityProfile() {
-this.setZipf_cumulative_probability_map(new TreeMap<Integer, Double>());
-

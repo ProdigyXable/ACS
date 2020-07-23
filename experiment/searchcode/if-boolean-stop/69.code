@@ -1,8 +1,0 @@
-public class StopOverFilter implements Parcelable {
-
-private boolean oneStopOver = true;
-private boolean withoutStopOver = true;
-private boolean twoPlusStopOver = true;
-
-private boolean isOneStopOverViewEnabled = true;
-

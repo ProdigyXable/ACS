@@ -1,6 +1,0 @@
-DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-PreparedQuery pq = datastore.prepare(gaeQuery);
-
-for (Entity entity : pq.asIterable())
-if(entity.getProperty(&quot;Sender&quot;).equals(this.sender) &amp;&amp;
-

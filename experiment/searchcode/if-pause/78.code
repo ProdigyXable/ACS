@@ -1,8 +1,0 @@
-return 0;
-else if(stopTime > 0){
-baseDuration = stopTime - startTime;
-baseDuration -= getTotalPauseTime();
-}
-else if(currentPause != null){
-baseDuration = currentPause.start - startTime;
-

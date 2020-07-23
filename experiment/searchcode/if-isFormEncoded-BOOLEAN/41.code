@@ -1,8 +1,0 @@
-private boolean hasBody;
-private boolean isFormEncoded;
-private boolean isMultipart;
-private String relativeUrl;
-headers = parseHeaders(headersToParse);
-} else if (annotation instanceof Multipart) {
-if (isFormEncoded) {
-

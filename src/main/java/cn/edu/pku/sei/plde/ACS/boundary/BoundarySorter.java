@@ -5,14 +5,14 @@ import cn.edu.pku.sei.plde.ACS.type.TypeUtils;
 import cn.edu.pku.sei.plde.ACS.utils.CodeUtils;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.visible.model.VariableInfo;
-import org.apache.commons.lang.StringUtils;
-
 import java.util.*;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by yanrunfa on 16/3/24.
  */
 public class BoundarySorter {
+
     private final String _classSrc;
     private final String _className;
     private final String _code;
@@ -24,19 +24,19 @@ public class BoundarySorter {
     private LinkedHashMap<VariableInfo, String> _sortedBoundary = new LinkedHashMap<>();
     private List<List<String>> _boundaryCombinations = new ArrayList<>();
 
-    public BoundarySorter(Suspicious suspicious, String classSrc){
+    public BoundarySorter(Suspicious suspicious, String classSrc) {
         _suspicious = suspicious;
         _classSrc = classSrc;
         _className = suspicious.classname();
-        _code = FileUtils.getCodeFromFile(classSrc,_className);
+        _code = FileUtils.getCodeFromFile(classSrc, _className);
         _methodCode = CodeUtils.getMethodString(_code, suspicious.functionnameWithoutParam(), suspicious.getDefaultErrorLine()).split("\n");
     }
 
-    public List<String> sortList(Map<VariableInfo, List<String>> boundary){
+    public List<String> sortList(Map<VariableInfo, List<String>> boundary) {
         List<String> result = new ArrayList<>();
-        for (Map.Entry<VariableInfo, List<String>> entry: boundary.entrySet()){
+        for (Map.Entry<VariableInfo, List<String>> entry : boundary.entrySet()) {
             Map<VariableInfo, String> map = new HashMap<>();
-            for (String value: entry.getValue()){
+            for (String value : entry.getValue()) {
                 map.put(entry.getKey(), value);
                 result.addAll(sort(map));
             }
@@ -44,34 +44,34 @@ public class BoundarySorter {
         return result;
     }
 
-    public List<String> sort(Map<VariableInfo, String> boundary){
-        if (boundary.size() == 1){
-            return Arrays.asList("if("+boundary.values().toArray()[0]+")");
+    public List<String> sort(Map<VariableInfo, String> boundary) {
+        if (boundary.size() == 1) {
+            return Arrays.asList("if(" + boundary.values().toArray()[0] + ")");
         }
-        if (boundary.size() == 2){
+        if (boundary.size() == 2) {
             List<VariableInfo> infos = new ArrayList<>();
-            for (VariableInfo info: boundary.keySet()){
+            for (VariableInfo info : boundary.keySet()) {
                 infos.add(info);
             }
             VariableInfo info1 = infos.get(0);
             VariableInfo info2 = infos.get(1);
-            if (TypeUtils.isArrayFromName(info1.variableName) &&
-                    TypeUtils.isArrayFromName(info2.variableName) &&
-                    info1.getStringType().equals(info2.getStringType())){
-                if (info1.isParameter && info2.isParameter){
+            if (TypeUtils.isArrayFromName(info1.variableName)
+                    && TypeUtils.isArrayFromName(info2.variableName)
+                    && info1.getStringType().equals(info2.getStringType())) {
+                if (info1.isParameter && info2.isParameter) {
                     return Arrays.asList(getIfStringFromBoundary(new ArrayList<>(boundary.values())));
                 }
             }
 
         }
-        for (Map.Entry<VariableInfo, String> entry: boundary.entrySet()){
-            if (entry.getKey().isParameter){
+        for (Map.Entry<VariableInfo, String> entry : boundary.entrySet()) {
+            if (entry.getKey().isParameter) {
                 _paramVarBoundary.put(entry.getKey(), entry.getValue());
             }
-            if (entry.getKey().isLocalVariable){
+            if (entry.getKey().isLocalVariable) {
                 _localVarBoundary.put(entry.getKey(), entry.getValue());
             }
-            if (entry.getKey().isFieldVariable){
+            if (entry.getKey().isFieldVariable) {
                 _fieldVarBoundary.put(entry.getKey(), entry.getValue());
             }
         }
@@ -80,20 +80,19 @@ public class BoundarySorter {
         return getIfList();
     }
 
-
-    private List<String> getIfList(){
+    private List<String> getIfList() {
         List<String> ifStrings = new ArrayList<>();
-        for (List<String> boundarys: _boundaryCombinations){
+        for (List<String> boundarys : _boundaryCombinations) {
             String ifString = getIfStringFromBoundary(boundarys);
             ifStrings.add(ifString);
         }
         return ifStrings;
     }
 
-    public List<String> getIfStringFromBoundarys(Collection<List<String>> boundarys){
+    public List<String> getIfStringFromBoundarys(Collection<List<String>> boundarys) {
         List<String> result = new ArrayList<>();
-        for (List<String> list: boundarys){
-            for (String boundary: list){
+        for (List<String> list : boundarys) {
+            for (String boundary : list) {
                 result.add(getIfStringFromBoundary(Arrays.asList(boundary)));
             }
 
@@ -101,15 +100,15 @@ public class BoundarySorter {
         return result;
     }
 
-    public String getIfStringFromBoundary(List<String> boundarys){
-        return "if (("+ StringUtils.join(boundarys, ")||(") +"))";
+    public String getIfStringFromBoundary(List<String> boundarys) {
+        return "if ((" + StringUtils.join(boundarys, ")||(") + "))";
     }
 
-    public String getIfStringFromBoundary(Collection<String> boundarys){
-        return "if (("+ StringUtils.join(boundarys, ")||(") +"))";
+    public String getIfStringFromBoundary(Collection<String> boundarys) {
+        return "if ((" + StringUtils.join(boundarys, ")||(") + "))";
     }
 
-    private void boundaryCombination(){
+    private void boundaryCombination() {
         _boundaryCombinations = subsets(new ArrayList<String>(_sortedBoundary.values()));
         Collections.sort(_boundaryCombinations, new Comparator<List<String>>() {
             @Override
@@ -125,8 +124,9 @@ public class BoundarySorter {
         helper(res, each, 0, nums);
         return res;
     }
+
     private void helper(List<List<String>> res, List<String> each, int pos, List<String> n) {
-        if (pos <= n.size() && each.size()> 0) {
+        if (pos <= n.size() && each.size() > 0) {
             res.add(each);
         }
         for (int i = pos; i < n.size(); i++) {
@@ -137,34 +137,34 @@ public class BoundarySorter {
         return;
     }
 
-    private void sortBoundary(){
-        for (Map.Entry<VariableInfo, String> entry: _paramVarBoundary.entrySet()){
+    private void sortBoundary() {
+        for (Map.Entry<VariableInfo, String> entry : _paramVarBoundary.entrySet()) {
             _sortedBoundary.put(entry.getKey(), entry.getValue());
         }
-        TreeMap<Integer,Map.Entry<VariableInfo, String>> boundaryLevel = new TreeMap<>(new Comparator<Integer>() {
+        TreeMap<Integer, Map.Entry<VariableInfo, String>> boundaryLevel = new TreeMap<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o1.compareTo(o2);
             }
         });
-        for (Map.Entry<VariableInfo, String> entry: _localVarBoundary.entrySet()){
+        for (Map.Entry<VariableInfo, String> entry : _localVarBoundary.entrySet()) {
             int lastAssignLine = getLastAssignLine(entry.getKey());
-            while (boundaryLevel.containsKey(lastAssignLine)){
+            while (boundaryLevel.containsKey(lastAssignLine)) {
                 lastAssignLine++;
             }
-            boundaryLevel.put(lastAssignLine,entry);
+            boundaryLevel.put(lastAssignLine, entry);
         }
-        for (Map.Entry<VariableInfo, String> entry: boundaryLevel.values()){
+        for (Map.Entry<VariableInfo, String> entry : boundaryLevel.values()) {
             _sortedBoundary.put(entry.getKey(), entry.getValue());
         }
-        for (Map.Entry<VariableInfo, String> entry: _fieldVarBoundary.entrySet()){
+        for (Map.Entry<VariableInfo, String> entry : _fieldVarBoundary.entrySet()) {
             _sortedBoundary.put(entry.getKey(), entry.getValue());
         }
     }
 
-    private int getLastAssignLine(VariableInfo info){
-        for (int i = 0; i < _methodCode.length; i++){
-            if (_methodCode[i].trim().matches(info.variableName+"\\s*=.*")){
+    private int getLastAssignLine(VariableInfo info) {
+        for (int i = 0; i < _methodCode.length; i++) {
+            if (_methodCode[i].trim().matches(info.variableName + "\\s*=.*")) {
                 return i;
             }
         }

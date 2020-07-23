@@ -1,8 +1,0 @@
-private boolean localChange = false;
-
-public DisplayShelf(Image[] images) {
-getStyleClass().add(&quot;displayshelf&quot;);
-public void handle(KeyEvent ke) {
-if (ke.getCode() == KeyCode.LEFT) {
-shift(1);
-

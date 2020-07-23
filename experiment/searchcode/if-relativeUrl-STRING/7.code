@@ -1,9 +1,0 @@
-public class BreadcrumbItem {
-
-private String relativeUrl;
-private String title;
-
-public BreadcrumbItem(String title, String relativeUrl) {
-this.relativeUrl = relativeUrl;
-this.title = title;
-

@@ -1,8 +1,0 @@
-* @return if equivalent
-*/
-public boolean equivalent(Object obj) {
-if( obj instanceof Crud ) {
-Crud target = (Crud)obj;
-public boolean isSameAs(Crud target) {
-if( areSameBooleanValues(this.c, target.c) &amp;&amp;
-

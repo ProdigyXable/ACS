@@ -1,9 +1,0 @@
-return JsonNode::asDouble;
-}
-
-if (rawType.equals(Boolean.class) || rawType.equals(boolean.class)) {
-return JsonNode::asBoolean;
-}
-
-if (rawType.isInterface()) {
-

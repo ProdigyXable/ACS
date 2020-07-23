@@ -1,8 +1,0 @@
-return Thread.currentThread().equals(server.creatingThread);
-} catch (Throwable t) {
-throw new Error(t);
-}
-}
-
-private Thread creatingThread = Thread.currentThread();
-

@@ -1,8 +1,0 @@
-public static Runnable divisionByTwoPropagation(final Node n, final long delta, FadeIntensity fadeIntensity) {
-switch (fadeIntensity) {
-return FadeIntensityDelta(n, delta, fadeIntensity);
-}
-}
-
-private static Runnable FadeIntensityHigh(final Node n, final long delta, FadeIntensity fadeIntensity) {
-

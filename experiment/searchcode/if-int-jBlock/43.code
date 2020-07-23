@@ -1,8 +1,0 @@
-private final JExpression condition;
-private final JBlock ifTrue;
-private final Optional<JBlock> ifFalse;
-
-public JIf(
-JExpression condition,
-JBlock ifTrue,
-

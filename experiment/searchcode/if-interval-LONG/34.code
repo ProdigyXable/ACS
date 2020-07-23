@@ -1,8 +1,0 @@
-maxInterval = maxValue;
-}
-public long getInterval() {
-synchronized (this) {
-if (interval == 0) {
-public void setInterval(long interval) {
-if (interval == getInterval()) return;
-

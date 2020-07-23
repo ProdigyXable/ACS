@@ -1,8 +1,0 @@
-* @param externalValue the external value
-*/
-public ExternalDolceStatement(String name, String type,
-String externalType, String externalValue) {
-super();
-this.id = name;
-this.type = externalType;
-

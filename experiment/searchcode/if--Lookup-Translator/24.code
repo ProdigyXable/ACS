@@ -1,5 +1,0 @@
-import org.atlasapi.persistence.lookup.mongo.LookupEntryTranslator;
-import org.atlasapi.persistence.lookup.mongo.MongoLookupEntryStore;
-private final LookupEntryTranslator entryTranslator;
-private final MongoLookupEntryStore entryStore;
-

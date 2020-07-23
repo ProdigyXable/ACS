@@ -1,5 +1,0 @@
-/** initialize native resources */
-public static void initializeNatives(boolean mlockAll, boolean ctrlHandler, boolean loadSigar) {
-if (Natives.definitelyRunningAsRoot()) {
-if (Boolean.parseBoolean(System.getProperty(&quot;es.insecure.allow.root&quot;))) {
-

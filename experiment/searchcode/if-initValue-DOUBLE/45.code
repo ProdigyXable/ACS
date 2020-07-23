@@ -1,5 +1,0 @@
-initValue = StringUtil.replaceBlank(String.valueOf(initValue));
-} else if (field.getType().equals(Double.class)) {
-initValue = Double.parseDouble(initValue.toString());
-} else if (field.getType().equals(Date.class)) {
-

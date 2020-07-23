@@ -1,8 +1,0 @@
-import java.util.Collection;
-
-public class MoreItemsConverter implements ToBoolean {
-private int compareTo;
-
-public MoreItemsConverter(int compareTo) {
-this.compareTo = compareTo;
-

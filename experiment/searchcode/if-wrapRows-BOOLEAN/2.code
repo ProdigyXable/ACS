@@ -1,8 +1,0 @@
-private final boolean wrapRows;
-/** Wrap. */
-private final boolean wrapColumns;
-linkEnd.add(identifiers[i + 1][j + 1]);
-}
-}
-if (wrapRows) {
-

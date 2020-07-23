@@ -1,16 +1,15 @@
 package cn.edu.pku.sei.plde.ACS.equalVariable;
 
 import cn.edu.pku.sei.plde.ACS.utils.CodeUtils;
-import org.junit.Test;
-
 import java.util.Set;
-
 import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
 /**
  * Created by yjxxtd on 4/23/16.
  */
 public class EqualVariableCollectTest {
+
     @Test
     public void testEqualVariableCollect() {
         String path = "filesfortest//Complex.java";

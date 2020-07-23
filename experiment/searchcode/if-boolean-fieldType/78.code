@@ -1,5 +1,0 @@
-fieldValue = field.getInt(o);
-} else if (fieldType.equals(boolean.class)) {
-fieldValue = field.getBoolean(o);
-} else if (fieldType.equals(byte.class)) {
-

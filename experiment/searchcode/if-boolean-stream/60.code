@@ -1,6 +1,0 @@
-private StreamConfiguration streamConfiguration;
-private boolean following;
-
-public ContainerStreamConfig(StreamConfiguration streamConfiguration,boolean following) {
-this.streamConfiguration = streamConfiguration;
-

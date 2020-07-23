@@ -1,7 +1,0 @@
-package com.sleepycat.je.util;
-public class DbRunAction {
-private static final int COMPRESS=2;
-protected void hook841() throws Exception {
-if (action.equalsIgnoreCase(&quot;compress&quot;)) {
-doAction=COMPRESS;
-

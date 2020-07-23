@@ -1,9 +1,0 @@
-public void setValue(Boolean value) {
-if (value == null) throw new IllegalArgumentException();
-public void setValue(boolean bool) {
-boolean oldValue = booleanValue;
-booleanValue = bool;
-if (oldValue != booleanValue) changed();
-}
-}
-

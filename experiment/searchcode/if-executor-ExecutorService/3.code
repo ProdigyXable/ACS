@@ -1,9 +1,0 @@
-package com.comcast.technucleus.application.cache;
-
-import java.util.concurrent.ExecutorService;
-public static ExecutorService getExecutorServiceInstance() {
-
-String threadPoolSize = &quot;10&quot;;
-
-if(null == executorService) {
-

@@ -1,9 +1,0 @@
-public String readLine() throws Exception {
-//            if(reader == null) {
-//                createReader();
-//            reader = new BufferedReader(new FileReader(filename));
-}
-
-public void close() throws Exception {
-//            if(reader != null) {
-

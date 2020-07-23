@@ -1,9 +1,0 @@
-public ExponentialDistributionImpl(double mean ,double inverseCumAccuracy) {
-super();
-setMeanInternal(mean);
-solverAbsoluteAccuracy = inverseCumAccuracy;
-}
-
-@java.lang.Deprecated
-public void setMean(double mean) {
-

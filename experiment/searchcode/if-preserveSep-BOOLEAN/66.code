@@ -1,5 +1,0 @@
-private final boolean preserveSep;
-private final boolean preservePositionIncrements;
-private final int maxSurfaceFormsPerAnalyzedForm;
-public AnalyzingCompletionLookupProvider(boolean preserveSep, boolean exactFirst, boolean preservePositionIncrements, boolean hasPayloads) {
-

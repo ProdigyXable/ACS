@@ -1,9 +1,0 @@
-* Returns the vertical alignment for this component&#39;s text.
-*
-* @return int BConstants
-*/
-public VerticalAlignment getVerticalAlignment() {
-if (_valigns != null) {
-VerticalAlignment valign = _valigns[getState()];
-return (valign != null) ? valign : _valigns[ComponentState.DEFAULT.ordinal()];
-

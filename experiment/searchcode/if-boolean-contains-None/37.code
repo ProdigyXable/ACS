@@ -1,8 +1,0 @@
-public int count(BooleanPredicate predicate)
-{
-int count = 0;
-if (predicate.accept(false))
-public boolean detectIfNone(BooleanPredicate predicate, boolean ifNone)
-{
-if (predicate.accept(false))
-

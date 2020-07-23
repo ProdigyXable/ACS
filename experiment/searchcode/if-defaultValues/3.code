@@ -1,7 +1,0 @@
-String definedFields = f.getFlagvalue();
-String defaultValues = propertyManager.get(PropertyKeys.DEFAULTVALUES);
-if(!defaultValues.isEmpty()){
-defaultValues += &quot;;&quot;;
-}
-defaultValues += definedFields;
-

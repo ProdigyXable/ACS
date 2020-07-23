@@ -1,9 +1,0 @@
-public boolean supports(Architecture other) {
-if (this == other || other == any || other == all) {
-return true;
-}
-return false;
-}
-
-}
-

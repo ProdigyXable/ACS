@@ -1,8 +1,0 @@
-import org.apache.commons.lang.time.FastDateFormat;
-import org.displaytag.decorator.ColumnDecorator;
-
-public class DateDecorator implements ColumnDecorator {
-
-public DateDecorator() {
-dateFormat = FastDateFormat.getInstance(&quot;dd/MM/yyyy&quot;);
-

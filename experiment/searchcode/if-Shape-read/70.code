@@ -1,9 +1,0 @@
-return original.getElementName();
-}
-
-public Shape read(Element shapeElement) {
-Shape shape = original.read(shapeElement);
-
-readStrokeColor(shape,shapeElement) ;
-readFillColor(shape,shapeElement) ;
-

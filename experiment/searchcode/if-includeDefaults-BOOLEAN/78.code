@@ -1,8 +1,0 @@
-void includeInAll(Boolean includeInAll);
-
-void includeInAllIfNotSet(Boolean includeInAll);
-
-void unsetIncludeInAll();
-builder.enabled(nodeBooleanValue(fieldNode));
-} else if (fieldName.equals(&quot;auto_boost&quot;)) {
-

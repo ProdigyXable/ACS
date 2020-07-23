@@ -1,9 +1,0 @@
-import org.gwttime.time.ReadablePartial;
-
-public final class Partials {
-
-private Partials(){}
-
-public static int[] getPartialValues(ReadablePartial source,ReadablePartial destination, Chronology chrono){
-int [] values = new int[source.size()];
-

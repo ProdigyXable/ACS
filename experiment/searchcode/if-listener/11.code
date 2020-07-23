@@ -1,8 +1,0 @@
-@Override
-public void removeListener(ILabelProviderListener listener) {
-super.removeListener(listener);
-if (this.decorator != null &amp;&amp; !isListenerAttached()) {
-this.decorator.removeListener(this.labelProviderListener);
-}
-}
-

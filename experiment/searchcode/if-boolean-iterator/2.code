@@ -1,9 +1,0 @@
-package com.wiley.javainterviewsexposed.chapter07;
-
-import java.util.Iterator;
-import java.util.List;
-@Override
-public boolean hasNext() {
-if(!currentIterator.hasNext()) {
-if (!listIterator.hasNext()) {
-

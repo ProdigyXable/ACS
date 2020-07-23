@@ -1,8 +1,0 @@
-private TrackingPeriod(Period period, PeriodType periodType) {
-this.period = period;
-this.periodType = periodType;
-MutableDateTime newTime = new MutableDateTime(dateTime);
-if (periodType == PeriodType.years()) {
-// year start align
-newTime.year().roundFloor();
-

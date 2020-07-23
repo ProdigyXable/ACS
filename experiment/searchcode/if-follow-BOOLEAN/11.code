@@ -1,7 +1,0 @@
-@Override
-public boolean unFollow(long pid, long userId) {
-boolean succ = false;
-try {
-ProjectFollow follow = followRepository.followProject(pid, userId);
-if (follow == null) {
-

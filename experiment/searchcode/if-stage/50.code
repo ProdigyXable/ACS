@@ -1,8 +1,0 @@
-Pair<?> pair = stageMap.get(stageName) ;
-if (pair == null) { //if there is no stage of that name already registered
-Pair<? extends Controller> pair = stageMap.get(stageName) ;
-if (pair != null) {
-pair.controller.clear();
-}
-else {
-

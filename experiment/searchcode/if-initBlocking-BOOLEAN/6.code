@@ -1,7 +1,0 @@
-ListenableActionFuture<FlushResponse> flushResponseFuture = null;
-if (randomBoolean()) {
-ArrayList<String> indicesToFlush = new ArrayList<>();
-// only block on repo init if we have partial snapshot or we run into deadlock when acquiring shard locks for index deletion/closing
-boolean initBlocking = allowPartial || randomBoolean();
-if (initBlocking) {
-

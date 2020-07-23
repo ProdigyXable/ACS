@@ -1,9 +1,0 @@
-package com.zhongtian.datascene.auth.permisson;
-
-import org.apache.shiro.authz.Permission;
-public class UrlPermissionResovler implements PermissionResolver {
-
-@Override
-public Permission resolvePermission(String permissionString) {
-if(permissionString.startsWith(&quot;/&quot;)) {
-

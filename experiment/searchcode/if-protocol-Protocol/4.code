@@ -1,9 +1,0 @@
-this.protocol = protocol;
-}
-
-public static Protocol get(String protocol) throws IOException {
-if (protocol.equals(HTTP_1_0.protocol)) {
-return HTTP_1_0;
-}
-if (protocol.equals(HTTP_1_1.protocol)) {
-

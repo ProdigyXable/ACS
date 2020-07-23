@@ -1,5 +1,0 @@
-protected Aggregator aggregateResult(Aggregator aggregate, Aggregator nextResult) {
-if (nextResult == null) {
-public Aggregator visitXmlReturnClause(XmlReturnClauseContext ctx) {
-if (!getTagName(ctx.openXmlElement().getText()).equals(getTagName(ctx.closeXmlElement().getText()))) {
-

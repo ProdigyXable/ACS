@@ -1,8 +1,0 @@
-public Bind parse(XmlPullParser parser, int initialDepth) throws XmlPullParserException, IOException,
-SmackException {
-break;
-}
-break;
-case XmlPullParser.END_TAG:
-if (parser.getDepth() == initialDepth) {
-

@@ -1,5 +1,0 @@
-final PyObject bool___and__(PyObject right) {
-if (right instanceof PyBoolean) {
-return Py.newBoolean(value &amp; ((PyBoolean)right).value);
-} else if (right instanceof PyInteger) {
-

@@ -1,7 +1,0 @@
-org.elasticsearch.search.rescore.QueryRescorerBuilder(queryBuilder);
-if (randomBoolean()) {
-rescorer.setRescoreQueryWeight(randomFloat());
-}
-if (randomBoolean()) {
-rescorer.setScoreMode(randomFrom(QueryRescoreMode.values()));
-

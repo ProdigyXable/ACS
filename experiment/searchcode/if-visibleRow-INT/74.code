@@ -1,9 +1,0 @@
-int pass) {
-
-int visibleRow = state.getVisibleSeriesIndex(row);
-if (visibleRow < 0) {
-drawHorizontalItem(g2, state, dataArea, plot, domainAxis,
-rangeAxis, statData, visibleRow, row, column);
-}
-else if (orientation == PlotOrientation.VERTICAL) {
-

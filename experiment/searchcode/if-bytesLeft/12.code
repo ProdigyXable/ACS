@@ -1,8 +1,0 @@
-bytesLeft -= left;
-}
-if (trackQueue.isEmpty())
-this.bytesLeft = bytesLeft;
-if (bytesLeft > 0) {
-if (bytesLeft < len) {
-len = bytesLeft;
-

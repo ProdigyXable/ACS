@@ -1,3 +1,0 @@
-private static double cheatDistance(int objA, int objB){
-if(data.getObjectClusters().get(objA).equals(data.getObjectClusters().get(objB))){
-

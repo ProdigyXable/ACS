@@ -1,5 +1,0 @@
-return new CharacterParameter();
-if(type.isAssignableFrom(Boolean.TYPE) || type.isAssignableFrom(Boolean.class))
-return new BooleanParameter();
-if(type.isAssignableFrom(String.class))
-

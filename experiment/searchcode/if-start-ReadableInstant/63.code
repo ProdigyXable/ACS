@@ -1,6 +1,0 @@
-* @param endInstant  the start of the time interval
-* @throws IllegalArgumentException if the end is before the start
-* @throws IllegalArgumentException if the end is before the start
-*/
-void setInterval(ReadableInstant startInstant, ReadableInstant endInstant);
-

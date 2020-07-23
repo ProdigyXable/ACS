@@ -1,9 +1,0 @@
-public void write(byte[] buf, int bufOffset, int storageOffset, int nbytes)
-throws DataIntegrityException {
-
-while(nbytes > 0){
-int blockNum = storageOffset / blockSize;
-int blockOffset = storageOffset % blockSize;
-int nbytesThisTime = nbytes;
-if(nbytes > (blockSize-blockOffset)){
-

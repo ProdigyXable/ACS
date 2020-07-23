@@ -1,7 +1,0 @@
-int[] label = dataset[datasetIndex].toArray(new int[dataset[datasetIndex].size()]);
-
-if (data.length < 500) {
-int[] label = dataset[datasetIndex].toArray(new int[dataset[datasetIndex].size()]);
-
-if (data.length < 500) {
-

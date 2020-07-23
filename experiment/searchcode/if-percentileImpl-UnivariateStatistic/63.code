@@ -1,5 +1,0 @@
-public double getPercentile(double p) throws MathIllegalStateException, MathIllegalArgumentException {
-if (percentileImpl instanceof Percentile) {
-public synchronized UnivariateStatistic getPercentileImpl() {
-return percentileImpl;
-

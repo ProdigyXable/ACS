@@ -1,8 +1,0 @@
-Iterator<String> itr = jptsToUpdate.iterator();
-if (itr.hasNext()) {
-String jptName = itr.next();
-while (it.hasNext()) {
-Object o = it.next();
-if (o instanceof PersistentType) {
-PersistentType jpt = (PersistentType)o;
-

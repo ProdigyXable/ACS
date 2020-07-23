@@ -1,7 +1,0 @@
-public class ComboboxToolTipRenderer extends DefaultListCellRenderer {
-ArrayList tooltips;
-
-@Override
-public Component getListCellRendererComponent(JList list, Object value,
-int index, boolean isSelected, boolean cellHasFocus) {
-

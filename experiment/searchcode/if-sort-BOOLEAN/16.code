@@ -1,8 +1,0 @@
-public SortDirectionEnum getSortDirection() {
-return sortDirection;
-}
-
-public boolean equals(Object obj) {
-if (!(obj instanceof SortOrder)) {
-return false;
-

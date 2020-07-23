@@ -1,9 +1,0 @@
-protected void countToken(String tok) {
-synchronized (tokenFreq) {
-Integer currentCount = tokenFreq.get(tok);
-if (currentCount == null)
-this.tokenFreq = new HashMap<String, Integer>();
-}
-
-public static long test(int numPages, String pageFile) {
-

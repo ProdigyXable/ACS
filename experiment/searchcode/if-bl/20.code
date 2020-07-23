@@ -1,7 +1,0 @@
-List<BlCustinfo> blCustinfos = blCustinfoMapper.selectByExample(blCustinfoCriteria);
-if (CollectionUtil.isEmpty(blCustinfos)) {
-List<BlAcctInfo> blAcctInfos = blAcctInfoMapper.selectByExample(blAcctInfoCriteria);
-if (CollectionUtil.isEmpty(blAcctInfos)) {
-return null;
-} else {
-

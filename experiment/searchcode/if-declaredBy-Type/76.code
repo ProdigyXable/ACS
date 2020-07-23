@@ -1,7 +1,0 @@
-public static Method method( Class declaringClass, Modifiers modifiers, Class returnType,
-String name, Class... parameterTypes ) {
-return new Method( declaringClass, modifiers, returnType, name, parameterTypes );
-}
-
-public final Modifiers modifiers;
-

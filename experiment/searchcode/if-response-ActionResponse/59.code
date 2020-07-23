@@ -1,5 +1,0 @@
-public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
-if (customer == null) {
-ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
-

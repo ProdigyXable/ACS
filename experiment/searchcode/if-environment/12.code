@@ -1,8 +1,0 @@
-private EnvironmentConfigurator() {
-}
-
-public static EnvironmentConfig getInstance(){
-if(environmentConfig == null){
-synchronized(EnvironmentConfigurator.class){
-if(environmentConfig == null){
-

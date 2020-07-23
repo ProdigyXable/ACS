@@ -1,8 +1,0 @@
-while (wordCount < data.length) {
-for (int blockCount = 0; blockCount < blockSize/bytelen; blockCount++) {
-byte word = data[wordCount++];
-block[blockCount*bytelen + 48 +11] = Byte.MAX_VALUE;
-
-if (wordCount >= data.length)
-break;
-

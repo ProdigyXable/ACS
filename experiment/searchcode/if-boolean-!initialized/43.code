@@ -1,9 +1,0 @@
-public abstract class EngineTask {
-private boolean initialized;
-
-/**
-* Call only this method in order to initialize the task.
-*/
-void init() {
-if (initialized) throw new TaskInitializedException();
-

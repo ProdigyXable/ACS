@@ -1,7 +1,0 @@
-public class Refresher extends Thread {
-private Refreshable refreshObject;
-private int refreshInterval;
-public Refresher(Refreshable refreshObject, int refreshInterval) {
-this.refreshObject = refreshObject;
-this.refreshInterval = refreshInterval;
-

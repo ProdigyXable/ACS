@@ -1,8 +1,0 @@
-public FillStyleArray(SWFInputStream swf, boolean isMorphStyle,
-boolean hasAlpha) throws IOException {
-
-this();
-
-int fillStyleCount = swf.readUnsignedByte();
-if (fillStyleCount == 0xFF) {
-

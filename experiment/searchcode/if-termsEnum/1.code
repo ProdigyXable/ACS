@@ -1,4 +1,0 @@
-public int docFreq(BytesRef text) throws IOException {
-final TermsEnum termsEnum = getThreadTermsEnum();
-if (termsEnum.seekExact(text, true)) {
-

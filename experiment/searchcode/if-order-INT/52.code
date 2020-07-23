@@ -1,8 +1,0 @@
-this.production = production;
-}
-
-public Order createOrder(int offerId) {
-Order order = orderRepository.createOrder(offerId);
-if(order != null) {
-OrderDTO orderDTO = order.createDTO();
-

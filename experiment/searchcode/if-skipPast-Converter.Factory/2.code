@@ -1,7 +1,0 @@
-for (EntityConverterFactory factory : mEntityConverterFactories) {
-if (!factoryFound) {
-if (factory == skipPast) {
-for (FieldConverterFactory factory : mFieldConverterFactories) {
-if (!factoryFound) {
-if (factory == skipPast) {
-

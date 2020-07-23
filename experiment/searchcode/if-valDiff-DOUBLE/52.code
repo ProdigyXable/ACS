@@ -1,8 +1,0 @@
-.getPrecipLidAndValue(obsTimeStr);
-
-if (precipLidAndValue == null) {
-precipLidAndValue = new HashMap<String, Double>();
-// TODO determine how A1 handles missing data
-double valDiff = value - value2;
-int valint = (int) (valDiff * 100);
-

@@ -1,7 +1,0 @@
-for (String cookie : cookies) {
-Integer domainIndex = cookie.indexOf(&quot;domain=&quot;);
-if (domainIndex != -1) {
-GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
-int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
-if (resultCode != ConnectionResult.SUCCESS) {
-

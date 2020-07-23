@@ -1,6 +1,0 @@
-result = Initialisator.compare(this.getInitialisator(), other.getInitialisator());
-
-if (result == EQUAL &amp;&amp; isCoerceMatch())
-protected boolean testAmbiguity(MatchingInfo previous) {
-if (previous.isAmbiguous()) setAmbiguous();
-

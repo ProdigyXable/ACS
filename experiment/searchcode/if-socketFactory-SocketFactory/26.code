@@ -1,8 +1,0 @@
-import java.security.NoSuchAlgorithmException;
-import java.security.Security;
-import javax.net.SocketFactory;
-import org.apache.harmony.security.fortress.Services;
-public abstract class SSLSocketFactory extends SocketFactory {
-private static SocketFactory defaultSocketFactory;
-private static int lastCacheVersion;
-

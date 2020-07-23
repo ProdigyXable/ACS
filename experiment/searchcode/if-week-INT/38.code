@@ -1,7 +1,0 @@
-* @return a Week
-* @throws WeekNotExistsException
-*/
-public Week getWeekCalendar(int weekNum) throws WeekNotExistsException
-{
-if(!this.weeks.containsKey(weekNum)) throw new WeekNotExistsException();
-

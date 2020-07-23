@@ -1,8 +1,0 @@
-private double softCurrentTime;
-
-/** indicate if the step has been finalized or not. */
-private boolean finalized;
-interpolatedPrimaryState         = new double[primaryMapper.getDimension()];
-interpolatedPrimaryDerivatives   = new double[primaryMapper.getDimension()];
-if (secondaryMappers == null) {
-

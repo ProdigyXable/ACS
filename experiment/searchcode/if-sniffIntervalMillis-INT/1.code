@@ -1,5 +1,0 @@
-* @throws IllegalArgumentException if sniffIntervalMillis is not greater than 0
-*/
-public SnifferBuilder setSniffIntervalMillis(int sniffIntervalMillis) {
-if (sniffIntervalMillis <= 0) {
-

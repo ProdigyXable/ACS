@@ -1,7 +1,0 @@
-private XYChart.Series series;
-private boolean isTracking; // Has this series been added yet? If so it&#39;s tracking any new changes
-series = new XYChart.Series(); // Create a new series
-}
-
-public boolean IsTracking() {
-

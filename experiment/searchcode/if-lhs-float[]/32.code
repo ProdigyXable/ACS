@@ -1,6 +1,0 @@
-append((double[]) lhs, (double[]) rhs);
-}else if (lhs instanceof float[]){
-append((float[]) lhs, (float[]) rhs);
-}else if (lhs instanceof boolean[]){
-append((boolean[]) lhs, (boolean[]) rhs);
-

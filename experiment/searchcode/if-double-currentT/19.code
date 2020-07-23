@@ -1,5 +1,0 @@
-if(nextScore < currentScore){
-double p = Math.exp((nextScore-currentScore)/currentT);
-if(random.nextDouble()>p){
-if(random.nextDouble()>p){
-

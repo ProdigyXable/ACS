@@ -1,9 +1,0 @@
-* Returns BGP-LS capability support from the configuration.
-*
-* @return true if BGP-LS capability is set else false
-*/
-public boolean lsCapability() {
-public boolean validateFlowSpec() {
-if (flowSpecCapability() != null) {
-String flowSpec = flowSpecCapability();
-

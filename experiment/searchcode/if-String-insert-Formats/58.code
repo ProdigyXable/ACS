@@ -1,8 +1,0 @@
-Datas.STRING,
-Datas.IMAGE }
-, new Formats[] {
-Formats.STRING,
-Formats.STRING,
-Formats.STRING,
-Formats.STRING,
-

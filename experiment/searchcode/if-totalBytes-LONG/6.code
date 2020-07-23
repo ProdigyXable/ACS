@@ -1,9 +1,0 @@
-private long totalBytes;
-
-public IpOutputWritable() {
-}
-
-public IpOutputWritable(double averageBytes, long totalBytes) {
-this.averageBytes = averageBytes;
-this.totalBytes = totalBytes;
-

@@ -1,9 +1,0 @@
-this.toParse = new StringBuilder(toParse);
-index = 0;
-}
-
-public Token next() {
-Token token = new Token();
-char character;
-if (index < toParse.length()) {
-

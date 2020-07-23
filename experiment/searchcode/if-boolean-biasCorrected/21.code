@@ -1,8 +1,0 @@
-* at least two rows and two columns
-*/
-public Covariance(RealMatrix matrix, boolean biasCorrected) {
-checkSufficientData(matrix);
-* @return covariance matrix
-*/
-protected RealMatrix computeCovarianceMatrix(double[][] data, boolean biasCorrected) {
-

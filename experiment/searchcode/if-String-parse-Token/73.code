@@ -1,7 +1,0 @@
-public boolean parse (String valText, ValBase valBase) {
-this.valBase = valBase;
-source = new TokenString(valText, delimiters);
-String token = nextToken();
-if (token.equalsIgnoreCase(&quot;values&quot;)) {
-token = nextToken();
-

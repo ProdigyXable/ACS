@@ -1,8 +1,0 @@
-* Boolean indicating whether or not to create a new game with random tile
-* placement
-*/
-boolean randomTiles;
-/**
-* Boolean indicating whether or not to create a new game with random number
-* assignation
-

@@ -1,9 +1,0 @@
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof AxisLocation)) {
-return false;
-}
-if (this.name.equals(((AxisLocation) obj).toString())) {
-return true;
-

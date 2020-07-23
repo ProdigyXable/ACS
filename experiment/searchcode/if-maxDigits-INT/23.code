@@ -1,5 +1,0 @@
-int minDigits = Math.min(numDigits, numDeltaDigits) - 1;
-int maxDigits = Math.max(numDigits, numDeltaDigits);
-final int maximumFractionDigits = stringConverter.getMaximumFractionDigits();
-if (minDigits < -maximumFractionDigits &amp;&amp; maxDigits >= -maximumFractionDigits) {
-

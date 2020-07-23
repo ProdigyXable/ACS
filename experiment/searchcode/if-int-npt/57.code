@@ -1,8 +1,0 @@
-public UserData(boolean ensembleNPT,
-double temperature,
-double pressure,
-int frequency,
-int numbOfMCSteps
-) {
-this.ensembleNPT = ensembleNPT;
-

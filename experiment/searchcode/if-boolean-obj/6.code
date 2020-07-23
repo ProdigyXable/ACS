@@ -1,8 +1,0 @@
-* Object 转 boolean
-* @param obj Object
-* @return boolean value
-*/
-public static boolean objToBooleanValue(Object obj) {
-if (obj == null) {
-return false;
-

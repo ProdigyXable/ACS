@@ -1,6 +1,0 @@
-public static void assertDuration(double currentDuration,
-long referenceDuration, double referenceBIPS)
-double ajustedDuration = adjustExpectedDuration(referenceDuration,
-referenceBIPS);
-if (currentDuration > ajustedDuration * SLACK_FACTOR) {
-

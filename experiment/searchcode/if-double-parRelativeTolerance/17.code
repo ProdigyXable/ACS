@@ -1,6 +1,0 @@
-/**  Desired relative error in the approximate solution parameters. */
-private final double parRelativeTolerance;
-public LevenbergMarquardtOptimizer(double costRelativeTolerance,
-double parRelativeTolerance,
-double orthoTolerance) {
-

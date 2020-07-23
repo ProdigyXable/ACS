@@ -1,8 +1,0 @@
-public static CreateTextureAttribute createTextures(boolean bump, boolean diffuse, boolean normal, boolean specular, boolean emissive) {
-int value = 0;
-
-if (bump) {
-value |= CREATE_BUMP_TEXTURE;
-}
-if (diffuse) {
-

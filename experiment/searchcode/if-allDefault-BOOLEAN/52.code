@@ -1,9 +1,0 @@
-public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-if (newValue) {
-break;
-}
-}
-if (allDefault) {
-resetvalueMenuItem.setDisable(true);
-} else {
-

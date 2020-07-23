@@ -1,8 +1,0 @@
-double periodLength,
-Runnable task) {
-this.periodType = periodType;
-this.periodLength = periodLength;
-this.task = task;
-
-if(periodType == MacroBaseConf.PeriodType.TIME_BASED) {
-

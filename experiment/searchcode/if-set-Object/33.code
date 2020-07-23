@@ -1,8 +1,0 @@
-if(objectAttribute.getAttributeId()!=null){
-zettObjectAttribute.setAttributeId(objectAttribute.getAttributeId());
-}
-if(objectAttribute.getTypeValue()!=null){
-zettObjectAttribute.setLabel(objectAttribute.getLabel());
-}
-if(objectAttribute.getName()!=null){
-

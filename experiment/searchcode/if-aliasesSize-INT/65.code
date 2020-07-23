@@ -1,8 +1,0 @@
-shardId = in.readVInt();
-types = in.readStringArray();
-int routingSize = in.readVInt();
-if (routingSize > 0) {
-int aliasesSize = in.readVInt();
-if (aliasesSize > 0) {
-filteringAliases = new String[aliasesSize];
-

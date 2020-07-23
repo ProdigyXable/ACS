@@ -1,7 +1,0 @@
-public class IfThenElseExpr extends Expr {
-public final Expr cond;
-public final Expr thenExpr;
-public final Expr elseExpr;
-
-public IfThenElseExpr(Location location, Expr cond, Expr thenExpr, Expr elseExpr) {
-

@@ -7,6 +7,6 @@ public class Wong1 implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         // ef / float(ef + ep + nf)
-        return  ef;
+        return ef;
     }
 }

@@ -1,7 +1,0 @@
-package org.alvarogp.nettop.metric.domain.model.metric.transform.filter;
-
-import org.alvarogp.nettop.metric.domain.model.metric.Metric;
-public interface MetricFilter extends Func1<Metric, Boolean> {
-/**
-* Returns true if the metric passes the filter, false otherwise.
-

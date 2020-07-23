@@ -1,8 +1,0 @@
-email = Boolean.FALSE;
-
-if (network.equals(&quot;web&quot;)) {
-web = Boolean.TRUE;
-} else if (network.equals(&quot;yahooNetwork&quot;)) {
-yahooNetwork = Boolean.TRUE;
-} else if (network.equals(&quot;twitterNetwork&quot;)) {
-

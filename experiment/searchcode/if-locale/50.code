@@ -1,6 +1,0 @@
-public static Locale parseLocale(String localeString) {
-Locale returnedLocale = null;
-if (localeString != null) {
-String parts[] = localeString.split(&quot;_&quot;);
-if (parts.length == 1) {
-

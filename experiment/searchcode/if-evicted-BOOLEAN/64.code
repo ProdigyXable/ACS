@@ -1,8 +1,0 @@
-super(maxSize);
-}
-
-@Override
-protected void entryRemoved(boolean evicted, K key, Bitmap oldValue, Bitmap newValue) {
-super.entryRemoved(evicted, key, oldValue, newValue);
-if(oldValue != null &amp;&amp; !oldValue.isRecycled()){
-

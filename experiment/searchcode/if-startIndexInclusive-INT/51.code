@@ -1,5 +1,0 @@
-public T[] getPage(int page, int pageSize) {
-int startIndexInclusive = getStart(page, pageSize);
-int endIndexExclusive = getEndIndex(cacheArray.length, page, pageSize);
-if (startIndexInclusive < cacheArray.length) {
-

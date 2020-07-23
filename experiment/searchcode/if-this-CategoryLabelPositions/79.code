@@ -1,8 +1,0 @@
-public CategoryLabelPositions() {
-this.positionForAxisAtTop = new CategoryLabelPosition();
-return false;
-}
-
-CategoryLabelPositions that = (CategoryLabelPositions) obj;
-if (!this.positionForAxisAtTop.equals(that.positionForAxisAtTop)) {
-

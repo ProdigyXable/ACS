@@ -1,8 +1,0 @@
-private final String versionString;
-return versionString;
-}
-
-@Override
-public boolean equals(Object obj) {
-if(obj instanceof ProjectVersion) {
-

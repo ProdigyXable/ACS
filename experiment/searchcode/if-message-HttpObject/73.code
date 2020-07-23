@@ -1,7 +1,0 @@
-import io.netty.handler.codec.http.HttpHeaders;
-import io.netty.handler.codec.http.HttpObject;
-import io.netty.handler.codec.http.HttpResponse;
-public class HttpClientHandler extends SimpleChannelInboundHandler<HttpObject> {
-
-public void messageReceived(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
-

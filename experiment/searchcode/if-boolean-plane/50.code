@@ -1,7 +1,0 @@
-* Check plane parameters from PlaneEnum.
-*/
-public class Verifier {
-
-public static boolean checkPlaneParameters(PlaneEnum planeEnum) throws IllegalArgumentException{
-if (planeEnum.getName() == &quot;&quot;) {
-

@@ -1,9 +1,0 @@
-(&quot;Direct&quot;),
-RA_MANHATTAN_HORIZ                           // horiz/vert only, start horiz
-(&quot;Horizontal First Manhattan&quot;),
-return this.description;
-}
-
-/** True if this is one of the Manhattan algorithms. */
-public boolean isManhattan()
-

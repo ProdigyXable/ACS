@@ -1,8 +1,0 @@
-public class ExactSimilarityCalculator extends SimilarityCalculator
-{
-
-public ExactSimilarityCalculator(float threshold)
-{
-super(Algorithm.EQUAL_FIELDS_BOOLEAN_DISTANCE, threshold);
-//super(Algorithm.EXACT_MATCH, threshold);
-

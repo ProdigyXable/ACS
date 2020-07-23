@@ -1,8 +1,0 @@
-package payne.framework.pigeon.generation;
-
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-Class<?> clazz = (Class<?>) parameterizedType.getRawType();
-if (Collection.class.isAssignableFrom(clazz)) {
-this.array = true;
-

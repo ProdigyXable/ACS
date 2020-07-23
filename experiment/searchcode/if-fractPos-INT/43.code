@@ -1,6 +1,0 @@
-setFieldValue(period, iFieldType, parseInt(text, position, length));
-} else if (fractPos < 0) {
-} else {
-if (fractLen >= 3) {
-fractValue = parseInt(text, fractPos, 3);
-

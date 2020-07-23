@@ -1,7 +1,0 @@
-String text = new String();
-
-boolean firstIteration = true;
-for (String element : list) {
-if (firstIteration) {
-text += element;
-

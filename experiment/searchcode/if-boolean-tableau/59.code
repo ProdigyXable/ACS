@@ -1,9 +1,0 @@
-public int[] getTableau(){
-return this.tableau;
-}
-public boolean estVide(){
-boolean B=true;
-for(int i=0; i<this.getTableau().length;i++){
-if (this.getTableau()[i] !=0){
-B=false;
-

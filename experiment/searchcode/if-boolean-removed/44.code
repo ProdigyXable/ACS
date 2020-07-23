@@ -1,6 +1,0 @@
-private Boolean isPropertyIsSOTransactionRemoved;
-
-public Boolean getIsPropertyIsSOTransactionRemoved() {
-public void setIsPropertyIsSOTransactionRemoved(Boolean removed) {
-this.isPropertyIsSOTransactionRemoved = removed;
-

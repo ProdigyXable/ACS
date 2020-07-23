@@ -1,9 +1,0 @@
-public boolean isInstance(Object obj, Context context) {
-return (insertedType.isInstance(obj, context) || supertype.isInstance(obj, context));
-return insertedType.isExternal();
-}
-
-/** Returns true if the inserted type is primitive. */
-public boolean isPrimitive() {
-return insertedType.isPrimitive();
-

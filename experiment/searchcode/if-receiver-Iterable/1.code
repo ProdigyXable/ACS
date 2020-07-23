@@ -1,5 +1,0 @@
-Receivers$CompositeReceiver(Iterable iterable) {
-this.receivers = Receivers$CompositeReceiver.copy(iterable);
-public boolean equals(@Nullable Object object) {
-if (!(object instanceof Receivers$CompositeReceiver)) return false;
-

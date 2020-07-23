@@ -1,8 +1,0 @@
-private final Executor callbackExecutor;
-private final ErrorHandler errorHandler;
-
-CallbackRunnable(Callback<T> paramCallback, Executor paramExecutor, ErrorHandler paramErrorHandler)
-this.callback = paramCallback;
-this.callbackExecutor = paramExecutor;
-this.errorHandler = paramErrorHandler;
-

@@ -1,8 +1,0 @@
-public class ImportingModuleEngine implements Runnable {
-private int[] intArray;
-private float[] floatArray;
-//                    execute.load(intArray);
-//                if(floatArray !=null)
-//                    execute.load(floatArray);
-//                if(stringArray != null)
-

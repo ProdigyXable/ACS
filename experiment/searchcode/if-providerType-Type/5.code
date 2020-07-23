@@ -1,5 +1,0 @@
-public static AbstractCaptchaProvider getInstance(String providerType) {
-if (providerType.equals(&quot;SESSION&quot;)) {
-return new CaptchaSessionProvider();
-} else if (providerType.equals(&quot;COOKIE&quot;)) {
-

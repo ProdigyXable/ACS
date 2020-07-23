@@ -1,9 +1,0 @@
-package week4;
-
-
-public class Polynomial implements Function, Integrandable {
-//	ArrayList<LinearProduct> terms = new ArrayList<LinearProduct>();
-Function polynomial;
-
-public Polynomial(double[] multipliers) {
-

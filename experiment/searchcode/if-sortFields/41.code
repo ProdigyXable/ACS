@@ -1,7 +1,0 @@
-this.limit = limit;
-if (sortFields != null) {
-this.sortFields = sortFields;
-public String getSortColumn() {
-String sortColumn = null;
-if (!this.sortFields.isEmpty()) {
-

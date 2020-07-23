@@ -1,9 +1,0 @@
-import java.util.HashMap;
-import java.util.Map;
-
-/**
-* Компонент транслитерации киррилических символов в латиницу
-String fromMap = map.get(ch);
-if(fromMap != null) {
-buffer.append(fromMap);
-

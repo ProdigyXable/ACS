@@ -1,8 +1,0 @@
-this.scopedAnalyzer = scopedAnalyzer;
-}
-
-@Override
-public <T extends AnalyzerReference> boolean is(Class<T> analyzerType) {
-if ( LuceneAnalyzerReference.class.isAssignableFrom( analyzerType ) ) {
-if ( scopedAnalyzer instanceof ScopedLuceneAnalyzer ) {
-

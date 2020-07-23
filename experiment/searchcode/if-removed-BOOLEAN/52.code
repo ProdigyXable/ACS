@@ -1,9 +1,0 @@
-private String message;
-private boolean correct;
-private boolean hinted;
-private boolean removed;
-* @param removed true if this answer is removed
-*/
-public void setRemoved(boolean removed) {
-this.removed = removed;
-

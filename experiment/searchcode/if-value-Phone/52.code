@@ -1,8 +1,0 @@
-return Response.status(HttpStatus.BAD_REQUEST.value()).build();
-}
-PhoneEntity entity = phoneDao.findPhoneById(id);
-if (entity == null) {
-public Response createPhone(PhoneDto sampleDto) {
-if(sampleDto ==  null)
-return Response.status(HttpStatus.BAD_REQUEST.value()).build();
-

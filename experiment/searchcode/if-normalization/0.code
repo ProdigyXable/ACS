@@ -1,5 +1,0 @@
-for (NormalizationType normalizationType : NormalizationType.values()) {
-if (normalizationType.index == index) {
-for (NormalizationType normalizationType : NormalizationType.values()) {
-if (normalizationType.name.equals(name)) {
-

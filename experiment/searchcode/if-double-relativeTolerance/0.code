@@ -1,8 +1,0 @@
-private final double relativeTolerance;
-
-/** The maximum number of steps for the root finder. */
-double absoluteTolerance,
-double relativeTolerance,
-int maximumSteps) {
-ArgChecker.notNegativeOrZero(absoluteTolerance, &quot;absoluteTolerance&quot;);
-

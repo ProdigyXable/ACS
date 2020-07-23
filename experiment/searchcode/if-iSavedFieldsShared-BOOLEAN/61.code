@@ -1,7 +1,0 @@
-private SavedField[] iSavedFields = new SavedField[8];
-private int iSavedFieldsCount;
-private boolean iSavedFieldsShared;
-int savedFieldsCount = iSavedFieldsCount;
-
-if (savedFieldsCount == savedFields.length || iSavedFieldsShared) {
-

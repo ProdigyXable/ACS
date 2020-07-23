@@ -1,3 +1,0 @@
-public Expression rewriteNullIfExpression(NullIfExpression node, C context, ExpressionTreeRewriter<C> treeRewriter)
-public Expression rewriteIfExpression(IfExpression node, C context, ExpressionTreeRewriter<C> treeRewriter)
-

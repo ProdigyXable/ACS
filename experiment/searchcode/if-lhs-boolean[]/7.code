@@ -1,9 +1,0 @@
-} else if ((lhs instanceof boolean[])) {
-append((boolean[]) lhs, (boolean[]) rhs);
-result = Float.compare(lhs, rhs);
-return this;
-}
-
-public CompareToBuilder append(boolean lhs, boolean rhs) {
-if (result != 0) {
-

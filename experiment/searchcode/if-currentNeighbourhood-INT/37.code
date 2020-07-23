@@ -1,9 +1,0 @@
-features,
-currentLearning);
-
-final int currentNeighbourhood = neighbourhoodSize.value(numCalls);
-1d / currentNeighbourhood);
-
-if (currentNeighbourhood > 0) {
-// Initial set of neurons only contains the winning neuron.
-

@@ -1,9 +1,0 @@
-private List<PointcutPatternRule> excludePointcutPatternRuleList;
-
-public PointcutPatternRule() {
-}
-
-public PointcutType getPointcutType() {
-public List<PointcutPatternRule> getExcludePointcutPatternRuleList() {
-return excludePointcutPatternRuleList;
-

@@ -1,8 +1,0 @@
-package odra.sbql.optimizers.queryrewrite.wrapper;
-
-import java.util.Hashtable;
-import java.util.Vector;
-Vector<ASTNode> result = nameExpressionFinder.findNodes(wholeQuery);
-if(!result.isEmpty())
-((NameExpression)result.firstElement()).getSignature().getOwnerExpression().getSignature()
-

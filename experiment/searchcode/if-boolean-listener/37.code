@@ -1,8 +1,0 @@
-//import cn.sharesdk.framework.PlatformActionListener;
-
-public class AuthManager {
-
-private static SignupListener signupListener;
-// public static boolean doSignup(Platform platform){
-// if(signupListener != null &amp;&amp; signupListener.isSignup()){
-

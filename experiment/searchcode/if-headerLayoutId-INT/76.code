@@ -1,8 +1,0 @@
-//com.github.florent37.materialviewpager
-
-protected int headerLayoutId;
-protected int pagerTitleStripId;
-public void writeToParcel(Parcel dest, int flags) {
-dest.writeInt(this.headerLayoutId);
-dest.writeInt(this.pagerTitleStripId);
-

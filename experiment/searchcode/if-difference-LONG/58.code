@@ -1,9 +1,0 @@
-numberOfDays+=days[i];
-}
-numberOfDays += date;
-}
-String getDifference(Date other) {
-long difference = this.numberOfDays - other.numberOfDays;
-long numberOfFourYears = difference/1461;
-long remainingDifference = difference - (numberOfFourYears*1461);
-

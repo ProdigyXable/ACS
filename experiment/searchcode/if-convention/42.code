@@ -1,9 +1,0 @@
-* @return String
-*/
-public String rechercherConvention() {
-String ret = null;
-
-if (this.critereRechercheConvention.getNomEnseignant() == &quot;&quot;)
-this.critereRechercheConvention.setNomEnseignant(null);
-if(this.critereRechercheConvention.getPrenomEnseignant() == &quot;&quot;)
-

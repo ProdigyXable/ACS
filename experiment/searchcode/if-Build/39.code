@@ -1,5 +1,0 @@
-public void checkRegressions(AbstractBuild<?, ?> build, BuildListener listener) {
-if (isResultReported(build)) {
-AbstractBuild<?, ?> lastSuccessfulBuild = getLatestSuccessfulBuild(build);
-if (isResultReported(lastSuccessfulBuild)) {
-

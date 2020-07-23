@@ -6,6 +6,6 @@ package cn.edu.pku.sei.plde.ACS.localization.metric;
 public class Hamming implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
-        return  ef + np;
+        return ef + np;
     }
 }

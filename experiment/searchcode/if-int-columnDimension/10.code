@@ -1,4 +1,0 @@
-for (int i = 0; i < this.linedimension; i++) {
-for (int j = 0; j < this.columndimension; j++) {
-if (!(this.getValue(i, j) < 0)) {
-

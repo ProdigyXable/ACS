@@ -1,9 +1,0 @@
-public String getCmptVolumeRoundUp() {
-if(getCmptVolume() != null){
-Double value = Double.parseDouble(getCmptVolume());
-this.calculatedYourVolumePCT = calculatedYourVolumePCT;
-}
-
-public double getCalculatedCmptVolumePCT() {
-return calculatedCmptVolumePCT;
-

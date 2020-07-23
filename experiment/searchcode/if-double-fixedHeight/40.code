@@ -1,6 +1,0 @@
-else {
-double fixedHeight = heightRange.constrain(r.getHeight());
-return arrangeFF(container, g2, fixedWidth, fixedHeight, params);
-protected ArrangeResult arrangeFF(BlockContainer container, Graphics2D g2,
-double fixedWidth, double fixedHeight,
-

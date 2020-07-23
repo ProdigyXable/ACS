@@ -1,9 +1,0 @@
-return false;
-}
-AxisLabelLocation location = (AxisLabelLocation) obj;
-if (!this.name.equals(location.toString())) {
-if (this.equals(AxisLabelLocation.HIGH_END)) {
-return AxisLabelLocation.HIGH_END;
-}
-if (this.equals(AxisLabelLocation.MIDDLE)) {
-

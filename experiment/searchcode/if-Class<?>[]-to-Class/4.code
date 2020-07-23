@@ -1,7 +1,0 @@
-* @param fromClass
-* @param toClass
-* @return
-*/
-public static BeanCopier getBeanCopierInstance(Class fromClass,Class toClass){
-ClassPair classPair = ClassPair.getInstance(fromClass, toClass);
-

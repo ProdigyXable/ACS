@@ -1,9 +1,0 @@
-* @return
-*/
-public static double computingMaxValueForTSC(TimeSeriesCollection timeSeriesCollection) {
-if(timeSeriesCollection == null)
-public static double computingMinValueForTSC(TimeSeriesCollection timeSeriesCollection) {
-if(timeSeriesCollection == null)
-return Double.NaN;
-double result = Double.MAX_VALUE;
-

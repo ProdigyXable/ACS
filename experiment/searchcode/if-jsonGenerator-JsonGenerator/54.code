@@ -1,9 +1,0 @@
-public void writeCustomTypePrefixForObject(Object obj, JsonGenerator jsongenerator, String s)
-throws IOException, JsonProcessingException
-{
-if(jsongenerator.canWriteTypeId())
-throws IOException, JsonProcessingException
-{
-String s = idFromValue(obj);
-if(jsongenerator.canWriteTypeId())
-

@@ -1,8 +1,0 @@
-public class DemoGuavaAndOldStyle {
-
-public static final Function<Dot, Double> TO_MAP = new Function<Dot, Double>() {
-double coordinateSum = dot.getX().add(dot.getY()).doubleValue();
-
-if (coordinateSum <= max) {
-dots.put(dot, coordinateSum);
-

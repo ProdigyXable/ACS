@@ -1,6 +1,0 @@
-query.setInteger(&quot;userId&quot;, id);
-List<ProjectContributors> myList = query.list();
-
-if (!myList.isEmpty()) {
-
-

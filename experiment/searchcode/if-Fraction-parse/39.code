@@ -1,9 +1,0 @@
-Integer lenght = strFraction.length();
-Integer fraction = Integer.parseInt(strFraction);
-
-while(lenght > 0)
-{
-if (fraction % 5 != 0)
-{
-return false;
-

@@ -1,7 +1,0 @@
-protected abstract T newObject( Node node );
-
-private T newObject( Relationship relationship )
-Relationship existingRelationship = getLinkRelationshipOrNull();
-T existingObject = null;
-if ( existingRelationship != null )
-

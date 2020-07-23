@@ -1,6 +1,0 @@
-main.mCHandler.getSymbolTable(), loc, lhs);
-if (!(t instanceof ArrayType)) {
-final String msg = &quot;Type mismatch - cannot take index on a not-array element!&quot;;
-expr = expr.switchToRValueIfNecessary(main, memoryHandler, structHandler, loc);
-final AExpressionTranslation expressionTranslation =
-

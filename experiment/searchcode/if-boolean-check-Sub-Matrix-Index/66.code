@@ -1,4 +1,0 @@
-assertEquals(new Array2DRowRealMatrix(reference), sub);
-if (mustFail) {
-fail(&quot;Expecting MatrixIndexException&quot;);
-

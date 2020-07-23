@@ -1,7 +1,0 @@
-public SubTitle(String content, HorizontalAlignment horizontalAlignment, int rightContentPadding){
-if(horizontalAlignment == HorizontalAlignment.Left){
-this.leftContent = content;
-}else if(horizontalAlignment == HorizontalAlignment.Center){
-this.centerContent = content;
-}else{
-

@@ -1,8 +1,0 @@
-attributes[i] = Double.parseDouble(s[i]);
-}
-String className = s[ATTRIBUTE_COUNT];
-
-int classNumber;
-if (CLASS_NAMES.contains(className)) {
-classNumber = CLASS_NAMES.indexOf(className);
-

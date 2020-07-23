@@ -1,9 +1,0 @@
-public class TupleComparator implements Comparator<ArrayList<Datum>>{
-LinkedHashMap<Integer, Boolean> sortFields;
-return -1;
-}
-
-int diff = 0;
-for (Map.Entry<Integer, Boolean> mp : sortFields.entrySet()){
-if (mp.getValue()){
-

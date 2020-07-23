@@ -1,7 +1,0 @@
-long ord = globalOrdinals.lookupTerm(includeValue);
-if (ord >= 0) {
-acceptedGlobalOrdinals.set(ord);
-long ord = globalOrdinals.lookupTerm(excludeValue);
-if (ord >= 0) {
-acceptedGlobalOrdinals.clear(ord);
-

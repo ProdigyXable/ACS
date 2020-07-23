@@ -1,5 +1,0 @@
-public synchronized boolean equals(java.lang.Object obj) {
-if (!(obj instanceof GetCampaignClicksResponse)) return false;
-GetCampaignClicksResponse other = (GetCampaignClicksResponse) obj;
-if (obj == null) return false;
-

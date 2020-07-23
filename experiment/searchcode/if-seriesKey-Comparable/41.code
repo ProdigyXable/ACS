@@ -1,6 +1,0 @@
-public static Collection<KeyedValues3DItemKey> itemKeysForSeries(
-KeyedValues3D data, Comparable<?> seriesKey) {
-= new ArrayList<KeyedValues3DItemKey>();
-if (!data.getSeriesKeys().contains(seriesKey)) {
-return result;
-

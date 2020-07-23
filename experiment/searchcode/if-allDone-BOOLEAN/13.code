@@ -1,5 +1,0 @@
-private static boolean isAllDone(List<PrintThread> threadList) {
-boolean isAlldone = true;
-for (PrintThread pt : threadList) {
-isAlldone = isAlldone &amp;&amp; !pt.isAlive();
-

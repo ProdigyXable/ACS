@@ -1,7 +1,0 @@
-IdaInstitutionBean institution,
-Path transformationInput,
-boolean incrementalUpdate)
-{
-super(solrService, institution, null, incrementalUpdate);
-this.transformationInput = transformationInput;
-

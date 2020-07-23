@@ -1,6 +1,0 @@
-@Override
-protected void doEditAction(ProcessorImpl processor) throws EditException {
-oldStrategyStack = processor.getIterationStrategy();
-
-if (!(iterationStrategyStack instanceof IterationStrategyStackImpl)) {
-

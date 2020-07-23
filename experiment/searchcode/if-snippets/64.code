@@ -1,5 +1,0 @@
-List<FileSnippets> fileSnippetList = snippetSets.get(key);
-if (fileSnippetList == null) {
-FileSnippets fileSnippets = findFileSnippetsForFile(fileSnippetList, codeFile);
-if (fileSnippets == null) {
-

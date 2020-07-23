@@ -1,8 +1,0 @@
-import org.joda.time.ReadableInstant;
-
-import com.google.common.collect.Lists;
-
-public abstract class TimeWriter<T extends Comparable<T>> {
-public List<TimeInstant<ReadableInstant>> makeMatchingTimes(
-ReadableInstant start, ReadableInstant end, int frequency) {
-

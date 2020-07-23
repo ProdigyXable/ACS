@@ -1,9 +1,0 @@
-import net.jumperz.app.MGuardian.*;
-
-import javax.net.SocketFactory;
-import javax.net.ssl.*;
-
-public class MSslTarget
-private int targetPort;
-private SocketFactory socketFactory;
-

@@ -1,9 +1,0 @@
-* @param includeDefaults include the default patterns
-*/
-public LinePatternList(boolean includeDefaults)
-{
-this();
-if (!includeDefaults)
-{
-clear();
-

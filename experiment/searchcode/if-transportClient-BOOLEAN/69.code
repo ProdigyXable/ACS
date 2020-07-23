@@ -1,9 +1,0 @@
-private final boolean transportClient;
-private final boolean pluginEnabled;
-private final ESLogger logger;
-
-public ClusteringPlugin(Settings settings) {
-public Collection<Module> nodeModules() {
-if (pluginEnabled &amp;&amp; !transportClient) {
-return Arrays.<Module> asList(new ClusteringModule());
-

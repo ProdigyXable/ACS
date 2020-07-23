@@ -1,7 +1,0 @@
-public class SummaryCount {
-
-private Map<String, Integer> countByStage = new HashMap<>();
-
-public void addToCountForStage(String stage){
-if(!countByStage.containsKey(stage))
-

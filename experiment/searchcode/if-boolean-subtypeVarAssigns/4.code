@@ -1,7 +1,0 @@
-Map<TypeVariable<?>, Type> subtypeVarAssigns) {
-if (type instanceof Class<?>) {
-return getTypeArguments((Class<?>) type, toClass, subtypeVarAssigns);
-}
-
-if (type instanceof ParameterizedType) {
-

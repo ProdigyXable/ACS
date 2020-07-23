@@ -1,8 +1,0 @@
-public int compare(Chromosome firstChromosome, Chromosome secondChromosome)
-{
-if (firstChromosome.getFitness() < secondChromosome.getFitness())
-{
-return -1;
-}
-if (firstChromosome.getFitness() > secondChromosome.getFitness())
-

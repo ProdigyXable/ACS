@@ -1,9 +1,0 @@
-* @return {@code true} if the two {@code TimePeriod} objects are
-*         equivalent.
-*/
-public boolean equals(TimePeriod tmPd) {
-if (this.compareTo(tmPd) == 0) {
-return true;
-} else {
-return false;
-

@@ -1,9 +1,0 @@
-private boolean appendStatics = false;
-private boolean appendTransients = false;
-protected String[] excludeFieldNames;
-return var1.get(this.getObject());
-}
-
-public boolean isAppendStatics() {
-return this.appendStatics;
-

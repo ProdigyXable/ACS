@@ -1,9 +1,0 @@
-package first;
-
-public class CoinsInALineII {
-public boolean firstWillWin(int[] values) {
-int n = values.length;
-if (n == 0) {
-return false;
-} else if (n == 1) {
-

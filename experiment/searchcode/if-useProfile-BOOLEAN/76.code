@@ -1,7 +1,0 @@
-boolean useProfile = randomBoolean();
-final String profile;
-final Settings settings;
-final Settings profileSettings;
-if (useProfile) {
-profile = &quot;some_profile&quot;;
-

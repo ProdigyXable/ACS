@@ -1,5 +1,0 @@
-@Override
-protected void lastListenerRemoved() {
-super.lastListenerRemoved();
-if (setChangeListener != null) {
-

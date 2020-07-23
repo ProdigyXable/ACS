@@ -1,7 +1,0 @@
-final boolean useClusterSetting = randomBoolean();
-final Rebalance allowedOnes = RandomPicks.randomFrom(random(), EnumSet.of(Rebalance.PRIMARIES, Rebalance.REPLICAS, Rebalance.ALL));
-assertThat(clusterState.getRoutingNodes().shardsWithState(RELOCATING).size(), equalTo(0));
-
-if (useClusterSetting) {
-prevState = clusterState;
-

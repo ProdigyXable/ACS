@@ -1,7 +1,0 @@
-public class Solution {
-public int maxArea(int[] height) {
-// Start typing your Java solution below
-// DO NOT write main() function
-int maxA=0;
-int len=height.length;
-

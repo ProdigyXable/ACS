@@ -1,9 +1,0 @@
-public class HighestGPA
-{
-public static void main(String[] args)
-{
-//Step 1
-double GPA;
-GPA =                                  //Step 6.b
-Double.parseDouble(tokenizer.nextToken());
-

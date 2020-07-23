@@ -1,9 +1,0 @@
-oneErrorLength = index.getOneErrorLength();
-twoErrorsLength = index.getTwoErrorsLength();
-searchLength = index.getSearchLength();
-Set<Integer> set = new HashSet<Integer>();
-
-CharSequence query = string.substring(0, Math.min(string.length(), searchLength));
-
-int maxDistance = getMaxDistance(string.length());
-

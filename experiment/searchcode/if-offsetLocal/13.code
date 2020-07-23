@@ -1,6 +1,0 @@
-final int offsetAdjusted = getOffset(instantAdjusted);
-// if the offsets differ, we must be near a DST boundary
-if (offsetLocal != offsetAdjusted) {
-// this happens naturally for positive offsets, but not for negative
-if ((offsetLocal - offsetAdjusted) < 0) {
-

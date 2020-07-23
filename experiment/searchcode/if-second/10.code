@@ -1,5 +1,0 @@
-case &quot;secondBeanFirstField&quot; : return secondBean -> {
-if (secondBean.getSecondBeanFirstField() == null || secondBean.getSecondBeanFirstField().isEmpty()) {
-case &quot;secondBeanSecondField&quot; : return secondBean -> {
-if (secondBean.getSecondBeanSecondField() == null || secondBean.getSecondBeanSecondField().isEmpty()) {
-

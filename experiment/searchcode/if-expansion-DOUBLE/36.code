@@ -1,9 +1,0 @@
-public Slot   thrusterSlot, weaponSlot;
-public Slot[] expansionSlots;
-
-public abstract int numberOfExpansionSlots ();
-protected abstract Point getExpansionSlotLocation (final int i);
-
-public abstract double thrustFactor ();
-}
-

@@ -1,9 +1,0 @@
-* limitations under the License.
-*/
-package org.apache.commons.math4.fraction;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import org.apache.commons.math4.fraction.BigFraction;
-import org.apache.commons.math4.fraction.FractionConversionException;
-

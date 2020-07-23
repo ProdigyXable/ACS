@@ -1,8 +1,0 @@
-this(text, horizontalAlignment, LEADING, CENTER);
-}
-public MultiLabel(String text, int horizontalAlignment, int textAlignment)
-{
-this(text, horizontalAlignment, textAlignment, CENTER);
-}
-public MultiLabel(String str, int horizontalAlignment, int textAlignment, int verticalAlignment)
-

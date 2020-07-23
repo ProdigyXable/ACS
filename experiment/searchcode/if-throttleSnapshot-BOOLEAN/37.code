@@ -1,6 +1,0 @@
-ListenableActionFuture<FlushResponse> flushResponseFuture = null;
-if (randomBoolean()) {
-ArrayList<String> indicesToFlush = newArrayList();
-File repositoryLocation = newTempDir(LifecycleScope.SUITE);
-boolean throttleSnapshot = randomBoolean();
-

@@ -1,6 +1,0 @@
-public static Durability fromThrift(TDurability tdurabilty) {
-if (tdurabilty == null) {
-return Durability.DEFAULT;
-public static Durability resolveDurabilty(Durability durability, Durability tabletDurability) {
-if (durability == Durability.DEFAULT) {
-

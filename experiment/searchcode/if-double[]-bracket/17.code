@@ -1,8 +1,0 @@
-public class RootBracketExpander
-extends AbstractAnytimeBatchLearner<Evaluator<Double,Double>, LineBracket>
-implements RootBracketer
-double x1 = this.getBracket().getUpperBound().getInput();
-double y1 = this.getBracket().getUpperBound().getOutput();
-
-if( y0*y1 < 0.0 )
-

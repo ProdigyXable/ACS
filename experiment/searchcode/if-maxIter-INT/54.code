@@ -1,9 +1,0 @@
-/** Allowed number of evalutations. */
-private final int maxIter;
-
-/**
-* @param max Allowed number of iterations.
-public MaxIter(int max) {
-if (max <= 0) {
-throw new NotStrictlyPositiveException(max);
-

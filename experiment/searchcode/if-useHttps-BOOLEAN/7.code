@@ -1,9 +1,0 @@
-server.stop();
-}
-}
-
-public Browser getStatelessBrowser(boolean useHttps) {
-if (statelessBrowser != null) return statelessBrowser;
-public Browser getFirefoxBrowser(boolean useHttps) {
-if (firefoxBrowser != null) return firefoxBrowser;
-

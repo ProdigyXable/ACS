@@ -1,9 +1,0 @@
-import org.adamsko.cubicforest.players.resolver.NullOrderDecision;
-
-public class NullOrderDecisionsAggregate implements OrderDecisionsAggregate {
-private NullOrderDecisionsAggregate() {
-}
-
-public static NullOrderDecisionsAggregate instance() {
-if (instance == null) {
-

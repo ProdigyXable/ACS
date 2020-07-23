@@ -1,8 +1,0 @@
-public class DiversifiedMapSamplerAggregator extends SamplerAggregator {
-
-private ValuesSource valuesSource;
-private int maxDocsPerValue;
-private BytesRefHash bucketOrds;
-AggregationContext aggregationContext, Aggregator parent, Map<String, Object> metaData, ValuesSource valuesSource,
-int maxDocsPerValue) throws IOException {
-

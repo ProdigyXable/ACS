@@ -1,9 +1,0 @@
-package com.example.edward.test.helper;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-* @return
-*/
-public ExecutorService getExecutorService() {
-if(executorService==null){
-

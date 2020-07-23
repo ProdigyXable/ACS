@@ -1,9 +1,0 @@
-private static final long serialVersionUID = 1L;
-
-private Exception origException;
-private String message;
-private boolean fatal;
-
-public EppicException(Exception origException, String message, boolean fatal) {
-this.origException = origException;
-

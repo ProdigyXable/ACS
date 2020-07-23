@@ -1,9 +1,0 @@
-private Parameter offDiagonalParameter;
-
-private boolean asCorrelation = false;
-
-private int dim;
-
-public CompoundSymmetricMatrix(Parameter diagonals, Parameter offDiagonal, boolean asCorrelation) {
-super(MATRIX_PARAMETER);
-

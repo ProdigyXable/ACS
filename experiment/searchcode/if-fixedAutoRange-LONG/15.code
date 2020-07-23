@@ -1,8 +1,0 @@
-this.fixedAutoRange = length;
-if (isAutoRange()) {
-autoAdjustRange();
-if (this.lowerMargin != that.lowerMargin) {
-return false;
-}
-if (this.fixedAutoRange != that.fixedAutoRange) {
-

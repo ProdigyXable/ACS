@@ -1,9 +1,0 @@
-implements FixedSize, Serializable {
-
-private static final long serialVersionUID = -8289709441678695668L;
-
-protected final int maxSize;
-private static int checkMaxSize(int maxSize) {
-if (maxSize < 0 &amp;&amp; maxSize != -1) {
-throw new IllegalArgumentException(&quot;maxSize=&quot; + maxSize);
-

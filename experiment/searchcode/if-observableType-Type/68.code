@@ -1,9 +1,0 @@
-checkReturnMethodTypeIsObservable(metadata);
-
-ParameterizedType observableType = (ParameterizedType) responseType;
-
-if (isReturnMethodTypeResponse(metadata)) {
-ParameterizedType responseParameterizedType = (ParameterizedType)
-observableType.getActualTypeArguments()[0];
-Type enclosingType = responseParameterizedType.getActualTypeArguments()[0];
-

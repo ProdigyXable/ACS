@@ -1,8 +1,0 @@
-this.message = message;
-}
-
-public R accept(MessageVisitor<R> messageVisitor) throws Exception {
-if(message instanceof BytesMessage){
-return messageVisitor.onBytesMessage((BytesMessage)message);
-}else if(message instanceof MapMessage){
-

@@ -1,9 +1,0 @@
-public List<News> queryNews(String category)
-{
-if(category == &quot;&quot;)
-return null;
-QueryBuilder<News> queryBuilder = newsDao.queryBuilder();
-
-queryBuilder.where(NewsDao.Properties.Category.eq(category)).orderDesc(Properties.Id);
-if(queryBuilder.count() > 10)
-

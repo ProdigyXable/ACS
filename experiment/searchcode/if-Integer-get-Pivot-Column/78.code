@@ -1,8 +1,0 @@
-List<PivotTableData.Axis> colLeaves = data.getRootColumn().getLeaves();
-int colBreadth = colLeaves.size();
-for (PivotTableData.Axis column : leafColumns) {
-
-PivotTableData.Cell pivotCell = row.getCell(column);
-String label;
-if (pivotCell == null) {
-

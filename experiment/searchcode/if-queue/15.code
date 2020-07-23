@@ -1,7 +1,0 @@
-package com.fang.queue.service;
-
-public class QueueServiceFactory {
-private static QueueService queueService;
-public static synchronized QueueService getQueueServiceInstance(){
-if(queueService==null)
-

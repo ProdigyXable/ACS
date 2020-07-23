@@ -1,9 +1,0 @@
-public boolean getValue() {
-return value;
-}
-
-public void set(boolean input) {
-if (input &amp;&amp; !latch) {
-value = !value;
-latch = true;
-

@@ -1,8 +1,0 @@
-private String message;
-private boolean fatal;
-
-public EppicException(Exception origException, String message, boolean fatal) {
-this.origException = origException;
-this.message = message;
-this.fatal = fatal;
-

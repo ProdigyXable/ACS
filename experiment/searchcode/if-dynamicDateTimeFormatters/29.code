@@ -1,6 +1,0 @@
-} else if (dynamicDateTimeFormatters.isEmpty()) {
-// add the default one
-protected void doXContent(XContentBuilder builder, ToXContent.Params params) throws IOException {
-if (dynamicDateTimeFormatters != Defaults.DYNAMIC_DATE_TIME_FORMATTERS) {
-if (dynamicDateTimeFormatters.length > 0) {
-

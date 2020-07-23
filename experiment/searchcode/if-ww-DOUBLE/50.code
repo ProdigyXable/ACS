@@ -1,8 +1,0 @@
-if ( HistUtils.isValidDouble(h) ) sumW[i]   = h;
-if ( HistUtils.isValidDouble(w) ) sumWW[i]  = w;
-sumW[bin] = entries;
-
-if ( ! Double.isNaN(sWW) )
-this.sumWW[bin] = sWW;
-else if ( ! Double.isNaN(plusError) )
-

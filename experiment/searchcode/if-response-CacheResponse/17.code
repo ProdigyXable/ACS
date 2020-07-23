@@ -1,8 +1,0 @@
-cacheName = cacheNameResolver.resolveCacheName(message);
-}
-
-CacheResponse cacheResponse = cachingProvider.get(cacheName, key);
-
-// If we have a cached response, build an actual repsonse and return
-if (cacheResponse != null)
-

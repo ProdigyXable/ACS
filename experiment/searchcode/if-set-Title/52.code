@@ -1,8 +1,0 @@
-super.onResume();
-if (null == mTitle) {
-getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, getTitleBarLayoutId());
-public void setTitle(final CharSequence title) {
-super.setTitle(title);
-if (null == mTitle) {
-getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, getTitleBarLayoutId());
-

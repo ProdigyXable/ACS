@@ -1,7 +1,0 @@
-private SyncDao syncDao;
-
-private boolean LocalUpdateDownLoadSyncOutUIThread(SyncDownLoadResult paramSyncDownLoadResult, SyncDao paramSyncDao)
-paramSyncDao = paramSyncDao.initSyncUploadData();
-if (paramSyncDao != null) {
-paramContext = new SyncUpLoadParam(paramInt, paramSyncDao);
-

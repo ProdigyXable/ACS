@@ -1,8 +1,0 @@
-private Object objectValue;
-private boolean failIfNotFound;
-
-public DataSourceObject(String objectId, Object objectValue, boolean failIfNotFound) {
-public boolean equals(Object o) {
-if (!(o instanceof DataSourceObject)) {
-return false;
-

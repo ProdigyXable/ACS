@@ -1,8 +1,0 @@
-int colonPos = vncServerName.lastIndexOf(&#39;:&#39;);
-while (colonPos > 0 &amp;&amp; vncServerName.charAt(colonPos - 1) == &#39;:&#39;)
-colonPos--;
-if (colonPos == 0)
-return &quot;localhost&quot;;
-if (colonPos == -1)
-colonPos = vncServerName.length();
-

@@ -1,6 +1,0 @@
-String patternString = configurable.getPatternFromConfig(props);
-if (Strings.isValid(patternString)) {
-try {
-Pattern customPattern = Pattern.compile(patternString);
-configurable.setCustomPattern(customPattern);
-

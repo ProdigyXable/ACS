@@ -1,5 +1,0 @@
-public static CelluloseLayer convert(CelluloseLayerDto celluloseLayerDto) {
-if (celluloseLayerDto == null) {
-public static CelluloseLayerDto convert(CelluloseLayer celluloseLayer) {
-if (celluloseLayer == null) {
-

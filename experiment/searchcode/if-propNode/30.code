@@ -1,6 +1,0 @@
-Object typeNode = propNode.get(&quot;type&quot;);
-if (typeNode != null) {
-mainFieldBuilder = (AbstractFieldMapper.Builder) typeParser.parse(propName, propNode, parserContext);
-} else {
-if (fields == null) {
-

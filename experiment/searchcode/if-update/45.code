@@ -1,6 +1,0 @@
-package com.lynk.dr.ui.common;
-
-public interface IfUpdateTableRow<E> {
-void update(E e);
-}
-

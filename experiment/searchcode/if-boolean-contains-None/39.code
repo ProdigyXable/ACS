@@ -1,9 +1,0 @@
-return elements.contains(false) ? ImmutableBooleanEmptySet.INSTANCE : this;
-}
-
-public BooleanIterator booleanIterator()
-return predicate.accept(false) ? ImmutableBooleanEmptySet.INSTANCE : this;
-}
-
-public boolean detectIfNone(BooleanPredicate predicate, boolean ifNone)
-

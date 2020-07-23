@@ -3,14 +3,13 @@ package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 /**
  * Created by yjxxtd on 2/29/16.
  */
-
 import cn.edu.pku.sei.plde.ACS.type.TypeInference;
 import cn.edu.pku.sei.plde.ACS.visible.model.MethodInfo;
+import java.util.ArrayList;
 import org.eclipse.jdt.core.dom.*;
 
-import java.util.ArrayList;
-
 public class MethodCollectVisitor extends ASTVisitor {
+
     private ArrayList<MethodInfo> methodsInClassList;
 
     public MethodCollectVisitor() {
@@ -33,16 +32,15 @@ public class MethodCollectVisitor extends ASTVisitor {
             return true;
         }
 
-        if (!(node.getParent() instanceof TypeDeclaration)){
+        if (!(node.getParent() instanceof TypeDeclaration)) {
             return true;
         }
 
-        if (node.getBody()!= null){
-            if(node.getBody().toString().equals("{\n  return true;\n}\n") || node.getBody().toString().equals("{\n  return false;\n}\n")){
+        if (node.getBody() != null) {
+            if (node.getBody().toString().equals("{\n  return true;\n}\n") || node.getBody().toString().equals("{\n  return false;\n}\n")) {
                 return true;
             }
         }
-
 
         MethodInfo methodInfo = null;
         String methodName = node.getName().toString();
@@ -63,7 +61,6 @@ public class MethodCollectVisitor extends ASTVisitor {
 
         return true;
     }
-
 
     @Override
     public boolean visit(VariableDeclarationStatement node) {

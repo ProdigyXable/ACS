@@ -1,7 +1,0 @@
-if (mIsDestroy) {
-break;
-}
-boolean savedSuccessfully = false;
-if (!savedSuccessfully) {
-if (imageFile.exists()) {
-

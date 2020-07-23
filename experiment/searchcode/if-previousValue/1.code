@@ -1,9 +1,0 @@
-sum = sum + previousValue;
-previousValue = -number;
-}
-if (previousSign == &#39;*&#39;) {
-previousValue = previousValue * number;
-}
-if (previousSign == &#39;/&#39;) {
-previousValue = previousValue / number;
-

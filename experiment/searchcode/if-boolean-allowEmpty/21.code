@@ -1,9 +1,0 @@
-public class MyProperEditor extends PropertyEditorSupport {
-
-private final SimpleDateFormat sdf;
-private final boolean allowEmpty;
-private final int extractLength;
-
-
-public MyProperEditor(SimpleDateFormat sdf, boolean allowEmpty) {
-

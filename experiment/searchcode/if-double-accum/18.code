@@ -1,8 +1,0 @@
-* @param accum
-*/
-public void shiftYears(double accum) {
-if (accum >= 1.0 || accum <= -1.0) {
-public void shiftWeeks(double accum) {
-if (accum >= 1.0 || accum <= -1.0) {
-week += (long) accum;
-

@@ -1,8 +1,0 @@
-private boolean allowDuplicate;
-
-public ListGenerator(List<T> data, int min, int max, boolean allowDuplicate) {
-super();
-this.data = data;
-this.min = min;
-if(!(this.allowDuplicate = allowDuplicate))
-

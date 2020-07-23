@@ -1,6 +1,0 @@
-private MovementDirection determineMovementDirection(float dx, float dy) {
-if (Math.abs(dx) > Math.abs(dy)) {
-if (dx > 0) {
-return MovementDirection.RIGHT;
-} else {
-

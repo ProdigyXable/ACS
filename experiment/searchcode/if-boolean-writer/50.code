@@ -1,7 +1,0 @@
-} else if (obj instanceof Double || obj instanceof BigDecimal) {
-writer = DoubleWriter.getInstance();
-} else if (obj instanceof Boolean) {
-writer = BooleanWriter.getInstance();
-} else if (obj instanceof Object[]) {
-writer = ArrayWriter.getInstance();
-

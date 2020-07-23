@@ -1,7 +1,0 @@
-public TimeZone nearestTimeZone(Location node) {
-double bestDistance = Double.MAX_VALUE;
-for (Location current : timeZones.subList(1, timeZones.size())) {
-double newDistance = distanceInKilometers(node, current);
-
-if (newDistance < bestDistance) {
-

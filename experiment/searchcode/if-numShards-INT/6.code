@@ -1,9 +1,0 @@
-private int numShards;
-
-protected  VertexIdTranslate() {
-
-}
-
-public VertexIdTranslate(int vertexIntervalLength, int numShards) {
-this.vertexIntervalLength = vertexIntervalLength;
-

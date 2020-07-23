@@ -1,5 +1,0 @@
-public  DissonanceMenuRenderer(DissonanceButtonRenderer dissonanceButtonRenderer,ShapeRenderer renderer,ColorPalette colorPalette){
-this.buttonRenderer = dissonanceButtonRenderer;
-this.shapeRenderer = renderer;
-this.colorPalette = colorPalette;
-

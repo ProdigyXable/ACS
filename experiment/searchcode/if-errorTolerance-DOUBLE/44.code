@@ -1,9 +1,0 @@
-return sp;
-}
-public boolean approxEquals (double[] u, double[] v, double errorTolerance)
-{
-if(u == null || v == null) return false;
-public boolean approxEquals (double[][] A, double[][] B, double errorTolerance)
-{
-if(A == null || B == null) return false;
-

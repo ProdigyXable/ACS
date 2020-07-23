@@ -1,3 +1,0 @@
-for(int docCount = 0; docCount<doc.query(&quot;//&quot;+TrConstants.FormatInfo.MENTION).size(); docCount++){
-if(identity.getNick().equals(doc.query(&quot;//&quot;+TrConstants.FormatInfo.MENTION).get(docCount).getValue())){
-

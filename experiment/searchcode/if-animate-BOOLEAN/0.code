@@ -1,9 +1,0 @@
-* Filters the animations for only a certain type of properties.
-*/
-public class AnimationFilter {
-boolean animateAlpha;
-boolean animateY;
-boolean animateZ;
-boolean animateScale;
-boolean animateHeight;
-

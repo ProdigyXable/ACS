@@ -1,5 +1,0 @@
-public void validate(Object object, Errors errors){
-if(object instanceof PersonneVto){
-PersonneVto personneVto = (PersonneVto) object;
-if(StringUtils.isEmpty(personneVto.getEmail())){
-

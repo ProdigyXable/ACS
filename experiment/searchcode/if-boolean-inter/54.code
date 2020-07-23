@@ -1,9 +1,0 @@
-* <!-- end-user-doc -->
-* @generated
-*/
-public Message getHasMessageInterBrickIn() {
-if (hasMessageInterBrickIn != null &amp;&amp; hasMessageInterBrickIn.eIsProxy()) {
-hasMessageInterBrickIn = (Message)eResolveProxy(oldHasMessageInterBrickIn);
-if (hasMessageInterBrickIn != oldHasMessageInterBrickIn) {
-if (eNotificationRequired())
-

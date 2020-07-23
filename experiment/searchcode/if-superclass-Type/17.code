@@ -1,8 +1,0 @@
-private final Type type;
-
-protected TypeReference(){
-Type superClass = getClass().getGenericSuperclass();
-
-if (superClass instanceof ParameterizedType) {
-type = ((ParameterizedType) superClass).getActualTypeArguments()[0];
-

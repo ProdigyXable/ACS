@@ -1,9 +1,0 @@
-return new CachedIterator<T>()
-{
-private boolean gotCache = false;
-private T cachedItem = null;
-@Override
-public boolean hasNext()
-{
-return cachedIterator.hasItem();
-

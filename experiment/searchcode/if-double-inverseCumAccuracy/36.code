@@ -1,8 +1,0 @@
-double alpha,
-double beta,
-double inverseCumAccuracy) {
-public double logDensity(double x) {
-recomputeZ();
-if (x < 0 || x > 1) {
-return Double.NEGATIVE_INFINITY;
-

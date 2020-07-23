@@ -1,9 +1,0 @@
-return spatialAxis;
-}
-
-/**
-* Create the spatialAxis property if one does not exist.
-public CharacterizationAxis createSpatialAxis() {
-if (this.spatialAxis == null)
-this.setSpatialAxis (new CharacterizationAxis ());
-

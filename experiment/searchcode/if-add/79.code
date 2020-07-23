@@ -1,6 +1,0 @@
-private punctuationList(){
-p = new ArrayList<>();
-p.add(&quot;!&quot;); p.add(&quot;@&quot;); p.add(&quot;#&quot;); p.add(&quot;$&quot;); p.add(&quot;%&quot;); p.add(&quot;^&quot;);
-p.add(&quot;&amp;&quot;); p.add(&quot;*&quot;); p.add(&quot;(&quot;); p.add(&quot;)&quot;); p.add(&quot;_&quot;); p.add(&quot;`&quot;);
-p.add(&quot;~&quot;); p.add(&quot;=&quot;); p.add(&quot;+&quot;); p.add(&quot;{&quot;); p.add(&quot;[&quot;);
-

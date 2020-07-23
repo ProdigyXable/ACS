@@ -1,6 +1,0 @@
-final DatasetRenderingOrder order = (DatasetRenderingOrder) o;
-if (!this.name.equals(order.toString())) {
-private Object readResolve() throws ObjectStreamException {
-if (this.equals(DatasetRenderingOrder.STANDARD)) {
-return DatasetRenderingOrder.STANDARD;
-

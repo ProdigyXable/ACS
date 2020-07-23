@@ -1,7 +1,0 @@
-Map<String, Object> res = new HashMap<String, Object>();
-res.put(BackTool.msgCode, successMsgCode);
-if(null != successKey &amp;&amp; null != successMsg){
-Map<String, Object> res = new HashMap<String, Object>();
-res.put(BackTool.msgCode, successMsgCode);
-if(null != successKey &amp;&amp; null != successMsg &amp;&amp; successKey.length == successMsg.length){
-

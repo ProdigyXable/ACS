@@ -1,5 +1,0 @@
-public static void parseKey(ViewQuery viewQuery, Object object) throws Exception {
-if (object instanceof String) {
-viewQuery.key((String) object);
-} else if (object instanceof Long) {
-

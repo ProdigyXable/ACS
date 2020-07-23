@@ -1,9 +1,0 @@
-StringBuffer sBuff = new StringBuffer ( );
-if ( className.contains(&quot;[&quot;))
-{
-className = chopBrackets ( className );
-isArray = true;
-}
-System.out.println ( className );
-if ( isPrimitiveType ( className ))
-

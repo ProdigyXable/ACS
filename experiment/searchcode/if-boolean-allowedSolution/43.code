@@ -1,8 +1,0 @@
-protected static final double DEFAULT_ABSOLUTE_ACCURACY = 1e-6;
-
-/** The kinds of solutions that the algorithm may accept. */
-private AllowedSolution allowed;
-super(absoluteAccuracy);
-this.allowed = AllowedSolution.ANY_SIDE;
-this.method = method;
-

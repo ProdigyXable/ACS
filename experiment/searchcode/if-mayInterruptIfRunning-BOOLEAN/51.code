@@ -1,7 +1,0 @@
-public RemoteServiceCancelRequest(boolean mayInterruptIfRunning) {
-this(mayInterruptIfRunning, null);
-}
-
-public RemoteServiceCancelRequest(boolean mayInterruptIfRunning, String responseId) {
-super();
-

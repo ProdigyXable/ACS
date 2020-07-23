@@ -1,7 +1,0 @@
-private static boolean shutdown;
-
-protected static void init(String[] args, Object o) {
-if (ORBInterface.getORB() == null) {
-shutdown = true;
-ORBInterface.initORB(args, null);
-

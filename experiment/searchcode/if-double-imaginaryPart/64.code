@@ -1,9 +1,0 @@
-/** Real part of complex number. */
-private double realPart;
-
-/** Imaginary part of complex number. */
-private double imaginaryPart;
-* @param imaginaryPart     imaginary part of complex number.
-*/
-public ComplexNumber(double realPart, double imaginaryPart) {
-

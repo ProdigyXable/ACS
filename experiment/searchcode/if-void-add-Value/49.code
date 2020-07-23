@@ -1,9 +1,0 @@
-intervals = new LinkedList<Value>();
-// Intervals FIFO list initialization - addFirst() + removeFirst()
-
-if (Value_1I_ago != null) {
-intervals.addFirst(Value_1I_ago);
-}
-if (Value_2I_ago != null) {
-intervals.addFirst(Value_2I_ago);
-

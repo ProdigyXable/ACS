@@ -1,3 +1,0 @@
-//                int anInd1 = getAnonymousIndex(ctx.getClassDescriptor().getUtfByIndex(o1.innerClassIndex), ctx.getClassDescriptor().getClassName());
-//                int anInd2 = getAnonymousIndex(ctx.getClassDescriptor().getUtfByIndex(o2.innerClassIndex), ctx.getClassDescriptor().getClassName());
-

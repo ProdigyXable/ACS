@@ -1,8 +1,0 @@
-public Position getLinePosition(Line s) {
-Position position = null;
-
-Double distance = s.distanceFromPoint(c);
-
-if (distance < r) {
-
-

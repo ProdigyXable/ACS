@@ -1,5 +1,0 @@
-continuousVariables.addElement(n);
-continuousValues.addElement(dVal);
-}
-else if (n.getTypeOfVariable() == Node.FINITE_STATES) {
-

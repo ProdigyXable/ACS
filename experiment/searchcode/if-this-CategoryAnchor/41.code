@@ -1,7 +1,0 @@
-return false;
-}
-CategoryAnchor position = (CategoryAnchor) obj;
-if (!this.name.equals(position.toString())) {
-private Object readResolve() throws ObjectStreamException {
-if (this.equals(CategoryAnchor.START)) {
-

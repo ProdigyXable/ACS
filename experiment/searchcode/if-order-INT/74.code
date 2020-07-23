@@ -1,9 +1,0 @@
-return new OrderBy(field, OrderType.DESC);
-}
-
-public Order getOrder() {
-Order order = null;
-if (OrderType.ASC == orderType) {
-order = Order.asc(getField());
-} else if (OrderType.DESC == orderType) {
-

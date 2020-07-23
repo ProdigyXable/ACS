@@ -1,4 +1,0 @@
-Mapping rootMappingType = MIDTypeHierarchy.getRootMappingType();
-ModelElementEndpoint rootModelElemTypeEndpoint = MIDTypeHierarchy.getRootModelElementTypeEndpoint();
-for (Entry<String, Set<EObject>> entry : modelObjAttrs.entrySet()) {
-

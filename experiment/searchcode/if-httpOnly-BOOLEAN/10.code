@@ -1,9 +1,0 @@
-private String path;
-private String domain;
-private String expires;
-private Boolean httpOnly;
-private String domain;
-private String expires;
-private Boolean httpOnly;
-private Boolean secure;
-

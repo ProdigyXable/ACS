@@ -1,7 +1,0 @@
-writer.flush();
-} catch (IOException e) {
-e.printStackTrace();
-} finally {
-if (writer != null) {
-e.printStackTrace();
-

@@ -1,7 +1,0 @@
-public void beforeArrayValues(JsonGenerator jsongenerator)
-throws IOException, JsonGenerationException
-public void writeRootValueSeparator(JsonGenerator jsongenerator)
-throws IOException, JsonGenerationException
-{
-if(_rootValueSeparator != null)
-

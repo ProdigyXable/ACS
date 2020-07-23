@@ -1,6 +1,0 @@
-if (i == 0) {
-
-CategoriesDAO categoriesDAO = new CategoriesDAOImpl();
-if (categoriesDAO.findCategories(category) == 1){
-if (categoriesDAO.findCategories(category) == 1){
-

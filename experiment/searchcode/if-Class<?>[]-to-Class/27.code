@@ -1,5 +1,0 @@
-* @param className    The name of the class to load.
-* @return The class or null if no class loader could load the class.
-* @param className    The name of the class to load
-* @return The class or null if no class loader could load the class.
-

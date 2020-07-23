@@ -1,5 +1,0 @@
-Locale defaultLocale = Locale.getDefault();
-String actualName = defaultZone.getDisplayName(false, TimeZone.LONG);
-String expectedName = defaultZone.getDisplayName(false, TimeZone.LONG,
-defaultLocale);
-

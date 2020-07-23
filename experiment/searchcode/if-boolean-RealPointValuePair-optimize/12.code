@@ -1,8 +1,0 @@
-this(new RealConvergenceChecker() {
-
-@Override
-public boolean converged(int iteration, RealPointValuePair previous,
-RealPointValuePair current) {
-if (Double.isNaN(current.getValue())) {
-throw new RuntimeException(&quot;NAN!&quot;);
-

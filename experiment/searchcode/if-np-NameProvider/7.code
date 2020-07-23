@@ -1,9 +1,0 @@
-NameProvider nameProvider = cNameProvider.get();
-if (nameProvider == null) {
-nameProvider = getDefaultNameProvider();
-return iID;
-}
-String name;
-NameProvider np = getNameProvider();
-if (np instanceof DefaultNameProvider) {
-

@@ -1,7 +1,0 @@
-package org.ipso.lbc.common.frameworks.jfreechart;
-
-import org.jfree.chart.renderer.category.BarRenderer;
-import org.jfree.data.category.CategoryDataset;
-public Paint getItemPaint(int i, int j) {
-CategoryDataset categorydataset = this.getPlot().getDataset();
-

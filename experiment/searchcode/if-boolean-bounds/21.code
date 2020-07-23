@@ -1,8 +1,0 @@
-public class InsetCalculator {
-private final boolean isRound;
-private final Rect insetBounds;
-private final Rect previousBounds;
-public Rect getInsetBounds(Rect bounds) {
-boolean hasChanged = hasBoundsChanged(bounds);
-if (hasChanged) {
-

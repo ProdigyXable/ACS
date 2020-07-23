@@ -1,4 +1,0 @@
-protected RestDeleteStoredScriptAction(Settings settings, RestController controller, boolean registerDefaultHandlers) {
-super(settings);
-if (registerDefaultHandlers) {
-

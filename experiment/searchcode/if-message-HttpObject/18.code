@@ -1,8 +1,0 @@
-public abstract class HttpContentDecoder extends MessageToMessageDecoder<HttpObject> {
-
-private EmbeddedChannel decoder;
-list.add(ReferenceCountUtil.retain(httpobject));
-} else {
-if (httpobject instanceof HttpMessage) {
-assert this.message == null;
-

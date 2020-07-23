@@ -1,9 +1,0 @@
-* @author species8472
-*/
-public class RangeIncrement extends LongParticle {
-
-/**
-* Basic constructor for the long type.
-public RangeIncrement(final long rangeIncrementInput) {
-this.setValue(rangeIncrementInput);
-

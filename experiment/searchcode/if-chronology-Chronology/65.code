@@ -1,8 +1,0 @@
-package datetime;
-
-import chronology.BasicChronology;
-import duration.DurationField;
-import field.PreciseDurationDateTimeField;
-public final class BasicDayOfYearDateTimeField extends PreciseDurationDateTimeField {
-private final BasicChronology iChronology;
-

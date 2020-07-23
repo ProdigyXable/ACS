@@ -1,6 +1,0 @@
-package com.wenping.templet.feature.giflist;
-
-import com.ryanharter.auto.value.moshi.AutoValueMoshiAdapterFactory;
-import com.squareup.moshi.Moshi;
-import com.wenping.templet.feature.NetworkManager;
-

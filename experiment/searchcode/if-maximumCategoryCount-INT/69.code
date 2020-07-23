@@ -1,6 +1,0 @@
-/** The maximum number of categories to present. */
-private int maximumCategoryCount;
-private int lastCategoryIndex() {
-if (this.maximumCategoryCount == 0) {
-return -1;
-

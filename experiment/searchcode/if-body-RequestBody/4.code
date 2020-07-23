@@ -1,8 +1,0 @@
-@Override
-protected Request buildRequest(Request.Builder builder, RequestBody requestBody)
-{
-if (method.equals(OkHttpUtils.METHOD.PUT))
-{
-builder.put(requestBody);
-} else if (method.equals(OkHttpUtils.METHOD.DELETE))
-

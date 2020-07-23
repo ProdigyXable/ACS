@@ -1,7 +1,0 @@
-public ParetoDistribution(double scale, double shape, double inverseCumAccuracy)
-throws NotStrictlyPositiveException {
-double scale,
-double shape,
-double inverseCumAccuracy)
-throws NotStrictlyPositiveException {
-

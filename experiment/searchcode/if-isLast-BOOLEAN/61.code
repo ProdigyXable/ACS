@@ -1,7 +1,0 @@
-private int counter;
-private boolean isLast;
-
-public regLastVisitor (ArrayList<Leaf> leafs) {
-public Boolean visitAltn(regularExpressionParser.AltnContext ctx) {
-boolean last = this.isLast;
-

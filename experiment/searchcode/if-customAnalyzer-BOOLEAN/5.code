@@ -1,7 +1,0 @@
-private ExtendedAnalyzeTokenList tokenizer;
-private List<ExtendedAnalyzeTokenList> tokenfilters;
-private boolean customAnalyzer = false;
-super.writeTo(out);
-out.writeBoolean(customAnalyzer);
-if (!customAnalyzer) {
-

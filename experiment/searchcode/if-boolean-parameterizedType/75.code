@@ -1,8 +1,0 @@
-return Array.newInstance(cc, 0).getClass();
-}
-} else if (type instanceof ParameterizedType) {
-return tryToClass(((ParameterizedType) type).getRawType());
-Type t = targetClass.getGenericSuperclass();
-if (t instanceof ParameterizedType) {
-if (paramTypeCount == paramTypes.length) {
-

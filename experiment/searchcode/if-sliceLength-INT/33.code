@@ -1,8 +1,0 @@
-int start, wordLength = words[0].length();
-int sliceLength = wordLength * words.length;
-
-Map<String, Integer> wordsLookup = buildLookup(words);
-String sub = s.substring(start, start + sliceLength);
-if (isSubString(sub, wordsLookup, wordLength)) {
-startLoc.add(start);
-

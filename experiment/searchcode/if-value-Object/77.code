@@ -1,8 +1,0 @@
-import de.demimoranes.realestatecredit.dslifiers.BusinessObjectDslifier;
-
-public class SimpleValuePlaceholder implements ValuePlaceholder {
-
-protected final Object value;
-
-public SimpleValuePlaceholder(Object value) {
-

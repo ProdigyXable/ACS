@@ -1,8 +1,0 @@
-public static Shape getShape(ShapeType type) {
-Shape shapeImpl = shapes.get(type);
-
-if (shapeImpl == null)
-{
-if (type.equals(ShapeType.OVAL_FILL)) {
-shapeImpl = new Oval(true);
-

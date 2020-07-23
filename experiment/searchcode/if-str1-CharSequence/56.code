@@ -1,9 +1,0 @@
-String str1 = MMFormMobileInputView.a(iEJ).getText().toString();
-if (bn.iW(str1))
-{
-MMFormMobileInputView.a(iEJ).setText(&quot;+&quot;);
-MMFormMobileInputView.e(iEJ).AD(paramEditable);
-}
-return;
-if (str1.contains(&quot;+&quot;)) {
-

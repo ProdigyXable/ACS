@@ -1,8 +1,0 @@
-public abstract Locale[] getAvailableLocales();
-
-public boolean isSupportedLocale(Locale locale){
-locale = locale.stripExtensions();
-
-for (Locale available : getAvailableLocales()){
-if (locale.equals(available.stripExtensions())){
-

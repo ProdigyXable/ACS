@@ -1,9 +1,0 @@
-case &quot;Abm&quot; :
-normalizedKeyNumber = 1;
-normalizedKeyFlag = &quot;A&quot;;
-break;
-
-default :
-boolean foundNormalizedKey = setNormalizedString(keyString);
-if (!foundNormalizedKey) {
-

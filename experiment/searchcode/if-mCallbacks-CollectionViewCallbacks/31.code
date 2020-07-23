@@ -1,5 +1,0 @@
-public void setCollectionAdapter(CollectionViewCallbacks adapter) {
-mCallbacks = adapter;
-public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-if (mCallbacks == null) {
-

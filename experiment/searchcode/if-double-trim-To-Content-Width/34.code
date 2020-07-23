@@ -1,8 +1,0 @@
-protected double trimToContentWidth(double fixedWidth) {
-double result = this.margin.trimWidth(fixedWidth);
-* @return The available space.
-*
-* @see #trimToContentWidth(double)
-*/
-protected double trimToContentHeight(double fixedHeight) {
-

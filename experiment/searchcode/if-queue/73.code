@@ -1,6 +1,0 @@
-T queue = queueInstances.get(spec);
-if (queue == null) {
-queue = createAndInitQueue(spec);
-if (queue != null) {
-T existingQueue = queueInstances.putIfAbsent(spec, queue);
-

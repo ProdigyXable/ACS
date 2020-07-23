@@ -1,8 +1,0 @@
-return true;
-}
-if (!(obj instanceof LengthConstraintType)) {
-return false;
-}
-if (this.name.equals(((LengthConstraintType) obj).toString())) {
-return true;
-

@@ -1,9 +1,0 @@
-this(new BorderArrangement());
-}
-
-public BlockContainer(Arrangement arrangement) {
-return false;
-}
-BlockContainer that = (BlockContainer) obj;
-if (!this.arrangement.equals(that.arrangement)) {
-

@@ -1,5 +1,0 @@
-public class RecordViewPresenterImpl implements RecordViewPresenter {
-RecordViewActivity mActivity;
-public void onExit(){
-if(mActivity.modified!=mActivity.columns &amp;&amp; !mActivity.isCustomQuery())
-

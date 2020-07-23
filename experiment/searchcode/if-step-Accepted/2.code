@@ -1,7 +1,0 @@
-this.pickEarlyType = pickEarlyType;
-this.acceptedCountLimit = acceptedCountLimit;
-if (acceptedCountLimit < 1) {
-public void addMove(LocalSearchMoveScope moveScope) {
-selectedMoveCount++;
-if (moveScope.getAccepted()) {
-

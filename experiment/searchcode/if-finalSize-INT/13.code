@@ -1,8 +1,0 @@
-super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
-int finalSize = getMeasuredHeight();
-if (finalSize > getMeasuredWidth()) {
-finalSize = getMeasuredWidth();
-}
-int finalMeasureSpec = MeasureSpec.makeMeasureSpec(finalSize, MeasureSpec.EXACTLY);
-

@@ -1,8 +1,0 @@
-final FluentMethod reflectedMethod,
-final boolean isBoolean) {
-if (argumentMap.containsKey(reflectedMethod.property()))
-{
-if (isBoolean)
-{
-reflectedMethod.call(options, argumentMap.containsKey(reflectedMethod.property()));
-

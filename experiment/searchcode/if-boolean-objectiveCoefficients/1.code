@@ -1,5 +1,0 @@
-protected void setSolution(double val){solution=val;};
-void setCoefficientForObjective(ObjectiveType ot,double newvalue){
-/*	if ( objectiveCoefficients.containsKey(ot)){
-if ( objectiveCoefficients.get(ot) != newvalue &amp;&amp; objectiveCoefficients.get(ot) != 0  ){
-

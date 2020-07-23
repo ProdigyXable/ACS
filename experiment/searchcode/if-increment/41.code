@@ -1,7 +1,0 @@
-EventIncrementCache localEventIncrementCache = (EventIncrementCache)Rp.get();
-if (localEventIncrementCache != null) {
-EventIncrementCache localEventIncrementCache1 = localEventIncrementCache2;
-if (localEventIncrementCache2 == null)
-{
-localEventIncrementCache2 = hs();
-

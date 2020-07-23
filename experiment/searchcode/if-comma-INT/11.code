@@ -1,3 +1,0 @@
-int val = firstExpression.number * secondExpression.number;
-int comma = firstExpression.comma + secondExpression.comma;
-

@@ -1,6 +1,0 @@
-public Number getValue(Comparable rowKey, Comparable columnKey) {
-int r = getRowIndex(rowKey);
-int c = getColumnIndex(columnKey);
-if (c != -1) {
-int c = getColumnIndex(columnKey);
-

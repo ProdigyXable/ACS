@@ -1,8 +1,0 @@
-public static void execute(Thread thread, long timeout) throws TimeoutException {
-thread.start();
-try {
-thread.join(timeout);
-} catch (InterruptedException e) {}
-
-if (thread.isAlive()) {
-

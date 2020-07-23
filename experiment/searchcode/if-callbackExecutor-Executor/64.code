@@ -1,5 +1,0 @@
-public class ErrorHandlingExecutorCallAdapterFactory implements CallAdapter.Factory {
-private final Executor callbackExecutor;
-public ErrorHandlingExecutorCallAdapterFactory(Executor callbackExecutor, RetrofitCallbackPOJO callbackstar) {
-this.callbackExecutor = callbackExecutor;
-

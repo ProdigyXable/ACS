@@ -1,5 +1,0 @@
-if (!(o instanceof GetterLazyBoolean)) return false;
-final GetterLazyBoolean other = (GetterLazyBoolean)o;
-if (!other.canEqual((java.lang.Object)this)) return false;
-if (this.isBooleanValue() != other.isBooleanValue()) return false;
-

@@ -1,6 +1,0 @@
-else
-{
-if (this.dateObj.hashCode() == ((DateTypeObject)(object)).dateObj.hashCode())
-{
-if (this.type == ((DateTypeObject)(object)).type)
-

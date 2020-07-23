@@ -1,8 +1,0 @@
-super(name, context, parent, metaData);
-this.valuesSource = valuesSource;
-this.formatter = formatter;
-if (valuesSource != null) {
-public LeafBucketCollector getLeafCollector(LeafReaderContext ctx,
-final LeafBucketCollector sub) throws IOException {
-if (valuesSource == null) {
-

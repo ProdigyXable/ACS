@@ -1,5 +1,0 @@
-String newName=name.replace(&quot;-&quot;, &quot;_&quot;).replace(&quot;:&quot;, &quot;_&quot;).replace(&quot; &quot;, &quot;&quot;).toLowerCase();
-boolean includeFieldName=findIndexNames(newName);
-if(includeFieldName){
-fields.put(newName, metadata.get(name));
-

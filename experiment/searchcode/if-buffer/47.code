@@ -1,9 +1,0 @@
-* Returns the buffer as the requested type if possible.
-* To achieve this,
-* @param bufferClass
-* @return
-*/
-@SuppressWarnings(&quot;unchecked&quot;)
-public <B extends Buffer> B getBuffer(Class<B> bufferClass) {
-if(bufferClass.isInstance(buffer)) {
-

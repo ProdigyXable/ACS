@@ -1,9 +1,0 @@
-private ApplicationProperties(){
-
-}
-
-public static ApplicationProperties getInstance(){
-if(applicationProperties == null){
-// set default values
-applicationProperties.properties.setProperty(ICommonProperties.trendLineVisible, Boolean.FALSE.toString());
-

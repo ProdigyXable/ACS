@@ -1,6 +1,0 @@
-String type[] = contentType.split(&quot;;&quot;);
-mediaType = type[0];
-if(mediaType.startsWith(&quot;[&quot;))
-mediaType = mediaType.substring(1, mediaType.length());
-if(mediaType.endsWith(&quot;]&quot;))
-

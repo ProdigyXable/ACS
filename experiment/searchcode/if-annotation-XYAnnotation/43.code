@@ -1,8 +1,0 @@
-return false;
-}
-if (!(obj instanceof XYAnnotationEntity)) {
-return false;
-}
-XYAnnotationEntity that = (XYAnnotationEntity) obj;
-if (this.rendererIndex != that.rendererIndex) {
-

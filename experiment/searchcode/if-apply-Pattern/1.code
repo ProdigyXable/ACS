@@ -1,6 +1,0 @@
-if ( formatter instanceof SimpleDateFormat )
-{
-SimpleDateFormat sdf = (SimpleDateFormat)formatter;
-sdf.applyLocalizedPattern( customPattern( sdf.toLocalizedPattern() ) );
-sdf.applyPattern( customPattern( sdf.toPattern() ) );
-

@@ -1,5 +1,0 @@
-if (editDistance != that.editDistance) return false;
-if (transpositions != that.transpositions) return false;
-if (fuzzyMinLength != that.fuzzyMinLength) return false;
-if (fuzzyPrefixLength != that.fuzzyPrefixLength) return false;
-

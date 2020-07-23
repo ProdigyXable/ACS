@@ -1,9 +1,0 @@
-public final String contentType;
-
-protected Payload(MediaType mediaType){
-this.mediaType = mediaType;
-public MediaType getMediaType(){
-if(contentType==null)
-return null;
-if(mediaType==null)
-

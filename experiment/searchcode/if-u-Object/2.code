@@ -1,6 +1,0 @@
-Object visit(Embed n, Object o);
-Object visit(StatementIf n, Object o);
-Object visit(StatementIfElse n, Object o);
-Object visit(StatementIfElseNoShortIf n, Object o);
-Object visit(StatementEach n, Object o);
-

@@ -1,7 +1,0 @@
-public static Token createRelOp(String lexeme) {
-OpType opType = OpType.NONE;
-if (lexeme.equals(&quot;==&quot;))
-opType = OpType.EQUAL;
-else if (lexeme.equals(&quot;!=&quot;))
-opType = OpType.NOT_EQUAL;
-

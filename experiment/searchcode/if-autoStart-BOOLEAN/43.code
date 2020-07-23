@@ -1,8 +1,0 @@
-public void setLocalResource(File file, boolean autostart, boolean repeat, IStage stage);
-
-/**
-* Sets the local resource.
-*            the stage
-*/
-public void setLocalResource(String localPath, boolean autostart, boolean repeat, IStage stage);
-

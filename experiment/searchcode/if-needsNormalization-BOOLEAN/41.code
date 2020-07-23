@@ -1,9 +1,0 @@
-final Set<Transition> foundTransitions = new HashSet<>();
-
-for (Transition transition : transitions) {
-if (needsNormalization(transition)) {
-return foundTransitions;
-}
-
-private boolean needsNormalization(Transition transition) {
-

@@ -1,8 +1,0 @@
-public boolean equals(Object o) {
-if (this == o) return true;
-if (o == null || getClass() != o.getClass()) return false;
-
-ClassPair classPair = (ClassPair) o;
-
-if (!classA.equals(classPair.classA)) return false;
-

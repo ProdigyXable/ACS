@@ -1,7 +1,0 @@
-package com.example.selftest.fragments;
-
-import com.example.selftest.R;
-import com.example.selftest.adapters.RecommendListAdapter;
-import com.example.selftest.entity.HttpAction;
-import com.example.selftest.entity.MyWebResponse;
-

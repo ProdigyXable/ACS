@@ -1,9 +1,0 @@
-return JpaQueryUtil.getResultList(query, params);
-}
-
-//=====================================================================
-public static Object getSingleResult(Query query, Object... params){
-if(params!=null){
-if(params!=null){
-for(int i=0;i<params.length;i++){
-

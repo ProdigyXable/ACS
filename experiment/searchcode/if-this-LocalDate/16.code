@@ -1,6 +1,0 @@
-LocalDate today = LocalDate.now();
-LocalDate thisYearBirthDay = LocalDate.of(today.getYear(), birthday.getMonth(), birthday.getDayOfMonth());
-LocalDate nextYearBirthDay = thisYearBirthDay.plusYears(1);
-
-if(thisYearBirthDay.isAfter(today)){
-

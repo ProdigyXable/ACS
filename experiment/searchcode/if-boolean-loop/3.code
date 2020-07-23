@@ -1,7 +1,0 @@
-public class LoopSettings implements Cloneable {
-private Boolean looped = false;
-private Integer loopStart;
-public void setLoopPoints(Integer start,Integer end) {
-if(start <= end) {
-loopStart = start;
-

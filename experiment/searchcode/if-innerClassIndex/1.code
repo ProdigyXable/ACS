@@ -1,8 +1,0 @@
-IJavaBreakpoint bp = (IJavaBreakpoint) breakpoint;
-
-String type = bp.getTypeName();
-if (type != null) {
-int innerClassIndex = type.indexOf(&#39;$&#39;);
-if (innerClassIndex > 0) {
-// For inner classes, return the outermost class name,
-

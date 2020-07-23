@@ -1,8 +1,0 @@
-private ObjectName        sourcePattern;
-private QueryExp          sourceQuery;
-
-public RegistrationFilter(ObjectName sourcePattern, QueryExp sourceQuery) {
-if (sourcePattern.apply(sourceName)) {
-if (sourceQuery != null) {
-return sourceQuery.apply(sourceName);
-

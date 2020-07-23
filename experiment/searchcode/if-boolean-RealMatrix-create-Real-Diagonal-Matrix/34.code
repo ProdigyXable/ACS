@@ -1,5 +1,0 @@
-public RealMatrix getS() {
-if (cachedS == null) {
-// cache the matrix for subsequent calls
-cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues);
-

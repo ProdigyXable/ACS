@@ -1,8 +1,0 @@
-private static BudgetStatus instance;
-private String userid;
-private double rentPercent;
-private double groceryPercent;
-private double clothingPercent;
-private double transportationPercent;
-private double educationPercent;
-

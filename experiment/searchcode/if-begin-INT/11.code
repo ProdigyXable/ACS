@@ -1,9 +1,0 @@
-int begin = 0, end = n;
-while(begin < end){
-int v = (begin + end) >> 1;
-if (isBadVersion(v)) {
-int begin = 0, end = n;
-while(begin < end){
-int v = (end - begin) / 2 + begin;
-if(isBadVersion(v)){
-

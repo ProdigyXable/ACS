@@ -1,9 +1,0 @@
-public void load() {
-
-}
-
-public String getKeyFromName(String name, String def) {
-String key = keys.get(name);
-if(key==null) {
-setKey(name, def);
-

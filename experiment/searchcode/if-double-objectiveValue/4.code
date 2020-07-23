@@ -1,9 +1,0 @@
-public class ObjectiveValue implements Comparable<ObjectiveValue> {
-
-public static final BigDecimal OPTIMAL = ZERO, WORST = ONE;
-public ObjectiveValue() {
-}
-
-public ObjectiveValue(String description) {
-this.description = description;
-

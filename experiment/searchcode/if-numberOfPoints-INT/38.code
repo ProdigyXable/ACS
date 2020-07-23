@@ -1,9 +1,0 @@
-public abstract class AbstractPolygon extends EMFTag {
-
-private Rectangle bounds;
-
-private int numberOfPoints;
-&quot;\n  bounds: &quot; + bounds +
-&quot;\n  #points: &quot; + numberOfPoints;
-if (points != null) {
-

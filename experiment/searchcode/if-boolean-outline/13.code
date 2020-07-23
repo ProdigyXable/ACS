@@ -1,8 +1,0 @@
-protected Log logger = LogFactory.getLog(getClass());
-
-public Boolean process(ProcessOutline context, ClassOutline classOutline,
-Options options) {
-
-if (context.getIgnoring().isPackageOutlineIgnored(context,
-classOutline._package(), options)) {
-

@@ -1,5 +1,0 @@
-public synchronized boolean equals(java.lang.Object obj) {
-if (!(obj instanceof GetModuleOfferedResponse)) return false;
-GetModuleOfferedResponse other = (GetModuleOfferedResponse) obj;
-if (obj == null) return false;
-

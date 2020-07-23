@@ -1,8 +1,0 @@
-public class ObjectObjectComparisonPolicy implements ObjectObjectComparisonPolicyIF
-{
-public static final ObjectObjectComparisonPolicyIF AcceptSameObjectComparisonPolicy = new ObjectObjectComparisonPolicy()
-return ObjectObjectComparisonPolicyIF.ACCEPT;
-}
-
-return ObjectObjectComparisonPolicyIF.CONTINUE;
-

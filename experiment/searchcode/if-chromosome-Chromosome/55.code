@@ -1,9 +1,0 @@
-chromosomeList = mountChromosomeListToIndividual(chromosomeList);
-
-for (ProductionChromosome chromosome : chromosomeList) {
-if (chromosome.getMachine() != null &amp;&amp; chromosome.getSkill() != null) {
-machineAdded = false;
-
-if (!machineAdded) {
-type = chromosome.getSkillList().get(EmployeeSkill.SKILL3);
-

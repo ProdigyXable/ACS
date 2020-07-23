@@ -1,5 +1,0 @@
-public boolean	registerSelectionListener	 (ActionListener listener);
-public boolean	deRegisterSelectionListener	 (ActionListener listener);
-
-public boolean	registerDoubleClickListener	 (ActionListener listener);
-

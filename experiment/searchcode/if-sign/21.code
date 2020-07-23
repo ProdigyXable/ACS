@@ -1,4 +1,0 @@
-File signEditFolder = new File(plugin.getDataFolder().getPath());
-if (!signEditFolder.isDirectory())
-signEditFolder.mkdirs();
-

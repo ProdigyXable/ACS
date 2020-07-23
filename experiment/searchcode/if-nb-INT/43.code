@@ -1,9 +1,0 @@
-package foreverse.ksynthesis.evaluation;
-
-public class ClusteringResult {
-
-private int nbClusters;
-private int sumSize;
-private int nbValidClusters;
-private int nbFeaturesInCorrectClusters;
-

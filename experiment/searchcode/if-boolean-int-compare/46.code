@@ -1,9 +1,0 @@
-public class ConditionCompare extends DefaultCondition {
-
-public int compareOperator;
-public boolean invert;
-
-
-public ConditionCompare(int compareOperator) {
-this.compareOperator = compareOperator;
-

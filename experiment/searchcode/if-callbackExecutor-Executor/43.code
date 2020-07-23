@@ -1,8 +1,0 @@
-* Create asynchronous callback with only success scenario.
-*
-* @param callbackExecutor
-*            - status bar manager.
-*/
-public BaseAsyncCallback(ISuccessCallbackExecutor<T> callbackExecutor) {
-this.successCallbackExecutor = callbackExecutor;
-

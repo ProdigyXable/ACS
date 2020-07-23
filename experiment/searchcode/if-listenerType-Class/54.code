@@ -1,7 +1,0 @@
-public class AbstractListenerManager<ListenerType> extends ServiceTracker<ListenerType, ListenerType>
-{
-
-private ArrayList<ListenerType> allContextListeners;
-
-private final Object lock = new Object();
-

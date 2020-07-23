@@ -1,9 +1,0 @@
-static int maxIndex = 0;
-
-private int firstIndex;
-private int secondIndex;
-
-public IndexPair(int firstIndex, int secondIndex) {
-this.firstIndex = firstIndex;
-this.secondIndex = secondIndex;
-

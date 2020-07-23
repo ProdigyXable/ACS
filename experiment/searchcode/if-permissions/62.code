@@ -1,7 +1,0 @@
-if(role==null || permission==null) return;
-Set<Permission> permissions=role.getPermissions();
-if(permissions==null)permissions=new HashSet<>();
-if(role==null || permission==null) return;
-Set<Permission> permissions=role.getPermissions();
-if(permissions==null) return;
-

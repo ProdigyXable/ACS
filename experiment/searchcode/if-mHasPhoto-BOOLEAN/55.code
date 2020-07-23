@@ -1,9 +1,0 @@
-private boolean mHasPhoto;
-
-private View mPhotoViewContainer;
-
-private ImageView mPhotoView;
-public boolean onException(Exception e, String model, Target<Bitmap> target,
-boolean isFirstResource) {
-mHasPhoto = false;
-

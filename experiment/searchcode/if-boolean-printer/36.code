@@ -1,9 +1,0 @@
-private VirtualPrinter virtualPrinter;
-private String deviceName;
-private boolean defaultPrinter;
-
-public Printer() {
-public Printer(VirtualPrinter virtualPrinter, String deviceName, boolean defaultPrinter) {
-super();
-this.virtualPrinter = virtualPrinter;
-

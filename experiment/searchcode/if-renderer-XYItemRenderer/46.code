@@ -1,8 +1,0 @@
-ValueAxis yValueAxis = getRangeAxisForDataset(index);
-XYItemRenderer xyItemRenderer = findRenderer(index);
-
-if (xValueAxis == null || yValueAxis == null || xyItemRenderer == null) {
-private XYItemRenderer findRenderer(int index) {
-XYItemRenderer renderer = getRenderer(index);
-if (renderer == null) {
-

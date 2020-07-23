@@ -1,9 +1,0 @@
-package org.squirrelframework.cloud.routing;
-
-import com.google.common.base.Optional;
-
-/**
-* Created by kailianghe on 15/12/10.
-*/
-public class TraceableRoutingKeyResolver implements RoutingKeyResolver {
-

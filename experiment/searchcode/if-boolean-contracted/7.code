@@ -1,3 +1,0 @@
-extends AcAbstractModel
-implements AcGb0901InvoiceItemClaimContractedTypeVoPkIF, JwMatchIF, AcGb0901InvoiceItemClaimContractedTypeVoConstantsIF, JwTemplateContextIF
-

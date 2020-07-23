@@ -1,9 +1,0 @@
-package oe.midware.workflow.track.mode;
-
-public class XOffsetTool {
-
-public static String xoffsetResize(String xoffset) {
-try {
-int x = Integer.parseInt(xoffset);
-int xreal = x - 200;
-

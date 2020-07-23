@@ -1,9 +1,0 @@
-public class RobotPiloteImpl implements RobotPiloteOperations {
-
-private Position position;
-private boolean isStarted = false;
-@Override
-public void start() throws AlreadyStarted {
-if (isStarted) {
-throw new AlreadyStarted(&quot;Already started !&quot;);
-

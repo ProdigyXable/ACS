@@ -2,16 +2,15 @@ package cn.edu.pku.sei.plde.ACS.sort;
 
 import cn.edu.pku.sei.plde.ACS.jdtVisitor.IdentifierCollectVisitor;
 import cn.edu.pku.sei.plde.ACS.utils.JDTUtils;
-
+import java.util.*;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTParser;
-
-import java.util.*;
 
 /**
  * Created by yjxxtd on 4/4/16.
  */
 public class VariableSort {
+
     private Set<String> suspiciousVariableSet;
     private String statements;
 
@@ -21,6 +20,7 @@ public class VariableSort {
     private List<List<String>> sortVariable;
 
     private Set<String> allVariableInMethod;
+
     public VariableSort(Set<String> suspiciousVariableSet, String statements) {
         this.suspiciousVariableSet = suspiciousVariableSet;
         this.statements = statements;
@@ -88,42 +88,38 @@ public class VariableSort {
         return right;
     }
 
-    private String getIfExpression(String statement){
+    private String getIfExpression(String statement) {
         int beginIndex = statement.indexOf("(");
         int endIndex = statement.lastIndexOf(")");
         return statement.substring(beginIndex + 1, endIndex);
     }
 
-    private String getOper(String statement){
-        if(statement.contains("+=")){
+    private String getOper(String statement) {
+        if (statement.contains("+=")) {
             return "+=";
-        }
-        else if(statement.contains("-=")){
+        } else if (statement.contains("-=")) {
             return "-=";
-        }
-        else if(statement.contains("*=")){
+        } else if (statement.contains("*=")) {
             return "*=";
-        }
-        else if(statement.contains("/=")){
+        } else if (statement.contains("/=")) {
             return "/=";
-        }
-        else if(statement.contains("=")){
+        } else if (statement.contains("=")) {
             return "=";
         }
         return null;
     }
 
-    private void removeControlDependency(){
+    private void removeControlDependency() {
         Stack<Character> stack = new Stack<Character>();
 
         Stack<Set<String>> ifVariableStack = new Stack<Set<String>>();
-        for(int i = statementList.size() - 1; i >= 0; i --){
+        for (int i = statementList.size() - 1; i >= 0; i--) {
             String statement = statementList.get(i);
             if (statement == null) {
                 continue;
             }
 
-            if(statement.contains("{") && statement.contains("(") && statement.contains(")")){
+            if (statement.contains("{") && statement.contains("(") && statement.contains(")")) {
                 stack.push('{');
                 String rightHandExpression = getIfExpression(statement);
 
@@ -136,16 +132,16 @@ public class VariableSort {
                 ifVariableStack.push(rightHandSet);
             }
 
-            if(statement.contains("}") && !stack.isEmpty()){
+            if (statement.contains("}") && !stack.isEmpty()) {
                 stack.pop();
                 ifVariableStack.pop();
-                if(stack.empty()){
+                if (stack.empty()) {
                     ifVariableStack.clear();
                 }
                 continue;
             }
 
-            if(stack.empty()){
+            if (stack.empty()) {
                 continue;
             }
 
@@ -153,19 +149,18 @@ public class VariableSort {
                 continue;
             }
 
-
             String oper = getOper(statement);
             int index = statement.indexOf(oper);
             String leftHand = getLeftHand(statement, index);
 
             allVariableInMethod.add(leftHand);
 
-            if(sortVariable.size() >= 1 && sortVariable.get(0).contains(leftHand)){
-                for(Set<String> set : ifVariableStack){
+            if (sortVariable.size() >= 1 && sortVariable.get(0).contains(leftHand)) {
+                for (Set<String> set : ifVariableStack) {
                     Iterator<String> iter = sortVariable.get(0).iterator();
-                    while(iter.hasNext()){
+                    while (iter.hasNext()) {
                         String var = iter.next();
-                        if(set.contains(var)){
+                        if (set.contains(var)) {
                             iter.remove();
                         }
                     }
@@ -228,14 +223,13 @@ public class VariableSort {
                 } else {
                     inDegree.put(rightHand, 1);
                 }
-                if(!inDegree.containsKey(leftHand)) {
+                if (!inDegree.containsKey(leftHand)) {
                     inDegree.put(leftHand, 0);
                 }
             }
 
         }
     }
-
 
     private void topologicalSort() {
         Queue<String> queue = new LinkedList<String>();
@@ -267,7 +261,7 @@ public class VariableSort {
                     }
                 }
             }
-            if(levelVariable.size() != 0) {
+            if (levelVariable.size() != 0) {
                 sortVariable.add(levelVariable);
             }
         }

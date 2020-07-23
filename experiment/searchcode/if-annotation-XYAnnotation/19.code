@@ -1,5 +1,0 @@
-public void store(List<XYAnnotation> l, File f) {
-MaltcmsAnnotationFactory maf = new MaltcmsAnnotationFactory();
-MaltcmsAnnotation ma = maf.createNewMaltcmsAnnotationType(f.toURI());
-for (XYAnnotation xya : l) {
-

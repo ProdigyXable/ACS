@@ -1,8 +1,0 @@
-final double relativeSymmetryThreshold,
-final double absolutePositivityThreshold) {
-if (!matrix.isSquare()) {
-throw new NonSquareMatrixException(matrix.getRowDimension(),
-final double lIJ = lI[j];
-final double lJI = lJ[i];
-final double maxDelta =
-

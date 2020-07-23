@@ -1,9 +1,0 @@
-TupleSet sourceNodeTupleSet = null, targetNodeTupleSet = null, selectedEdgeTupleSet = null;
-
-public EdgeHighlightControl(int[] colorPalette) {
-this(colorPalette, null);
-public HoverColorAction(int[] colorPalette, String target) {
-super(target, VisualItem.FILLCOLOR);
-
-this.colorPalette = colorPalette;
-

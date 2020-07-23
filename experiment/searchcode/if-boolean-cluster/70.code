@@ -1,9 +1,0 @@
-public void setClusterId(Long clusterId) {
-this.clusterId = clusterId;
-}
-
-@Override
-public boolean equals(Object o) {
-if (this == o) return true;
-if (!(o instanceof Cluster)) return false;
-

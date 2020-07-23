@@ -1,7 +1,0 @@
-* @throws MathException if the algorithm fails to converge.
-*/
-public static double regularizedBeta(double x, double a, double b)
-throws MathException
-{
-return regularizedBeta(x, a, b, DEFAULT_EPSILON, Integer.MAX_VALUE);
-

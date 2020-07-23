@@ -1,6 +1,0 @@
-ParamChecks.nullNotPermitted(rowKey, &quot;rowKey&quot;);
-ParamChecks.nullNotPermitted(columnKey, &quot;columnKey&quot;);
-if (this.columnKeys.contains(columnKey)) {
-int row = getRowIndex(rowKey);
-if (row >= 0) {
-

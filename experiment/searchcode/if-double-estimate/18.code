@@ -1,5 +1,0 @@
-abstractEstimate.setNatureOfWork(lineEstimateDetails.getLineEstimate().getNatureOfWork());
-if(lineEstimateDetails.getLineEstimate().getLocation() != null)
-abstractEstimate.setExecutingDepartment(lineEstimateDetails.getLineEstimate().getExecutingDepartment());
-abstractEstimate.setWorkValue(lineEstimateDetails.getActualEstimateAmount().doubleValue());
-

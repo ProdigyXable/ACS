@@ -3,13 +3,12 @@ package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 /**
  * Created by yjxxtd on 2/29/16.
  */
-
 import cn.edu.pku.sei.plde.ACS.visible.model.VariableInfo;
+import java.util.*;
 import org.eclipse.jdt.core.dom.*;
 
-import java.util.*;
-
 public class EqualFieldCollectVisitor extends ASTVisitor {
+
     private Set<String> filedVariable;
     private Set<String> equalVariable;
 
@@ -20,9 +19,9 @@ public class EqualFieldCollectVisitor extends ASTVisitor {
 
     public Set<String> getEqualVariable() {
         Iterator<String> it = equalVariable.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             String var = it.next();
-            if(!filedVariable.contains(var)){
+            if (!filedVariable.contains(var)) {
                 it.remove();
             }
         }
@@ -31,7 +30,7 @@ public class EqualFieldCollectVisitor extends ASTVisitor {
 
     @Override
     public boolean visit(FieldDeclaration node) {
-        if(node.getParent() == null){
+        if (node.getParent() == null) {
             return true;
         }
         for (Object obj : node.fragments()) {
@@ -46,11 +45,11 @@ public class EqualFieldCollectVisitor extends ASTVisitor {
     @Override
     public boolean visit(MethodDeclaration node) {
 
-        if(node == null){
+        if (node == null) {
             return true;
         }
         String name = node.getName().toString();
-        if(!name.equals("equals")){
+        if (!name.equals("equals")) {
             return true;
         }
         EqualExpressionVisitor equalExpressionVisitor = new EqualExpressionVisitor();
@@ -58,7 +57,6 @@ public class EqualFieldCollectVisitor extends ASTVisitor {
         equalVariable = equalExpressionVisitor.getEqualVariable();
         return true;
     }
-
 
     @Override
     public boolean visit(VariableDeclarationStatement node) {

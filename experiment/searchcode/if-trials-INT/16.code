@@ -1,9 +1,0 @@
-public class BinomialDistr {
-
-/** The number of trials. */
-private int numberOfTrials;
-/** The probability of success. */
-private void setNumberOfTrialsInternal(int trials) {
-if (trials < 0) {
-throw new IllegalArgumentException(
-

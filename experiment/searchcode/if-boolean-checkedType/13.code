@@ -1,9 +1,0 @@
-private final Class<T> checkedType;
-
-private CheckObjectType(Class<T> checkedType) {
-this.checkedType = checkedType;
-}
-
-private boolean accept(U value) {
-return checkedType.isInstance(value);
-

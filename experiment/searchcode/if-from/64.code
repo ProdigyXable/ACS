@@ -1,8 +1,0 @@
-Heading heading) {
-
-//GridPositionDistribution to = new GridPositionDistribution(_from);
-
-if (heading == Heading.PLUS_X) {
-_from = pushSensorPlusX(actionModel, _from);
-} else if (heading == Heading.PLUS_Y) {
-

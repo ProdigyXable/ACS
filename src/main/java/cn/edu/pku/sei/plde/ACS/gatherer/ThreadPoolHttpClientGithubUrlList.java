@@ -3,8 +3,8 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
 /**
  * Created by yjxxtd on 4/16/16.
  */
-
-
+import java.io.IOException;
+import java.util.List;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -13,13 +13,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
-import org.apache.http.util.EntityUtils;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
 
 public class ThreadPoolHttpClientGithubUrlList {
 
@@ -96,6 +89,5 @@ public class ThreadPoolHttpClientGithubUrlList {
             }
         }
     }
-
 
 }

@@ -1,6 +1,0 @@
-for (RootMapper rootMapper : rootMappers) {
-if (rootMapper.includeInObject()) {
-root.putMapper(rootMapper);
-RootMapper mergeWithRootMapper = mergeWith.rootMapper(rootMapper.getClass());
-if (mergeWithRootMapper != null) {
-

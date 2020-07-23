@@ -1,9 +1,0 @@
-return secondCategoryDTO;
-}
-public SecondCategoryDTO removeSecondCategoryList(SecondCategoryDTO secondCategoryDTO)
-{
-if(secondCategoryList.contains(secondCategoryDTO))
-for (SecondCategoryDTO tmp : secondCategoryList)
-{
-if(tmp.getSecondCategoryCode()==exSecondCategoryDTO.getSecondCategoryCode())
-

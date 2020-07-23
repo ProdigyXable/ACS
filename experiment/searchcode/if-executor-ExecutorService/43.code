@@ -1,8 +1,0 @@
-package com.thread.global;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-private static ExecutorService executorService;
-private static ThreadPool instance;
-static{
-

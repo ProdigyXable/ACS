@@ -1,6 +1,0 @@
-for (Entry<String, String> entry : translations.entrySet()) {
-boolean containsEnglisWord = SubtitleUtils.findText(subtitleElement.getText(), entry.getKey());
-if(containsEnglisWord){
-for (Entry<String, String> entry : phrasalVerbs.entrySet()) {
-boolean containsPhrasalVerb = SubtitleUtils.findPhrasalVerb(subtitleElement.getText(), entry.getKey());
-

@@ -1,9 +1,0 @@
-import com.alpine.hadoop.util.AlpineHadoopThreadLocal;
-
-public class Probability {
-private double probability;
-public double getProbability() {
-return probability;
-}
-public void setProbability(double probability) {
-

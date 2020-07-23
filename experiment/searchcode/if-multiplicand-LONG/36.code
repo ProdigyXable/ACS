@@ -1,3 +1,0 @@
-// TODO Exception
-if (dimension != multiplicand.dimension) throw new IllegalArgumentException(&quot;&quot;);
-

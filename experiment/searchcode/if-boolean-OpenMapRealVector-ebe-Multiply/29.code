@@ -1,7 +1,0 @@
-public RealVector ebeMultiply(RealVector v) throws IllegalArgumentException {
-throw unsupported();
-}
-
-@Override
-public RealVector ebeMultiply(double[] v) throws IllegalArgumentException {
-

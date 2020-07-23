@@ -1,7 +1,0 @@
-public void setOrAnimateWordIdentifiedIcon(final ImageView imageView, boolean isCheck,
-boolean allowAnimate) {
-if (!hasL()) {
-imageView.setColorFilter(isCheck ?
-mContext.getResources().getColor(R.color.accent) : Color.WHITE);
-if (allowAnimate) {
-

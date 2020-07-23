@@ -1,8 +1,0 @@
-docCount = in.readVLong();
-docCountError = -1;
-if (showDocCountError) {
-docCountError = in.readLong();
-out.writeVLong(getDocCount());
-if (showDocCountError) {
-out.writeLong(docCountError);
-

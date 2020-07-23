@@ -1,9 +1,0 @@
-Rectangle2D area,
-RectangleEdge edge) {
-
-double result = 0.0;
-if (anchor == CategoryAnchor.START) {
-space.add(labelHeight + tickLabelHeight + this.categoryLabelPositionOffset, edge);
-}
-else if (RectangleEdge.isLeftOrRight(edge)) {
-

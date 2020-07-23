@@ -1,9 +1,0 @@
-public abstract class NumberConverter<T> extends NullConverter<T> {
-@Override
-public final T readNotNull(Object object) {
-if (object instanceof String) {
-} else {
-return readDouble(d);
-}
-} else if (object instanceof Integer) {
-

@@ -1,7 +1,0 @@
-package com.welyab.jcpa.classfile.constant;
-
-public enum ConstantType {
-for (ConstantType constantType : values()) {
-if (constantType.getTag() == tag) {
-return constantType;
-

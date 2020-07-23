@@ -1,5 +1,0 @@
-this.legendItemGraphicAnchor = RectangleAnchor.CENTER;
-this.legendItemGraphicLocation = RectangleAnchor.CENTER;
-public void setLegendItemGraphicAnchor(RectangleAnchor anchor) {
-if (anchor == null) {
-

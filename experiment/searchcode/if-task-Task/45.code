@@ -1,5 +1,0 @@
-for (Task task : TaskList.tasks) {
-if (task.getTaskAuthor() == taskAuthor)
-for (Task task : TaskList.tasks) {
-if (task.getTaskAppointer() == taskAppointer)
-

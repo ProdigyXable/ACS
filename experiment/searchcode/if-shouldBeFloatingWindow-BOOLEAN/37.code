@@ -1,7 +1,0 @@
-protected void onCreate(Bundle savedInstanceState) {
-if (shouldBeFloatingWindow()) {
-getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-setTitle(&quot;&quot;);
-if (savedInstanceState == null) {
-Intent intent = getIntent();
-

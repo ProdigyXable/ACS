@@ -1,9 +1,0 @@
-return add((ArrayRealVector) v);
-} else {
-checkVectorDimensions(v);
-double[] out = data.clone();
-throws IllegalArgumentException {
-checkVectorDimensions(v.length);
-double[] out = data.clone();
-for (int i = 0; i < data.length; i++) {
-

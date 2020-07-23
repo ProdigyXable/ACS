@@ -1,6 +1,0 @@
-public class IntegerToBooleanSETAdapter extends DmcTypeIntegerToBooleanSET implements DmcAdapterIF {
-
-transient DmcTypeIntegerToBooleanSET existingValue;
-
-public IntegerToBooleanSETAdapter(DmcAttributeInfo ai){
-

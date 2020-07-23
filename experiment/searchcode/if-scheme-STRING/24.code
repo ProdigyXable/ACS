@@ -1,7 +1,0 @@
-public class SchemeUtil {
-
-public static String getSchemeName( String uri, String scheme ) {
-int index = uri.indexOf( SchemeConstants.SCHEME_SEPARATOR );
-String curScheme = uri.substring( 0, index );
-if ( ! curScheme.equalsIgnoreCase( scheme ) ) {
-

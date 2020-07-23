@@ -1,9 +1,0 @@
-private Double initialTemperature;
-
-public Double getInitialTemperature() {
-return initialTemperature;
-@NotNull(errorCode = &quot;mashstep.initialTemperature.null&quot;)
-private Double recordedTemperature;
-
-public Double getRecordedTemperature() {
-

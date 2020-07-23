@@ -1,9 +1,0 @@
-import org.apache.http.HttpStatus;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpUriRequest;
-public static WHttpResponse with(HttpUriRequest httpUriRequest) {
-return new WHttpResponse(httpUriRequest);
-}
-
-public static class WHttpResponse {
-

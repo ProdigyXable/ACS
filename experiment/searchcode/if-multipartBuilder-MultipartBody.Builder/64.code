@@ -1,7 +1,0 @@
-if (TextUtils.isEmpty(url)) {
-return null;
-}
-MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
-multipartBuilder.setType(MultipartBody.FORM);
-if (params != null &amp;&amp; !params.isEmpty()) {
-

@@ -1,7 +1,0 @@
-private static StageManager instance = null;
-public static StageManager getInstance() {
-if (instance == null) {
-stages.put(stage.getClass(), stage);
-stage.registerUpdateHandler(fpsCounter);
-if (currentStage == null) {
-

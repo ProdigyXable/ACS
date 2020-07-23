@@ -1,5 +1,0 @@
-* @throws AmazonServiceException if error occurred while calling AWS API
-* @throws AmazonClientException  if error occurred while calling AWS API
-* @throws AmazonClientException  if error occurred while calling AWS API
-*/
-

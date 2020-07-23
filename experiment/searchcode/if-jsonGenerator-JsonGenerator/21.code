@@ -1,9 +1,0 @@
-public void serialize(Object linkElements, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-if(linkElements instanceof LinkElement) {
-jsonGenerator.writeStartObject();
-generateLinkElement(jsonGenerator, (LinkElement) linkElements);
-jsonGenerator.writeEndObject();
-}
-
-if(linkElements instanceof Set) {
-

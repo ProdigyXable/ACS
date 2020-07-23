@@ -1,8 +1,0 @@
-return result;
-}
-
-private long writeOrCountBytes(BufferedSink sink, boolean countBytes) throws IOException {
-sink.writeUtf8(&quot;Content-Length: &quot;).writeDecimalLong(contentLength).write(MultipartBuilder.CRLF);
-} else if (countBytes) {
-byteCountBuffer.clear();
-

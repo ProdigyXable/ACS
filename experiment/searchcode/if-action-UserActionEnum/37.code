@@ -1,9 +1,0 @@
-private QueryEnum[] mInitQueriesToLoad;
-
-private UserActionEnum[] mValidUserActions;
-
-private HashMap<Uri, ThrottledContentObserver> mContentObservers;
-if (mValidUserActions != null &amp;&amp; mValidUserActions.length > 0 &amp;&amp; action != null) {
-for (UserActionEnum actionEnum : mValidUserActions) {
-if (actionEnum.getId() == action.getId()) {
-

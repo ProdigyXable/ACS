@@ -1,9 +1,0 @@
-public double add(double lhs, double rhs) {
-return lhs + rhs;
-}
-
-/**
-* Multiplies the two given numbers
-public double multiply(double lhs, double rhs) {
-return lhs * rhs;
-

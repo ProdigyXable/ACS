@@ -1,9 +1,0 @@
-* limitations under the License.
-*/
-package org.kuali.kra.common.permissions.lookup.keyvalue;
-
-import org.kuali.kra.common.permissions.web.struts.form.PermissionsForm;
-@Override
-public List<KeyValue> getKeyValues() {
-Object form = getFormOrView();
-

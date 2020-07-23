@@ -1,9 +1,0 @@
-private long autoRefreshCutoff = Units.hoursToMilliseconds(2);
-private boolean forcedRefresh = false;
-private DistanceMode distanceMode = DistanceMode.FULL;
-public void setForcedRefresh(boolean forcedRefresh) {
-this.forcedRefresh = forcedRefresh;
-}
-
-public boolean getForcedRefresh() {
-

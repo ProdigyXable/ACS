@@ -1,9 +1,0 @@
-public class Solution {
-public boolean isNumeric(char[] str) {
-if(str == null || str.length == 0){
-return false;
-}
-
-int i = 0;
-if(str[i] == &#39;+&#39; || str[i] == &#39;-&#39;){
-

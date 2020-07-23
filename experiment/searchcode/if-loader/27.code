@@ -1,8 +1,0 @@
-private ImageLoaderFactory() {
-}
-
-public static UniversalImageLoader getLoader() {
-if (uilLoader == null) {
-synchronized (ImageLoaderFactory.class) {
-if (uilLoader == null) {
-

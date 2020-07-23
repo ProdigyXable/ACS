@@ -1,7 +1,0 @@
-implements PerformanceParameterEstimatingFunction {
-
-public double getPerformanceParameterEstimate(
-List<Double> reportedValues,
-double previousEstimate,
-int numValuesReportedSincePreviousEstimate,
-

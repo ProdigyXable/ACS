@@ -1,8 +1,0 @@
-double dDX, dDY;
-double dSlope;
-double dRecipSlope;
-boolean bEqual = false;
-double ardSlopes[] = new double[2];
-double ardRecipSlopes[] = new double [2];
-Scanner fin = new Scanner(new FileReader(&quot;82cIN.txt&quot;));
-

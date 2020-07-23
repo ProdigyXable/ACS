@@ -1,9 +1,0 @@
-import Jama.Matrix;
-
-public class AttitudeEvent extends INSEvent {
-
-protected double mGlobalAccel[];
-protected double mGlobalAngularVelocity[];
-protected double mGlobalMagneticField[];
-protected Matrix mSensorToGlobalRotationMatrix;
-

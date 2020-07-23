@@ -1,5 +1,0 @@
-public class StaffOverrideTimePeriods extends DomainObjectBase<StaffOverrideTimePeriods, Long>
-implements Serializable, Comparable<StaffOverrideTimePeriods> {
-
-private static final long serialVersionUID = 1L;
-

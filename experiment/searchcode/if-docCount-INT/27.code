@@ -1,7 +1,0 @@
-private Object[]            params;
-private int                 docCount;
-private List<DocDigestData> docDigestDatas;
-
-public TopSqlData(int docCount) {
-this.docCount = docCount;
-

@@ -1,8 +1,0 @@
-for (ConditionalActivator activator : activators) {
-if (activator.supports(extensionClass)) {
-activator.activate(extensionClass);
-supported = true;
-}
-}
-if (!supported) {
-

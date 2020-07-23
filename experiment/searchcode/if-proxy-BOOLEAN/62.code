@@ -1,9 +1,0 @@
-if (o == null || getClass() != o.getClass()) return false;
-
-ProxyInfo proxyInfo = (ProxyInfo) o;
-
-if (proxyPort != proxyInfo.proxyPort) return false;
-if (!proxyIp.equals(proxyInfo.proxyIp)) return false;
-
-return true;
-

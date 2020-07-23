@@ -1,8 +1,0 @@
-* the criterion goes below a physical threshold under which
-* improvements are considered useless or when the algorithm is
-* unable to improve it (even if it is still high). The first
-* of considered measurements).
-*/
-public GaussNewtonEstimator(int maxCostEval,
-double convergence,
-

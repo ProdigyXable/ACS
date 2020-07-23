@@ -1,7 +1,0 @@
-timestamp = new Timestamp(timeLong);
-
-// compute offset to conform to local
-int offsetMillis = (calendar.getTimeZone().getOffset(timeLong)) / 3600000;
-String offset = &quot;&quot; + offsetMillis;
-if (offsetMillis < 0 &amp;&amp; offsetMillis > -10) {
-

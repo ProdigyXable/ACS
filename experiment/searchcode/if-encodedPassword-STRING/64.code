@@ -1,9 +1,0 @@
-return new Credentials(ANONYMOUS, null, ENCODING_NONE);
-}
-XmppURI uri;
-String encodedPassword;
-
-String encodingMethod;
-
-public Credentials(final XmppURI uri, final String encodedPassword, final String encodingMethod) {
-

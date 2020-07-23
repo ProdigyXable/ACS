@@ -1,9 +1,0 @@
-public Co2PartStrategy advice(RouteType routeType) {
-
-if (routeType == RouteType.BARGE) {
-return bargeStrategy;
-}
-
-if (routeType == RouteType.RAIL) {
-return railStrategy;
-

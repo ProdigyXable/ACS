@@ -1,9 +1,0 @@
-public int chop(int value, int[] sortedArray) {
-int foundIndex = NOT_FOUND_INDEX;
-
-if (sortedArray == null || sortedArray.length == 0) {
-int start = i*sliceLength;
-int end = i*sliceLength + sliceLength;
-
-if (i == (slices - 1)) {
-

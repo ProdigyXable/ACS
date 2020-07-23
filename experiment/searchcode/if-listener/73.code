@@ -1,7 +1,0 @@
-Listener getTargetControlListener() {
-if (targetControlListener == null) {
-targetControlListener = new TargetControlListener();
-}
-return targetControlListener;
-}
-

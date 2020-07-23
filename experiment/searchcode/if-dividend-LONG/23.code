@@ -1,8 +1,0 @@
-boolean pos = true;
-
-if (dividendLong > 0 &amp;&amp; divisorLong < 0 || dividendLong < 0 &amp;&amp; divisorLong > 0) {
-pos = false;
-}
-
-if (dividendLong < 0) {
-

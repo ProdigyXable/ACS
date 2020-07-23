@@ -1,6 +1,0 @@
-* @see javax.net.ssl.TrustManager
-*/
-class TrustManagerJsseWrapper implements X509TrustManager {
-public TrustManagerJsseWrapper(SSLTrustManager trustManager) {
-if (trustManager == null) {
-

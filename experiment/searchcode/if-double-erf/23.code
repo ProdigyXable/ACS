@@ -1,7 +1,0 @@
-globalflag = globalflag || localflag;
-if (localflag) {
-fail(&quot;*** Erf, erf(): Incorrect function values&quot;);
-globalflag = globalflag || localflag;
-if (localflag) {
-fail(&quot;*** Erf, erfc(): Incorrect function values&quot;);
-

@@ -1,9 +1,0 @@
-private int consumedValue;
-
-@Override
-public void run() {
-while (true) {
-synchronized (this) {
-if (!Main.producer.isProduced()) {
-try {
-

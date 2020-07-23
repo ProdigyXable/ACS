@@ -1,8 +1,0 @@
-public abstract class Demo implements GLEventListener {
-protected DemoListener demoListener;
-private boolean doShutdown = true;
-// Execute only once
-boolean shouldDoShutdown = doShutdown;
-doShutdown = false;
-if (shouldDoShutdown) {
-

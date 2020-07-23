@@ -1,8 +1,0 @@
-private List<FloorDAO> data;
-private boolean isInsert = true;
-
-public RoomFloorAdapter(List<FloorDAO> data, boolean isInsert) {
-this.data = data;
-this.isInsert = isInsert;
-if (isInsert)
-

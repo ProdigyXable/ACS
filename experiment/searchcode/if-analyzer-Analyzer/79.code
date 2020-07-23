@@ -1,8 +1,0 @@
-ClassAnalyzer entityAnalyzer = analyzer.getClassAnalyzer(EntityAnalyzer.class);
-if (entityAnalyzer.isFailed()) {
-return null;
-}
-
-FieldAnalyzer dataAnalyzer = entityAnalyzer.getFieldAnalyzer(DataAnalyzer.class);
-if (dataAnalyzer.isFailed()) {
-

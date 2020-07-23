@@ -1,8 +1,0 @@
-final HttpsURLConnection httpsConnection = (HttpsURLConnection) connection;
-
-if (hostNameVerifier != null) {
-httpsConnection.setHostnameVerifier(hostNameVerifier);
-}
-
-if (sslContext != null) {
-

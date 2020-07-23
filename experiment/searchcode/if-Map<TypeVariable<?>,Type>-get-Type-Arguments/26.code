@@ -1,7 +1,0 @@
-TypeVariable<?> tv = (TypeVariable<?>) genericType;
-resolvedType = typeVariableMap.get(tv);
-if (resolvedType == null) {
-Map<TypeVariable<?>, Type> typeVariableMap = (ref != null ? ref.get() : null);
-
-if (typeVariableMap == null) {
-

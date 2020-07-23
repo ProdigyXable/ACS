@@ -1,8 +1,0 @@
-protected boolean getBooleanFromAffectedRows(int affectedRows) {
-if (affectedRows > 0) {
-return true;
-}
-return false;
-}
-}
-

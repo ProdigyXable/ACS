@@ -1,6 +1,0 @@
-/*     */ public abstract class AbstractReadableInstantFieldProperty
-/*     */   public boolean equals(Object paramObject)
-/*     */   {
-/* 442 */     if (this == paramObject) {
-/* 443 */       return true;
-

@@ -1,7 +1,0 @@
-public void load() {
-if (!getFacesContext().isPostback()) {
-if (idMemberType != null) {
-memberType = memberTypeRepository.findById(idMemberType);
-if (memberType == null) {
-redirect(&quot;list.jsf&quot;);
-

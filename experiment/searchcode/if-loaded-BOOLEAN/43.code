@@ -1,8 +1,0 @@
-private boolean loaded = false;
-
-@Override
-protected Void doInBackground(Void... voids) {
-if (!loaded) {
-PokemonRes.prepareCommonTables();
-loaded = true;
-

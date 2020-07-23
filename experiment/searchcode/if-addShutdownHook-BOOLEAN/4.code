@@ -1,7 +1,0 @@
-public class ShutdownHookUtils {
-
-public static void hook(final ExecutorService executor, final boolean now) {
-Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-
-@Override
-

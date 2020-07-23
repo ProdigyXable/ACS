@@ -1,6 +1,0 @@
-// CHECK-START: int Main.testDeadLoop(int) dead_code_elimination_final (before)
-// CHECK-DAG:                      If
-// CHECK-DAG:                      Add
-
-// CHECK-START: int Main.testDeadLoop(int) dead_code_elimination_final (after)
-

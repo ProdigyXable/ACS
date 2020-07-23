@@ -1,8 +1,0 @@
-// haploid gamete genotype (grouped by chromosomes)
-private List<HaploidChromosome> chromosomes;
-
-public Gamete(){
-public boolean equals(Object g){
-boolean equal = false;
-if(g instanceof Gamete){
-

@@ -1,6 +1,0 @@
-append((int[]) lhs, (int[]) rhs);
-} else if (lhs instanceof short[]) {
-append((short[]) lhs, (short[]) rhs);
-} else if (lhs instanceof char[]) {
-append((char[]) lhs, (char[]) rhs);
-

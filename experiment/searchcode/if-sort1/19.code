@@ -1,9 +1,0 @@
-package datastructure.sort;
-
-public class BubbleSort1 extends Sort {
-
-@Override
-public void start() {
-// TODO Auto-generated method stub
-p(&quot;\tBubble sort1: Just swap the first element&quot;);
-

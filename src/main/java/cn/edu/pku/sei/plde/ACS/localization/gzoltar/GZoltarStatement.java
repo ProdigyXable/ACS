@@ -15,11 +15,10 @@
  */
 package cn.edu.pku.sei.plde.ACS.localization.gzoltar;
 
-import com.gzoltar.core.components.Statement;
 import cn.edu.pku.sei.plde.ACS.localization.common.SourceLocation;
 import cn.edu.pku.sei.plde.ACS.localization.common.sps.SuspiciousStatement;
-
-import static com.google.common.base.Preconditions.checkNotNull;
+import com.google.common.base.Preconditions;
+import com.gzoltar.core.components.Statement;
 
 /**
  * @author Favio D. DeMarco
@@ -34,7 +33,7 @@ final class GZoltarStatement implements SuspiciousStatement {
      * @param statement
      */
     GZoltarStatement(final Statement statement) {
-        this.statement = checkNotNull(statement);
+        this.statement = Preconditions.checkNotNull(statement);
     }
 
     /**

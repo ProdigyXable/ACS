@@ -1,7 +1,0 @@
-public void info(Object message, Object... params) {
-if (hasParams(params)) {
-log4j.info(MessageFormat.format(message.toString(), params));
-public void error(Object message, Object... params) {
-if (hasParams(params)) {
-log4j.error(MessageFormat.format(message.toString(), params));
-

@@ -1,9 +1,0 @@
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-Paper p = new Paper();
-p.setImageableArea(0,0,0,0);
-pf1.setPaper(p);
-PageFormat pf2 = job.validatePage(pf1);
-

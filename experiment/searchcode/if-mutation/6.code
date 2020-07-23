@@ -1,7 +1,0 @@
-package uk.co.notclive.multicomp.variant.mutation;
-
-import uk.co.notclive.multicomp.environment.Environment;
-Mutation mutation = mutations.next();
-if (applyMutation(mutation)) {
-mutationTracker.addMutation(variant, mutation);
-

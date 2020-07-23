@@ -1,4 +1,0 @@
-SpectralCharAxis ret = (SpectralCharAxis) new ModelObjectFactory().newInstance(SpectralCharAxis.class);
-for (CharacterizationAxis axis : ds.getCharacterization().getCharacterizationAxes()) {
-if (axis instanceof SpectralCharAxis) {
-

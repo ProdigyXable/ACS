@@ -1,9 +1,0 @@
-* have the same dimension
-*/
-protected void checkVectorDimensions(RealVector v)
-throws IllegalArgumentException {
-* inconsistent with vector size
-*/
-protected void checkVectorDimensions(int n)
-throws IllegalArgumentException {
-

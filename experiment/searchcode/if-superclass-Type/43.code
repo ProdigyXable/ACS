@@ -1,6 +1,0 @@
-while(!(genericSuperclass instanceof ParameterizedType))
-{
-if(!(genericSuperclass instanceof Class))
-&quot;parameterized type nor class.&quot;);
-if(genericSuperclass == AbstractSearchableJpaRepository.class)
-

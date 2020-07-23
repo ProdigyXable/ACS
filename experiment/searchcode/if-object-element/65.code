@@ -1,9 +1,0 @@
-while (queue.size() > 0) {
-JsonElement element = queue.poll();
-if (element.isJsonObject()) {
-return ret;
-}
-
-public static JsonObject asJsonObject(JsonElement element) {
-if (element.isJsonObject()) {
-

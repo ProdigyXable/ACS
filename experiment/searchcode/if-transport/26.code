@@ -1,8 +1,0 @@
-protected Collection<Transport> createRecordList() {
-try {
-Collection<Transport> transportList = transportDataManager.getTransportList();
-if (transportList != null)
-public void removeTransport(Transport transport) {
-try {
-if (transportDataManager.removeTransport(transport))
-

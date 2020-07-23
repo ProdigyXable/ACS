@@ -1,6 +1,0 @@
-public static boolean isIrreduciblySynchronizing(Automaton automaton, InverseAutomaton inverseAutomaton)
-{
-int K = automaton.getK();
-
-if (!isSynchronizing(automaton, inverseAutomaton))
-

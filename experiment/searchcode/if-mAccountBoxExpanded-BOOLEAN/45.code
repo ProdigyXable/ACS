@@ -1,8 +1,0 @@
-if (mDeferredOnDrawerClosedRunnable != null) {
-mDeferredOnDrawerClosedRunnable.run();
-mDeferredOnDrawerClosedRunnable = null;
-}
-if (mAccountBoxExpanded) {
-protected void onNavDrawerStateChanged(boolean isOpen, boolean isAnimating) {
-if (mActionBarAutoHideEnabled &amp;&amp; isOpen) {
-

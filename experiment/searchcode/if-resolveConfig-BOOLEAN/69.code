@@ -1,6 +1,0 @@
-if (loadConfigSettings) {
-boolean loadFromEnv = true;
-if (useSystemProperties) {
-static String promptForValue(String key, Terminal terminal, boolean secret) {
-if (terminal == null) {
-

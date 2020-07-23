@@ -2,10 +2,9 @@ package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 
 import cn.edu.pku.sei.plde.ACS.type.TypeInference;
 import cn.edu.pku.sei.plde.ACS.visible.model.VariableInfo;
-import org.eclipse.jdt.core.dom.*;
-
 import java.util.ArrayList;
 import java.util.List;
+import org.eclipse.jdt.core.dom.*;
 
 /**
  * ASTVisit that helps to generate a tree
@@ -13,6 +12,7 @@ import java.util.List;
  * @author jiewang
  */
 public class VariableCollectVisitor extends ASTVisitor {
+
     private ArrayList<VariableInfo> filedInClassList;
     private ArrayList<VariableInfo> parametersInMethodList;
     private ArrayList<VariableInfo> localsInMethodList;
@@ -43,7 +43,7 @@ public class VariableCollectVisitor extends ASTVisitor {
     public boolean visit(FieldDeclaration node) {
         boolean isFinal = Modifier.isFinal(node.getModifiers());
         boolean isStatic = Modifier.isStatic(node.getModifiers());
-        if(node.getParent() == null){
+        if (node.getParent() == null) {
             return true;
         }
         //if(!node.getParent().toString().contains(" class " + className + " {")){
@@ -79,7 +79,6 @@ public class VariableCollectVisitor extends ASTVisitor {
         for (SingleVariableDeclaration parameter : parameters) {
             boolean isFinal = Modifier.isFinal(parameter.getModifiers());
 
-
             TypeInference paraTypeInference = new TypeInference(parameter.getType()
                     .toString());
             VariableInfo variableInfo = null;
@@ -102,7 +101,6 @@ public class VariableCollectVisitor extends ASTVisitor {
         }
         return true;
     }
-
 
     @Override
     public boolean visit(VariableDeclarationStatement node) {

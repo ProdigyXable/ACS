@@ -1,6 +1,0 @@
-BeamUtils.tryUpdateIntentFromBeam(this);
-
-boolean shouldBeFloatingWindow = shouldBeFloatingWindow();
-if (shouldBeFloatingWindow) {
-setupFloatingWindow(R.dimen.session_details_floating_width,
-

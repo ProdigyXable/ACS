@@ -1,7 +1,0 @@
-File dir = ResourceDir.getResourceDir();
-System.out.println(dir.isDirectory());
-if (dir.isDirectory()) {
-File[] files = dir.listFiles();
-for (File fileItem: files) {
-if (fileItem.isDirectory())   directoryCount++;
-

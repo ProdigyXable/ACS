@@ -1,8 +1,0 @@
-public static boolean isSimpleEvent(EventType eventType) {
-
-if (eventType == EventType.Gene_expression
-public static boolean isBindingEvent(EventType eventType) {
-
-if (eventType == EventType.Binding) {
-return true;
-

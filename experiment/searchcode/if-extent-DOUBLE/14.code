@@ -1,5 +1,0 @@
-private double dblExtentEast;
-private double dblExtentWest;
-private double dblExtentSouth;
-private double dblExtentNorth;
-

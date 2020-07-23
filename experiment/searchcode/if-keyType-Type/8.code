@@ -1,8 +1,0 @@
-private final Class<? extends K> keyType;
-
-public EntryKeyRef(Entry<K, ?> entry, Class<K> keyType) {
-if (entry == null)
-throw new NullPointerException(&quot;entry&quot;);
-if (keyType == null)
-throw new NullPointerException(&quot;keyType&quot;);
-

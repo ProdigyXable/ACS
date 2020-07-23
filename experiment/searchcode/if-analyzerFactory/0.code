@@ -1,9 +1,0 @@
-import net.paoding.analysis.analyzer.PaodingAnalyzer;
-
-public class AnalyzerFactory {
-
-private static AnalyzerFactory analyzerFactory = null;
-public static AnalyzerFactory getInstance() {
-synchronized (AnalyzerFactory.class) {
-if (analyzerFactory == null) {
-

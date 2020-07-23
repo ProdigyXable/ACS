@@ -1,9 +1,0 @@
-//Compares state id&#39;s
-public static boolean statesEqual(State state, State cState){
-if(state == null || cState == null) return false;
-if(state.getId() == cState.getId()){
-return true;
-}
-
-return false;
-

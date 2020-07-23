@@ -1,4 +1,0 @@
-case 100:
-drawable=context.getResources().getDrawable(R.drawable.yi100);
-if (drawable!=null){
-

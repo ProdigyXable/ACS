@@ -1,9 +1,0 @@
-return true;
-}
-if (!(o instanceof PlotOrientation)) {
-return false;
-}
-
-PlotOrientation orientation = (PlotOrientation) o;
-if (!this.name.equals(orientation.toString())) {
-

@@ -1,9 +1,0 @@
-public void update(GameObject ball, InputController ctrl){
-if (ctrl.isMoveUp()){
-double speed = ball.getCurrentVel().module();
-ball.setVel(new V2d(0,1).mul(speed));
-double speed = ball.getCurrentVel().module();
-ball.setVel(new V2d(0,-1).mul(speed));
-} else if (ctrl.isMoveLeft()){
-double speed = ball.getCurrentVel().module();
-

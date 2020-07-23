@@ -1,8 +1,0 @@
-return contains(getHash(content), content);
-}
-
-//	public boolean contains(SpaceNode content) {
-//		if (this.content == content) return true;
-//		else {
-//			if ((contentID > content.getId()) &amp;&amp; (smaller != null))
-

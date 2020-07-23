@@ -1,7 +1,0 @@
-Object entity = response.getEntity();
-if (entity != null) {
-return responseBuilder.status(response.getResponseCode()).entity(
-Response.ResponseBuilder responseBuilder;
-if (downloadFile) {
-responseBuilder = getFileDownloadResponseBuilder(((StreamRestResponse) response).getFileName());
-

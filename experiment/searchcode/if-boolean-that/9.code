@@ -1,8 +1,0 @@
-public interface NodeVisitor {
-/**
-* Convenience exception for subclasses.  The caller that initiates
-public boolean visit(If m);
-public boolean visit(IfExp m);
-public boolean visit(Import m);
-public boolean visit(ImportFrom m);
-

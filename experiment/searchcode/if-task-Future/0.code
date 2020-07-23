@@ -1,9 +1,0 @@
-package pt.up.fe.backup;
-
-import java.util.concurrent.FutureTask;
-import java.util.concurrent.RunnableFuture;
-
-import pt.up.fe.backup.tasks.Task;
-
-public class TaskFuture extends FutureTask<Object> implements RunnableFuture<Object> {
-

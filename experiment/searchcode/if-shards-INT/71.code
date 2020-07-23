@@ -1,9 +1,0 @@
-private int totalShards;
-private int successfulShards;
-private int failedShards;
-private ShardOperationFailedException[] shardFailures = EMPTY;
-successfulShards = in.readVInt();
-failedShards = in.readVInt();
-int size = in.readVInt();
-if (size > 0) {
-

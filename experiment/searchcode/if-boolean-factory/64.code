@@ -1,3 +1,0 @@
-protected AbstractDelegatingRecursiveGraphFactory(final GraphFactory<G> factory, final boolean typeResolution, final boolean annotationsSupported) {
-super(new BooleanDelegatingGraphFactory(factory, typeResolution, annotationsSupported));
-

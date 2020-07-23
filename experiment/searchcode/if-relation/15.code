@@ -1,6 +1,0 @@
-for (EKeggRelationType relationType : EKeggRelationType.values()){
-if (relationType.getRelationSubType().equals(subtype))
-if (type.equals(KeggRelation.PPrel))
-return true;
-if (type.equals(KeggRelation.ECrel))
-

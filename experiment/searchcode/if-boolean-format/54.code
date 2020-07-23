@@ -1,8 +1,0 @@
-package com.angrycat.erp.format;
-
-public class BooleanPropertyFormat extends PropertyFormat {
-return getMessageFormatValue(expressions[0]);
-}
-if(Boolean.FALSE.equals(val)){
-return getMessageFormatValue(expressions[1]);
-

@@ -2,18 +2,18 @@ package cn.edu.pku.sei.plde.ACS.fix;
 
 import cn.edu.pku.sei.plde.ACS.assertCollect.Asserts;
 import cn.edu.pku.sei.plde.ACS.utils.*;
-import org.apache.commons.lang.StringUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by yanrunfa on 5/3/16.
  */
 public class AssertComment {
+
     public Asserts asserts;
     public int line;
     private List<Integer> commented;
@@ -27,7 +27,7 @@ public class AssertComment {
     private File classBackup;
     private boolean isCommented = false;
 
-    public AssertComment(Asserts asserts, int line){
+    public AssertComment(Asserts asserts, int line) {
         this.asserts = asserts;
         this.errorAsserts = asserts._errorAssertLines;
         this.testClassPath = asserts._testClasspath;
@@ -39,28 +39,27 @@ public class AssertComment {
         this.commented = new ArrayList<>();
     }
 
-
-    public void comment(){
-        if (!errorAsserts.contains(line)){
+    public void comment() {
+        if (!errorAsserts.contains(line)) {
             return;
         }
-        if (errorAsserts.size() <=1){
+        if (errorAsserts.size() <= 1) {
             return;
         }
-        if (line == -1){
+        if (line == -1) {
             return;
         }
         backup();
-        for (int commentLine: errorAsserts){
-            if (commentLine == line){
+        for (int commentLine : errorAsserts) {
+            if (commentLine == line) {
                 continue;
             }
             commented.add(commentLine);
             SourceUtils.commentCodeInSourceFile(targetFile, commentLine);
-            if (LineUtils.isLineInFailBlock(code, commentLine)){
-                int i = commentLine -1;
-                String lineString = CodeUtils.getLineFromCode(code,i);
-                while (!lineString.contains("try {")){
+            if (LineUtils.isLineInFailBlock(code, commentLine)) {
+                int i = commentLine - 1;
+                String lineString = CodeUtils.getLineFromCode(code, i);
+                while (!lineString.contains("try {")) {
                     SourceUtils.commentCodeInSourceFile(targetFile, i);
                     i--;
                     lineString = CodeUtils.getLineFromCode(code, i);
@@ -71,32 +70,31 @@ public class AssertComment {
         make();
     }
 
-
-    public void uncomment(){
-        if (isCommented){
+    public void uncomment() {
+        if (isCommented) {
             FileUtils.copyFile(classBackup.getAbsolutePath(), FileUtils.getFileAddressOfClass(testClassPath, testClassName));
             FileUtils.copyFile(javaBackup.getAbsolutePath(), FileUtils.getFileAddressOfJava(testSrcPath, testClassName));
         }
     }
 
-    private void backup(){
-        classBackup = new File(FileUtils.tempClassPath(testClassName,"AssertComment"));
-        FileUtils.copyFile(FileUtils.getFileAddressOfClass(testClassPath, testClassName),classBackup.getAbsolutePath());
+    private void backup() {
+        classBackup = new File(FileUtils.tempClassPath(testClassName, "AssertComment"));
+        FileUtils.copyFile(FileUtils.getFileAddressOfClass(testClassPath, testClassName), classBackup.getAbsolutePath());
 
-        javaBackup = new File(FileUtils.tempJavaPath(testClassName,"AssertComment"));
-        FileUtils.copyFile(FileUtils.getFileAddressOfJava(testSrcPath, testClassName),javaBackup.getAbsolutePath());
+        javaBackup = new File(FileUtils.tempJavaPath(testClassName, "AssertComment"));
+        FileUtils.copyFile(FileUtils.getFileAddressOfJava(testSrcPath, testClassName), javaBackup.getAbsolutePath());
     }
 
-    private void make(){
+    private void make() {
         try {
-            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+ testClassPath+" "+ targetFile.getAbsolutePath()));
-        } catch (IOException e){
+            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp " + buildClasspath(Arrays.asList(PathUtils.getJunitPath())) + " -d " + testClassPath + " " + targetFile.getAbsolutePath()));
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private String buildClasspath(List<String> additionalPath){
-        if (asserts._libPath.size()!=0){
+    private String buildClasspath(List<String> additionalPath) {
+        if (asserts._libPath.size() != 0) {
             additionalPath = new ArrayList<>(additionalPath);
             additionalPath.addAll(asserts._libPath);
         }
@@ -105,7 +103,7 @@ public class AssertComment {
         path += System.getProperty("path.separator");
         path += asserts._testClasspath;
         path += System.getProperty("path.separator");
-        path += StringUtils.join(additionalPath,System.getProperty("path.separator"));
+        path += StringUtils.join(additionalPath, System.getProperty("path.separator"));
         path += "\"";
         return path;
     }

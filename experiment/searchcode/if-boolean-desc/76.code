@@ -1,8 +1,0 @@
-/*   @Override
-public boolean equals(Object codeDesc) {
-boolean retVal = false;
-
-if (codeDesc instanceof CodeDesc){
-if(null != codeDesc){
-CodeDesc cd = (CodeDesc) codeDesc;
-

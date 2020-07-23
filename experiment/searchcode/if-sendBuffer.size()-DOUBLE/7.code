@@ -1,9 +1,0 @@
-public synchronized void setBufferSize(short packetBufferSize) {
-if(sendBuffer != null) {
-flush();
-}
-sendBuffer = ByteBuffer.allocate(packetBufferSize);
-}
-
-public synchronized void enableMultiMetrics(boolean enable) {
-

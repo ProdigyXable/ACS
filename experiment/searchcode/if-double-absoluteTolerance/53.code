@@ -1,4 +1,0 @@
-double relativeTolerance,
-double absoluteTolerance,
-double initialBracketingRange) {
-

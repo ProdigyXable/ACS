@@ -1,6 +1,0 @@
-ClazzTypeEnum tempClzEnum = null;
-for (ClazzTypeEnum clzEnum : ClazzTypeEnum.values()) {
-if (clzEnum.getClzType().equals(clzType.trim())) {
-for (ClazzTypeEnum clzEnum : ClazzTypeEnum.values()) {
-if (clzEnum.getImportClazz().equals(clzType.trim())) {
-

@@ -1,8 +1,0 @@
-boolean suppressLeadingZeroElements,
-boolean suppressTrailingZeroElements) {
-
-// This method is generally replacable by the format method, but
-* @param tokens set to look in
-* @param value to look for
-* @return boolean <code>true</code> if contained
-

@@ -1,7 +1,0 @@
-return false;
-GeoAvgCost other = (GeoAvgCost) obj;
-if (Double.doubleToLongBits(aboveAvgCost) != Double
-.doubleToLongBits(other.aboveAvgCost))
-return false;
-if (Double.doubleToLongBits(avgCost) != Double
-

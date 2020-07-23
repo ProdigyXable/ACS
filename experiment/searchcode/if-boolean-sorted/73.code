@@ -1,5 +1,0 @@
-public int size() { return sortedSet.size(); }
-public boolean isEmpty() { return sortedSet.isEmpty(); }
-public boolean contains(Object o ) { return sortedSet.contains(o); }
-public boolean containsAll(Collection c) { return containsAll(c); }
-

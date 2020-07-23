@@ -1,3 +1,0 @@
-long l = hasFloat ? Double.doubleToRawLongBits(x) : c.at8(i);
-if (l != 0) // ignore 0s in checksum to be consistent with sparse chunks
-

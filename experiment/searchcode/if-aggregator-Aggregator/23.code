@@ -1,7 +1,0 @@
-package com.huawei.unibi.molap.engine.columnar.aggregator.impl;
-
-import com.huawei.unibi.molap.engine.aggregator.MeasureAggregator;
-public DataAggregator(boolean isAggTable, ColumnarAggregatorInfo columnarAggregatorInfo)
-{
-if(!isAggTable)
-

@@ -1,8 +1,0 @@
-chrono = ((ReadablePartial) object).getChronology();
-chrono = DateTimeUtils.getChronology(chrono);
-}
-
-return chrono;
-}
-public int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono) {
-

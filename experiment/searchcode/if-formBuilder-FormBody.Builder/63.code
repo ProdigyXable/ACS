@@ -1,7 +1,0 @@
-baseGet(url,listener,null);return;
-}
-FormBody.Builder formBuilder = new FormBody.Builder();
-Set<Map.Entry<String, String>> entrySet = params.entrySet();
-for (String key : params.keySet()) {
-formBuilder.add(key, params.get(key));
-

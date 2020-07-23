@@ -1,6 +1,0 @@
-this.minimalAcceptedSelection = minimalAcceptedSelection;
-if (minimalAcceptedSelection < 1) {
-throw new IllegalArgumentException(&quot;The minimalAcceptedSelection (&quot; + minimalAcceptedSelection
-public void stepStarted(LocalSearchStepScope stepScope) {
-deciderScoreComparatorFactory.stepStarted(stepScope);
-

@@ -1,7 +1,0 @@
-public class RMethodWithReturnType<ReturnType> {
-private final String methodName;
-private final Class<ReturnType> returnType;
-
-public RMethodWithReturnType(final String methodName,
-final Class<ReturnType> returnType) {
-

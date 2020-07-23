@@ -1,4 +1,0 @@
-for (InetAddress inetAddress : inetAddresses) {
-//                log.debug(&quot;Found InetAddress [{}] with IP [{}] and Domain Name [{}]&quot;, inetAddress.getCanonicalHostName(), inetAddress.getHostAddress(), inetAddress.getHostName());
-if (inetAddress.getHostAddress() != null &amp;&amp; !inetAddress.getHostAddress().isEmpty())
-

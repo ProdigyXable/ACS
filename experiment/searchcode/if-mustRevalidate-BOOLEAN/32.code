@@ -1,6 +1,0 @@
-String always = properties.getProperty (&quot;alwaysrevalidate&quot;, &quot;false&quot;);
-alwaysRevalidate = Boolean.parseBoolean (always);
-if (!alwaysRevalidate) {
-String mustRevalidate = properties.getProperty (&quot;revalidate&quot;);
-if (mustRevalidate == null) {
-

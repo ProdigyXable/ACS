@@ -1,9 +1,0 @@
-session.removeAttribute(&quot;userDto&quot;);
-if ((userName != null)
-&amp;&amp; (userPassword != null)) {
-userDto.setPassword(userPassword);
-UserDto dto = new UserDto();
-
-dto = userService.loginUser(userDto);
-if ((dto != null)) {
-

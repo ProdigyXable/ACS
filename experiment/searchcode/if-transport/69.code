@@ -1,5 +1,0 @@
-IEbTransportFeeCaculator t = new TransportXiaoBao();
-if (transportMode.equals(ZcSettingConstants.TRANSPORT_MODE_XIAOBAO)) {
-t = new TransportXiaoBao();
-} else if (transportMode.equals(ZcSettingConstants.TRANSPORT_MODE_XIAOBAO_GUAHAO)) {
-

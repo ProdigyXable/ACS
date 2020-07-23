@@ -1,9 +1,0 @@
-import cc.mallet.optimize.GradientAscent;
-import cc.mallet.optimize.Optimizer;
-
-public class OptimizerDemo {
-
-public static void main(String[] args) {
-
-OptimizerSample optimizable = new OptimizerSample();
-

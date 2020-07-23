@@ -1,9 +1,0 @@
-new GooglePlusIgnoredMessageChecker(),
-};
-
-@Override
-public boolean shouldIgnore(OfflineMessage message)
-throws MessagingException {
-for (IgnoredMessageChecker checker: checkers) {
-if (checker.shouldIgnore(message)) {
-

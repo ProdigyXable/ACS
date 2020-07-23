@@ -1,8 +1,0 @@
-// retrieves the simulation descriptor
-Configuration configurationObject =
-configurationReader.load( name );
-
-// if the configuration was not found, throw an exception
-if ( configurationObject == null )
-throw new ConfigurationNotFoundException( name );
-

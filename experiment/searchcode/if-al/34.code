@@ -1,8 +1,0 @@
-public void sort(ArrayList<Integer> al) {
-
-for (int num : al) {
-if (num % 3 == 0) {
-firstAl.add(num);
-} else if (num % 3 == 1) {
-secondAl.add(num);
-

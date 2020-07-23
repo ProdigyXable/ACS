@@ -1,9 +1,0 @@
-class InternalParserDateTimeParser implements DateTimeParser, InternalParser {
-private final InternalParser underlying;
-
-private InternalParserDateTimeParser(InternalParser internalParser) {
-this.underlying = internalParser;
-}
-
-static DateTimeParser of(InternalParser internalParser) {
-

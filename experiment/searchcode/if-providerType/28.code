@@ -1,5 +1,0 @@
-public static AbstractLocaleProvider getInstance(String providerType) {
-if (providerType.equals(&quot;SESSION&quot;)) {
-return new LocaleSessionProvider();
-} else if (providerType.equals(&quot;COOKIE&quot;)) {
-

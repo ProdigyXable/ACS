@@ -1,9 +1,0 @@
-@JsonProperty(&quot;exclude&quot;)
-private boolean exclusion;
-
-public CategoryConditionType() {
-}
-
-public CategoryConditionType(Set<Integer> categoryIds, boolean exclusion) {
-this.categoryIds = categoryIds;
-

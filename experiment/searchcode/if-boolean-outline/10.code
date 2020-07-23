@@ -1,5 +1,0 @@
-public boolean run(Outline outline, Options options, ErrorHandler errorHandler) throws SAXException {
-
-for (ClassOutline classOutline : outline.getClasses()) {
-if(this.isResource(classOutline) &amp;&amp; !classOutline.ref.binaryName().equals(RESOURCE)) {
-

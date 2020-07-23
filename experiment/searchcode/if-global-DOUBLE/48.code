@@ -1,6 +1,0 @@
-import us.ihmc.robotics.dataStructures.variable.DoubleYoVariable;
-
-public class DoubleGlobalParameter extends GlobalParameter
-{
-public DoubleGlobalParameter(String name, String description, double value, GlobalParameterChangedListener listener)
-

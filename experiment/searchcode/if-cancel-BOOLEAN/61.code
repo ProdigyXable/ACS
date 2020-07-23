@@ -1,8 +1,0 @@
-@Override public boolean stop(boolean cancel) {
-return G.stop(cancel);
-}
-
-/** {@inheritDoc} */
-@Override public boolean stop(String name, boolean cancel) {
-return G.stop(name, cancel);
-

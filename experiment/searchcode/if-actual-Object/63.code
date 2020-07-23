@@ -1,8 +1,0 @@
-assertion.assertEquals( expected, actual );
-}
-
-public static void assertEquals( Object expected, Object actual )
-public static void assertThat( Object actual, Constraint constraint )
-{
-if( !constraint.eval( actual ) ){
-

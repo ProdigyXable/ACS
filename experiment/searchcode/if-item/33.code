@@ -1,8 +1,0 @@
-public static boolean isWeapon(ItemStack par1)
-{
-if(mod_retrogame.epeeToolE.itemID == par1.itemID)
-return true;
-if(mod_retrogame.epeeToolS.itemID == par1.itemID)
-return true;
-if(mod_retrogame.epeeToolR.itemID == par1.itemID)
-

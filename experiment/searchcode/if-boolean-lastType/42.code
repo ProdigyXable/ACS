@@ -1,8 +1,0 @@
-if (legType != null) {
-if (legType != lastType) {
-getComponent().update(legType.getEvents());
-}
-} else {
-if (lastType != null) {
-getComponent().update(new ArrayList<>());
-

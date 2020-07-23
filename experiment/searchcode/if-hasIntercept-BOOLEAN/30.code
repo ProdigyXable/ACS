@@ -1,8 +1,0 @@
-/*  23:    */   private final boolean hasIntercept;
-/*  24:    */
-/*  25:    */   public SimpleRegression()
-/*  26:    */   {
-/*  30:    */   public SimpleRegression(boolean includeIntercept)
-/*  31:    */   {
-/*  32:116 */     this.hasIntercept = includeIntercept;
-

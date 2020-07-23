@@ -1,9 +1,0 @@
-public class DictionaryResult extends Result {
-private String password;
-private boolean matchFound;
-
-public DictionaryResult(String password, boolean matchFound){
-this.matchFound = matchFound;
-if(matchFound){
-this.password = password;
-

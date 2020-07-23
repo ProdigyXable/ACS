@@ -1,7 +1,0 @@
-this.ruleSetToExecute = ruleSetToExecute;
-}
-
-@Override
-public boolean canExecute(IValidationRule rule, String propertyPath, ValidationContext context) {
-if(isNullOrEmpty(rule.getRuleSet()) &amp;&amp; ruleSetToExecute.length ==0)
-

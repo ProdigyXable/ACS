@@ -1,8 +1,0 @@
-final Drawable mForeground = this.mForeground;
-if (this.mForegroundBoundsChanged) {
-this.mForegroundBoundsChanged = true;
-}
-
-public void setForeground(final Drawable mForeground) {
-if (this.mForeground != mForeground) {
-

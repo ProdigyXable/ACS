@@ -1,6 +1,0 @@
-Type genericType = getTargetType(methodParam);
-Map<TypeVariable<?>, Type> typeVariableMap = getTypeVariableMap(clazz);
-Type genericType = method.getGenericReturnType();
-Map<TypeVariable<?>, Type> typeVariableMap = getTypeVariableMap(clazz);
-Type rawType = getRawType(genericType, typeVariableMap);
-

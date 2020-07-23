@@ -1,8 +1,0 @@
-private final static Logger logger = Logger.getRootLogger();
-
-public static boolean isQuerySuccessful (int affectedRows)   {
-if (affectedRows==1)   {
-return true;
-} else if (affectedRows ==0)   {
-return false;
-

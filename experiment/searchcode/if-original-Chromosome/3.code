@@ -1,8 +1,0 @@
-* Mutate the given chromosome. Randomly swaps two genes.
-*
-* @param originalChromosome the original chromosome.
-public Chromosome mutate(Chromosome originalChromosome)
-throws MathIllegalArgumentException {
-
-if (!(originalChromosome instanceof TspChromosome))
-

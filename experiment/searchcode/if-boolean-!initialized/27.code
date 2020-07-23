@@ -1,9 +1,0 @@
-package com.parse;
-
-/** Utility class that checks to see if Parse has already been initialized.
-*  This avoids repeat initialization problem.
-*/
-public class ParseCheck {
-
-public static boolean isParseInitialized(){
-

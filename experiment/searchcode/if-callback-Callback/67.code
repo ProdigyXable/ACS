@@ -1,6 +1,0 @@
-for (Callback callback : callbacks) {
-if (callback instanceof NameCallback) {
-NameCallback nameCallback = (NameCallback) callback;
-nameCallback.setName(name);
-} else if (callback instanceof PasswordCallback) {
-

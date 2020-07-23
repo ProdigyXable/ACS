@@ -1,8 +1,0 @@
-public class GeneticAlgCore {
-private MathExpressionParser MEP;
-
-public GeneticAlgCore(MathExpressionParser MEP) {
-double from = intervals[i][0];
-double to = intervals[i][1];
-if (r >= from &amp;&amp; r <= to) {
-

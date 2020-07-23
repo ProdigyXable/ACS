@@ -1,8 +1,0 @@
-if (this.lowerMargin != that.lowerMargin) {
-return false;
-}
-if (this.fixedAutoRange != that.fixedAutoRange) {
-return false;
-}
-if (this.autoTickUnitSelection != that.autoTickUnitSelection) {
-

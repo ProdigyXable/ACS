@@ -1,5 +1,0 @@
-// TL: retrieve preferences from global shared prefs
-SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-boolean autoStart = prefs.getBoolean(&quot;autoStart&quot;, true);
-if (intent.getAction().equals(ACTION) &amp;&amp; autoStart) {
-

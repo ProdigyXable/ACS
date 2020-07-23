@@ -1,9 +1,0 @@
-public class TFIDFFeatureGenerator extends UnigramFeatureGenerator {
-
-public TFIDFFeatureGenerator(int numOfDocs) {
-super(numOfDocs);
-}
-
-private double getTermIDF(String term) {
-int df = Document.documentFrequency(term);
-

@@ -1,8 +1,0 @@
-package edu.msergey.jalg.exercises.ch3.ex58;
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class FreqCalculator {
-public static Map<Character, Integer> calc(String str) {
-

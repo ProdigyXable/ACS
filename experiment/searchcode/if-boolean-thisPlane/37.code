@@ -1,7 +1,0 @@
-final Plane otherPlane = (Plane) hyperplane;
-final Plane thisPlane  = (Plane) getHyperplane();
-final Line  inter      = otherPlane.intersection(thisPlane);
-
-if (inter == null) {
-// the hyperplanes are parallel,
-

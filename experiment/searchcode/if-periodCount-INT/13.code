@@ -1,8 +1,0 @@
-private final int accountLevelCount;
-private final int periodCount;
-
-public VisitorBuildAccountTable(int rowCount, int accountLevelCount, int periodCount) {
-super();
-this.rowCount = rowCount;
-this.accountLevelCount = accountLevelCount;
-

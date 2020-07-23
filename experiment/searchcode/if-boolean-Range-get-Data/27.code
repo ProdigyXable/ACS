@@ -1,9 +1,0 @@
-private IDataStore dataStore;
-private Properties properties;
-private DepthRange range;
-private boolean enabled = false;
-if (enabled) {
-enable();
-if (getVisibleRange() != null) {
-render(getVisibleRange());
-

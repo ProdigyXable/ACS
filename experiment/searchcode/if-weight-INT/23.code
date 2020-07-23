@@ -1,7 +1,0 @@
-public class Knapsack {
-private int targetWeight;
-private int[] weightArr;
-private int size;
-for(int j = i; j < weightArr.length; j++) {
-if(weightArr[j] = tempWeight) {
-

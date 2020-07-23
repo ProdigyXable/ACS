@@ -1,9 +1,0 @@
-return false;
-ComplexBean other = (ComplexBean) obj;
-if (removedField == null)
-{
-if (other.removedField != null)
-return false;
-}
-else if (!removedField.equals(other.removedField))
-

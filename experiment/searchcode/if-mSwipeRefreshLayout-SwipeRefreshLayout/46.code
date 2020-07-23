@@ -1,9 +1,0 @@
-@BindView(R.id.swipe_refresh_layout)
-protected SwipeRefreshLayout mSwipeRefreshLayout;
-
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-@Override
-public void run() {
-if(mSwipeRefreshLayout != null){
-

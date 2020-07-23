@@ -1,7 +1,0 @@
-ArrayList<Double> arrayList = new ArrayList<Double>();
-if (cursor.moveToFirst()) {
-do {
-
-if (cursor.getDouble(cursor.getColumnIndex(nameColumn)) != 0) {
-arrayList.add(cursor.getDouble(cursor.getColumnIndex(nameColumn)));
-

@@ -1,8 +1,0 @@
-* @author Michael Kucinski
-*/
-public class FileBrowserUtil {
-
-public static Directory buildDirectory(File file) {
-Directory directory = buildSingleDirectory(file, null);
-if (file.listFiles() != null) {
-

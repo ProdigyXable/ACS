@@ -1,5 +1,0 @@
-log.trace(&quot;Voting for scheduler {}&quot;, scheduler.getName());
-if (registeredSchedulerService.ifNoMasterSchedulerRegisterThisScheduler(scheduler.getName())) {
-scheduler.enable();
-} else if (registeredSchedulerService.ifThisSchedulerIsRegisteredAsMasterIncreaseHeartbeat(scheduler.getName())) {
-

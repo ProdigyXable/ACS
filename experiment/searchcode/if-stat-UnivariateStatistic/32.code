@@ -1,8 +1,0 @@
-package org.apache.commons.math3.stat.descriptive;
-
-import java.io.Serializable;
-import java.lang.reflect.InvocationTargetException;
-public double apply(UnivariateStatistic stat) {
-
-// No try-catch or advertised exception here because arguments are guaranteed valid
-

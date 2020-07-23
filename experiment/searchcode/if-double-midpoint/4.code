@@ -1,6 +1,0 @@
-testArgumentsOnNull(first, second);
-testArgumentsOnType(first, second);
-
-double firstMidpoint = first.calculateRelativeChangeInMidpoint();
-double secondMidpoint = second.calculateRelativeChangeInMidpoint();
-

@@ -1,6 +1,0 @@
-private TransportTube findTransport(World w, Vector position, String transportID) {
-for (VoxelOccupant occ : w.getOccupants(position)) {
-if (!(occ instanceof TransportTube)) continue;
-TransportTube transport = (TransportTube)occ;
-if (transport.getTransportID().equals(transportID)) {
-

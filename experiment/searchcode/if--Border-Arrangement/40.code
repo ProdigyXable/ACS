@@ -1,8 +1,0 @@
-mySettingsAware = (ArrangementStandardSettingsAware)rearranger;
-
-final ArrangementColorsProvider colorsProvider;
-if (rearranger instanceof ArrangementColorsAware) {
-CommonCodeStyleSettings commonSettings = settings.getCommonSettings(myLanguage);
-commonSettings.setArrangementSettings(createSettings());
-if (myForceArrangementPanel != null) {
-

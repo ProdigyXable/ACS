@@ -1,8 +1,0 @@
-abstract class AbstractRangeMap<A,B>{
-
-protected boolean fromInclusive, toInclusive = false;
-private boolean descending = false;
-if(from == null) return true;
-if (descending) {
-return fromInclusive ? ((Comparable<? super A>) from).compareTo(key) >= 0 :  ((Comparable<? super A>) from).compareTo(key) < 0;
-

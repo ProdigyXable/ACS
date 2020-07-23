@@ -1,8 +1,0 @@
-query.addAscendingOrder(&quot;objectId&quot;);
-
-if (lastObjectId != null &amp;&amp; !lastObjectId.equals(&quot;&quot;)) {
-query.whereGreaterThan(&quot;objectId&quot;, lastObjectId);
-query.addAscendingOrder(&quot;objectId&quot;);
-if (lastObjectId != null &amp;&amp; !lastObjectId.equals(&quot;&quot;)) {
-query.whereGreaterThan(&quot;objectId&quot;, lastObjectId);
-

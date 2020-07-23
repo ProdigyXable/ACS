@@ -1,9 +1,0 @@
-students = new LinkedList();
-}
-
-public boolean addStudent(String name){
-boolean added;
-added = students.add(name);
-if(added == true){
-System.out.println(&quot;Student was successfully added.&quot;);
-

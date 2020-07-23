@@ -1,7 +1,0 @@
-public class Solution {
-public void deleteNode(ListNode node) {
-ListNode next = node.next;
-while (true) {
-node.val = next.val;
-if(next.next == null) {
-

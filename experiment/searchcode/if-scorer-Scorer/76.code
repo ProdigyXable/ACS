@@ -1,9 +1,0 @@
-import java.util.List;
-
-public class CompositeKeytermWindowScorer implements KeytermWindowScorer {
-
-private List<KeytermWindowScorer> scorers;
-
-public CompositeKeytermWindowScorer () {
-super();
-

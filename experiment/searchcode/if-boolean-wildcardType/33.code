@@ -1,5 +1,0 @@
-} else if (a instanceof WildcardType) {
-WildcardType wildcardType = (WildcardType) a;
-for (Type lowerBound : wildcardType.getLowerBounds()) {
-if (!isAssignableFrom(b, lowerBound)) {
-

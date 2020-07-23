@@ -1,7 +1,0 @@
-for(Item item : items) {
-
-if (item.name.contains(&quot;Sulfuras&quot;)) {
-item.quality = 80;
-} else if(item.name.contains(&quot;Conjured&quot;)){
-item.sellIn = item.sellIn - 1;
-

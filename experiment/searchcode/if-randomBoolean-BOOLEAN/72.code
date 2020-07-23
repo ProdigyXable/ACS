@@ -1,8 +1,0 @@
-public void testToSearchRequest() {
-CountRequest countRequest;
-if (randomBoolean()) {
-countRequest = new CountRequest();
-}
-if (randomBoolean()) {
-countRequest.indicesOptions(IndicesOptions.fromOptions(randomBoolean(), randomBoolean(), randomBoolean(), randomBoolean()));
-

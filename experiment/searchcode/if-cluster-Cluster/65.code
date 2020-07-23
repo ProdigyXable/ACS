@@ -1,7 +1,0 @@
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = &quot;getClusterSANVolumesContext&quot;, propOrder = {&quot;cluster&quot;})
-public class GetClusterSANVolumesContext {
-public boolean equals(Object obj) {
-if (!(obj instanceof GetClusterSANVolumesContext)) {
-return false;
-

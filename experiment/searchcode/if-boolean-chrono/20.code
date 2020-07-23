@@ -1,9 +1,0 @@
-public Chronometer chrono;
-private boolean chronoStarted=false;
-private boolean chronoResetted=false;
-public void onClick(View v) {
-switch (v.getId()) {
-case R.id.btn_startstop:
-if (chronoStarted) {
-chrono.stop();
-

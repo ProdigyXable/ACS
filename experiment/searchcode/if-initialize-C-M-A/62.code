@@ -1,8 +1,0 @@
-public void addInitializeCapCountRequest (SparkInitializeCapCountRequest initializeCapCountRequest) {
-if (! initializeCapCountRequests.contains(initializeCapCountRequest)) {
-CapCountService capCountService;
-
-try {
-partitionId = TaskContext.getPartitionId();
-if (! initializeCapCountRequests.hasNext()) {
-

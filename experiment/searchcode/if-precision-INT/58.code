@@ -1,9 +1,0 @@
-UnitMultipliers precisionUnit, int point, UnitMultipliers pointUnit) {
-if (precisionUnit == null) {
-throw new IllegalArgumentException();
-// precision = int( precision[:-1] )
-
-// if points.isdigit():
-// pointsUnit = None
-// points = int(points)
-

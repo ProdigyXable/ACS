@@ -1,7 +1,0 @@
-this.allAdminContainerMappings = allAdminContainerMappings;
-}
-
-public boolean isValidContainer(long containerId) {
-AdminContainerMapping adminContainerMapping = allAdminContainerMappings.get();
-if(adminContainerMapping == null) {
-

@@ -1,8 +1,0 @@
-throws Exception;
-
-public abstract boolean getBoolean(String asKey, boolean abDefault)
-public abstract void set(String asKey, Date adtValue);
-
-public abstract void set(String asKey, boolean abValue);
-}
-

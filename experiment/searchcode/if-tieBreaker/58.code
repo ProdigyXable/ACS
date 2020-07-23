@@ -1,5 +1,0 @@
-while (maxValue.ordinal() > Value.NULL.ordinal()){
-if (CardUtils.countValues(cards, maxValue) >= PAIR_AMOUNT){
-while (tieBreaker.size() != TIE_BREAKER_SIZE){
-if (!tieBreaker.contains(maxCardValue)){
-

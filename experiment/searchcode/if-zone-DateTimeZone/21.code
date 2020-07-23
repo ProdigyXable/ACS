@@ -1,9 +1,0 @@
-public class DateToJavaOffsetTimeConverter implements Converter<Date, OffsetTime> {
-private final ZoneId dateTimeZone;
-this.dateTimeZone = dateTimeZone;
-}
-
-@Override
-public OffsetTime convert(Date in) throws Exception {
-if (in == null) return null;
-

@@ -1,5 +1,0 @@
-public BasicEvaledPop(List<Indiv> pop, FitFun fitness, int gen) {
-fitness.initGeneration(gen);
-FitVal fitVal = ind.getFitVal();
-if (fitVal == null || fitness.doRecomputeFitVal()) {
-

@@ -1,8 +1,0 @@
-package asyablindrat;
-
-public class Delay {
-private long delayNanos;
-private long passedNanos;
-public Delay(long delayMillis) {
-this.delayNanos = TimeConverter.millisToNanos(delayMillis);
-

@@ -1,8 +1,0 @@
-public class Solution {
-public int removeDuplicates(int[] A) {
-if(A.length<=0)
-for(int i = 1; i < A.length; i++) {
-int j = i+index;
-if(j>=A.length)
-return length;
-

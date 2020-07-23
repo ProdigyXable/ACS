@@ -1,5 +1,0 @@
-while (b.compareTo(BigInteger.ZERO) > 0) {
-if (!b.and(BigInteger.ONE).equals(BigInteger.ZERO)) {
-private static BigInteger addmod(BigInteger a, BigInteger b, BigInteger p) {
-if (p.subtract(b).compareTo(a) > 0) {
-

@@ -1,9 +1,0 @@
-public class FilesystemSizeFormatter {
-public static String format(long sizeInBytes) {
-if(sizeInBytes < KILOBYTE) {
-return integerFormatter.format(sizeInBytes);
-}
-
-if(sizeInBytes < MEGABYTE) {
-double kilobytes = ((double) sizeInBytes) / ((double) KILOBYTE);
-

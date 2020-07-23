@@ -1,6 +1,0 @@
-public static AuthenticatorFactory getFactory() {
-if(factory == null) {
-synchronized (AuthenticatorFactory.class) {
-if(factory == null) {
-factory = new AuthenticatorFactory();
-

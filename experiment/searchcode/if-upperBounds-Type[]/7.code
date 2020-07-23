@@ -1,8 +1,0 @@
-public class SimpleWildcardType implements WildcardType {
-
-private final Type[] upperBounds;
-private final Type[] lowerBounds;
-
-public SimpleWildcardType(Type[] upperBounds, Type[] lowerBounds) {
-this.upperBounds = upperBounds;
-

@@ -1,8 +1,0 @@
-public void setDetailedUrl(String detailedUrl) {
-if (!TextUtils.isEmpty(detailedUrl)) {
-this.detailedUrl = detailedUrl;
-@Override
-public boolean equals(Object obj) {
-if (null == obj) {
-return false;
-

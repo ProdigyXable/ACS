@@ -1,9 +1,0 @@
-this.defaultOptional = defaultOptional;
-}
-
-public Boolean getOptional(ProcessOutline outlineProcessor,
-FieldOutline fieldOutline, Options options) {
-public XBoolean createOptional(ProcessOutline outlineProcessor,
-FieldOutline fieldOutline, Options options) {
-final Boolean optional = getOptional(outlineProcessor, fieldOutline,
-

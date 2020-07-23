@@ -1,8 +1,0 @@
-n       = address.length;
-letters = new Letter[n];
-
-boolean hasInitial = false;
-for (int i = 0; i < n; i++) {
-letters[i] = new Letter(address[i], maxTime[i]);
-if (!hasInitial &amp;&amp; initialPos == address[i]) {
-

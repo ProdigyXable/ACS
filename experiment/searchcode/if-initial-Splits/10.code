@@ -1,5 +1,0 @@
-public void solveCase(Scanner sc, PrintWriter pw) throws Exception {
-int initialPlates = sc.nextInt();
-List<Integer> plates = new ArrayList<>();
-for( int i = 0; i < initialPlates; i++ ) {
-

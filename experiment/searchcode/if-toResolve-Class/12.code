@@ -1,7 +1,0 @@
-public static Type getSuperGenericInterface(Class implementerType, Class toResolve) {
-Type[] genericInterfaces = implementerType.getGenericInterfaces();
-if (genericInterface == toResolve)
-return genericInterface;
-
-if (genericInterface instanceof ParameterizedType) {
-

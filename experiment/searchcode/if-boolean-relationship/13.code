@@ -1,8 +1,0 @@
-Relationship newRelationship = null;
-try {
-newRelationship = repository.findRelationshipById(relationId);
-if (newRelationship != null) {
-data.setRelationshipId(newRelationship.getRelationshipId());
-
-if (newRelationship.getObjectDefination() != null)
-

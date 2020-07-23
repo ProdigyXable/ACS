@@ -1,3 +1,0 @@
-protected String buildIDPattern(String[] matches, final Boolean isMultiPart) {
-if (Boolean.FALSE.equals(isMultiPart)) {
-

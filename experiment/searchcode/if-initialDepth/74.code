@@ -1,6 +1,0 @@
-private static void parseLayout(List<DataFormLayoutElement> layout, XmlPullParser parser) throws XmlPullParserException, IOException {
-final int initialDepth = parser.getDepth();
-case XmlPullParser.END_TAG:
-if (parser.getDepth() == initialDepth) {
-break outerloop;
-

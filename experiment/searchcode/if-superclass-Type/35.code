@@ -1,8 +1,0 @@
-public static Type getType(Class subclass) {
-
-Type superclass = subclass.getGenericSuperclass();
-if (superclass instanceof Class)
-
-{
-throw new RuntimeException(&quot;Missing type parameter.&quot;);
-

@@ -1,6 +1,0 @@
-Class genericClass;
-
-if (genericType instanceof WildcardType) {
-WildcardType wildcardType = (WildcardType) genericType;
-if (wildcardType.getLowerBounds().length > 0) {
-

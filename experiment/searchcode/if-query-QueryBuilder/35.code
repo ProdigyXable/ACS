@@ -1,4 +1,0 @@
-// Create table id not exist
-StringBuilder queryBuilder = new StringBuilder();
-queryBuilder.append(&quot;CREATE TABLE IF NOT EXISTS &quot;);
-

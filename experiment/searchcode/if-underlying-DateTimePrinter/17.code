@@ -1,7 +1,0 @@
-class DateTimePrinterInternalPrinter implements InternalPrinter {
-
-private final DateTimePrinter underlying;
-
-static InternalPrinter of(DateTimePrinter underlying) {
-if (underlying instanceof InternalPrinterDateTimePrinter) {
-

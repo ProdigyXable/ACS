@@ -1,5 +1,0 @@
-public static class Scale extends CauchyDistributionVisualizer {
-
-@Override
-protected double evaluate(CauchyDistributionImpl d) {
-

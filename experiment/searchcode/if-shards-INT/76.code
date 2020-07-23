@@ -1,8 +1,0 @@
-private final ClusterHealthStatus status;
-private final int relocatingShards;
-private final int unassignedShards;
-private final int activeShards;
-private final int initializingShards;
-
-public ESClusterHealth(ESClusterHealthResponse r) {
-

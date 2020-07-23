@@ -1,5 +1,0 @@
-public int canJumpHelper(int[] A, int index, int[] jump)  {
-if(index > A.length-1)  return -1;
-if(jump[index]!=0)  return jump[index];
-// If any subpath is jumpable, return jumpable
-

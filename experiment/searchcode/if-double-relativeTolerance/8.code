@@ -1,4 +1,0 @@
-* @param relativeTolerance
-* @return true if either absolute or relative requirement is satisfied.
-public static boolean approximatelyEquals(double x, double y, double absoluteTolerance, double relativeTolerance) {
-

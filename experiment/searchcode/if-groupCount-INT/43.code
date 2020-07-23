@@ -1,4 +1,0 @@
-System.out.println(mapMapges.groupCount());
-for (int i = 1; i <= mapMapges.groupCount(); i++) {
-for (int i = 1; i <= mapMapges.groupCount(); i++) {
-

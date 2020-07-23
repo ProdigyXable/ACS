@@ -1,8 +1,0 @@
-if (!StringUtil.isHttpUrl(url))
-return null;
-Builder builder = new Request.Builder().url(url);
-if (isPost) {
-okhttp3.MultipartBody.Builder formBuilder = new MultipartBody.Builder();
-if (null == paramMaps)
-paramMaps = new HashMap<String, String>();
-

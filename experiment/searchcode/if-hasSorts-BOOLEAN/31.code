@@ -1,8 +1,0 @@
-} else if (context.parseFieldMatcher().match(currentFieldName, EXPLAIN_FIELD)) {
-builder.explain = parser.booleanValue();
-} else if (context.parseFieldMatcher().match(currentFieldName, TRACK_SCORES_FIELD)) {
-boolean hasSorts = sorts != null;
-out.writeBoolean(hasSorts);
-if (hasSorts) {
-out.writeVInt(sorts.size());
-

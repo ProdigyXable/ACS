@@ -1,8 +1,0 @@
-public class HelloPrimaySecondaryCommand extends HystrixCommand<String> {
-
-private final int id;
-private final boolean usePrimary;
-private long sleep = 0;
-
-public HelloPrimaySecondaryCommand(int id, boolean usePrimary, long sleep) {
-

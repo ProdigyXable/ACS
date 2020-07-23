@@ -1,9 +1,0 @@
-boolean executeImmediate = false;
-synchronized (this) {
-if (executedListeners) {
-this.listeners = listeners;
-}
-}
-if (executeImmediate) {
-executeListener(listener);
-

@@ -7,6 +7,6 @@ public class Fagge implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         // ef * (1 + 1 / (2* ep + ef))
-        return (ef ) / (ef + nf );
+        return (ef) / (ef + nf);
     }
 }

@@ -1,6 +1,0 @@
-public class Problem24 {
-public String lexicographicPermutations(int numDigits, int searched) {
-long numPermutations = factorial(numDigits);
-Set<Integer> allowedDigits = new TreeSet<Integer>();
-for (int i = 0; i < numDigits; i++) {
-

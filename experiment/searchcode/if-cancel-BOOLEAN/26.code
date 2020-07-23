@@ -1,7 +1,0 @@
-public interface ICancelable {
-
-boolean cancel(boolean mayInterruptIfRunning);
-
-boolean isCancelled();
-}
-

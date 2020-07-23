@@ -1,9 +1,0 @@
-public class DirectoryIDFilePattern implements FilePattern {
-
-protected final int[] dirID;
-protected final boolean ascending, sparse;
-
-
-public DirectoryIDFilePattern(int dirID, boolean ascending, boolean sparse) {
-this(new int[] {dirID}, ascending, sparse);
-

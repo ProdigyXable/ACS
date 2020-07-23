@@ -1,7 +1,0 @@
-Vertex vFrom;
-Vertex vTo;
-
-for (EntityLogisticsNetwork e : network)
-{
-if ((vFrom = vertexHashMap.get(e.getSourceName())) == null)
-

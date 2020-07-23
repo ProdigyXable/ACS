@@ -1,8 +1,0 @@
-public Double putSmaller(String key, Double value) {
-Double oldValue = super.get(key);
-if (oldValue != null) {
-if (oldValue > value)
-Double oldValue = super.get(key);
-if (oldValue != null) {
-if (oldValue < value)
-

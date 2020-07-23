@@ -1,8 +1,0 @@
-public static CharSequence escapeForXML(String str) {
-if (str == null) {
-return null;
-break;
-}
-if (charSequence != null) {
-if (i > i2) {
-

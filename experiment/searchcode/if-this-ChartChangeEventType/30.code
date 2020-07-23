@@ -1,5 +1,0 @@
-else if (this.equals(ChartChangeEventType.NEW_DATASET)) {
-return ChartChangeEventType.NEW_DATASET;
-}
-else if (this.equals(ChartChangeEventType.DATASET_UPDATED)) {
-

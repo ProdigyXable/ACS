@@ -1,8 +1,0 @@
-final class c implements ViewTreeObserver$OnPreDrawListener
-{
-final /* synthetic */ Fragment F;
-final /* synthetic */ Object I;
-final /* synthetic */ ArrayList J;
-final /* synthetic */ f K;
-final /* synthetic */ boolean L;
-

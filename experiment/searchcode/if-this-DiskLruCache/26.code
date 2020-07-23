@@ -1,9 +1,0 @@
-return 20971520;
-}
-
-protected DiskLruCache getDiskLruCache() {
-if (this.diskLruCache == null) {
-synchronized (this) {
-if (this.diskLruCache == null) {
-try {
-

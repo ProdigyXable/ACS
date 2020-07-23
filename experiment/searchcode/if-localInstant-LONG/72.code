@@ -1,6 +1,0 @@
-private long localToUTC(long localInstant) {
-DateTimeZone zone = getZone();
-int offset = zone.getOffsetFromLocal(localInstant);
-long utcInstant = localInstant - offset;
-int offsetBasedOnUtc = zone.getOffset(utcInstant);
-

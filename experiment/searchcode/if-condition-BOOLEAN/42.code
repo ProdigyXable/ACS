@@ -1,9 +1,0 @@
-private final boolean[] conditions;
-private boolean conditionToReturn;
-
-BooleanComparator(boolean[] conditions) {
-abstract boolean isFalse();
-
-boolean whenOneIs(boolean expectedCondition) {
-for (boolean condition : conditions) {
-

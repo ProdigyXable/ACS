@@ -1,7 +1,0 @@
-public void destory() {
-try {
-if (jsonGenerator != null) {
-jsonGenerator.flush();
-}
-if (!jsonGenerator.isClosed()) {
-

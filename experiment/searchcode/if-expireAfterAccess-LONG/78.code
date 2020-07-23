@@ -1,7 +1,0 @@
-synchronized public ICache createCache(String name, long capacity, long expireAfterWrite,
-long expireAfterAccess) {
-String cacheName = buildCacheName(name);
-if (cache == null) {
-// check if custom cache settings exist
-long cacheCapacity = capacity;
-

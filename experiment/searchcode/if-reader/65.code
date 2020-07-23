@@ -1,5 +1,0 @@
-//        for (Reader a : readerDAO.getAll()) {
-//            if (a.getName().equals(oldName)) {
-//        for (Reader a : readerDAO.getAll()) {
-//            if (a.getName().equalsIgnoreCase(name)) {
-

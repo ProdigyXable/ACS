@@ -1,3 +1,0 @@
-/** @return <b>true</b> - if task should be interrupted; <b>false</b> - otherwise */
-private boolean waitIfPaused() {
-

@@ -1,5 +1,0 @@
-if (throwable != null) {
-if (throwable instanceof Error) {
-throw (Error) throwable;
-} else if (throwable instanceof RuntimeException) {
-

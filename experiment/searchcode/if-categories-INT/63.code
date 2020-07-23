@@ -1,9 +1,0 @@
-if (obj == null)
-return false;
-if (getClass() != obj.getClass())
-return false;
-Categories other = (Categories) obj;
-if (categories == null) {
-if (other.categories != null)
-return false;
-

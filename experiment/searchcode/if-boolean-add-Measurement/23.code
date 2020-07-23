@@ -1,6 +1,0 @@
-/*  46 */     log.info(&quot;Measurement Engine initialized.&quot;);
-/*  47 */     TaskQueue.start();
-/*     */
-/*  50 */     addMeasurementProducer(httpErrorMeasurementProducer);
-/*  51 */     addMeasurementProducer(networkMeasurementProducer);
-

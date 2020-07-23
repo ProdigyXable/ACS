@@ -1,8 +1,0 @@
-* @param errorMessage error message
-* @throws FoodNetworkException if validation fails
-*/
-public ErrorMessage(long messageTimestamp, String errorMessage)
-throws FoodNetworkException {
-if (messageTimestamp < 0){
-throw new FoodNetworkException(&quot;Bad meesagetimestamp&quot;);
-

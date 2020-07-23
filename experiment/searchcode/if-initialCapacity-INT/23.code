@@ -1,9 +1,0 @@
-public ByteBuf buffer(int initialCapacity)
-{
-if (this.directByDefault) {
-return directBuffer(initialCapacity);
-public ByteBuf buffer(int initialCapacity, int maxCapacity)
-{
-if (this.directByDefault) {
-return directBuffer(initialCapacity, maxCapacity);
-

@@ -1,8 +1,0 @@
-private MessageBus messageBus;
-private String input = &quot;&quot;;
-private int maxInputLength;
-
-public InputRecorder(MessageBus messageBus, int maxInputLength){
-this.messageBus = messageBus;
-this.maxInputLength = maxInputLength;
-

@@ -1,6 +1,0 @@
-public BracketingNthOrderBrentSolver(final double absoluteAccuracy,
-final int maximalOrder)
-throws NumberIsTooSmallException {
-super(absoluteAccuracy);
-if (maximalOrder < 2) {
-

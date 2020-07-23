@@ -1,6 +1,0 @@
-double h, Range heightRange,
-LengthConstraintType heightConstraintType) {
-if (widthConstraintType == null) {
-public RectangleConstraint toUnconstrainedHeight() {
-if (this.heightConstraintType == LengthConstraintType.NONE) {
-

@@ -1,8 +1,0 @@
-public LanczosIterationBase(int maxIterations, double relativeTolerance, double absoluteTolerance)
-{
-super(maxIterations, relativeTolerance, absoluteTolerance);
-}
-
-@Override
-public boolean isFinished(TridiagonalMatrix tmatrix) {
-

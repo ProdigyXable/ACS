@@ -1,9 +1,0 @@
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof CategoryAnchor)) {
-if (this.equals(CategoryAnchor.START)) {
-return CategoryAnchor.START;
-}
-else if (this.equals(CategoryAnchor.MIDDLE)) {
-

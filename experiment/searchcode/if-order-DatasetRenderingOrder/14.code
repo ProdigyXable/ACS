@@ -1,9 +1,0 @@
-return true;
-}
-if (!(o instanceof DatasetRenderingOrder)) {
-return false;
-}
-
-DatasetRenderingOrder order = (DatasetRenderingOrder) o;
-if (!this.name.equals(order.toString())) {
-

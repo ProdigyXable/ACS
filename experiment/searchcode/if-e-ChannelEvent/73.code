@@ -1,8 +1,0 @@
-import com.cboe.util.channel.ChannelAdapterReferenceCounter;
-import com.cboe.util.channel.ChannelEvent;
-import com.cboe.util.channel.ChannelListener;
-channelEvent.setChannelAdapter(null);
-if (!isFinished)
-{
-channelEventCache.returnChannelEvent(channelEvent);
-

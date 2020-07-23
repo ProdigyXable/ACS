@@ -6,6 +6,6 @@ package cn.edu.pku.sei.plde.ACS.localization.metric;
 public class Zoltar implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
-        return ef / (ef + nf + ep + (10000 * nf * ep)/(double)ef);
+        return ef / (ef + nf + ep + (10000 * nf * ep) / (double) ef);
     }
 }

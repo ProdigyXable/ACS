@@ -1,9 +1,0 @@
-public class ConfigurationChangeResult implements DataSerializable{
-private boolean isSuccessful = true;
-private String errorMessage;
-this.errorMessage = errorMessage;
-this.exception = exception;
-}
-
-public void setIsSuccessful(boolean isSuccessful) {
-

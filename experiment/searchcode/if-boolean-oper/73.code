@@ -1,9 +1,0 @@
-package testbed;
-
-
-class PasteOper extends Undoable {
-private boolean applyOffsets;
-public PasteOper(boolean applyOffsets) {
-this.applyOffsets = applyOffsets;
-valid = !Editor.getClipboard().isEmpty();
-

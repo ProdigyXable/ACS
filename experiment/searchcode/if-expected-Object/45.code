@@ -1,8 +1,0 @@
-package microunit;
-
-public class Assert {
-
-public static void assertEquals(Object current, Object expected) {
-if ((current == null &amp;&amp;  expected != null)
-|| (current != null &amp;&amp;  expected == null)
-

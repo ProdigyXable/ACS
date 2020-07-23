@@ -1,8 +1,0 @@
-import org.jfree.data.category.CategoryDataset;
-import org.jfree.util.PublicCloneable;
-
-public class StandardCategorySeriesLabelGenerator
-@Override
-public String generateLabel(CategoryDataset categoryDataset, int n2) {
-if (categoryDataset != null) return MessageFormat.format(this.formatPattern, this.createItemArray(categoryDataset, n2));
-

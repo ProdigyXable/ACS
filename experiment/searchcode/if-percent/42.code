@@ -1,8 +1,0 @@
-* @author wm
-*/
-public class DrivePercentBoth extends CommandGroup {
-
-public DrivePercentBoth(double percent) {
-if(Math.abs(percent) > 1){
-percent = percent/Math.abs(percent);
-

@@ -1,8 +1,0 @@
-public class MeasurementCriterion implements Serializable{
-private String measureUri;
-private Double lower;
-private Double upper;
-private CriterionOperator operator;
-
-public MeasurementCriterion(String measureUri,CriterionOperator operator, Double value) {
-

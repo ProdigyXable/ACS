@@ -1,6 +1,0 @@
-private long getX(TimePeriod timePeriod) {
-if (this.xPosition == TimePeriodAnchor.START) {
-return timePeriod.getStart().getTime();
-}
-if (this.xPosition == TimePeriodAnchor.MIDDLE) {
-

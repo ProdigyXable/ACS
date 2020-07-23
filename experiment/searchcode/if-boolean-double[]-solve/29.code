@@ -1,3 +1,0 @@
-booleanArray0[2] = true;
-double[] doubleArray2 = Optimization.solveTriangle(matrix0, doubleArray1, false, booleanArray0);
-

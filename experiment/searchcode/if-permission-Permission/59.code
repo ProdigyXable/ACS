@@ -1,9 +1,0 @@
-package HuaHuaMan.Practice_01;
-
-import org.apache.shiro.authz.Permission;
-import org.apache.shiro.authz.permission.PermissionResolver;
-public Permission resolvePermission(String stringPermission) {
-
-if (stringPermission.startsWith(&quot;+&quot;)){
-return new BitPermission(stringPermission);
-

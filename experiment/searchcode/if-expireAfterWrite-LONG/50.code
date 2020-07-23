@@ -1,7 +1,0 @@
-extends CacheBuilderSpec.DurationParser
-{
-protected void parseDuration(CacheBuilderSpec paramCacheBuilderSpec, long paramLong, TimeUnit paramTimeUnit)
-{
-if (writeExpirationTimeUnit == null) {}
-for (boolean bool = true;; bool = false)
-

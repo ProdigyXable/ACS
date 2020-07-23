@@ -1,7 +1,0 @@
-public class SoundNode extends Node {
-
-//// Exposed Field ////////////////
-private String	minFrontExposedFieldName	= &quot;minFront&quot;;
-private String	maxFrontExposedFieldName	= &quot;maxFront&quot;;
-private String	minBackExposedFieldName		= &quot;minBack&quot;;
-

@@ -1,6 +1,0 @@
-this.tokenizedPattern = tokens;
-}
-
-public boolean matchPath(final TokenizedPath path, final boolean isCaseSensitive) {
-return SelectorUtils.matchPath(this.tokenizedPattern, path.getTokens(), isCaseSensitive);
-

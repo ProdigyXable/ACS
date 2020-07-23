@@ -1,7 +1,0 @@
-import paperman.model.SecurityConstants;
-import paperman.service.MasterService;
-import paperman.service.ReportService;
-private static ApplicationContext appContext;
-private static MasterService masterService;
-private static TransaksiService transaksiService;
-

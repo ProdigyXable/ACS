@@ -1,8 +1,0 @@
-public boolean equals(Object o) {
-if (this == o) return true;
-if (!(o instanceof PackageRelationship)) return false;
-
-PackageRelationship relationship = (PackageRelationship) o;
-
-if (requiresUriTargets != relationship.requiresUriTargets) return false;
-

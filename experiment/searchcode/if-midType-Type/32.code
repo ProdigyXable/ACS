@@ -1,4 +1,0 @@
-if (mName != null ? !mName.equals(agentEmp.mName) : agentEmp.mName != null) return false;
-if (mIdType != null ? !mIdType.equals(agentEmp.mIdType) : agentEmp.mIdType != null) return false;
-if (mIdDate != null ? !mIdDate.equals(agentEmp.mIdDate) : agentEmp.mIdDate != null) return false;
-

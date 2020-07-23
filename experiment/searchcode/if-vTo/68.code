@@ -1,8 +1,0 @@
-costCenterVTO.setBalanceAmt(costCenterVTO.getBudgetAmt() - costCenterVTO.getSpentAmt());
-if (&quot;SA&quot;.equalsIgnoreCase(costCenterAction.getTypeOfUser())) {
-balance = balance + costCenterVTO.getBalanceAmt();
-}
-costCenterDashBoardList.add(costCenterVTO);
-}
-if (&quot;SA&quot;.equalsIgnoreCase(costCenterAction.getTypeOfUser())) {
-

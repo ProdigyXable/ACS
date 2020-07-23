@@ -1,9 +1,0 @@
-* @param defaultValue the default value to return if the setting does not exist.
-* @return the setting value if found, else defaultValue.
-Setting setting = getSettingFromGroups(settingGroups, name);
-if (setting != null) {
-return setting.getValue();
-}
-
-return defaultValue;
-

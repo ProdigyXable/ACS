@@ -1,9 +1,0 @@
-super.executeCommand();
-if (!conflict.getMy().isNew() &amp;&amp; conflict.getMy().hasEqualSemanticAttributes(conflict.getTheir())) {
-return Objects.hash(super.hashCode(), conflict);
-}
-
-@Override
-public boolean equals(Object obj) {
-if (this == obj) return true;
-

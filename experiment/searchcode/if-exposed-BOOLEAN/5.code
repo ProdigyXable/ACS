@@ -1,9 +1,0 @@
-public boolean equals(Object obj) {
-if (this == obj)
-return true;
-if (obj == null)
-return false;
-if (exposed == null) {
-if (other.exposed != null)
-return false;
-

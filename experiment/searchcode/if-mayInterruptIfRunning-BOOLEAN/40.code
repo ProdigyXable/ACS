@@ -1,8 +1,0 @@
-public interface IProducer {
-
-public void submit(DataRequest request);
-
-public boolean cancel(boolean mayInterruptIfRunning);
-
-}
-

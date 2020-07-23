@@ -1,8 +1,0 @@
-private List<Long> requestCounter = new ArrayList<Long>();
-private int maxRequests;
-private long pace=Long.MAX_VALUE;
-private String msg;
-
-public RequestCounter(int maxRequests, long pace){
-this.maxRequests = maxRequests;
-

@@ -1,8 +1,0 @@
-ChartIndex index = (ChartIndex) interner.intern(tempIndex);
-builtLIndexes.add(index);
-if (index == tempIndex) {
-tempIndex = new ChartIndex();
-index = (ChartIndex) interner.intern(tempIndex);
-if (index == tempIndex) {
-tempIndex = new ChartIndex();
-

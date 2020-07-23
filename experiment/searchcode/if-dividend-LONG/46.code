@@ -1,8 +1,0 @@
-* https://leetcode.com/problems/divide-two-integers/
-*/
-public int divide(int dividend, int divisor) {
-if (divisor == 1)
-return dividend;
-long dividend_l = (long)dividend;
-long divisor_l = (long)divisor;
-

@@ -1,6 +1,0 @@
-Dao<RecipeModel, Long> dao = getDao();
-List<RecipeModel> list;
-if(skip==-1l &amp;&amp; take==-1l)
-{
-QueryBuilder<RecipeModel, Long> queryBuilder = dao.queryBuilder();
-

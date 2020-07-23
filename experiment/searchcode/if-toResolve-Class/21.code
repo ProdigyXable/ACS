@@ -1,6 +1,0 @@
-* been submitted to the Gson project; if accepted this file can be removed.
-*/
-final class GsonTypes {
-private static Type getGenericSupertype(Type context, Class<?> rawType, Class<?> toResolve) {
-if (toResolve == rawType) {
-

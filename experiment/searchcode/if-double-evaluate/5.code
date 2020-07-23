@@ -1,9 +1,0 @@
-
-public abstract class RFunc{
-
-public abstract double evaluate(double x);
-
-public double bracketRoot(double a, double b, double maxErr){
-double fl = evaluate(a);
-double fu = evaluate(b);
-

@@ -1,9 +1,0 @@
-return this.pool.execute(op);
-}
-
-public void setupServerAffinity(boolean allowFailover) {
-if (logger.isDebugEnabled()) {
-public Object executeOnPrimary(Op op) {
-if(queueManager == null) {
-throw new SubscriptionNotEnabledException();
-

@@ -1,9 +1,0 @@
-// notify about next step if necessary
-double stepSize = getStepSize();
-double position = getTimePosition();
-double duration = getDuration();
-setWindowSize(duration);
-
-// notify about next step if necessary
-double stepSize = getStepSize();
-

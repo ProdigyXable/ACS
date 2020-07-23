@@ -1,6 +1,0 @@
-public interface Task {
-AsyncTask<?, ?, ?> getTask();
-boolean cancel(boolean mayInterruptIfRunning );
-
-}
-

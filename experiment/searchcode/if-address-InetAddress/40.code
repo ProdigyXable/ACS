@@ -1,9 +1,0 @@
-package zqc.reading.corejava8e.ch17networking;
-
-import java.net.InetAddress;
-
-public class InetAddressTest {
-String host = args[0];
-InetAddress[] addresses = InetAddress.getAllByName(host);
-for (InetAddress address : addresses)
-

@@ -1,7 +1,0 @@
-ArrayList<INotificationCenter.INotificationListener> listeners = mListeners.get(type);
-if (listeners == null) {
-listeners = new ArrayList<>();
-}
-
-if (!listeners.contains(listener)) {
-

@@ -1,5 +1,0 @@
-Geometry intersection = line.intersection(otherLine);
-int numGeometries = intersection.getNumGeometries();
-if (numGeometries < 3) {
-Point start1 = line.getStartPoint();
-

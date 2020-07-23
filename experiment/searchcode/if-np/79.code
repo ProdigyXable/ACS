@@ -1,5 +1,0 @@
-private static void parseTransformItem(String s, Matrix matrix) {
-if (s.startsWith(&quot;matrix(&quot;)) {
-NumberParse np = NumberParse.parseNumbers(s.substring(&quot;matrix(&quot;.length()));
-if (np.numbers.size() == 6) {
-

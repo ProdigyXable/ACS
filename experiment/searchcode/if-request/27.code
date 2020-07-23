@@ -1,5 +1,0 @@
-public void cancelRequest() {
-if ((requestList != null) &amp;&amp; (requestList.size() > 0)) {
-for (final HttpRequest request : requestList) {
-//                if (request.getRequest() != null) {
-

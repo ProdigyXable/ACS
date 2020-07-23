@@ -1,8 +1,7 @@
 package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 
-import org.eclipse.jdt.core.dom.*;
-
 import java.util.ArrayList;
+import org.eclipse.jdt.core.dom.*;
 
 /**
  * Created by yjxxtd on 2/29/16.
@@ -36,23 +35,22 @@ public class ConstructorInvocationInTestCollectVisitor extends ASTVisitor {
     @Override
     public boolean visit(MethodDeclaration node) {
         String methodName = node.getName().toString();
-        if(methodName.equals(targetMethodName)){
+        if (methodName.equals(targetMethodName)) {
             isInTragetMethod = true;
-        }else{
+        } else {
             isInTragetMethod = false;
         }
 
         return true;
     }
 
-
     @Override
     public boolean visit(ClassInstanceCreation node) {
-        if(node == null || node.getType() == null || !isInTragetMethod){
+        if (node == null || node.getType() == null || !isInTragetMethod) {
             return true;
         }
         String className = node.getType().toString();
-        if(!constructorInvocationList.contains(className)){
+        if (!constructorInvocationList.contains(className)) {
             constructorInvocationList.add(node.getType().toString());
         }
 
@@ -459,4 +457,3 @@ public class ConstructorInvocationInTestCollectVisitor extends ASTVisitor {
         return true;
     }
 }
-

@@ -1,7 +1,0 @@
-Object around() throws Exception: ... {
-/* ... */
-if( /*condition*/ )
-throw new Exception();
-/* ... */
-}
-

@@ -1,7 +1,0 @@
-@Override
-public synchronized void addStaleListener(IStaleListener listener) {
-if (!disposed) {
-changeSupport.addStaleListener(listener);
-}
-}
-

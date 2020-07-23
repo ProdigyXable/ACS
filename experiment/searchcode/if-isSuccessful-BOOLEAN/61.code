@@ -1,7 +1,0 @@
-public boolean AddNewResinChemical(ResinChemical newResinChemical)
-{
-boolean isSuccessful = false;
-isSuccessful = repo.AddResinChemical(newResinChemical);
-
-if(isSuccessful == false)
-

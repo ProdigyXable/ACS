@@ -1,6 +1,0 @@
-Chronology chronology = ((ReadableInstant) obj).getChronology();
-if (chronology == null) {
-return ISOChronology.getInstance(dateTimeZone);
-}
-if (chronology.getZone() == dateTimeZone) {
-

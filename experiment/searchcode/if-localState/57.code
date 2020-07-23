@@ -1,8 +1,0 @@
-oldState = (State) localState.get();
-if (oldState.isUnsubscribed) {
-return Subscriptions.unsubscribed();
-State oldState;
-do {
-oldState = (State) localState.get();
-if (!oldState.isUnsubscribed) {
-

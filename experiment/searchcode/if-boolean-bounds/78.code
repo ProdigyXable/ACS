@@ -1,9 +1,0 @@
-protected boolean containsBoundsIfWithinOuterBounds(OneDimensionalBounds[] bounds)
-{
-return false;
-}
-
-protected boolean containsPointIfWithinOuterBounds(double[] point)
-{
-return false;
-

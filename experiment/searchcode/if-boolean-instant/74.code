@@ -1,9 +1,0 @@
-public long getEndMillis() {
-if (endInstant == NULL_END_INSTANT) {
-throw new OpenEndedIntervalEndInstantAccessAttempt();
-}
-return endInstant;
-}
-
-public boolean contains(long millisInstant) {
-

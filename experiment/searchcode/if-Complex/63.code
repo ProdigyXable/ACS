@@ -1,7 +1,0 @@
-package PolynomialLibrary;
-
-public class ComplexNumber extends NumberField<ComplexNumber> {
-public double R,I;
-public ComplexNumber(double real, double imaginary) {
-R = real;
-

@@ -1,8 +1,0 @@
-if (this == o) {
-return true;
-}
-if (!(o instanceof KeyedValueComparatorType)) {
-final KeyedValueComparatorType type = (KeyedValueComparatorType) o;
-if (!this.name.equals(type.name)) {
-return false;
-

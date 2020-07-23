@@ -1,6 +1,0 @@
-// the cursor whose data we are currently displaying
-private int mSessionQueryToken;
-private Uri mCurrentUri = PTAppContract.ClassSubject.CONTENT_URI;
-if (savedInstanceState != null) {
-mSessionQueryToken = savedInstanceState.getInt(STATE_SESSION_QUERY_TOKEN);
-

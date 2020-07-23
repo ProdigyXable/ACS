@@ -1,8 +1,0 @@
-Object oldValue;
-do {
-oldValue = Magic.prepareObject(base, offset);
-if (oldValue != testValue) return false;
-oldValue = Magic.prepareAddress(Magic.addressAsObject(addr), Offset.zero());
-newValue = oldValue.plus(increment);
-if (newValue.GT(bound)) return Address.max();
-

@@ -1,9 +1,0 @@
-public Class<? extends Collection> caseWildcardType(WildcardType wildcardType) {
-Type[] upperBounds = wildcardType.getUpperBounds();
-if ( upperBounds.length == 0 ) {
-return isSimple( parameterizedType.getRawType() );
-}
-
-@Override
-public Boolean caseWildcardType(WildcardType wildcardType) {
-

@@ -1,6 +1,0 @@
-* Ignore unavailable indices, this includes indices that not exists or closed indices.
-* @param ignore whether to ignore unavailable indices
-*/
-public K ignoreUnavailable(boolean ignore) {
-setParameter(Parameters.IGNORE_UNAVAILABLE, String.valueOf(ignore));
-

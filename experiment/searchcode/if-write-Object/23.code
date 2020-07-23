@@ -1,8 +1,0 @@
-private void writeJson(String name, Object object) {
-try {
-if (object == null) {
-writeNull(name);
-
-} else if (object instanceof Number) {
-writeNumber(name, (Number) object);
-

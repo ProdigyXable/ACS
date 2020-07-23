@@ -1,6 +1,0 @@
-Collection<IResource> setContractedClasses = mapContractClasses.get(contract);
-if (setContractedClasses == null) {
-setContractedClasses = new HashSet<IResource>();
-synchronized static public Boolean isContracted(IResource resource, boolean checkAgainstModel) {
-if (checkAgainstModel) {
-

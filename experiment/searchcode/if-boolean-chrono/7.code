@@ -1,9 +1,0 @@
-import com.makco.smartfinance.persistence.entity.DateUnit;
-
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-public boolean equals(Object o) {
-if(o instanceof Chrono){
-Chrono that = (Chrono) o;
-

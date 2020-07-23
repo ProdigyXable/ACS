@@ -1,5 +1,0 @@
-String versionString = tag.name.replace(&quot;v&quot;, &quot;&quot;);
-if (Version.isParseable(versionString)) {
-Version version = new Version(versionString);
-if (version.isLargerThan(latestVersion)) {
-

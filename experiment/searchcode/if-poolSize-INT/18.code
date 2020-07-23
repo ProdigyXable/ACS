@@ -1,6 +1,0 @@
-public void testRepeatableReturnsTrue() throws InterruptedException {
-int poolsize = 5;
-newRunningRepeater(poolsize);
-public void testRepeatableReturnsFalse() throws InterruptedException {
-int poolsize = 5;
-

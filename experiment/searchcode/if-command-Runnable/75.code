@@ -1,9 +1,0 @@
-import javax.swing.SwingUtilities;
-
-import com.lorent.whiteboard.command.ClientRunnable;
-import com.lorent.whiteboard.model.CommandsManager;
-public void run(final CommandsManager manager) {
-SwingUtilities.invokeLater(new Runnable() {
-public void run() {
-if(runnable!=null)
-

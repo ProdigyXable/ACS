@@ -1,9 +1,0 @@
-return getInstance(DateTimeZone.getDefault());
-}
-
-public static ISOChronology getInstance(DateTimeZone dateTimeZone) {
-if (dateTimeZone == null) {
-iSOChronology = (ISOChronology) cCache.get(dateTimeZone);
-if (iSOChronology == null) {
-iSOChronology = new ISOChronology(ZonedChronology.getInstance(INSTANCE_UTC, dateTimeZone));
-

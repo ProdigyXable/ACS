@@ -1,9 +1,0 @@
-private void calculate(DeterministicAnalyzer a)
-{
-double computerEstimate = a.getEstimate(estimates, history);
-for (int i = 0; i < runs; i++) {
-double estimate = a.getEstimate(estimates, history);
-total[i] = estimate;
-
-if (estimate > max) {
-

@@ -1,9 +1,0 @@
-return text.substring(0, plus);
-} else if (text.contains(&quot;-&quot;)) {
-int minus = text.indexOf(&quot;-&quot;);
-return chrono;
-}
-
-private String createErrorMessage(String text, int errorPos) {
-int sampleLen = errorPos + 32;
-

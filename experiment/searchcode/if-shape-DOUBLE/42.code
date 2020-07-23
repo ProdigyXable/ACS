@@ -1,9 +1,0 @@
-public void clearListOfShape() {
-if (listOfGroupedShape != null) {
-listOfGroupedShape.clear();
-}
-}
-
-public boolean isListOfGroupedShapeEmpty() {
-if (listOfGroupedShape == null) {
-

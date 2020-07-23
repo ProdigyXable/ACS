@@ -1,7 +1,0 @@
-protected SwipeRefreshLayout mSwipeRefreshLayout;
-@Override
-protected int getLayoutId() {
-return R.layout.fragment_base_refresh;
-protected void inJectChildView(View viewGroup) {
-mSwipeRefreshLayout = (SwipeRefreshLayout) viewGroup.findViewById(R.id.swiperefreshlayout);
-

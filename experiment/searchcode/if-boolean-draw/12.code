@@ -1,7 +1,0 @@
-int guessesLeft = 11-incorrectNumber;
-draw draw = new draw();
-boolean lose = false;
-if (incorrectNumber == 0)
-{
-draw.drawHead(pen, relSize);
-

@@ -1,8 +1,0 @@
-public class BulkResponse extends ActionResponse implements Iterable<BulkItemResponse> {
-
-public static final long NO_INGEST_TOOK = -1L;
-
-private BulkItemResponse[] responses;
-private long tookInMillis;
-private long ingestTookInMillis;
-

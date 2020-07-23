@@ -1,8 +1,0 @@
-import jamder.agents.GoalAgent;
-import jamder.behavioural.Action;
-import jamder.norms.AtomicAction;
-import jamder.norms.AtomicActionType;
-import jamder.norms.IfConditional;
-import jamder.norms.Norm;
-import jamder.norms.NormAction;
-

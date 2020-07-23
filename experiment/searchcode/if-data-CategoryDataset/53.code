@@ -1,8 +1,0 @@
-import java.io.Serializable;
-import org.jfree.chart.entity.ChartEntity;
-import org.jfree.data.category.CategoryDataset;
-import org.jfree.util.ObjectUtilities;
-
-public class CategoryItemEntity
-extends ChartEntity
-

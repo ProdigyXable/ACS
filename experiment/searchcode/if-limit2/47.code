@@ -1,7 +1,0 @@
-public class IfElse extends PostfixCommand {
-
-public Comparable<?>[] evaluate(ASTFunNode node, JepRuntime runtime)
-throws ParseException {
-node.childrenAccept(runtime.ev, null);
-Comparable<?> limit2 = runtime.stack.pop();
-

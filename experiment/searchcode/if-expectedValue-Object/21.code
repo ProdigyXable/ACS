@@ -1,9 +1,0 @@
-public void hasValue(T expectedValue) {
-isNotNull();
-
-if(expectedValue == null){
-failWithMessage(EXPECTED_NOT_NULL);
-}
-
-if(!expectedValue.equals(actual.getValue())){
-

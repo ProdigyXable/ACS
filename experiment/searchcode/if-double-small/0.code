@@ -1,9 +1,0 @@
-public SmallDouble add(Real r)
-{
-SmallDouble o = r.toSmallDouble();
-if (m == 0.0)
-if (m == 0.0)
-{
-return o;
-}
-

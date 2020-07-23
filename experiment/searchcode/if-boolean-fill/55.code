@@ -1,9 +1,0 @@
-public class RegionFeatureType implements Type {
-
-private boolean type;
-private String fillPattern;
-
-public RegionFeatureType(boolean type, String fillPattern) {
-this.type = type;
-this.fillPattern = fillPattern;
-

@@ -1,8 +1,0 @@
-public static ActivityManager getScreenManager() {
-if (instance == null) {
-instance = new ActivityManager();
-* @param activity
-*/
-public void popActivity(Activity activity) {
-if (activity != null) {
-

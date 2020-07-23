@@ -1,6 +1,0 @@
-* @throws IllegalArgumentException if the end is before the start
-*/
-protected BaseInterval(long startInstant, long endInstant, Chronology chrono) {
-* @param end  end of this interval, null means now
-* @throws IllegalArgumentException if the end is before the start
-

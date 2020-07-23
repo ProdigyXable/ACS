@@ -1,5 +1,0 @@
-import spatial.rectangleAlgebra.QualitativeAllenIntervalConstraint;
-import spatial.rectangleAlgebra.RectangleConstraint;
-RectangleConstraint[] allConstraintsArray = allConstraints.toArray(new RectangleConstraint[allConstraints.size()]);
-if (!solver.addConstraints(allConstraintsArray)) {
-

@@ -1,9 +1,0 @@
-public List getParameters() {
-if (this.parameters == null) {
-this.parameters = new ArrayList();
-this.getParameters().add(paramter);
-return this;
-}
-
-public Object get( int index ) {
-

@@ -1,8 +1,0 @@
-public class DecodedResourceCall extends Lockable<DecodedResourceCall> {
-
-private String             relativeURL;
-this.parameters      = new HashMap();
-}
-
-public DecodedResourceCall( String relativeURL, Class resourceHandler ) {
-

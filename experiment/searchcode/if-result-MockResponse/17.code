@@ -1,9 +1,0 @@
-public MockResponse toMockResponse() {
-MockResponse mockResponse = new MockResponse();
-if (webSocketSession != null) {
-mockResponse.setBody(body);
-mockResponse.setResponseCode(statusCode);
-}
-
-if (responseDelay > 0) {
-

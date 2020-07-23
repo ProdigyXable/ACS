@@ -1,7 +1,0 @@
-locationView = (TextView) view.findViewById(R.id.publicPickyLocation);
-
-if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.INTERNET) !=
-@Override
-public void process(Boolean element) {
-loadPicky();
-

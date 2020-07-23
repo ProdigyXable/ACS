@@ -1,6 +1,0 @@
-boolean hasParentWithQuery=false;
-boolean hasQuery=tag.containsAttribute(&quot;query&quot;);
-
-while((parent=getParentTagOutput(parent))!=null) {
-if(!hasParentWithQuery)hasParentWithQuery=parent.hasQuery();
-

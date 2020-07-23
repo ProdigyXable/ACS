@@ -1,5 +1,0 @@
-return false;
-else if (obj instanceof FieldScopeInfo) {
-FieldScopeInfo o = (FieldScopeInfo) obj;
-if (receiverScope == null) {        // this branch is added to avoid failing on ScopeInfo.IMMORTAL
-

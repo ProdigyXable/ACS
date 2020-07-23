@@ -1,6 +1,0 @@
-super(itemView);
-innerType = type;
-if (innerType == UltimateViewAdapter.VIEW_TYPES.NORMAL) {
-bindNormal(itemView);
-} else if (innerType == UltimateViewAdapter.VIEW_TYPES.ADVIEW) {
-

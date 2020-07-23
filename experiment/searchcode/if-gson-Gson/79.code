@@ -1,9 +1,0 @@
-public class GsonInstance  {
-
-private static Gson mGson ;
-
-public static Gson getGson(){
-if(mGson == null){
-synchronized (GsonInstance.class){
-if(mGson == null){
-

@@ -1,6 +1,0 @@
-public class WordformTSTSearchResult implements Iterable<Wordform>{
-private boolean isMatchExact;
-private WordformTST.Node resultNode;
-
-public WordformTSTSearchResult(boolean matchExact, WordformTST.Node resultNode) {
-

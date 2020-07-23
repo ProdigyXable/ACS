@@ -1,8 +1,0 @@
-package ecologylab.oodss.distributed.client;
-
-public interface ClientStatusListener
-*          true if the client connected; false if the client disconnected.
-*/
-public void clientConnectionStatusChanged(boolean connect);
-}
-

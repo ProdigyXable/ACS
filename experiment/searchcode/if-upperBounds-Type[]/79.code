@@ -1,7 +1,0 @@
-class WildcardTypeWrapper implements WildcardWrapper {
-private final TypeWrapper[] upperBounds;
-private final TypeWrapper[] lowerBounds;
-private final int hashCode;
-
-public WildcardTypeWrapper(TypeWrapper[] upperBounds, TypeWrapper[] lowerBounds, int hashCode) {
-

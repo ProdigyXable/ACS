@@ -1,7 +1,0 @@
-@Override
-public void onBuildUpdated(Build build, BuildArtifact artifact) {
-if (allDependenciesAvailableOrUpdated(build, artifact)
-&amp;&amp; build.containsArtifactOfType(BuildSpecificationArtifact.class)) {
-if (LitFileContent.isBuildInValidStateToGenerateLitFile(build)) {
-persistLitFile(build);
-

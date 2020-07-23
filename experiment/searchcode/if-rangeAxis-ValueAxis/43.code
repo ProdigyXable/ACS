@@ -1,9 +1,0 @@
-import org.jfree.chart.axis.CategoryAxis;
-import org.jfree.chart.axis.ValueAxis;
-import org.jfree.chart.plot.CategoryPlot;
-* Creates a new instance with the specified axes.
-*
-* @param domainAxis
-*            the x-axis.
-* @param rangeAxis
-

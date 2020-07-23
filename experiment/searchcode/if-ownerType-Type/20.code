@@ -1,9 +1,0 @@
-public abstract class BaseEntity extends BBPersistentObject implements IEntity, IArtifactOwner<EntityType, String>, IStatusable, Serializable {
-
-private EntityType ownerType;
-private String name;
-private Status status;
-
-protected BaseEntity(EntityType ownerType) {
-Assert.notNull(ownerType, &quot;ownerType&quot;);
-

@@ -1,5 +1,0 @@
-public Covariance(double[][] data, boolean biasCorrected, double mu[]) {
-this(new BlockRealMatrix(data), biasCorrected, mu);
-protected RealMatrix computeCovarianceMatrix(RealMatrix matrix, boolean biasCorrected) {
-int dimension = matrix.getColumnDimension();
-

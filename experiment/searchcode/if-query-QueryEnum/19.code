@@ -1,8 +1,0 @@
-String contextId = (String) getRequestAttributes().get(&quot;contextId&quot;);
-UmlgQueryEnum queryEnum = UmlgQueryEnum.valueOf(type);
-switch (queryEnum) {
-throw new IllegalStateException(&quot;Unhandled UmlgQueryEnum &quot; + queryEnum.name());
-}
-
-//        if (type.equalsIgnoreCase(&quot;groovy&quot;)) {
-

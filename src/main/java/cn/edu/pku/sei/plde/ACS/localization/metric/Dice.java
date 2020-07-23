@@ -7,6 +7,6 @@ public class Dice implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         // ef / float(ef + ep + nf)
-        return  2*ef / ((double) (ef + (ep + nf)));
+        return 2 * ef / ((double) (ef + (ep + nf)));
     }
 }

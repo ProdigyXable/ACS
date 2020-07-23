@@ -1,8 +1,0 @@
-public void updateRoutingEntry(final ShardRouting newRouting, final boolean persistState) {
-final ShardRouting currentRouting = this.shardRouting;
-if (!newRouting.shardId().equals(shardId())) {
-mapperAnalyzer.setType(index.type());
-final boolean created;
-try {
-if (logger.isTraceEnabled()) {
-

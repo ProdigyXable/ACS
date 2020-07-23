@@ -1,9 +1,0 @@
-import jcolin.utils.RngUtils;
-
-public abstract class Validator {
-
-private static final boolean DEBUG = false;
-String rng = createRng();
-if (DEBUG) {
-System.out.printf(&quot;Validator: Rng: %s\n&quot;, rng);
-

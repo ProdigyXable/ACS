@@ -1,8 +1,0 @@
-package action.certificate;
-
-import com.opensymphony.xwork2.ActionSupport;
-import service.certificate.DeleteCertificateService;
-public String execute(){
-boolean success = DeleteCertificateService.execute(certificateId);
-if(success)
-

@@ -1,8 +1,0 @@
-ReferenceType actual_targ =
-(ReferenceType) actual_pt.subst().substType(tv);
-if (!(formal_targ instanceof WildCardType)
-solver));
-}
-else if (formal_targ instanceof WildCardType
-&amp;&amp; actual_targ instanceof WildCardType) {
-

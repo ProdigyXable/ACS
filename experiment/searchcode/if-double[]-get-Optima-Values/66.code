@@ -1,7 +1,0 @@
-_code = generateCode(validHour);
-double[] optima = knownOptima.get(validHour);
-optP[validHour] = new DoubleToken(_optimum);
-_writeModelFile();
-//double[] optima = knownOptima.get(validHour);
-double[] optima = _modelCheck(validHour,null);
-

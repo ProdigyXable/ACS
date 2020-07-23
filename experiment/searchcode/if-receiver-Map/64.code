@@ -1,3 +1,0 @@
-List<EventReceiver> eventReceivers = this.mEventReceiverMap.get(action);
-if (eventReceivers == null) {
-

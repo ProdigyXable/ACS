@@ -1,7 +1,0 @@
-public static IPreferenceChangeListener getPreferenceChangeListener() {
-if (preferenceChangeListener == null) {
-preferenceChangeListener = new PreferenceOverriddenByCssChangeListener();
-}
-return preferenceChangeListener;
-}
-

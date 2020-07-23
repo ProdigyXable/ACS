@@ -1,9 +1,0 @@
-public ScopeDTO findById(String id) {
-ScopeDTO scopeDto = scopeCache.findById(id);
-
-if (scopeDto == null) {
-scopeDto = scopeCache.findById(id);
-
-if (scopeDto == null) {
-scopeDto = scopeConnector.findById(id);
-

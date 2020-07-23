@@ -1,7 +1,0 @@
-public class TransportMultiSearchAction extends HandledTransportAction<MultiSearchRequest, MultiSearchResponse> {
-
-private final int availableProcessors;
-int maxConcurrentSearches = request.maxConcurrentSearchRequests();
-if (maxConcurrentSearches == 0) {
-maxConcurrentSearches = defaultMaxConcurrentSearches(availableProcessors, clusterState);
-

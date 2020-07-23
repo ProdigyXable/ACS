@@ -1,9 +1,0 @@
-* @author Everton Rosario (erosario@gmail.com)
-* TrackReport
-*/
-public class TrackReport {
-private int totalTracks;
-private int totalLyrics;
-private int totalCyphers;
-private int totalTraductions;
-

@@ -1,8 +1,0 @@
-return this;
-}
-
-/**
-* {@link retrofit2.Retrofit.Builder#validateEagerly(boolean)}
-public Builder<OWNER, TOKEN_TYPE, TOKEN> validateEagerly(boolean validateEagerly) {
-this.builder.validateEagerly(validateEagerly);
-

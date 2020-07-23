@@ -1,5 +1,0 @@
-public synchronized boolean equals(java.lang.Object obj) {
-if (!(obj instanceof GetDocumentDetailedResponse)) return false;
-GetDocumentDetailedResponse other = (GetDocumentDetailedResponse) obj;
-if (obj == null) return false;
-

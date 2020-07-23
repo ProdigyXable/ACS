@@ -1,9 +1,0 @@
-public class BruteResult extends Result {
-private String password;
-private boolean matchFound;
-
-public BruteResult(String password, boolean matchFound){
-this.matchFound = matchFound;
-if(matchFound){
-this.password = password;
-

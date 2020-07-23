@@ -1,9 +1,0 @@
-Goal currentGoal = goalsStack.pop();
-if (currentGoal.getId() == goalId)
-{
-addAndUpdateGoal(goalId);
-break;
-}
-}
-if (goalsStack.size() == 0)
-

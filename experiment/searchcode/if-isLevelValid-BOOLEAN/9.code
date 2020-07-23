@@ -1,9 +1,0 @@
-public SetLevelCommand(final short level) {
-super();
-this.m_level = level;
-}
-
-@Override
-public boolean isValid() {
-return CharacterXpTable.getInstance().isLevelValid(this.m_level);
-

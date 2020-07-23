@@ -1,7 +1,0 @@
-package ru.sbertech.test.lesson13.homework.example1;
-
-import java.util.concurrent.Callable;
-synchronized (this) {
-if (mytask == null) {
-T temp = callable.call();
-

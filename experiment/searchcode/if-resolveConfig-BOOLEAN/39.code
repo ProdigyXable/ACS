@@ -1,9 +1,0 @@
-public static void configure(Settings settings, boolean resolveConfig) {
-if (loaded) {
-return;
-}
-loaded = true;
-Settings.Builder settingsBuilder = settingsBuilder();
-if (resolveConfig) {
-resolveConfig(environment, settingsBuilder);
-

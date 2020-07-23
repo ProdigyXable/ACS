@@ -1,8 +1,0 @@
-private VerificationMethodSettings value = new VerificationMethodSettings();
-
-
-public enum EnabledState {
-disabled,
-public static class VerificationMethodSetting {
-private EnabledState enabledState = EnabledState.disabled;
-

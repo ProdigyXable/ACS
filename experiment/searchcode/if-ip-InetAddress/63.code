@@ -1,9 +1,0 @@
-public ServerInfo() {
-this.serverIp = &quot;not defined&quot;;
-InetAddress[] allMyIps = null;
-try {
-e.printStackTrace();
-}
-if (allMyIps != null &amp;&amp; allMyIps.length > 1) {
-this.serverIp = &quot;&quot;;
-

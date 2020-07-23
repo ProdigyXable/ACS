@@ -1,9 +1,0 @@
-JScrollPane scrollPanTableau;
-DefaultTableModel modelTableauArbo;
-private Object[][] donneesTableauArbo = {{&quot;Aucun mot&quot;, &quot;Aucun mot&quot;},};
-tableauArbo = new RenduJTable(modelTableauArbo);
-}
-else
-{
-donneesTableauArbo = new Object[listeMots.size()][2];
-

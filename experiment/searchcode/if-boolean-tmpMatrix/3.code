@@ -1,9 +1,0 @@
-double[] columnsMedians = findColumnsMedians(tmpMatrix);
-if (checkToStop(rowsMedians)) {
-System.out.println(&quot;Columns medians &quot; + Arrays.toString(columnsMedians));
-printMatrix(tmpMatrix);
-}
-}
-
-private boolean checkToStop(double[] medians) {
-

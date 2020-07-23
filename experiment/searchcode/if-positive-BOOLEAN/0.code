@@ -1,5 +1,0 @@
-public PositiveBooleanExpression MkAnd(PositiveBooleanExpression phi, PositiveBooleanExpression psi) {
-if (phi instanceof PositiveFalse || psi instanceof PositiveFalse) {
-public PositiveBooleanExpression MkOr(PositiveBooleanExpression phi, PositiveBooleanExpression psi) {
-if (phi instanceof PositiveTrue || psi instanceof PositiveTrue) {
-

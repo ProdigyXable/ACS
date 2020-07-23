@@ -1,7 +1,0 @@
-@SearchableProperty(store = Store.YES, index = Index.UN_TOKENIZED)
-private boolean snapshot;
-@SearchableProperty(store = Store.YES, index = Index.UN_TOKENIZED)
-@SearchableProperty(store = Store.YES, index = Index.UN_TOKENIZED)
-private boolean hasSource;
-@SearchableProperty(store = Store.YES, index = Index.UN_TOKENIZED)
-

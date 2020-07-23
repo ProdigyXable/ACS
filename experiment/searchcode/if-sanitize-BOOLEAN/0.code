@@ -1,8 +1,0 @@
-public boolean contains(Object value) {
-return super.contains(sanitize(value));
-}
-
-@Override
-public boolean containsAll(Collection<?> values) {
-return super.containsAll(sanitize(values));
-

@@ -1,7 +1,0 @@
-package org.jocean.http.rosa.impl;
-
-import org.jocean.http.util.HttpMessageHolder;
-import org.jocean.http.util.Nettys;
-public Observable<RESP> call(final Observable<HttpObject> source) {
-final HttpMessageHolder holder = new HttpMessageHolder(0);
-

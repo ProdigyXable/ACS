@@ -1,7 +1,0 @@
-import java.util.List;
-
-public class MinOfTwo {
-
-public String loop(String file, boolean hasHeader, String seperator) {
-List<Integer[]> list = TestData.loadTestData(file, hasHeader, seperator);
-

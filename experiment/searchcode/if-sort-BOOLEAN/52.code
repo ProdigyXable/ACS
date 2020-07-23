@@ -1,9 +1,0 @@
-private boolean sortAscending;
-
-
-public SortableBean(String defaultSortColumn) {
-sortColumnName = defaultSortColumn;
-* Is the default sortColumnName direction for the given column &quot;sortAscending&quot; ?
-*/
-public abstract boolean isDefaultAscending(String sortColumn);
-

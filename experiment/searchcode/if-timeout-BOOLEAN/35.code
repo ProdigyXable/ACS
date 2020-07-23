@@ -1,8 +1,0 @@
-long configTimeout = Long.parseLong(XMLReader.getConfigurationValue(&quot;timeoutSecond&quot;));
-if(configTimeout != 0) {
-timeout = configTimeout * 1000; // config¸Ì­±ªºtimeout¬°minute¡A­nÂà´«¦¨ms
-}
-}
-
-public boolean check(long currentExecuteTime) {
-

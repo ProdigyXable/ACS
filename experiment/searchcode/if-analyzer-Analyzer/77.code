@@ -1,5 +1,0 @@
-ClassAnalyzer characterAnalyzer = analyzer.getClassAnalyzer(CharacterAnalyzer.class);
-if (characterAnalyzer.isFailed()) {
-FieldAnalyzer combatStatusListAnalyzer = characterAnalyzer.getFieldAnalyzer(CombatStatusListAnalyzer.class);
-if (combatStatusListAnalyzer.isFailed()) {
-

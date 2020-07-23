@@ -1,8 +1,0 @@
-public TimePeriod(final String timePeriod) {
-if (StringUtils.hasText(timePeriod)) {
-try {
-this.timePeriod = ETimePeriod.valueOf(timePeriod);
-} catch (final Exception e) {
-}
-if (this.timePeriod == null) {
-

@@ -1,4 +1,0 @@
-public RealMatrix add(RealMatrix m){
-ArrayList<RealVector> vectorTemp = new ArrayList<RealVector>();
-if(matrix.size() == m.numRows() &amp;&amp; matrix.get(0).getLength() == m.numColumns()){
-

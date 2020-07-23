@@ -1,9 +1,0 @@
-return error;
-}
-if(sendBuffer == null) {
-sendBuffer = freqPairs;
-} else {
-int size = Math.min(sendBuffer.length, freqPairs.length);
-for(int i = 0; i < size; i++) {
-if(sendBuffer[i] == null) {
-

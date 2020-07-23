@@ -1,8 +1,0 @@
-public TreeCapitatorEBXLAddonTicker(EnumSet<TickType> tickTypes) {
-this.tickTypes = tickTypes;
-for (TickType tickType : tickTypes)
-{
-if (!TreeCapitatorEBXLAddonMod.onTick(tickType, isStart))
-{
-this.tickTypes.remove(tickType);
-

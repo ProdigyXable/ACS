@@ -1,8 +1,0 @@
-package kyototycoon.tsvrpc;
-
-public class TsvEncodingHelper {
-private static final TsvEncoding BASE64_TSV_ENCODING = new TsvEncoding(&quot;text/tab-separated-values; colenc=B&quot;, new Base64ValueEncoding());
-public static TsvEncoding forContentType(String contentType) {
-for (TsvEncoding each : SUPPORTED) {
-if (each.contentType.equals(contentType)) {
-

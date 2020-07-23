@@ -1,9 +1,0 @@
-private final boolean uppercase;
-private final boolean centered;
-private final boolean underlined;
-private final float marginLeft;
-private final float marginBottom;
-
-private TitlePageType(boolean uppercase, boolean centered,
-boolean underlined, float marginLeft, float marginRight,
-

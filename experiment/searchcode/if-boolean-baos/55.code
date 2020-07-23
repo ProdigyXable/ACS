@@ -1,8 +1,0 @@
-public class DefaultHttpResponseStreamProcessor implements HttpResponseStreamProcessor {
-@Override
-public boolean consumeInputStream(HttpResponse response, InputStream is) {
-e.printStackTrace();
-response.setResponseBytes(null);
-} finally {
-if (baos != null) {
-

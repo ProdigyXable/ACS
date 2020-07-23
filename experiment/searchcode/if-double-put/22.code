@@ -1,7 +1,0 @@
-@Override
-protected void putData() throws SQLException, DataAccessException {
-putDouble(&quot;WBTOT_AREA&quot;);
-putDouble(&quot;WBTOT_BMC&quot;);
-putDouble(&quot;WBTOT_BMD&quot;);
-putDouble(&quot;SUBTOT_AREA&quot;);
-

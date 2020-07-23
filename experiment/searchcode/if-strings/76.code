@@ -1,9 +1,0 @@
-import java.util.List;
-
-public class StringJoiner {
-public String join(Collection<String> strings) {
-if (strings.size() == 0){
-return &quot;&quot;;
-}
-List<String> otherStrings = new ArrayList<String>(strings);
-

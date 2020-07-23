@@ -1,8 +1,0 @@
-private String errorMessage;
-/**
-* Customize exception for catching all the exception in SDP
-* @param errorCode
-public SDPInternalException(String errorCode, String errorMessage,  Throwable cause) {
-if (cause != null) {
-super.initCause(cause);
-

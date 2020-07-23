@@ -1,9 +1,0 @@
-private static MemberQueue initanceMember;
-public static MemberQueue getInitanceMember()
-{
-if(initanceMember==null)
-private static MemberQueue reduceMember;
-public static MemberQueue getReduceMember()
-{
-if(reduceMember==null)
-

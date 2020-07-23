@@ -1,9 +1,0 @@
-public class DoubleArrayComparator implements Comparator<Object> {
-int fitCriterion = -1;
-
-public DoubleArrayComparator() {
-* @param criterion
-*/
-public DoubleArrayComparator(int criterion) {
-fitCriterion = criterion;
-

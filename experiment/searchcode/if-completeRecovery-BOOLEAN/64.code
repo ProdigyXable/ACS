@@ -1,7 +1,0 @@
-virtualHost.getAttainedChildFromAddress(Queue.class, entry.getKey()).completeRecovery();
-}
-
-for(Queue<?> q : virtualHost.getChildren(Queue.class))
-{
-if(!queueRecoveries.containsKey(q.getName()))
-

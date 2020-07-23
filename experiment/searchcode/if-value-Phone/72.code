@@ -1,9 +1,0 @@
-@GenericGenerator(name = &quot;generator&quot;, strategy = &quot;guid&quot;, parameters = {})
-@GeneratedValue(generator = &quot;generator&quot;)
-@Generated(GenerationTime.INSERT)
-@Column(name=&quot;PHONE_UID&quot;)
-public boolean equals(Object o) {
-if (this == o) return true;
-if (!(o instanceof Phone)) return false;
-Phone phone1 = (Phone) o;
-

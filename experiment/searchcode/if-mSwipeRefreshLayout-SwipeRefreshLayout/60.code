@@ -1,8 +1,0 @@
-private SwipeRefreshLayout mSwipeRefreshLayout;
-private RefreshListener mRefreshListener;
-private boolean mRefreshing;
-public void init(Activity activity, SwipeRefreshLayout swipeRefreshLayout, RefreshListener listener) {
-mRefreshListener = listener;
-mSwipeRefreshLayout = swipeRefreshLayout;
-mSwipeRefreshLayout.setOnRefreshListener(this);
-

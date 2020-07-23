@@ -1,7 +1,0 @@
-List<Byte> packedScript = new LinkedList<Byte>();
-
-if (script.getInfo() == Script.InfoTypes.MESSAGE.getValue()) {
-// add message body to a packed script
-if (script.getInfo() == Script.InfoTypes.MESSAGE.getValue()) {
-for (Byte[] ch : message) {
-

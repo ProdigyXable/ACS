@@ -1,7 +1,0 @@
-private Integer size;
-private List<SortBuilder> sorts;
-private Boolean trackScores;
-private HighlightBuilder highlightBuilder;
-public PercolateSourceBuilder setTrackScores(boolean trackScores) {
-this.trackScores = trackScores;
-

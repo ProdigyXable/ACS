@@ -1,8 +1,0 @@
-private final boolean streamingMode;
-
-Ojdbc6OracleDataStager(StagingSpec[] stagingSpecs,
-SQLOrderBy order, ConnectionSpec connectionSpec,
-boolean streamingMode) {
-this.stagingSpecs = stagingSpecs;
-this.referenceSpec = referenceSpec;
-

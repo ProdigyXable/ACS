@@ -1,9 +1,0 @@
-public static DiscountStrategy getDiscountStrategy(StrategyTypes strategyType) {
-StrategyTypes  strategy = null;
-if (strategyType == null) {
-strategy = discountDefaultStrategy;
-} else {
-strategy = strategyType;
-}
-if (StrategyTypes.HIGHEST.getType().equals(strategy.getType())) {
-

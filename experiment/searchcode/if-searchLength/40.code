@@ -1,9 +1,0 @@
-public Problem26() {
-super(26);
-}
-
-int search(int divisor, int skip, int searchLength) {
-BigInteger bigDivisor = BigInteger.valueOf(divisor);
-for (int ctr = 1; ctr < searchLength; ++ctr) {
-BigInteger small = BigInteger.TEN.modPow(
-

@@ -1,9 +1,0 @@
-* Expiration time after last access in {@code expireAfterAccessTimeUnit}.
-*/
-private Long expireAfterAccess;
-
-/**
-* {@link TimeUnit} for {@code expireAfterAccess}.
-public GuavaCacheBuilder<K, V> expireAfterAccess(Long aExpireAfterAccess) {
-this.expireAfterAccess = aExpireAfterAccess;
-

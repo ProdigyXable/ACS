@@ -1,6 +1,0 @@
-Class converter() default NULL.class;
-Class preferedClass() default NULL.class; //TODO this needs to be finished
-public static Class<? extends JpcConverter> getConverterClass(LConverter aLConverter) {
-Class converterClass = aLConverter.converter();
-if(converterClass == null || converterClass.equals(NULL.class))
-

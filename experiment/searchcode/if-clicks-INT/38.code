@@ -1,8 +1,0 @@
-public class ClicksPerSecond {
-int CPS = 0;
-private static ClicksPerSecond CPSObject;
-
-public static ClicksPerSecond getCPSObject() {
-if (CPSObject == null) {
-CPSObject = new ClicksPerSecond();
-

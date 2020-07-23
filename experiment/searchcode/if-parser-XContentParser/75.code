@@ -1,7 +1,0 @@
-List<String> path = newArrayList();
-XContentParser.Token token = jp.nextToken();
-if (token == null) {
-return settings;
-}
-if (token != XContentParser.Token.START_OBJECT) {
-

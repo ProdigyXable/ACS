@@ -1,5 +1,0 @@
-public void testSplitProportionStress() {
-for (int dimensionSize = 1; dimensionSize < 101; ++dimensionSize) {
-Dimension d = new MockDimension(dimensionSize);
-List<Integer> splits = d.calculateSplitProportion(splitSize);
-

@@ -1,8 +1,0 @@
-private void checkForDirectionChange() {
-if (changeDirection()) {
-currentDirection = rotation.nextDirection(currentDirection);
-column += currentDirection.columnChange();
-
-movesInCurrentDirection++;
-if (increaseDimensions()) {
-

@@ -1,8 +1,0 @@
-List<RepositoryConnectorConfiguration> configurationListForThisInstanceId = configurationMap.get(repositoryConnectorConfiguration.getConnectorId());
-if (configurationListForThisInstanceId == null) {
-configurationListForThisInstanceId.add(repositoryConnectorConfiguration);
-}
-validateConfiguration(configurationMap);
-// create connectors and set values:
-for (Entry<String, List<RepositoryConnectorConfiguration>> entry : configurationMap.entrySet()) {
-

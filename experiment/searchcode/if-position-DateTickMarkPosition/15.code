@@ -1,8 +1,0 @@
-return true;
-}
-if (!(obj instanceof DateTickMarkPosition)) {
-return false;
-}
-DateTickMarkPosition position = (DateTickMarkPosition) obj;
-if (!this.name.equals(position.toString())) {
-

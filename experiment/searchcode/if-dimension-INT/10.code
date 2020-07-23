@@ -1,8 +1,0 @@
-private int calcDimension;
-
-private AlbumCalcDimensionType(int calcDimension) {
-this.calcDimension = calcDimension;
-}
-
-public static AlbumCalcDimensionType getCalcDimensionType(int calcDimension) {
-

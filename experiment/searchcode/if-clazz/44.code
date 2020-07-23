@@ -1,9 +1,0 @@
-* @param clazz
-* @return
-*/
-public static Element newElement(java.lang.Class<?> clazz) {
-if (clazz == null)
-return null;
-else if (clazz.isInterface())
-return Interface.newInstance(clazz);
-

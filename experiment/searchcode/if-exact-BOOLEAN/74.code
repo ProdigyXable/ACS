@@ -1,9 +1,0 @@
-private final boolean ignoreExact;
-
-public MonitorWeightMax(boolean ignoreExact) {
-this.ignoreExact = ignoreExact;
-if (ignoreExact &amp;&amp; monitor.getWildcardNum() == 0) {
-continue;
-}
-if (max<monitor.getWeight()){
-

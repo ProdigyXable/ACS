@@ -1,7 +1,0 @@
-protected final void setItemActive(boolean active){
-envActive = active;
-if(envActive == false){
-itemVisible(false);
-} else if(delayedExecutor!=null){
-itemVisible(true);
-

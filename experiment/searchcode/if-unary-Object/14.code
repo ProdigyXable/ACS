@@ -1,8 +1,0 @@
-package org.jtwig.render.expression.calculator.operation.unary;
-
-import com.google.common.base.Optional;
-this.unaryOperationCalculatorSelector = unaryOperationCalculatorSelector;
-}
-
-public Object calculate (RenderRequest request, UnaryOperationExpression expression) {
-

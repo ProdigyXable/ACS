@@ -1,7 +1,0 @@
-private transient Stroke outlineStroke;
-private transient Shape shape;
-private RectangleAnchor shapeAnchor;
-this.shape = shape;
-this.shapeAnchor = RectangleAnchor.CENTER;
-this.shapeLocation = RectangleAnchor.CENTER;
-

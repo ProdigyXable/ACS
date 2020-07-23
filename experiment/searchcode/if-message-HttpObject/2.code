@@ -1,8 +1,0 @@
-DecoderResult result = httpObject.getDecoderResult();
-if (!result.isSuccess()) {
-throw new BadRequestException(result.cause());
-}
-
-if (httpObject instanceof HttpRequest) {
-HttpRequest httpRequest = (HttpRequest) httpObject;
-

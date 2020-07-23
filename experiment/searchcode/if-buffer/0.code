@@ -1,5 +1,0 @@
-public class BufferInternalUtils {
-static public ByteBuffer getByteBuffer(Buffer buffer) {
-if (buffer instanceof ByteBufferAs) return ((ByteBufferAs)buffer).getByteBuffer();
-if (buffer instanceof ByteBuffer) return (ByteBuffer)buffer;
-

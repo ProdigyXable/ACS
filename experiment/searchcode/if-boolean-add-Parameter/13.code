@@ -1,8 +1,0 @@
-bpd = Environment.addBooleanParameter(&quot;booleanPar&quot;);
-} catch (AddParameterException e) {
-fail(&quot;Add boolean parameter has thrown unexpected exception&quot;
-+ e.getMessage());
-}
-
-if(bpd == null)
-

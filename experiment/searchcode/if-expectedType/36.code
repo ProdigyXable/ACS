@@ -1,7 +1,0 @@
-* @param context
-*            the evaluation context
-* @param expectedType
-*            the expected type
-protected static <T> T getFromContext(IEvaluationContext context, Class<T> expectedType) {
-if (context == null || expectedType == null) {
-

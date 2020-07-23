@@ -1,7 +1,0 @@
-StringBuilder rule = new StringBuilder();
-for (int[] term : multIndirection[k]) {
-if (rule.length() > 0) {
-StringBuilder rule = new StringBuilder();
-for (int[] term : compIndirection[k]) {
-if (rule.length() > 0) {
-

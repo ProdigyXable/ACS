@@ -1,7 +1,0 @@
-Reader jsonReader = null;
-
-try {
-boolean isGZipped = isResponseGZipped(response);
-public static boolean isResponseGZipped(NetworkResponse response) {
-boolean isGZipped = false;
-

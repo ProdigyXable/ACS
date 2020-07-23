@@ -1,9 +1,0 @@
-* @return
-*/
-public Locale getLocale(Iterator<Locale> locales){
-if(locales != null){
-while(locales.hasNext()){
-Locale rtnLoc = this.verifyLocale(loc);
-if(rtnLoc != null)
-return rtnLoc;
-

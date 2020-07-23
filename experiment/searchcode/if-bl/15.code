@@ -1,8 +1,0 @@
-package edu.nju.git.bl.factory.impl;
-
-import edu.nju.git.bl.impl.RepoBlImpl;
-import edu.nju.git.bl.impl.RepoChartBlImpl;
-public static BlFactory instance(){
-if (uniqueInstance == null) {
-uniqueInstance = new BlFactory();
-

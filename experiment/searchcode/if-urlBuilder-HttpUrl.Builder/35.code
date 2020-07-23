@@ -1,6 +1,0 @@
-final HttpUrl.Builder urlBuilder = new HttpUrl.Builder();
-urlBuilder.scheme(&quot;http&quot;);
-urlBuilder.host(host);
-urlBuilder.addPathSegments(path);
-urlBuilder.addPathSegment(type.name().toLowerCase());
-

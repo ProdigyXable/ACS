@@ -1,8 +1,0 @@
-private float   mLevelWidth = 0;
-
-private boolean mIsScrollable = false;
-float widthRange;
-
-if(mLevelWidth != 0){
-widthRange = mLevelWidth;
-

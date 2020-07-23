@@ -1,6 +1,0 @@
-final XYItemRenderer renderer = plot.getRenderer();
-
-if (renderer instanceof StandardXYItemRenderer) {
-final StandardXYItemRenderer itemRenderer = (StandardXYItemRenderer) renderer;
-itemRenderer.setSeriesStroke(0, new BasicStroke(1.5f));
-

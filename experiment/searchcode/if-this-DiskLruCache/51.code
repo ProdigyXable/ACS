@@ -1,8 +1,0 @@
-synchronized (DiskLruCache.this)
-{
-if (DiskLruCache.this.journalWriter == null) {
-return null;
-}
-DiskLruCache.this.trimToSize();
-if (DiskLruCache.this.journalRebuildRequired())
-

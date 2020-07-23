@@ -1,8 +1,0 @@
-public void setMiniLogDisabled(boolean minilogDisabled) {
-this.minilogDisabled = minilogDisabled;
-if (minilogDisabled) {
-public void fixUp() {
-boolean shouldPut = false;
-if (sequenceId == null) {
-sequenceId = 0;
-

@@ -1,8 +1,0 @@
-* Create a StrictChronology for any chronology.
-*
-* @param base the chronology to wrap
-* @throws IllegalArgumentException if chronology is null
-*/
-public static StrictChronology getInstance(Chronology base) {
-if (base == null) {
-

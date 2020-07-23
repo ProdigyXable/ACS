@@ -1,3 +1,0 @@
-public IPair<TreeModel, SetHashTable<IOntologyConcept,CheckNode>> buildTree(boolean unmappedNoSynsetVisible, boolean unmappedWithSynsetVisible) {
-private boolean isSelected(boolean isMapped, boolean hasSynsets, boolean unmappedNoSynsetVisible, boolean unmappedWithSynsetVisible) {
-

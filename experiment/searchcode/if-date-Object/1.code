@@ -1,7 +1,0 @@
-@SuppressWarnings(&quot;rawtypes&quot;)
-public class DateComparator implements Comparator {
-
-public int compare(Object anObject, Object anotherObject) {
-Date aDate = (Date) anObject;
-Date anotherDate = (Date) anotherObject;
-

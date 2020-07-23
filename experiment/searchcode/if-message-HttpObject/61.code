@@ -1,6 +1,0 @@
-import io.netty.handler.codec.http.HttpObject;
-import io.netty.handler.codec.http.HttpRequest;
-import io.netty.handler.codec.http.HttpResponse;
-public HttpResponse requestPre(HttpObject httpObject) {
-if (httpObject instanceof HttpRequest) {
-

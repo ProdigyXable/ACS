@@ -1,5 +1,0 @@
-List<BlCustinfoInfo> blCustinfoInfos = iQueryIdInfoAtomSV.queryBlCustinfo(extCustIdInfo);
-if (CollectionUtil.isEmpty(blCustinfoInfos)) {
-List<BlAcctInfoInfo> acctInfoInfos = iQueryIdInfoAtomSV.queryBlAcctInfo(ownerIDInfo);
-if(!CollectionUtil.isEmpty(acctInfoInfos)){
-

@@ -1,7 +1,0 @@
-shapes.add(new ConstrainableShape(getRect(25-size/2,25-size/2,25+size/2,25+size/2)));
-cc.setParameters(shapes);
-double conf=cc.solve();
-if(prevConf!=-1)
-double conf=cc.solve();
-if(prevConf!=-1)
-

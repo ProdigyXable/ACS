@@ -1,3 +1,0 @@
-public DerivedClass(Session session, SchemaClass schema, boolean hasProperties, boolean hasStats , boolean isManaged) {
-public DerivedClass(Session session, SchemaClass schema, Decoder dec, boolean hasProperties, boolean hasStats , boolean isManaged) {
-

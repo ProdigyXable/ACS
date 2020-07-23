@@ -1,7 +1,0 @@
-public void generate() throws Exception {
-if (routingImpl.isConfigRouting()) {
-routingObj = new RoutingObj();
-/** element: <routing>.<protocol> */
-if (routingImpl.isConfigRoutingProtocol()) {
-RoutingProtocol protocolObj = new RoutingProtocol();
-

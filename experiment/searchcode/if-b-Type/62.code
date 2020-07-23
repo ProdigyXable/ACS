@@ -1,8 +1,0 @@
-public class TypesChecker {
-
-public static boolean checkTypes(String firstType, String secondType) {
-if (firstType == null || secondType == null) {
-return false;
-}
-if (firstType.equals(secondType)) {
-

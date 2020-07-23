@@ -1,9 +1,0 @@
-return null;
-}
-
-wi = dis.readInt();
-he = dis.readInt();
-shapeWidth = dis.readInt();
-shapeHeight = dis.readInt();
-leftShapeCenter = dis.readInt();
-

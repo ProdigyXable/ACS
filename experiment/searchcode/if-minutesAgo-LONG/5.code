@@ -1,3 +1,0 @@
-target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(MINUTESAGO$2);
-if (target == null)
-

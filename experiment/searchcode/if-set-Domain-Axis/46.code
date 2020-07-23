@@ -1,9 +1,0 @@
-ValueAxis axis = (chart.getXYPlot()).getDomainAxis();
-NumberAxis numberAxis;
-if (axis instanceof NumberAxis) {
-numberAxis = (NumberAxis) axis;
-(chart.getXYPlot()).setDomainAxis(numberAxis);
-}
-
-numberAxis.setTickUnit((NumberTickUnit) NumberAxis.createIntegerTickUnits().getCeilingTickUnit(1d));
-

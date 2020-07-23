@@ -1,7 +1,0 @@
-// need to increment these
-if (!(meanImpl instanceof Mean)) {
-meanImpl.increment(value);
-public double getMean() {
-if (mean == meanImpl) {
-return new Mean(secondMoment).getResult();
-

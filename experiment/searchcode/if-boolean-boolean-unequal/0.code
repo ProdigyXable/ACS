@@ -1,7 +1,0 @@
-* [-l,-r] = [l,r] and [-l,r]=[l,-r]=-[l,r]
-*/
-double firstValUnequalZero = left.re;
-if (Quaternion.isAlmostZero(firstValUnequalZero)) {
-firstValUnequalZero = left.i;
-if (Quaternion.isAlmostZero(firstValUnequalZero)) {
-

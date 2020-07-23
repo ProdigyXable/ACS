@@ -1,5 +1,0 @@
-ExtendedUserAdObject extendedUserAdObject = new ExtendedUserAdObject();
-extendedUserAdObject.setStatus(userAdObject.getStatus());
-if(userAdObject.getStatus()!=null){
-extendedUserAdObject.setStatusValue(userAdObject.getStatus().toInteger());
-

@@ -1,8 +1,0 @@
-private static boolean initialized = Boolean.TRUE;
-
-private List<AbstractInitializedCacheService> abstractInitializedCacheServices;
-@Override
-public void onApplicationEvent(ApplicationEvent event) {
-if (initialized) {
-logger.info(&quot;init start...&quot;);
-

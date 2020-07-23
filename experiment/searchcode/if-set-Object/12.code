@@ -1,9 +1,0 @@
-public ObjectType getObjectType() {
-return objectType;
-}
-
-
-public void setObjectType(ObjectType objectType) {
-if (objectType != null) {
-setObjectId(objectType.getId());
-

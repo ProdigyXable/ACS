@@ -1,8 +1,0 @@
-Class<?> loadedClass = LOADED_CLASSES.get(className);
-
-try {
-if (loadedClass == null) {
-loadedClass = loadClass(Thread.currentThread().getContextClassLoader(), className);
-
-if (loadedClass == null) {
-

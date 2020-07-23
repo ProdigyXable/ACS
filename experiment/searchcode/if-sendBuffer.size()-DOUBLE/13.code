@@ -1,6 +1,0 @@
-public synchronized void setBufferSize(short packetBufferSize) {
-if(sendBuffer != null) {
-flush();
-}
-sendBuffer = ByteBuffer.allocate(packetBufferSize);
-

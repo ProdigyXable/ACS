@@ -1,9 +1,0 @@
-* Tests for the {@link ActiveShardCount} class
-*/
-public class ActiveShardCountTests extends ESTestCase {
-
-public void testFromIntValue() {
-final ByteBufferStreamInput in = new ByteBufferStreamInput(ByteBuffer.wrap(out.bytes().toBytesRef().bytes));
-ActiveShardCount readActiveShardCount = ActiveShardCount.readFrom(in);
-if (activeShardCount == ActiveShardCount.DEFAULT
-

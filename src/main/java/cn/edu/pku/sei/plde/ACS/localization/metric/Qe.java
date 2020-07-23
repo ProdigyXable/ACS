@@ -7,6 +7,6 @@ public class Qe implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         // ef / float(ef + ep + nf)
-        return  ef / ((double) (ef + ep));
+        return ef / ((double) (ef + ep));
     }
 }

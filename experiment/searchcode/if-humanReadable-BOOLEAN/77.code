@@ -1,8 +1,0 @@
-private Feature[] features = DEFAULT_FEATURES;
-private boolean humanReadable = false;
-
-public GetIndexRequest features(Feature... features) {
-public GetIndexRequest humanReadable(boolean humanReadable) {
-this.humanReadable = humanReadable;
-return this;
-

@@ -7,6 +7,6 @@ public class Ample implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         // abs((ef/float(ef+nf)) - (ep/float(ep+np)))
-        return Math.abs((ef/((double) (ef + nf))) - (ep/((double) (ep + np))));
+        return Math.abs((ef / ((double) (ef + nf))) - (ep / ((double) (ep + np))));
     }
 }

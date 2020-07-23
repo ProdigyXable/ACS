@@ -1,5 +1,0 @@
-public class HttpSnoopClientHandler extends SimpleChannelInboundHandler<HttpObject> {
-
-public void messageReceived(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
-if (msg instanceof HttpResponse) {
-

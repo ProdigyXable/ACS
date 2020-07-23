@@ -1,9 +1,0 @@
-// @return 例外
-//============================================================
-public Throwable throwable(){
-if(_throwable != null){
-public Throwable rootThrowable(){
-Throwable throwable = _throwable;
-while(throwable != null){
-if(throwable instanceof InvocationTargetException){
-

@@ -1,6 +1,0 @@
-EObject objectToSerialize = (getObjectToSerialze() != null
-? getObjectToSerialze()
-: objectToTest);
-
-// if (objectToSerialize instanceof EObject) {
-

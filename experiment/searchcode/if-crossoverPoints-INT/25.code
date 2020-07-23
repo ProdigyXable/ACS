@@ -1,9 +1,0 @@
-public ListCrossoverN(int crossoverPoints)
-{
-super(crossoverPoints);
-}
-
-public ListCrossoverN(int crossoverPoints, Probability crossoverProbability)
-{
-super(crossoverPoints, crossoverProbability);
-

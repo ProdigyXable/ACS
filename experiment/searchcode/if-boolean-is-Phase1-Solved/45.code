@@ -1,5 +1,0 @@
-private int maxdepth = 20;    // length of best solution found (phase1+phase2)
-private boolean prepared = false;    // flag is set when tables are prepared
-private boolean wanttostop = false;    // flag is set when solver should be stopped soon
-private boolean running = false;
-

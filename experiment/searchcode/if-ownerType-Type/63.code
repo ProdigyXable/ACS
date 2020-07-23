@@ -1,7 +1,0 @@
-private ResourceOwnerType ownertype;
-private Role role;
-private long updatetime;
-private List<ResourceUserInfo> userInfos;
-public ResourceGroupInfo(int groupid, ResourceOwnerType ownertype, Role role, long updatetime) {
-this.groupid = groupid;
-

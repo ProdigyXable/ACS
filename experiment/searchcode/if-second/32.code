@@ -1,9 +1,0 @@
-return false;
-if (getClass() != obj.getClass())
-return false;
-ObjSecondS other = (ObjSecondS) obj;
-if (fieldSecondS == null) {
-if (other.fieldSecondS != null)
-return false;
-} else if (!fieldSecondS.equals(other.fieldSecondS))
-

@@ -3,9 +3,9 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
 /**
  * Created by yjxxtd on 4/16/16.
  */
-
-
 import cn.edu.pku.sei.plde.ACS.file.WriteFile;
+import java.io.IOException;
+import java.util.List;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -15,12 +15,6 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
 
 public class ThreadPoolHttpClientGithub {
 
@@ -38,7 +32,7 @@ public class ThreadPoolHttpClientGithub {
             GetThread[] getThreads = new GetThread[urlList.size()];
             for (int i = 0; i < urlList.size(); i++) {
                 HttpGet get = new HttpGet(urlList.get(i));
-                getThreads[i] = new GetThread(httpclient, get, project,packageName, i + 1);
+                getThreads[i] = new GetThread(httpclient, get, project, packageName, i + 1);
             }
 
             for (GetThread gt : getThreads) {
@@ -69,7 +63,7 @@ public class ThreadPoolHttpClientGithub {
         private final String packageName;
         private final int id;
 
-        public GetThread(CloseableHttpClient httpClient, HttpGet httpget, String project,String packageName, int id) {
+        public GetThread(CloseableHttpClient httpClient, HttpGet httpget, String project, String packageName, int id) {
             this.httpClient = httpClient;
             this.context = new BasicHttpContext();
             this.httpget = httpget;
@@ -100,6 +94,5 @@ public class ThreadPoolHttpClientGithub {
             }
         }
     }
-
 
 }

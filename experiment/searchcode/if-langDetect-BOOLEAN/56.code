@@ -1,9 +1,0 @@
-* @return
-*/
-@Override
-public boolean isRetain(String msg, JSONObject json, Status status) {
-boolean isen = false;
-String langcode = status.getLang();
-if (langcode != null) {
-if (langcode.equals(&quot;en&quot;)) {
-

@@ -1,8 +1,0 @@
-MutableDateTime newTime = new MutableDateTime(dateTime);
-if (periodType == PeriodType.years()) {
-// year start align
-newTime.year().roundFloor();
-} else if (periodType == PeriodType.months()) {
-// year start align
-newTime.year().roundFloor();
-

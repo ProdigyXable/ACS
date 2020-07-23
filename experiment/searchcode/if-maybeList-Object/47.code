@@ -1,7 +1,0 @@
-return Collections.singletonList(maybeMap.get());
-}
-
-Maybe<List<Map<String, Object>>> maybeList = TypeCoercions.tryCoerce(config,
-new TypeToken<List<Map<String, Object>>>() {});
-if (maybeList.isPresent()) {
-

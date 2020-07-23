@@ -1,9 +1,0 @@
-public class FlipFilter extends Filter {
-
-private boolean flipHorizontal;
-private boolean flipVertical;
-
-public void setFlip(boolean flipHorizontal, boolean flipVertical) {
-this.flipHorizontal = flipHorizontal;
-this.flipVertical = flipVertical;
-

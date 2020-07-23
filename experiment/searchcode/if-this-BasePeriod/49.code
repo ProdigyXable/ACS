@@ -1,7 +1,0 @@
-final TimeTableSlot nextFree = findNextFreeValidTimeTableSlotSameRoom(
-coding, basePeriod, room, true, instance);
-if (nextFree == null) {
-return null;
-coding, basePeriod, room, false, instance);
-if (Math.abs(basePeriod - nextFree.getPeriod()) > Math.abs(basePeriod
-

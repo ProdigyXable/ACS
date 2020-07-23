@@ -1,3 +1,0 @@
-if (writerSentClose) throw new IllegalStateException(&quot;closed&quot;);
-if (writerWantsClose) throw new IllegalStateException(&quot;must call close()&quot;);
-

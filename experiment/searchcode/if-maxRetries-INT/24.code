@@ -1,7 +1,0 @@
-public class CustomServiceUnavailableRetryStrategy implements ServiceUnavailableRetryStrategy {
-
-private int maxRetries;
-private long retryInterval;
-public CustomServiceUnavailableRetryStrategy(int maxRetries, long retryInterval) {
-if (maxRetries < 1) {
-

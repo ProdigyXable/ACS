@@ -1,6 +1,0 @@
-this.controller = controller;
-}
-public Object execute(Object query) throws ClassNotFoundException, SQLException, Exception {
-if(query instanceof QueryLoad){
-return controller.getQueryLoad((QueryLoad)query);
-

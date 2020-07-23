@@ -1,9 +1,0 @@
-public void setTimestamp(long timestamp) {
-if (timestamp >= 0) {
-this.timestamp = timestamp;
-} else {
-* Search-Timestamp of the Data-Object.
-*/
-public void setSearchTimestamp(long searchTimestamp) {
-if (searchTimestamp >= 0) {
-

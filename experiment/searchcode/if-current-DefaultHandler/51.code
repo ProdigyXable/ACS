@@ -1,8 +1,0 @@
-public void characters(char ch[], int start, int length) throws SAXException
-{
-if (currentFlag.equalsIgnoreCase(LensXmlFields.NAME))
-{
-name = new String(ch, start, length);
-}
-else if (currentFlag.equalsIgnoreCase(LensXmlFields.COLOUR))
-

@@ -1,9 +1,0 @@
-parsers = null;
-}
-
-private void closeParsers() {
-if (parsers != null) {
-for (JsonParser parser : parsers) {
-protected JsonParser createParser(Object element) {
-JsonParser jp = new JsonElementParser(element);
-

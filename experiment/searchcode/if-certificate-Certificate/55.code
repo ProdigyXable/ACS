@@ -1,9 +1,0 @@
-public CertificateStatus saveStatus(CertificateStatus certificateStatus)
-{
-certificateStatus.setLastUpdate(new Date());
-if (certificateStatus.getCertificateStatusId() == null)
-CertificateStatus certStatus = certificateStatusRepository.findByCertificateSerialNumber(certificateStatus.getCertificateSerialNumber());
-if (certStatus == null)
-{
-throw new NoResultException();
-

@@ -1,8 +1,0 @@
-private String secret;
-
-public CmdSign(Cmd cmd, String secret) {
-this.cmd = cmd.getCmd();
-public boolean equals(Object o) {
-if (this == o) return true;
-if (o == null || getClass() != o.getClass()) return false;
-

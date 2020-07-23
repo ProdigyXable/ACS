@@ -1,8 +1,0 @@
-public class RemoveServiceResult {
-
-private final boolean success;
-private final Optional<FailureReason> optionalFailureReason;
-
-protected RemoveServiceResult(boolean success) {
-this.success = success;
-

@@ -1,9 +1,0 @@
-public class JoinResult<E> {
-boolean joinLeft, joinRight;
-E newEstimate;
-
-public boolean isJoinLeft() {
-this.newEstimate = 0d;
-if(this.joinLeft &amp;&amp; this.joinRight){
-this.newEstimate = (leftEstimate + estimate + rightEstimate) / (leftTuples + 1 + rightTuples);
-

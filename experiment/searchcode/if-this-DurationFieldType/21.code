@@ -1,9 +1,0 @@
-private UnsupportedDurationField(DurationFieldType durationFieldType) {
-this.iType = durationFieldType;
-}
-
-public static synchronized UnsupportedDurationField getInstance(DurationFieldType durationFieldType) {
-unsupportedDurationField = (UnsupportedDurationField) cCache.get(durationFieldType);
-}
-if (unsupportedDurationField == null) {
-

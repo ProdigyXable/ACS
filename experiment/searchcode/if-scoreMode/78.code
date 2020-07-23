@@ -1,7 +1,0 @@
-this.childScorer = childScorer;
-this.scoreMode = scoreMode;
-if (scoreMode != ScoreMode.None) {
-if (pendingChildDocs.length == childDocUpto) {
-pendingChildDocs = ArrayUtil.grow(pendingChildDocs);
-if (scoreMode != ScoreMode.None) {
-

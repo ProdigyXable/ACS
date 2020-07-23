@@ -1,9 +1,0 @@
-return key.getTypeLiteral().getRawType().equals(Provider.class);
-}
-
-/**
-* Returns true if the key type is MembersInjector (but not a subclass of MembersInjector).
-Key<TypeLiteral<T>> key, Errors errors) throws ErrorsException {
-Type typeLiteralType = key.getTypeLiteral().getType();
-if (!(typeLiteralType instanceof ParameterizedType)) {
-

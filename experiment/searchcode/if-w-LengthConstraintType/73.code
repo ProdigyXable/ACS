@@ -1,9 +1,0 @@
-return false;
-}
-LengthConstraintType that = (LengthConstraintType) obj;
-if (!this.name.equals(that.toString())) {
-if (this.equals(LengthConstraintType.NONE)) {
-return LengthConstraintType.NONE;
-}
-else if (this.equals(LengthConstraintType.RANGE)) {
-

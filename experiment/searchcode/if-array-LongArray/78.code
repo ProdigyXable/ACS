@@ -1,8 +1,0 @@
-private long longVariable;
-private long[] longArray;
-private String stringObject;
-private String secondStringObject;
-
-public void setLongArray(long[] longArray) {
-this.longArray = longArray;
-

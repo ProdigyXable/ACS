@@ -1,4 +1,0 @@
-public abstract class Eventsender<ListenerType extends EventListener, EventType extends DefaultEvent> {
-for (final WeakReference<ListenerType> listener : this.weakListener) {
-if ((l = listener.get()) == null) {
-

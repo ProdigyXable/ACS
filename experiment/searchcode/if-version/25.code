@@ -1,9 +1,0 @@
-return preVersion;
-}
-
-public String getCompiledVersion() {
-if (revisionVersion != 0 &amp;&amp; preVersion != 0)
-return String.format(&quot;%s.%s.%s Pre-release %s&quot;, majorVersion, minorVersion, revisionVersion, preVersion);
-if (revisionVersion != 0)
-return String.format(&quot;%s.%s.%s&quot;, majorVersion, minorVersion, revisionVersion);
-

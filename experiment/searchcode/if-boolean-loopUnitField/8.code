@@ -1,6 +1,0 @@
-DateTimeFieldType loopType = types[i];
-DurationField loopUnitField = loopType.getDurationType().getField(iChronology);
-if (i > 0) {
-if (loopUnitField.isSupported() == false) {
-if (lastUnitField.isSupported()) {
-

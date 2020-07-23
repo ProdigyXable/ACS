@@ -1,9 +1,0 @@
-import org.threadly.litesockets.protocols.http.shared.HTTPHeaders;
-
-/**
-* This is an immutable HTTPRequest object.  This is what is sent to the server when doing an
-if(o == this) {
-return true;
-} else if(o instanceof HTTPRequest) {
-HTTPRequest hr = (HTTPRequest)o;
-

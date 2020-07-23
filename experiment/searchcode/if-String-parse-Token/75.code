@@ -1,9 +1,0 @@
-(	TokenNameLPAREN
-&quot; &quot;	TokenNameStringLiteral
-)	TokenNameRPAREN
-)	TokenNameRPAREN
-;	TokenNameSEMICOLON
-checkParseCausesIAE	TokenNameIdentifier	 check Parse Causes IAE
-(	TokenNameLPAREN
-&quot;,&quot;	TokenNameStringLiteral	,
-

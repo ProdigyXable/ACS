@@ -1,9 +1,0 @@
-public String methodName() throws GlobalException{
-if(labQueryVo==null)labQueryVo=new LabQueryVo();
-getRequest().setAttribute(&quot;listQuery&quot;, labQueryVo.getListQuery());
-if(labQueryVo.getQueryType().equals(Constants.TRUE)){
-return &quot;list1&quot;;
-}else
-return LIST;
-}
-

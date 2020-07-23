@@ -1,6 +1,0 @@
-// NOTE: logic duplicated below START
-for (int i = 0; i < searchLength; i++) {
-if (noMoreMatchesForReplIndex[i] || searchList[i] == null || searchList[i].length() == 0 || replacementList[i] == null) {
-for (int i = 0; i < searchLength; i++) {
-if (noMoreMatchesForReplIndex[i] || searchList[i] == null || searchList[i].length() == 0 || replacementList[i] == null) {
-

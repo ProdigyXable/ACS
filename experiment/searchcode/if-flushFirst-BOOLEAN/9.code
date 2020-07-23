@@ -1,7 +1,0 @@
-* @throws javax.xml.transform.TransformerException
-*/
-public void recomposeTemplates(boolean flushFirst) throws TransformerException
-{
-/***************************************  KEEP METHOD IN FOR COMPILATION
-if (flushFirst)
-

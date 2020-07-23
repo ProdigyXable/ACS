@@ -1,7 +1,0 @@
-package delight.rhinosandox.internal;
-
-import java.lang.reflect.Member;
-import org.mozilla.javascript.Context;
-public RhinoEval(final String name, final Member methodOrConstructor, final Scriptable scope) {
-super(name, methodOrConstructor, scope);
-

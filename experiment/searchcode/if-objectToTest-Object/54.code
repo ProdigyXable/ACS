@@ -1,6 +1,0 @@
-protected AbstractIntactAnnotation findObject(AbstractIntactAnnotation objectToTest) {
-if (testNumber == 1){
-return entityManager.find(CvTermAnnotation.class, objectToTest.getAc());
-}
-else if(testNumber == 2){
-

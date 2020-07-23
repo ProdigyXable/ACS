@@ -1,8 +1,0 @@
-public class SpecialStrings {
-public String findNext(String current) {
-char[] chars = current.toCharArray();
-
-int i = chars.length - 1;
-
-for (; i > 0; i--) {
-

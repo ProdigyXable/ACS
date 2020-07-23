@@ -1,8 +1,0 @@
-private FareEstimateLocation pickupLocation;
-private Map<String, FareEstimateVehicleViewData> vehicleViews;
-
-public boolean equals(Object paramObject)
-{
-if (this == paramObject);
-FareEstimateResponse localFareEstimateResponse;
-

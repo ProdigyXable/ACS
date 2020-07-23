@@ -1,7 +1,0 @@
-super(megaApi, listener, singleListener);
-this.outputStream = outputStream;
-}
-
-public boolean onTransferData(MegaApi api, MegaTransfer transfer, byte[] buffer) {
-if (outputStream != null) {
-

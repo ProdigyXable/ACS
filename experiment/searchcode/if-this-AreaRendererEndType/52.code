@@ -1,9 +1,0 @@
-return false;
-}
-AreaRendererEndType that = (AreaRendererEndType) obj;
-if (!this.name.equals(that.toString())) {
-result = AreaRendererEndType.TAPER;
-}
-else if (this.equals(AreaRendererEndType.TRUNCATE)) {
-result = AreaRendererEndType.TRUNCATE;
-

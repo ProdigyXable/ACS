@@ -1,9 +1,0 @@
-package com.neccton;
-
-import org.springframework.context.ConfigurableApplicationContext;
-
-public class ApplicationContextProvider
-public static void setApplicationContext(final ConfigurableApplicationContext ctx)
-{
-if (context == null)
-

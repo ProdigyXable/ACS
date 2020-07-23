@@ -1,9 +1,0 @@
-return true;
-}
-if (!(obj instanceof VerticalAlignment)) {
-return false;
-}
-
-VerticalAlignment alignment = (VerticalAlignment) obj;
-if (!this.name.equals(alignment.name)) {
-

@@ -1,7 +1,0 @@
-public static double[] calculateAvgRanks(double[][] groupRanks) {
-int systems = groupRanks.length;
-int experts = groupRanks[0].length;
-double[] avgRanks = new double[systems];
-
-for (int s = 0; s < systems; s++) {
-

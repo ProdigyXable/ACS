@@ -1,6 +1,0 @@
-fractionParts = inputString.split (&quot;/&quot;);
-topFraction = fractionParts [0];
-bottomFraction = fractionParts [1];
-num = Integer.parseInt(topFraction.substring (0,1));
-denom = Integer.parseInt (bottomFraction.substring (0,1));
-

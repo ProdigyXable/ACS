@@ -1,7 +1,0 @@
-@Override
-public void success(String response, UserActionEnum action) {
-if (isResumed()) {
-public void fail(VolleyError error, UserActionEnum action) {
-if (isResumed()) {
-mUpdatableView.dismissProgressDialog();
-

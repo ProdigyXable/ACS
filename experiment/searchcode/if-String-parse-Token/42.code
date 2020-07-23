@@ -1,5 +1,0 @@
-else if(_token.type == Token.TOK_CREATE_FILE)
-{
-java.util.List<String> s = strings();
-if(_token.type != Token.TOK_SEMI)
-

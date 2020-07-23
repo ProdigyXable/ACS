@@ -1,9 +1,0 @@
-this.maxWidth = maxWidth;
-this.maxHeight = maxHeight;
-this.key = image;
-
-double aspectRatio;
-if (image.width() >= image.height()) {
-targetWidth = maxWidth;
-aspectRatio = (double) image.height() / (double) image.width();
-

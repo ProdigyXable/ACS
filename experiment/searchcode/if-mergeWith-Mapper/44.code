@@ -1,4 +1,0 @@
-public void merge(Mapper mergeWith, MergeContext mergeContext) throws MergeMappingException {
-if (!(mergeWith instanceof ExternalRootMapper)) {
-mergeContext.addConflict(&quot;Trying to merge &quot; + mergeWith + &quot; with &quot; + this);
-

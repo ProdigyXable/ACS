@@ -1,9 +1,0 @@
-rss[T_FAT] = this.getRSS(data, obs, vars);
-
-double min = Double.MAX_VALUE;
-int tipo = UNKNOWN;
-return Double.MAX_VALUE;
-}
-try {
-return ols.calculateResidualSumOfSquares();
-

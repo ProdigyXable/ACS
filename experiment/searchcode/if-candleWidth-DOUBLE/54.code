@@ -1,8 +1,0 @@
-* Candlestick renderer for OHLC data points
-*
-*/
-public class CandlestickRenderer implements IDrawable<Date, Double>, IOHLCRenderer {
-int pixelLeft = pixelIndex - candleWidth / 2;
-int candleHeight = Math.abs(pixelOpen - pixelClose);
-if (candleHeight != 0) {
-

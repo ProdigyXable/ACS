@@ -1,9 +1,0 @@
-public static String wrap(String str, int wrapLength) {
-return wrap(str, wrapLength, null, false);
-newLineStr = &quot;\n&quot;;
-}
-if (wrapLength < 1) {
-wrapLength = 1;
-}
-int inputLineLength = str.length();
-

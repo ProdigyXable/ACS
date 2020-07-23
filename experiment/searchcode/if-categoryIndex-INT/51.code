@@ -1,6 +1,0 @@
-categoryImageCounts[categoryIndex]++;
-for (int i = 0; i < imageFeatures.length; i++) {
-categoryFeatures[categoryIndex][i] += imageFeatures[i];
-for (categoryIndex = 0; categoryIndex < categoryCount; categoryIndex++) {
-for (int i = 0; i < categoryFeatures[categoryIndex].length; i++) {
-

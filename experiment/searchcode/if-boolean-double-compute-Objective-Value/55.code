@@ -1,6 +1,0 @@
-public ObjectiveSet performExactAlgorithm(int type, double value) {
-SetOfObjectiveSets minimalObjectiveSets = getAllMinimalSets(type, value);
-* larger than value.
-*/
-private SetOfObjectiveSets computeSetOfSetsFor(int p, int q, int type, double value) {
-

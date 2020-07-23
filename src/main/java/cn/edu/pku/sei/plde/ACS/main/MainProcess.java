@@ -3,19 +3,20 @@ package cn.edu.pku.sei.plde.ACS.main;
 import cn.edu.pku.sei.plde.ACS.fix.SuspiciousFixer;
 import cn.edu.pku.sei.plde.ACS.localization.Localization;
 import cn.edu.pku.sei.plde.ACS.localization.Suspicious;
+import cn.edu.pku.sei.plde.ACS.trace.TraceResult;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.utils.PathUtils;
 import cn.edu.pku.sei.plde.ACS.utils.RecordUtils;
 import cn.edu.pku.sei.plde.ACS.utils.TestUtils;
-import org.apache.commons.io.IOUtils;
-import org.easymock.EasyMock;
-import org.joda.convert.FromString;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import org.apache.commons.io.IOUtils;
+import org.easymock.EasyMock;
+import org.joda.convert.FromString;
 
 /**
  * Created by yanrunfa on 16/4/23.
@@ -28,22 +29,25 @@ public class MainProcess {
     private String testClasspath;
     private String testClassSrc;
     public static String PROJECT_NAME;
+    private Map<String, Integer> originallyFailingTestResults;
 
     private List<String> libPath = new ArrayList<>();
     private boolean successHalfFlag = false;
     public List<Suspicious> triedSuspicious = new ArrayList<>();
 
-    public MainProcess(String path){
-        if (!path.endsWith("/")){
+    public MainProcess(String path) {
+        if (!path.endsWith("/")) {
             path += "/";
         }
         PATH_OF_DEFECTS4J = path;
+        // TestUtils.getFailTestNumInProject(PROJECT_NAME);
+        // this.originallyFailingTestResults = TestUtils.getFailTestNumInProject(PROJECT_NAME);
     }
 
-    public  boolean mainProcess(String projectType, int projectNumber, TimeLine timeLine) throws Exception{
-        String project = setWorkDirectory(projectType,projectNumber);
-        if (!checkProjectDirectory()){
-            System.out.println("Main Process: set work directory error at project "+projectType+"-"+projectNumber);
+    public boolean mainProcess(String projectType, int projectNumber, TimeLine timeLine) throws Exception {
+        String project = setWorkDirectory(projectType, projectNumber);
+        if (!checkProjectDirectory()) {
+            System.out.println("Main Process: set work directory error at project " + projectType + "-" + projectNumber);
             File recordPackage = new File(Config.PATCH_PATH);
             recordPackage.mkdirs();
             File main = new File(Config.FIX_RESULT_FILE_PATH);
@@ -52,71 +56,70 @@ public class MainProcess {
                     main.createNewFile();
                 }
                 FileWriter writer = new FileWriter(main, true);
-                writer.write("project "+project+" path error\n");
+                writer.write("project " + project + " path error\n");
                 writer.close();
-            }catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
             return false;
         }
+
         PROJECT_NAME = project;
-        Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath);
+        Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc, libPath);
         List<Suspicious> suspiciouses = localization.getSuspiciousLite();
-        if (timeLine.isTimeout()){
+        if (timeLine.isTimeout()) {
             return false;
         }
-        if (suspiciouses.size() == 0){
+        if (suspiciouses.size() == 0) {
             System.out.println("no suspicious found\n");
         }
         return suspiciousLoop(suspiciouses, project, timeLine);
     }
 
-
-    private boolean checkProjectDirectory(){
-            if (!new File(classpath).exists()){
-                System.out.println("Classpath :"+classpath+" do not exist!");
-                return false;
-            }
-            if (!new File(classSrc).exists()){
-                System.out.println("ClassSourcePath :"+classSrc+" do not exist!");
-                return false;
-            }
-            if (!new File(testClasspath).exists()){
-                System.out.println("TestClassPath :"+testClasspath+" do not exist!");
-                return false;
-            }
-            if (!new File(testClassSrc).exists()){
-                System.out.println("TestSourcePath :"+testClassSrc+" do not exist!");
-                return false;
-            }
-            return true;
+    private boolean checkProjectDirectory() {
+        if (!new File(classpath).exists()) {
+            System.out.println("Classpath :" + classpath + " do not exist!");
+            return false;
         }
-
+        if (!new File(classSrc).exists()) {
+            System.out.println("ClassSourcePath :" + classSrc + " do not exist!");
+            return false;
+        }
+        if (!new File(testClasspath).exists()) {
+            System.out.println("TestClassPath :" + testClasspath + " do not exist!");
+            return false;
+        }
+        if (!new File(testClassSrc).exists()) {
+            System.out.println("TestSourcePath :" + testClassSrc + " do not exist!");
+            return false;
+        }
+        return true;
+    }
 
     public boolean suspiciousLoop(List<Suspicious> suspiciouses, String project, TimeLine timeLine) {
-        for (Suspicious suspicious: suspiciouses){
+        for (Suspicious suspicious : suspiciouses) {
             suspicious._libPath = libPath;
             boolean tried = false;
-            for (Suspicious _suspicious: triedSuspicious){
-                if (_suspicious._function.equals(suspicious._function) && _suspicious._classname.equals(suspicious._classname)){
+            for (Suspicious _suspicious : triedSuspicious) {
+                if (_suspicious._function.equals(suspicious._function) && _suspicious._classname.equals(suspicious._classname)) {
                     tried = true;
                 }
             }
-            if (tried){
+            if (tried) {
                 continue;
             }
             try {
-                if (timeLine.isTimeout()){
+                if (timeLine.isTimeout()) {
                     return false;
                 }
 
-                if (fixSuspicious(suspicious, project, timeLine)){
+                if (fixSuspicious(suspicious, project, timeLine)) {
                     return true;
                 }
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-            if (!successHalfFlag){
+            if (!successHalfFlag) {
                 triedSuspicious.add(suspicious);
             }
 
@@ -124,78 +127,104 @@ public class MainProcess {
         return false;
     }
 
-
-    public boolean fixSuspicious(Suspicious suspicious, String project, TimeLine timeLine) throws Exception{
+    public boolean fixSuspicious(Suspicious suspicious, String project, TimeLine timeLine) throws Exception {
         successHalfFlag = false;
         SuspiciousFixer fixer = new SuspiciousFixer(suspicious, project, timeLine);
-        if (timeLine.isTimeout()){
+        if (timeLine.isTimeout()) {
             return false;
         }
-        if (fixer.mainFixProcess()){
+        if (fixer.mainFixProcess()) {
             RecordUtils.printCollectingMessage(suspicious, timeLine);
+
+            int ff = 0;
+            int fp = 0;
+            int pf = 0;
+            int pp = 0;
+
+            for (TraceResult tr : fixer.traceResults) {
+                System.out.println(String.format("TraceResult=%s class=%s method=%s line=%d", String.valueOf(tr.getTestResult()), tr._testClass, tr._testMethod, tr._traceLine));
+
+                if (tr.getTestResult()) { // Passing test?
+
+                } else { // Failing test?
+
+                }
+
+            }
+
             return isFixSuccess(project, timeLine);
+
         }
         return false;
     }
 
-    public boolean isFixSuccess(String project, TimeLine timeLine){
+    public boolean isFixSuccess(String project, TimeLine timeLine) {
         System.out.println("Fix Success One Place");
-        if (timeLine.isTimeout()){
+        if (timeLine.isTimeout()) {
             return false;
         }
+
         int failTest = SuspiciousFixer.FAILED_TEST_NUM;
-        if (failTest == 0){
-            failTest = TestUtils.getFailTestNumInProject(project);
+        if (failTest == 0) {
+            Map<String, Integer> m = TestUtils.getFailTestNumInProject(project);
+            if (m.isEmpty()) {
+                failTest = Integer.MAX_VALUE;
+            } else {
+                int accumulator = 0;
+                for (Integer v : m.values()) {
+                    accumulator += v;
+                }
+                failTest = accumulator;
+            }
         }
-        if (failTest > 0){
+        if (failTest > 0) {
             SuspiciousFixer.FAILED_TEST_NUM = failTest;
-            Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath);
+            Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc, libPath);
             List<Suspicious> suspiciouses = localization.getSuspiciousLite(false);
-            if (suspiciouses.size() == 0){
+            if (suspiciouses.size() == 0) {
                 successHalfFlag = true;
                 return false;
             }
             return suspiciousLoop(suspiciouses, project, timeLine);
-        }
-        else {
+        } else {
             System.out.println("Fix All Place Success");
             return true;
         }
 
     }
 
-    public String setWorkDirectory(String projectName, int number){
+    public String setWorkDirectory(String projectName, int number) {
         libPath.add(FromString.class.getProtectionDomain().getCodeSource().getLocation().getFile());
         libPath.add(EasyMock.class.getProtectionDomain().getCodeSource().getLocation().getFile());
         libPath.add(IOUtils.class.getProtectionDomain().getCodeSource().getLocation().getFile());
-        File projectDir = new File(System.getProperty("user.dir")+"/project/");
-        System.out.println("Project Dir: "+projectDir.getAbsolutePath());
+        File projectDir = new File(System.getProperty("user.dir") + "/project/");
+        System.out.println("Project Dir: " + projectDir.getAbsolutePath());
         FileUtils.deleteDirNow(projectDir.getAbsolutePath());
-        if (!projectDir.exists()){
+        if (!projectDir.exists()) {
             projectDir.mkdirs();
         }
-        String project = projectName+"_"+number;
+        String project = projectName + "_" + number;
         /* 四个整个项目需要的参数 */
-        FileUtils.copyDirectory(PATH_OF_DEFECTS4J+project,projectDir.getAbsolutePath());
+        FileUtils.copyDirectory(PATH_OF_DEFECTS4J + project, projectDir.getAbsolutePath());
         List<String> paths = PathUtils.getSrcPath(project);
-        classpath = projectDir+"/"+project+paths.get(0);
-        testClasspath = projectDir+"/"+project+paths.get(1);
-        classSrc = projectDir+"/"+project+paths.get(2);
-        testClassSrc = projectDir+"/"+ project + paths.get(3);
-        FileUtils.copyDirectory(PATH_OF_DEFECTS4J+project+"/src/test/resources/",System.getProperty("user.dir")+"/src/test");
-        File libPkg = new File(projectDir.getAbsolutePath()+"/"+project+"/lib/");
-        if (libPkg.exists() && libPkg.list() != null){
-            for (String p: libPkg.list()){
-                if (p.endsWith(".jar")){
-                    libPath.add(libPkg.getAbsolutePath()+"/"+p);
+        classpath = projectDir + "/" + project + paths.get(0);
+        testClasspath = projectDir + "/" + project + paths.get(1);
+        classSrc = projectDir + "/" + project + paths.get(2);
+        testClassSrc = projectDir + "/" + project + paths.get(3);
+        FileUtils.copyDirectory(PATH_OF_DEFECTS4J + project + "/src/test/resources/", System.getProperty("user.dir") + "/src/test");
+        File libPkg = new File(projectDir.getAbsolutePath() + "/" + project + "/lib/");
+        if (libPkg.exists() && libPkg.list() != null) {
+            for (String p : libPkg.list()) {
+                if (p.endsWith(".jar")) {
+                    libPath.add(libPkg.getAbsolutePath() + "/" + p);
                 }
             }
         }
-        libPkg = new File(projectDir.getAbsolutePath()+"/"+project+"/build/lib/");
-        if (libPkg.exists() && libPkg.list() != null){
-            for (String p: libPkg.list()){
-                if (p.endsWith(".jar")){
-                    libPath.add(libPkg.getAbsolutePath()+"/"+p);
+        libPkg = new File(projectDir.getAbsolutePath() + "/" + project + "/build/lib/");
+        if (libPkg.exists() && libPkg.list() != null) {
+            for (String p : libPkg.list()) {
+                if (p.endsWith(".jar")) {
+                    libPath.add(libPkg.getAbsolutePath() + "/" + p);
                 }
             }
         }

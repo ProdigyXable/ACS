@@ -1,7 +1,0 @@
-public class CountingSleepingRequestRetryHandler implements RequestRetryHandler {
-private int maxRetries;
-private long sleepMs;
-
-public CountingSleepingRequestRetryHandler(int maxRetries, long sleepMs) {
-this.maxRetries = maxRetries;
-

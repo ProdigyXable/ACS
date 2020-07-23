@@ -1,5 +1,0 @@
-StringBuilder regex = new StringBuilder(&quot;(?i)(&quot;);
-for (TokenReplacement replacement : replacements) {
-if (replacement.getFrom().length() > 1) {
-regex.append(replacement.getFrom()).append(&quot;|&quot;);
-

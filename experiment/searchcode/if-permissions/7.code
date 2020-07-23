@@ -1,8 +1,0 @@
-public class PermisosFacebbok {
-
-public String[] mPermissions = null;
-public String[] getPermissionsList() {
-if(mPermissions == null) {
-int i = 0;
-mPermissions = new String[42];
-

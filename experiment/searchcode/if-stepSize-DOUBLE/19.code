@@ -1,8 +1,0 @@
-return pi;
-}
-
-private static double squareOfChunk(int stepSize, int chunk) {
-double x = offset(stepSize(stepSize), chunk) + halfOfStep(stepSize);
-double y = circleFunction(x);
-return adjustedRectangleSquare(stepSize(stepSize), y);
-

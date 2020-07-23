@@ -1,4 +1,0 @@
-public class ShapeFactory {
-public Shape getShape(String shapeType) {
-if (shapeType.equals(&quot;RECTANGLE&quot;)) {
-

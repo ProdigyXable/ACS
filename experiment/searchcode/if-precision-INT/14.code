@@ -1,8 +1,0 @@
-private final int precision;
-
-PrecisionRestrictDatatype(DatatypeBase base, int precision) {
-super(base);
-void checkRestriction(Object obj) throws DatatypeException {
-final int actualPrecision = getPrecision((BigDecimal)obj);
-if (actualPrecision > precision) {
-

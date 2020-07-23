@@ -1,9 +1,0 @@
-return starttime.getTimeInMillis();
-}
-public static long getStartTime(long start){
-Calendar starttime=Calendar.getInstance();
-return starttime.getTimeInMillis();
-}
-public static long getEndTime(long end){
-Calendar endtime = Calendar.getInstance();
-

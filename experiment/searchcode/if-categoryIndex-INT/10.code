@@ -1,8 +1,0 @@
-isHotspotListEnabled = b;
-}
-
-protected abstract HotspotList createHotspotList(int categoryIndex, int elementIndex) throws PrismException;
-
-@Override
-public HotspotList getHotspotList(int categoryIndex, int elementIndex) throws PrismException
-

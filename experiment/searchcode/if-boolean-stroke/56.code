@@ -1,9 +1,0 @@
-import javax.swing.JTextArea;
-import javax.swing.KeyStroke;
-
-import org.sissala.keyboard.SissalaKeyMapper;
-private boolean isEngToggled;
-private JTextArea textArea;
-
-public SissalaKeyInputMap(JTextArea uiTextArea) {
-

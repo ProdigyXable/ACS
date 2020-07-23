@@ -1,5 +1,0 @@
-public boolean contains(ReadableInstant readableInstant) {
-if (readableInstant == null) {
-long currentTimeMillis = DateTimeUtils.currentTimeMillis();
-if (startMillis >= currentTimeMillis || currentTimeMillis >= endMillis) {
-

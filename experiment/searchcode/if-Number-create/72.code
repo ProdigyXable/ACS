@@ -1,8 +1,0 @@
-while (lg < maxLg)
-{
-car = System.in.read();
-if ((car < 0) || (car == &#39;\n&#39;)) break;
-result = result + line;
-if (i < numberOfDigits)
-result = result + &quot; &quot;;
-

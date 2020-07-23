@@ -4,18 +4,18 @@ import cn.edu.pku.sei.plde.ACS.boundary.BoundaryCollect;
 import cn.edu.pku.sei.plde.ACS.boundary.model.BoundaryWithFreq;
 import cn.edu.pku.sei.plde.ACS.boundary.model.Interval;
 import cn.edu.pku.sei.plde.ACS.log.Log;
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  * Created by yjxxtd on 4/23/16.
  */
 public class MathUtilsTest {
+
     @Test
-    public void testMergetDoubleInterval(){
+    public void testMergetDoubleInterval() {
         ArrayList<Interval> intervalList = new ArrayList<Interval>();
         List<Interval> intervalMergeList = new ArrayList<Interval>();
 
@@ -55,7 +55,7 @@ public class MathUtilsTest {
     }
 
     @Test
-    public void testMergetIntInterval(){
+    public void testMergetIntInterval() {
         ArrayList<Interval> intervalList = new ArrayList<Interval>();
         List<Interval> intervalMergeList = new ArrayList<Interval>();
 
@@ -105,8 +105,6 @@ public class MathUtilsTest {
 //
 //        System.out.println("17xx " + boundaryWithFreqArrayList.get(0).value + boundaryWithFreqArrayList.get(0).leftClose);
 //        System.out.println("17xx " + boundaryWithFreqArrayList.get(1).value + boundaryWithFreqArrayList.get(1).rightClose);
-
-
 //        String path = "experiment//searchcode//if-Complex";
 //        BoundaryCollect boundaryCollect = new BoundaryCollect(path, true, "Complex");
 //        boundaryWithFreqs = boundaryCollect.getBoundaryWithFreqList();
@@ -125,11 +123,11 @@ public class MathUtilsTest {
 //        }
 //
         String path = "experiment//searchcode//if-double-factorial";
-        BoundaryCollect boundaryCollect = new BoundaryCollect(path, false , null);
+        BoundaryCollect boundaryCollect = new BoundaryCollect(path, false, null);
         boundaryWithFreqs = boundaryCollect.getBoundaryWithFreqList();
 
         Log log = new Log("log//if-double-factorial.log");
-        for(BoundaryWithFreq boundaryInfo : boundaryWithFreqs){
+        for (BoundaryWithFreq boundaryInfo : boundaryWithFreqs) {
             log.logSignLine("begin");
             //log.logStr("name: " + boundaryInfo.name);
             log.logStr("value: " + boundaryInfo.value);
@@ -159,23 +157,19 @@ public class MathUtilsTest {
 //            log.logStr("variableSimpleType " + boundaryInfo.variableSimpleType);
 //            log.logSignLine("end");
 //        }
-
-        ArrayList<BoundaryWithFreq> boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 1,"double");
+        ArrayList<BoundaryWithFreq> boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 1, "double");
 //
 //        System.out.println("17xx " + boundaryWithFreqArrayList.get(0).value + boundaryWithFreqArrayList.get(0).leftClose);
 //        System.out.println("17xx " + boundaryWithFreqArrayList.get(1).value + boundaryWithFreqArrayList.get(1).rightClose);
 
-
-        boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 18.0,"double");
+        boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 18.0, "double");
 
         System.out.println("18xx " + boundaryWithFreqArrayList.get(0).value + boundaryWithFreqArrayList.get(0).leftClose);
         System.out.println("18xx " + boundaryWithFreqArrayList.get(1).value + boundaryWithFreqArrayList.get(1).rightClose);
 
 //        boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 19.0);
-
         //System.out.println("19xx " + boundaryWithFreqArrayList.get(0).value + boundaryWithFreqArrayList.get(0).leftClose);
         //System.out.println("19xx " + boundaryWithFreqArrayList.get(1).value + boundaryWithFreqArrayList.get(1).rightClose);
-
 //        boundaryWithFreqs.add(new BoundaryWithFreq(null, false, "xx", "1.0", 1, 1, 1));
 //        boundaryWithFreqs.add(new BoundaryWithFreq(TypeEnum.DOUBLE, true, null, "1.0", 1, 1, 1));
 //        ArrayList<BoundaryWithFreq> boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 1.0);
@@ -196,6 +190,5 @@ public class MathUtilsTest {
 //        boundaryWithFreqArrayList = MathUtils.generateInterval(boundaryWithFreqs, 2.0);
 //        assertTrue(boundaryWithFreqArrayList.get(0).value.equals("1.0"));
 //        assertTrue(boundaryWithFreqArrayList.get(1).value.equals("3.0"));
-
     }
 }

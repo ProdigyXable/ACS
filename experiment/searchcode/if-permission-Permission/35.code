@@ -1,8 +1,0 @@
-this.permissionList = permissionList;
-}
-
-public boolean areAllPermissionsGranted() {
-if (isPermissionListAvailable()) {
-for (Permission permission : permissionList) {
-if (permission.isDenied()) {
-

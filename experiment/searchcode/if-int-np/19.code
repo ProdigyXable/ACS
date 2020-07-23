@@ -1,8 +1,0 @@
-while (np != null) {
-if (np.left == null) {
-if (pre == null)
-pre = np;
-else {
-if (pre.val > np.val) {
-if (n1 == null)
-

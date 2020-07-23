@@ -1,9 +1,0 @@
-return false;
-}
-PieLabelLinkStyle style = (PieLabelLinkStyle) obj;
-if (!this.name.equals(style.toString())) {
-if (this.equals(PieLabelLinkStyle.STANDARD)) {
-result = PieLabelLinkStyle.STANDARD;
-}
-else if (this.equals(PieLabelLinkStyle.QUAD_CURVE)) {
-

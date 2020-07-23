@@ -1,9 +1,0 @@
-this.name = name;
-}
-
-public boolean atLeast(final JavaVersion requiredVersion) {
-return this.value >= requiredVersion.value;
-}
-
-static JavaVersion getJavaVersion(final String nom) {
-

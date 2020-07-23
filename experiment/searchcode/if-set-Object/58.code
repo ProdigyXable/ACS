@@ -1,8 +1,0 @@
-objectExternalReference.setReference(zettObjectExternalReference.getReference());
-}
-if(zettObjectExternalReference.getSource()!=null){
-if(zettObjectExternalReference.getSystem()!=null){
-objectExternalReference.setSystem(zettObjectExternalReference.getSystem());
-}
-if(zettObjectExternalReference.getSystemVersion()!=null){
-

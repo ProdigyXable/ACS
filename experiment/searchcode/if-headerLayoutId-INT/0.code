@@ -1,8 +1,0 @@
-protected final Context mContext;
-protected final int mHeaderLayoutId;
-protected final int mTitleTextViewId;
-
-public SimpleSectionListAdapter(Context context, BaseAdapter adapter, SectionListAdapter.SectionDetector detector, int headerLayoutId, int titleTextViewId) {
-super(adapter, detector);
-mContext = context;
-

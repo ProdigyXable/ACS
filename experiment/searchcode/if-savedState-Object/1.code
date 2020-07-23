@@ -1,8 +1,0 @@
-final SavedState savedState = new SavedState();
-savedState.featureId = parcel.readInt();
-if (parcel.readInt() != (isOpen ? 1 : 0)) {
-isOpen = false;
-}
-savedState.isOpen = isOpen;
-if (savedState.isOpen) {
-

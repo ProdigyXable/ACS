@@ -1,9 +1,0 @@
-private String word;
-private static final MatchType match = MatchType.EXACT;
-
-public EWordType(String word){
-this.word = word;
-public MatchType match(String token) {
-MatchType notMatch = MatchType.NONE;
-if(token.equalsIgnoreCase(word))
-

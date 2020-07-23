@@ -1,5 +1,0 @@
-public void display(Secret secret, Boolean isAllowConversation, SecretCountdownCallback callback) {
-displaySecretCard(secret);
-if (!secret.isAutoRemove()) {
-Utils.setVisibility(secretCountdownView, View.INVISIBLE);
-

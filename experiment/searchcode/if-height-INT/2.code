@@ -1,8 +1,0 @@
-public int trap(int[] height) {
-
-if (height == null || height.length <=2) {
-j--;
-} else {
-if (height[i] <= height[j]) {
-int k = i + 1;
-

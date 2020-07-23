@@ -1,5 +1,0 @@
-closestCandidate = closerOf(closestCandidate, currentCandidate);
-closestCandidate = preferPositiveIfBothSameDistance(closestCandidate,currentCandidate);
-private int preferPositiveIfBothSameDistance(int closest,int currentCandidate) {
-if (sameDistance(closest, currentCandidate)) {
-

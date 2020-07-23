@@ -1,9 +1,0 @@
-return this;
-}
-
-public DnsClientSupplier getDnsClientSupplier() {
-if (dnsClientSupplier == null) {
-
-if (port != -1) {
-dnsClientSupplier = new DnsSingleClientSupplier(getVertx(), getHost(), getPort());
-

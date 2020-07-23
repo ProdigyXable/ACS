@@ -1,8 +1,0 @@
-topRight += 4 * increment;
-increment += 2;
-numberOfDiagonals += 4;
-if(isPrime(topRight + increment)) {
-numberOfPrimes++;
-}
-if(isPrime(topRight + 2 * increment)) {
-

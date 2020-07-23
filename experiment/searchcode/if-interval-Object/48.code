@@ -1,7 +1,0 @@
-String[] intervals = intervalHours.split(&quot;,&quot;);
-
-if (intervals.length <= 0) {
-return null;
-String intervalValidation = &quot;&quot;;
-if (interval.isInsideInterval(timeApp)) {
-

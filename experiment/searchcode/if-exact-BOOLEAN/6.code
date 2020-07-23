@@ -1,7 +1,0 @@
-public class BooleanGeneratorUnitTest {
-
-@Test
-public void testGenerateExactBoolean() throws Exception {
-final Boolean boolean1 = true;
-final ExactBooleanRequirement exactBooleanRequirement = new ExactBooleanRequirement(boolean1);
-

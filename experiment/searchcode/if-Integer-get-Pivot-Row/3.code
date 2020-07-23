@@ -1,6 +1,0 @@
-if (rows > pivotTable.getRowSection().getRowList().size()) {
-rows = pivotTable.getRowSection().getRowList().size();
-List<ColumnField> oldColumns = pivotTable.getColumnSection().getColumnFieldList();
-
-List<Row> oldRows = pivotTable.getRowSection().getRowList();
-

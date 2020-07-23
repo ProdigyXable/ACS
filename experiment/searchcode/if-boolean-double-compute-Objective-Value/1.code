@@ -1,8 +1,0 @@
-previousEfficientSolution=currentEfficientSolution;
-
-double lambda;
-if (lambdaValue != null) {
-lambda = lambdaValue;
-for (int objective=0; objective < currentEfficientSolution.getNumberOfObjectives(); objective++) {
-if (currentEfficientSolution.getObjectiveValue(objective) < previousEfficientSolution.getObjectiveValue(objective)) {
-

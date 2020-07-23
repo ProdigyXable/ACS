@@ -1,7 +1,0 @@
-*            Must be in [1..1024].
-* @throws IllegalArgumentException if maxDigits is not in [1..1024]
-*/
-public GetDataCommand(String file, long timeout, int maxDigits) throws IllegalArgumentException
-{
-super();
-

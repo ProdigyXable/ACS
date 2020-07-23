@@ -1,4 +1,0 @@
-ProviderConnectMode connectMode = ProviderConnectMode.PASS_THROUGH;
-if (StringUtils.isNotBlank(mode)) {
-connectMode = ProviderConnectMode.getConnectMode(mode);
-

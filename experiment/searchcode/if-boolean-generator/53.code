@@ -1,7 +1,0 @@
-* @see AbstractCacheKeyGenerator#AbstractCacheKeyGenerator(boolean, boolean)
-*/
-public StringCacheKeyGenerator(boolean includeMethod, boolean includeParameterTypes) {
-protected void append(StringGenerator generator, boolean[] a) {
-generator.builder.append(&quot;[&quot;);
-if (a.length > 0) {
-

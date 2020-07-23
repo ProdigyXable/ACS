@@ -1,8 +1,0 @@
-@Override
-public void removePropertyChangeListener(IPropertyChangeListener listener) {
-removeListenerObject(listener);
-if (!isListenerAttached()) {
-disposePreferenceStoreListener();
-}
-}
-

@@ -1,5 +1,0 @@
-return new BSPTree<Euclidean1D>(upperCut,
-new BSPTree<Euclidean1D>(Boolean.FALSE),
-new BSPTree<Euclidean1D>(Boolean.FALSE),
-new BSPTree<Euclidean1D>(upperCut,
-

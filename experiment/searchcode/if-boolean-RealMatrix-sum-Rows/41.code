@@ -1,6 +1,0 @@
-/** Array for weighted recombination. */
-private RealMatrix weights;
-/** Variance-effectiveness of sum w_i x_i. */
-private static RealMatrix sumRows(final RealMatrix m) {
-double[][] d = new double[1][m.getColumnDimension()];
-

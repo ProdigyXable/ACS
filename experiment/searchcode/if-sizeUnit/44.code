@@ -1,9 +1,0 @@
-// along with abc4j.  If not, see <http://www.gnu.org/licenses/>.
-package abc.ui.scoretemplates;
-
-import java.io.Serializable;
-public boolean equals(Object o) {
-if (o instanceof SizeUnit)
-return ((SizeUnit)o).name.equals(name);
-else if (o instanceof String)
-

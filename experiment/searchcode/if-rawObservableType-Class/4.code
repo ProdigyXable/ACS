@@ -1,8 +1,0 @@
-if (rawType != Observable.class &amp;&amp; !isSingle) {
-return null;
-}
-if (!(returnType instanceof ParameterizedType)) {
-Class<?> rawObservableType = getRawType(observableType);
-if (rawObservableType == Response.class) {
-if (!(observableType instanceof ParameterizedType)) {
-

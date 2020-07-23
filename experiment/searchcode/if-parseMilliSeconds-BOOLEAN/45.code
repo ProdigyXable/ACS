@@ -1,6 +1,0 @@
-* @param dateJoined The date this user joined, use Utils.getNowTime() if now.
-* @param hasAccount boolean if this user has an account, pass false if not known
-* @param rowId the rowId of the group to update.
-* @param isUpdating boolean if we are updating or not
-* @return boolean if we updated successfully to sql table.
-

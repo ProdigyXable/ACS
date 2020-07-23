@@ -1,8 +1,0 @@
-modelandpara       mp=null;
-int  predictValuetemp=0;
-int   avgpredictValue=0;
-int[]       bestmodel=new int[2];
-double[][] predictErr=new double[7][modelOri.length];
-double  minpreDicterr=9999999;
-int  bestpreDictValue=0;
-

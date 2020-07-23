@@ -1,9 +1,0 @@
-boolean bool1 = paramObject instanceof ak;
-boolean bool2 = false;
-if (bool1)
-{
-ak localak = (ak)paramObject;
-boolean bool3 = ag.a(this.a, localak.a);
-bool2 = false;
-if (bool3)
-

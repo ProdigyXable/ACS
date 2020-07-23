@@ -1,5 +1,0 @@
-public final String setRequestURL(String keyword) {
-
-HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;https://api.edamam.com/search?&quot;).newBuilder();
-urlBuilder.addQueryParameter(&quot;q&quot;, keyword);
-

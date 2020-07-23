@@ -1,3 +1,0 @@
-ConfiguredSharedResource configuredSharedResource = sharedResourceService.getConfiguredSharedResource(sourceSink);
-if(configuredSharedResource==null)
-

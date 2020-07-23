@@ -1,9 +1,0 @@
-* Numerical value for this difference&#39;s severity and significance (higher = more severe/significant)
-*/
-private double differenceScore;
-
-/**
-* Create a new difference with the provided differenceScore
-public Difference(double differenceScore) {
-this.differenceScore = differenceScore;
-

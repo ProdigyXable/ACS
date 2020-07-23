@@ -1,9 +1,0 @@
-* @return complete url for fetching data
-*/
-public static String GetRequestUrl(String relativeUrl)
-{
-if (relativeUrl.startsWith(&quot;/&quot;)) return LOGINRADIUS_API_ROOT + relativeUrl;
-String keyvalueString = createKeyValueString(queryArgs);
-String url = GetRequestUrl(relativeUrl);
-if (url.contains(&quot;?&quot;)) return url + &quot;&amp;&quot; + keyvalueString;
-

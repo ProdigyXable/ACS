@@ -1,9 +1,0 @@
-return new FeerlarocConverterFactory(moshi, false);
-}
-
-private final Moshi moshi;
-private final boolean lenient;
-
-private FeerlarocConverterFactory(Moshi moshi, boolean lenient) {
-if (moshi == null) throw new NullPointerException(&quot;moshi == null&quot;);
-

@@ -1,4 +1,0 @@
-for (SectionAdapter adapter:adapters) {
-int sectionCount = adapter.getSectionCount();
-if (section < sectionCount)
-

@@ -1,4 +1,0 @@
-byte blockColumnStart = (byte) ((column / 3) * 3);
-for (int blockRow = blockRowStart; blockRow < blockRowStart + 3; blockRow++) {
-for (int blockColumn = blockColumnStart; blockColumn < blockColumnStart + 3; blockColumn++) {
-

@@ -1,8 +1,0 @@
-protected static final ThreadLocal<List<Class<?>>> lastType = new ThreadLocal<List<Class<?>>>();
-
-public DefaultInvocationHandler( Class<?> type )
-{
-if( lastType.get() == null )
-lastType.set( new ArrayList<Class<?>>() );
-if( !lastType.get().contains( type ) )
-

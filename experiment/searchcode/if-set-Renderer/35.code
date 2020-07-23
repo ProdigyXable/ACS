@@ -1,9 +1,0 @@
-super (rows, columns);
-}
-
-
-public TBooleanRenderer getBooleanRendererPar() {
-if (this.booleanRendererPar == null) {
-this.booleanRendererPar = new TBooleanRenderer();
-this.booleanRendererPar.setBackground(this.colorPar);
-

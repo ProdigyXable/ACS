@@ -1,6 +1,0 @@
-public SimpleWildcardType(Type[] upperBounds, Type[] lowerBounds) {
-if (lowerBounds == null) {
-lowerBounds = new Type[0];
-}
-if (upperBounds == null || upperBounds.length == 0) {
-

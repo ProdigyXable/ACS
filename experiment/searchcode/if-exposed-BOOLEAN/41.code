@@ -1,9 +1,0 @@
-* <!-- end-user-doc -->
-* @generated
-*/
-public OutputDataPort getExposedPort() {
-if (exposedPort != null &amp;&amp; exposedPort.eIsProxy()) {
-exposedPort = (OutputDataPort)eResolveProxy(oldExposedPort);
-if (exposedPort != oldExposedPort) {
-if (eNotificationRequired())
-

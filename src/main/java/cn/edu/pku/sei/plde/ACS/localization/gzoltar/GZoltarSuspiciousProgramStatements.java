@@ -15,18 +15,15 @@
  */
 package cn.edu.pku.sei.plde.ACS.localization.gzoltar;
 
+import cn.edu.pku.sei.plde.ACS.localization.common.sps.SuspiciousProgramStatements;
+import cn.edu.pku.sei.plde.ACS.localization.metric.Metric;
+import static com.google.common.base.Preconditions.checkNotNull;
 import com.google.common.base.Predicate;
 import com.gzoltar.core.GZoltar;
 import com.gzoltar.core.components.Statement;
-import cn.edu.pku.sei.plde.ACS.localization.metric.Metric;
-import cn.edu.pku.sei.plde.ACS.localization.common.sps.SuspiciousProgramStatements;
-import org.apache.commons.lang.StringUtils;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
-
-import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * A list of potential bug root-cause.
@@ -78,7 +75,6 @@ public final class GZoltarSuspiciousProgramStatements implements SuspiciousProgr
 
     private final WGzoltar gzoltar;
 
-
     protected GZoltarSuspiciousProgramStatements(final URL[] classpath, Collection<String> packageNames, Metric metric, String testSrcPath, String srcPath, List<String> libPath) {
         try {
             //gzoltar = new GZoltarJava7();
@@ -104,8 +100,8 @@ public final class GZoltarSuspiciousProgramStatements implements SuspiciousProgr
         for (String packageName : packageNames) {
             gzoltar.addPackageToInstrument(packageName);
         }
-        for (URL url: classpath){
-            if (url.getPath().endsWith(".jar")){
+        for (URL url : classpath) {
+            if (url.getPath().endsWith(".jar")) {
                 gzoltar.addClassNotToInstrument(url.getPath());
                 gzoltar.addPackageNotToInstrument(url.getPath());
             }
@@ -115,9 +111,9 @@ public final class GZoltarSuspiciousProgramStatements implements SuspiciousProgr
     /**
      * @param testClasses
      * @return a ranked list of potential bug root-cause.
-     * @see cn.edu.pku.sei.plde.ACS.localization.common.sps.SuspiciousProgramStatements#sortBySuspiciousness(String...)
+     * @see
+     * cn.edu.pku.sei.plde.ACS.localization.common.sps.SuspiciousProgramStatements#sortBySuspiciousness(String...)
      */
-
     public List<StatementExt> sortBySuspiciousness(final String... testClasses) {
         for (String className : checkNotNull(testClasses)) {
             gzoltar.addTestToExecute(className); // we want to execute the test
@@ -126,15 +122,12 @@ public final class GZoltarSuspiciousProgramStatements implements SuspiciousProgr
         }
         gzoltar.run();
 
-
-
         List<StatementExt> statements = gzoltar.getSuspiciousStatementExts();
 
-		/*Logger logger = LoggerFactory.getLogger(this.getClass());
+        /*Logger logger = LoggerFactory.getLogger(this.getClass());
 		if (logger.isDebugEnabled()) {
 			logger.debug("Suspicious statements:\n{}", Joiner.on('\n').join(statements));
 		}*/
-
         return statements;
     }
 

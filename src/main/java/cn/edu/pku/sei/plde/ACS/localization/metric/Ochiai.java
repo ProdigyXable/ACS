@@ -7,8 +7,8 @@ public class Ochiai implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
         //if (ef == 1)
-        return ef/Math.sqrt((ef+ep)*(ef+nf))*10;
-            //return (double) ef / ((double) ep + (double)np ) * 10000;
+        return ef / Math.sqrt((ef + ep) * (ef + nf)) * 10;
+        //return (double) ef / ((double) ep + (double)np ) * 10000;
         //else
         //    return 0;
 

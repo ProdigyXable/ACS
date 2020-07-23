@@ -1,5 +1,0 @@
-public void setChargeDistribPercentForChargeDistribPercentCreate(ChargeDistribPercentObjectData data) {
-if (data != null) {
-public void setChargeDistribPercentForChargeDistribPercentFind(ChargeDistribPercentObjectFilter data) {
-if (data != null) {
-

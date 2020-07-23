@@ -1,6 +1,0 @@
-package ch.opentrainingcenter.charts.single.creators.internal;
-
-import org.jfree.data.xy.XYDataset;
-public static XYDataset filter(final XYDataset dataset) {
-final int seriesCount = dataset.getSeriesCount();
-

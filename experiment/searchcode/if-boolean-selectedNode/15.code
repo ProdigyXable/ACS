@@ -1,9 +1,0 @@
-TreePath sourcePath = selectionPath.getParentPath();
-
-DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) selectionPath
-DefaultMutableTreeNode sourceParentNode = (DefaultMutableTreeNode) sourcePath
-.getLastPathComponent();
-
-if (isDropAllowed(sourceParentNode, targetParentNode, selectedNode)) {
-System.out.println(&quot;drop accept&quot;);
-

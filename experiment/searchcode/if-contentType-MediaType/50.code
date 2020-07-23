@@ -1,8 +1,0 @@
-BasicProperties.Builder bob = new BasicProperties.Builder();
-if (mediaType != null) {
-bob = bob.contentType(mediaType.toString());
-}
-return bob;
-}
-}
-

@@ -1,4 +1,0 @@
-public double scalarProduct(DoubleVector multiplicand) {
-// TODO Exception
-if (dimension != multiplicand.dimension) throw new IllegalArgumentException(&quot;&quot;);
-

@@ -3,9 +3,8 @@ package cn.edu.pku.sei.plde.ACS.utils;
 import cn.edu.pku.sei.plde.ACS.boundary.model.BoundaryWithFreq;
 import cn.edu.pku.sei.plde.ACS.boundary.model.Interval;
 import cn.edu.pku.sei.plde.ACS.type.TypeEnum;
-import org.apache.commons.lang.StringUtils;
-
 import java.util.*;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by yanrunfa on 16/3/3.
@@ -202,7 +201,6 @@ public class MathUtils {
         }
     }
 
-
     public static List<Integer> changeStringListToInteger(List<String> list) {
         List<Integer> nums = new ArrayList<>();
         for (String var : list) {
@@ -218,7 +216,6 @@ public class MathUtils {
         return nums;
     }
 
-
     public static <T> boolean hasInterSection(List<T> firstList, List<T> secondList) {
         for (T value : firstList) {
             if (secondList.contains(value)) {
@@ -228,54 +225,51 @@ public class MathUtils {
         return false;
     }
 
-
     public static boolean isMaxMinValue(String value) {
-        return value.contains(String.valueOf(Integer.MAX_VALUE)) ||
-                value.contains(String.valueOf(Integer.MIN_VALUE)) ||
-                value.contains(String.valueOf(Double.MAX_VALUE)) ||
-                value.contains(String.valueOf(Double.MIN_VALUE)) ||
-                value.contains(String.valueOf(Long.MAX_VALUE)) ||
-                value.contains(String.valueOf(Long.MIN_VALUE)) ||
-                value.contains(String.valueOf(Short.MAX_VALUE)) ||
-                value.contains(String.valueOf(Short.MIN_VALUE)) ||
-                value.contains("-9223372036854775808") ||
-                value.contains("9223372036854775807");
+        return value.contains(String.valueOf(Integer.MAX_VALUE))
+                || value.contains(String.valueOf(Integer.MIN_VALUE))
+                || value.contains(String.valueOf(Double.MAX_VALUE))
+                || value.contains(String.valueOf(Double.MIN_VALUE))
+                || value.contains(String.valueOf(Long.MAX_VALUE))
+                || value.contains(String.valueOf(Long.MIN_VALUE))
+                || value.contains(String.valueOf(Short.MAX_VALUE))
+                || value.contains(String.valueOf(Short.MIN_VALUE))
+                || value.contains("-9223372036854775808")
+                || value.contains("9223372036854775807");
     }
 
-
-    public static boolean allMaxMinValue(List<String> values){
-        for (String value: values){
-            if (!isMaxMinValue(value)){
+    public static boolean allMaxMinValue(List<String> values) {
+        for (String value : values) {
+            if (!isMaxMinValue(value)) {
                 return false;
             }
         }
         return true;
     }
 
-    public static String replaceSpecialNumber(String ifString){
-        ifString = ifString.replace(String.valueOf(Integer.MIN_VALUE),"Integer.MIN_VALUE");
-        ifString = ifString.replace(String.valueOf(Integer.MAX_VALUE),"Integer.MAX_VALUE");
-        ifString = ifString.replace("(int)-2.147483648E9","Integer.MIN_VALUE");
-        ifString = ifString.replace("(int)2.147483647E9","Integer.MAX_VALUE");
-        ifString = ifString.replace("-2.147483648E9","Integer.MIN_VALUE");
-        ifString = ifString.replace("2.147483647E9","Integer.MAX_VALUE");
-        ifString = ifString.replace("(long)-9.223372036854776E18","Long.MIN_VALUE");
-        ifString = ifString.replace("(long)9.223372036854776E18","Long.MAX_VALUE");
-        ifString = ifString.replace("-9.223372036854776E18","Long.MIN_VALUE");
-        ifString = ifString.replace("9.223372036854776E18","Long.MAX_VALUE");
-        ifString = ifString.replace(String.valueOf(Long.MIN_VALUE),"Long.MIN_VALUE");
-        ifString = ifString.replace(String.valueOf(Long.MAX_VALUE),"Long.MAX_VALUE");
-        ifString = ifString.replace(String.valueOf(Double.MIN_VALUE),"Double.MIN_VALUE");
-        ifString = ifString.replace(String.valueOf(Double.MAX_VALUE),"Double.MAX_VALUE");
-        ifString = ifString.replace(String.valueOf(Short.MIN_VALUE),"Short.MIN_VALUE");
-        ifString = ifString.replace(String.valueOf(Short.MAX_VALUE),"Short.MAX_VALUE");
+    public static String replaceSpecialNumber(String ifString) {
+        ifString = ifString.replace(String.valueOf(Integer.MIN_VALUE), "Integer.MIN_VALUE");
+        ifString = ifString.replace(String.valueOf(Integer.MAX_VALUE), "Integer.MAX_VALUE");
+        ifString = ifString.replace("(int)-2.147483648E9", "Integer.MIN_VALUE");
+        ifString = ifString.replace("(int)2.147483647E9", "Integer.MAX_VALUE");
+        ifString = ifString.replace("-2.147483648E9", "Integer.MIN_VALUE");
+        ifString = ifString.replace("2.147483647E9", "Integer.MAX_VALUE");
+        ifString = ifString.replace("(long)-9.223372036854776E18", "Long.MIN_VALUE");
+        ifString = ifString.replace("(long)9.223372036854776E18", "Long.MAX_VALUE");
+        ifString = ifString.replace("-9.223372036854776E18", "Long.MIN_VALUE");
+        ifString = ifString.replace("9.223372036854776E18", "Long.MAX_VALUE");
+        ifString = ifString.replace(String.valueOf(Long.MIN_VALUE), "Long.MIN_VALUE");
+        ifString = ifString.replace(String.valueOf(Long.MAX_VALUE), "Long.MAX_VALUE");
+        ifString = ifString.replace(String.valueOf(Double.MIN_VALUE), "Double.MIN_VALUE");
+        ifString = ifString.replace(String.valueOf(Double.MAX_VALUE), "Double.MAX_VALUE");
+        ifString = ifString.replace(String.valueOf(Short.MIN_VALUE), "Short.MIN_VALUE");
+        ifString = ifString.replace(String.valueOf(Short.MAX_VALUE), "Short.MAX_VALUE");
         return ifString;
     }
 
-    public static boolean allMaxMinValue(Set<String> values){
+    public static boolean allMaxMinValue(Set<String> values) {
         return allMaxMinValue(new ArrayList<String>(values));
     }
-
 
     public static List<Interval> mergetDoubleInterval(ArrayList<Interval> intervals) {
         Collections.sort(intervals, new Comparator<Interval>() {
@@ -397,7 +391,6 @@ public class MathUtils {
 //            log.logStr("right " + boundaryInfo.rightClose());
 //            log.logSignLine("end");
 //        }
-
         ArrayList<BoundaryWithFreq> interval = new ArrayList<BoundaryWithFreq>();
 
         int size = boundaryWithFreqs.size();
@@ -417,15 +410,15 @@ public class MathUtils {
                     boundaryWithFreqs.get(i + 1).otherType, boundaryWithFreqs.get(i + 1).value, boundaryWithFreqs.get(i + 1).leftClose, boundaryWithFreqs.get(i + 1).rightClose, boundaryWithFreqs.get(i + 1).freq);
 
             if (boundaryWithFreq0.dvalue < wrongValue && boundaryWithFreq1.dvalue > wrongValue) {
-               if(boundaryWithFreq0.leftClose >= boundaryWithFreq0.rightClose){
+                if (boundaryWithFreq0.leftClose >= boundaryWithFreq0.rightClose) {
                     boundaryWithFreq0.leftClose = 1;
-                }else{
+                } else {
                     boundaryWithFreq0.leftClose = 0;
                 }
 
-                if(boundaryWithFreq1.rightClose >= boundaryWithFreq1.leftClose){
+                if (boundaryWithFreq1.rightClose >= boundaryWithFreq1.leftClose) {
                     boundaryWithFreq1.rightClose = 1;
-                }else{
+                } else {
                     boundaryWithFreq1.rightClose = 0;
                 }
 
@@ -437,12 +430,12 @@ public class MathUtils {
         }
 
         if (wrongValue < boundaryWithFreqs.get(0).dvalue) {
-            interval.add(new BoundaryWithFreq(TypeEnum.DOUBLE, true, null, MathUtils.getComplexOfNumberType(type)+".MIN_VALUE", 1, 0, 1));
+            interval.add(new BoundaryWithFreq(TypeEnum.DOUBLE, true, null, MathUtils.getComplexOfNumberType(type) + ".MIN_VALUE", 1, 0, 1));
             BoundaryWithFreq boundaryWithFreq1 = new BoundaryWithFreq(boundaryWithFreqs.get(0).variableSimpleType, boundaryWithFreqs.get(0).isSimpleType,
                     boundaryWithFreqs.get(0).otherType, boundaryWithFreqs.get(0).value, boundaryWithFreqs.get(0).leftClose, boundaryWithFreqs.get(0).rightClose, boundaryWithFreqs.get(0).freq);
-            if(boundaryWithFreq1.rightClose >= boundaryWithFreq1.leftClose){
+            if (boundaryWithFreq1.rightClose >= boundaryWithFreq1.leftClose) {
                 boundaryWithFreq1.rightClose = 1;
-            }else{
+            } else {
                 boundaryWithFreq1.rightClose = 0;
             }
             interval.add(boundaryWithFreq1);
@@ -451,21 +444,21 @@ public class MathUtils {
         if (wrongValue > boundaryWithFreqs.get(size - 1).dvalue) {
             BoundaryWithFreq boundaryWithFreq0 = new BoundaryWithFreq(boundaryWithFreqs.get(size - 1).variableSimpleType, boundaryWithFreqs.get(size - 1).isSimpleType,
                     boundaryWithFreqs.get(size - 1).otherType, boundaryWithFreqs.get(size - 1).value, boundaryWithFreqs.get(size - 1).leftClose, boundaryWithFreqs.get(size - 1).rightClose, boundaryWithFreqs.get(size - 1).freq);
-            if(boundaryWithFreq0.leftClose >= boundaryWithFreq0.rightClose){
+            if (boundaryWithFreq0.leftClose >= boundaryWithFreq0.rightClose) {
                 boundaryWithFreq0.leftClose = 1;
-            }else{
+            } else {
                 boundaryWithFreq0.leftClose = 0;
             }
             interval.add(boundaryWithFreq0);
-            interval.add(new BoundaryWithFreq(TypeEnum.DOUBLE, true, null, MathUtils.getComplexOfNumberType(type)+".MAX_VALUE", 0, 1, 1));
+            interval.add(new BoundaryWithFreq(TypeEnum.DOUBLE, true, null, MathUtils.getComplexOfNumberType(type) + ".MAX_VALUE", 0, 1, 1));
             return interval;
         }
         return interval;
     }
 }
 
-
 class ComparatorBounaryWithFreqs implements Comparator {
+
     @Override
     public int compare(Object arg0, Object arg1) {
 

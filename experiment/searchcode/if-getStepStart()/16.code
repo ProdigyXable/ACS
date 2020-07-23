@@ -1,8 +1,0 @@
-final double[] y = getStepStart().getCompleteState();
-yDotK[0] = getStepStart().getCompleteDerivative();
-
-if (firstTime) {
-setStepSize(hNew);
-if (forward) {
-if (getStepStart().getTime() + getStepSize() >= finalTime) {
-

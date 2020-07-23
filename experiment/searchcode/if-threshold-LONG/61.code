@@ -1,6 +1,0 @@
-* @param listener The ThresholdListener
-*/
-public void addThresholdListener(final ThresholdListener listener) {
-if(listener==null)
-if(listener==null)
-

@@ -1,9 +1,0 @@
-package lib;
-
-public class TimeoutManagerImpl implements TimeoutManager, TimeoutListener {
-private long timeout;
-public void breakTimeout() {
-if (timeoutMechanism != null) {
-timeoutMechanism.breakTimeout();
-timeoutMechanism = null;
-

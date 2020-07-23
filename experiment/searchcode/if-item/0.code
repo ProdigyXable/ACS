@@ -1,6 +1,0 @@
-private void updateItem(Item item) {
-if (!item.isDisposed()) {
-_commonViewer.doUpdateItem(item);
-}
-}
-

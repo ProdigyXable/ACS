@@ -1,7 +1,0 @@
-public class DateDistance {
-
-private final DurationFieldType fieldType;
-private final int amount;
-
-private static Map<String, DurationFieldType> nameToDurationFieldMap = buildNameToDurationFieldMap();
-

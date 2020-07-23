@@ -1,8 +1,0 @@
-XYSeries series2 = createSeries2();
-
-DefaultTableXYDataset dataset = new DefaultTableXYDataset();
-dataset.addSeries(series1);
-public void test788597() {
-DefaultTableXYDataset dataset = new DefaultTableXYDataset();
-dataset.addSeries(createSeries1());
-

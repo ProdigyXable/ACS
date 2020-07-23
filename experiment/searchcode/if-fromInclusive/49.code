@@ -1,9 +1,0 @@
-return commandExecutor.writeReactive(getName(), StringCodec.INSTANCE, RedisCommands.ZREMRANGEBYLEX, getName(), &quot;-&quot;, toValue);
-}
-
-@Override
-public Publisher<Integer> removeRangeTailByLex(String fromElement, boolean fromInclusive) {
-String fromValue = fromElement.toString();
-if (fromInclusive) {
-fromValue = &quot;[&quot; + fromValue;
-

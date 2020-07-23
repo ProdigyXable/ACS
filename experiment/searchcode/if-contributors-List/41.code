@@ -1,8 +1,0 @@
-public class ContributorsTableModel extends AbstractTableModel
-{
-private List contributors;
-private String nameColumnLabel;
-private String contactColumnLabel;
-
-public ContributorsTableModel(final List contributors) {
-

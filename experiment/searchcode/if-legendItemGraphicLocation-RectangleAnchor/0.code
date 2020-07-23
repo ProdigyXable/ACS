@@ -1,5 +1,0 @@
-private RectangleAnchor legendItemGraphicLocation;
-private RectangleInsets legendItemGraphicPadding;
-this.legendItemGraphicAnchor = RectangleAnchor.CENTER;
-this.legendItemGraphicLocation = RectangleAnchor.CENTER;
-

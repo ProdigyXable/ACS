@@ -1,6 +1,0 @@
-RoleInclusion otherRi = (RoleInclusion) o;
-int lhsRes = 0;
-Role[] oLhs = otherRi.getLhs();
-if(!Arrays.equals(lhs, oLhs)) {
-// If length is different put the shortest one first
-

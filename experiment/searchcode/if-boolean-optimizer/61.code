@@ -1,9 +1,0 @@
-protected abstract void kickStart() throws OptimizerException;
-
-/**
-* Minimize
-* @return true if OK, false if &#39;kickstart&#39; is required
-* @throws OptimizerException
-*/
-protected abstract boolean minimizationStep() throws OptimizerException;
-

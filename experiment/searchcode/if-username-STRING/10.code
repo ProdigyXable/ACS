@@ -1,8 +1,0 @@
-import static com.skillkit.utils.Constants.*;
-public class StringValidations {
-
-public Boolean validateUsername(String username){
-
-if ((username != null)||(!(username.isEmpty()))){
-if(!((username.contains(EMPTY_SPACE)) ||(username.contains(EXCLAMATION_MARK))
-

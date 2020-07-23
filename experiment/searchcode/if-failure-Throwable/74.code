@@ -1,7 +1,0 @@
-public abstract class AssertedFailure
-{
-private Throwable exceptionRaised;
-private Class<? extends Throwable> expected;
-
-protected AssertedFailure(final Class<? extends Throwable> expectedAssertionType)
-

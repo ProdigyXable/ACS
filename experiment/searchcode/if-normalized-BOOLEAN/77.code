@@ -1,7 +1,0 @@
-* @param path Relative path to be normalized
-*
-* @return The normalized path or <code>null</code> if the path cannot be
-*         normalized
-*/
-public static String normalize(String path) {
-

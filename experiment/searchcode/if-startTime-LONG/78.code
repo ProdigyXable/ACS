@@ -1,9 +1,0 @@
-private long starttime,stoptime;
-
-public Timer() { reset(); }
-public void reset() { starttime= stoptime= 0; }
-public void stop() { stoptime= System.currentTimeMillis(); }
-public long milliseconds()
-{
-if (stoptime < starttime) return 0;
-

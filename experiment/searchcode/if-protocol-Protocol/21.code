@@ -1,8 +1,0 @@
-package com.coenterprise.service.impl;
-
-import com.coenterprise.dao.ProtocolDao;
-import com.coenterprise.entity.Protocol;
-//    	 Protocol protocol = protocolDao.findByName(protocolName);
-//        if (protocol != null) {
-//            protocolDao.delete(protocol);
-

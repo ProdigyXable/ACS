@@ -1,9 +1,0 @@
-display.insert(scratchPad, display.getCaretPosition());
-}
-else if ( m == selectItem )
-private void addRecentCut(String cut)
-{
-recentCuts.insertElementAt(cut,0);
-cutsMenu.removeAll();
-for (int k = 0; k < recentCuts.size(); k++)
-

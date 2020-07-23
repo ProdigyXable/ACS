@@ -1,9 +1,0 @@
-* @return the adjusted instant millis
-*/
-public long adjustOffset(long instant, boolean earlierOrLater) {
-* Returns true if this time zone has no transitions.
-*
-* @return true if no transitions
-*/
-public abstract boolean isFixed();
-

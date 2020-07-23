@@ -1,5 +1,0 @@
-HashMap<String,Double> weights = new HashMap<String,Double>();
-public boolean addKeyTerm(String labStr, double weight, boolean override) {
-boolean newValueAdded = false;
-if ((override == true) || (!weights.containsKey(labStr))) {
-

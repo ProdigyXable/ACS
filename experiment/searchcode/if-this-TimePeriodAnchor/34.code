@@ -1,9 +1,0 @@
-public boolean equals(Object obj) {
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof TimePeriodAnchor)) {
-return false;
-}
-if (this.name.equals(((TimePeriodAnchor) obj).name)) {
-

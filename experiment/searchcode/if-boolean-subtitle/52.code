@@ -1,8 +1,0 @@
-} catch (Exception e) {
-e.printStackTrace();
-}
-if (mSubtitleContent != null) {
-delayTime = mSubtitleContent.getSubtitleEndTime() - mSubtitleContent.getSubtitleStartTime();
-private void sendShowSubtitleMsg(int delay, boolean isPicture) {
-if (mDisplayCallBack != null) {
-

@@ -1,5 +1,0 @@
-static public void replaceViewAtPosition(View viewToReplace, View replaceWith) {
-ViewGroup parent = (ViewGroup) viewToReplace.getParent();
-int index = parent.indexOfChild(viewToReplace);
-parent.removeView(viewToReplace);
-

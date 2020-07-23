@@ -1,8 +1,0 @@
-int result = 1;
-result = prime * result + (int) (gmtTimeInNanos ^ (gmtTimeInNanos >>> 32));
-return result;
-return false;
-}
-QueryTypeGmtTimeInNanos other = (QueryTypeGmtTimeInNanos) obj;
-if (gmtTimeInNanos != other.gmtTimeInNanos) {
-

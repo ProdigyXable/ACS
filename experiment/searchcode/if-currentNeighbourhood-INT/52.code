@@ -1,8 +1,0 @@
-&quot;data/users.json&quot;);
-
-int numReviews = testDB.getAllReviewDetails().size();
-
-//test adding invalid input
-for (String currentNeighbourhood : currentRestaurant.getNeighbourhoods()){
-if(!neighbourhood.contains(currentNeighbourhood)){
-

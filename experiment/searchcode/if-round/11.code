@@ -1,9 +1,0 @@
-public void addRound(RoundEntity roundEntity) {
-roundRepository.save(roundEntity);
-}
-
-public RoundEntity updateRound(RoundEntity round) {
-if (!roundRepository.exists(
-public RoundEntity startRound(long roundId, LocalDateTime dateTime) {
-if (!roundRepository.exists(roundId)) {
-

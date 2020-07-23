@@ -1,7 +1,0 @@
-public static Retrofit apiClientBussiness(){
-if (retrofit == null) {
-retrofit = new Retrofit.Builder()
-public static Retrofit apiClientArt(){
-if (retrofit == null){
-retrofit = new Retrofit.Builder()
-

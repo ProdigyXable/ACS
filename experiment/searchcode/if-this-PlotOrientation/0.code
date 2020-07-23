@@ -1,7 +1,0 @@
-Object o = null;
-if (this.equals(PlotOrientation.HORIZONTAL)) {
-o = PlotOrientation.HORIZONTAL;
-}
-else if (this.equals(PlotOrientation.VERTICAL)) {
-o = PlotOrientation.VERTICAL;
-

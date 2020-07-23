@@ -1,8 +1,0 @@
-protected T entity;
-
-public EntityTask(int delay, int maximumIterations, T entity) {
-this(delay, maximumIterations, entity, true);
-}
-
-public EntityTask(int delay, int maximumIterations, T entity, boolean walkable) {
-

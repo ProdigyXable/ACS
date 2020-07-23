@@ -1,8 +1,0 @@
-String Value = jtf.getText();
-if(jrb.isSelected())
-rtol = false;
-else
-rtol = true;
-r = new DCsource(Double.parseDouble(Value.trim()), rtol,x1,x2,y1,y2);
-Main.dc = r;
-

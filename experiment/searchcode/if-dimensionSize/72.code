@@ -1,6 +1,0 @@
-throws IllegalArgumentException {
-int[] dimensionSize = mdcm.getDimensionSizes();
-//if done
-if (subVector.length == dimensionSize.length) {
-Complex[] temp = new Complex[dimensionSize[d]];
-

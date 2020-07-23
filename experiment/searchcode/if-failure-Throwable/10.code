@@ -1,9 +1,0 @@
-extends RuntimeException implements java.io.Serializable {
-private Throwable t;
-
-public GeneralFailureException(String s) {
-super(s);
-}
-
-public GeneralFailureException(String s, Throwable throwable) {
-

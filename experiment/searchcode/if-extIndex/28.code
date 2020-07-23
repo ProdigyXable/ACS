@@ -1,7 +1,0 @@
-Integer extIndex = StringUtils.lastIndexOf(path, &quot;.&quot;);
-if(extIndex == -1){
-return StringUtils.EMPTY;
-Integer extIndex = StringUtils.lastIndexOf(path, &quot;/&quot;);
-if(extIndex == -1){
-return StringUtils.EMPTY;
-

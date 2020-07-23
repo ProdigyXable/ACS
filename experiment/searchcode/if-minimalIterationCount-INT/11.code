@@ -1,8 +1,0 @@
-/** minimum number of iterations */
-private final int minimalIterationCount;
-
-/** The functions evaluation count. */
-final double absoluteAccuracy,
-final int minimalIterationCount,
-final int maximalIterationCount)
-

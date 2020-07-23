@@ -1,9 +1,0 @@
-this.toIndex = toIndex;
-}
-
-public int getOriginalIndex(int current){
-if (toIndex == current) {
-public int getCurrentIndex(int original){
-if (fromIndex == original) {
-original = toIndex;
-

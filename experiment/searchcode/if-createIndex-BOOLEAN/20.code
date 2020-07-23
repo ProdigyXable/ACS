@@ -1,9 +1,0 @@
-Node node = nodeBuilder().node();
-Client client = node.client();
-createIndex(INSTANCE);
-return client;
-}
-
-private static void createIndex(Client client) {
-boolean exist = client.admin().indices().prepareExists(&quot;hackaton&quot;).execute().actionGet().isExists();
-

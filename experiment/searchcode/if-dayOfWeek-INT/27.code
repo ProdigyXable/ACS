@@ -1,9 +1,0 @@
-public DayOfWeek(final int dayOfWeek) {
-_set(dayOfWeek);
-}
-public DayOfWeek(final Integer dayOfWeek) {
-_set(dayOfWeek);
-}
-public DayOfWeek(final String month) {
-int m = Integer.parseInt(month);
-

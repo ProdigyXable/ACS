@@ -1,7 +1,0 @@
-import org.apache.commons.math.optimization.OptimizationException;
-import org.apache.commons.math.optimization.VectorialPointValuePair;
-/** {@inheritDoc} */
-@Override
-public VectorialPointValuePair doOptimize()
-throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
-

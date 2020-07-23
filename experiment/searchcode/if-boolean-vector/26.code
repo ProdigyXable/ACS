@@ -1,7 +1,0 @@
-package com.perunlabs.platform.common.jval.intvector;
-
-public class IntVectorInternals {
-
-public static boolean areEquals(IntVectorG intVector, Object object) {
-if (object instanceof IntVectorG) {
-

@@ -1,8 +1,0 @@
-XContentParser parser = parseContext.parser();
-
-QueryBuilder positiveQuery = null;
-boolean positiveQueryFound = false;
-QueryBuilder negativeQuery = null;
-boolean negativeQueryFound = false;
-float boost = AbstractQueryBuilder.DEFAULT_BOOST;
-

@@ -1,8 +1,0 @@
-public void doNotRemoveIfInBooleanPrimitiveAssignment1(boolean bo) {
-boolean b = true;
-if (bo) {
-b = false;
-public void removeUselessIfInBooleanPrimitiveAssignment1(boolean bo) {
-boolean b = true;
-if (bo) {
-

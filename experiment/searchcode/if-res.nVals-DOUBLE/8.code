@@ -1,8 +1,0 @@
-if((contents &amp; HAS_DOUBLES) != 0){
-nVals = in.readInt();
-map   = res.getDoubleVals();
-for(int i=0; i<nVals; i++){
-if((contents &amp; HAS_DOUBLELS) != 0){
-nVals = in.readInt();
-map   = res.getDoubleLists();
-

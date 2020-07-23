@@ -1,9 +1,0 @@
-return &quot;[B&quot;;
-}
-else if (n == Boolean.TYPE) {
-return &quot;[Z&quot;;
-if (n == Byte.TYPE) {
-return &quot;B&quot;;
-}
-else if (n == Boolean.TYPE) {
-

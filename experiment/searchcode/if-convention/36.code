@@ -1,6 +1,0 @@
-for (Convention arc : conversionPath) {
-if (planner.getCost(converted).isInfinite()
-private Graphs.FrozenGraph<Convention, DefaultEdge> getPathMap() {
-if (pathMap == null) {
-pathMap = Graphs.makeImmutable(conversionGraph);
-

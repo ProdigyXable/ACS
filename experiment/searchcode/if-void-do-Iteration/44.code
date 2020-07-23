@@ -1,6 +1,0 @@
-/** Assert no future iteration available.
-*/
-private void assertNoFutureIterationAvailable() {
-tester.assertKeyPresent(&quot;iteration.continue.unfinished.stories&quot;);
-public void testOnIterationStartProposeToCloseAlreadyStartedIterationsOnlyIfThereAre() throws Exception {
-

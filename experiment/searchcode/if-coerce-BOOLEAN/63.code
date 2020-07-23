@@ -1,8 +1,0 @@
-return CoerceLuaToJava.SCORE_UNCOERCIBLE;
-}
-if (clazz == clazz2) {
-return 0;
-static Coercion getCoercion(final Class clazz) {
-final Coercion coercion = CoerceLuaToJava.COERCIONS.get(clazz);
-if (coercion != null) {
-

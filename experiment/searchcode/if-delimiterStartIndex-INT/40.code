@@ -1,9 +1,0 @@
-Matcher matcher = Pattern.compile(delimiterRegex).matcher(copyOfInputStr);
-while (matcher.find()) {
-int delimiterStartIndex = matcher.start();
-int delimiterEndIndex = matcher.end();
-tokens.add(inputStr.substring(previousDelimiterEndIndex, delimiterStartIndex).trim());
-previousDelimiterEndIndex = delimiterEndIndex;
-}
-if (previousDelimiterEndIndex == 0) {
-

@@ -1,8 +1,0 @@
-//true = failure activated
-public boolean trainFailure;
-public boolean engineFail;
-public boolean signalFail;
-public boolean brakeFail;
-//public boolean wheelFail;
-//minutes
-

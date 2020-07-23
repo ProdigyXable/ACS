@@ -1,9 +1,0 @@
-decl_stmt|;
-name|int
-name|numOnFailureProcessors
-init|=
-name|randomIntBetween
-argument_list|(
-literal|0
-name|numOnFailureProcessors
-

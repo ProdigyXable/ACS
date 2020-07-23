@@ -1,8 +1,0 @@
-return false;
-MetricObject other = (MetricObject) obj;
-if (metricDataType != other.metricDataType)
-return false;
-if (metricDescription == null) {
-if (other.metricDescription != null)
-return false;
-

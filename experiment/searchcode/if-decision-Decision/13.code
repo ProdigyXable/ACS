@@ -1,8 +1,0 @@
-import org.gov.adm.businessobjects.ChildSubSection;
-import org.gov.adm.businessobjects.Decision;
-import org.gov.adm.businessobjects.GrantAsylumSubSection;
-Decision decision = store.get(decisionId);
-
-if (decision == null) {
-Decision  newDecision = new Decision();
-

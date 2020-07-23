@@ -1,8 +1,0 @@
-String identifier;
-int nameResId;
-int iconResId;
-
-private Category(String identifier, int nameResId, int iconResId) {
-this.identifier = identifier;
-this.nameResId = nameResId;
-

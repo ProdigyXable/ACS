@@ -1,5 +1,0 @@
-QueryObject loggedEmail = null;
-
-if(query != null){
-loggedEmail = new QueryObject(QueryEnum.LOGIN_EMAIL, query, true, QueryOperatorEnum.LIKE);
-

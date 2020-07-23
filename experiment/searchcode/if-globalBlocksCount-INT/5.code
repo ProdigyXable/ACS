@@ -1,7 +1,0 @@
-RoutingTable.Builder builder = RoutingTable.builder(clusterState.routingTable());
-int numberOfIndices = clusterState.routingTable().indicesRouting().size();
-if (numberOfIndices > 0) {
-ClusterBlocks.Builder builder = ClusterBlocks.builder().blocks(clusterState.blocks());
-int globalBlocksCount = clusterState.blocks().global().size();
-if (globalBlocksCount > 0) {
-

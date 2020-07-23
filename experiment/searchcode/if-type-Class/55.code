@@ -1,6 +1,0 @@
-public static Type getComponentType(Type type) {
-Class<?> clazz;
-
-if (type instanceof Class) {
-clazz = (Class<?>) type;
-

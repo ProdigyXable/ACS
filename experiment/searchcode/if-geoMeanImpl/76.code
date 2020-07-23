@@ -1,9 +1,0 @@
-varianceImpl.increment(value);
-}
-if (!(geoMeanImpl instanceof GeometricMean)) {
-geoMeanImpl.increment(value);
-sumsqImpl.clear();
-geoMeanImpl.clear();
-secondMoment.clear();
-if (meanImpl != mean) {
-

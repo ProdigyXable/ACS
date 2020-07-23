@@ -1,9 +1,0 @@
-public abstract class SettingsHelper {
-
-public static boolean showingAdvancedTooltips(){
-if(FMLCommonHandler.instance().getEffectiveSide() == Side.SERVER)
-return Minecraft.getMinecraft().gameSettings.advancedItemTooltips;
-}
-
-}
-

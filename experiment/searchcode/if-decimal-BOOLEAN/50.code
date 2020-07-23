@@ -1,5 +1,0 @@
-BigDecimal result = null;
-for (BigDecimal bigDecimal : amounts) {
-if (bigDecimal != null) {
-if (bigDecimal != null) {
-

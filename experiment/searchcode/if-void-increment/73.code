@@ -1,8 +1,0 @@
-this.zzaIj = new AtomicReference();
-}
-
-public void flush() {
-EventIncrementCache eventIncrementCache = (EventIncrementCache) this.zzaIj.get();
-if (eventIncrementCache != null) {
-eventIncrementCache.flush();
-

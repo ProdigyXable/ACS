@@ -1,7 +1,0 @@
-import static org.seasar.doma.internal.util.AssertionUtil.*;
-
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.ParameterizedType;
-protected Type getTypeArgument(Class<?> clazz, Type type) {
-if (genericDeclaration == clazz
-

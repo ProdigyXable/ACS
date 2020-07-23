@@ -1,8 +1,0 @@
-this.setValue(value);
-}
-
-public static boolean containsConstant(String constantName) {
-for (ConstantEnum entry : ConstantEnum.values()) {
-if (entry.getName().equals(constantName)) {
-return true;
-

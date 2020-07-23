@@ -1,8 +1,0 @@
-import static com.github.mrsdogood.hessianfree.Utils.copy;
-
-public class HessianFreeOptimizer extends Optimizer<Gradientable>{
-private int cgoIterations;
-cgOptimizer.setMaxAlpha(maxAlpha);
-cgOptimizer.optimize(cgoIterations);
-if(defaultAlpha != null &amp;&amp; cgOptimizer.gradHasBeenZero()){
-

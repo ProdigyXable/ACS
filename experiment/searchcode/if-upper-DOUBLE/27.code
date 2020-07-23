@@ -1,7 +1,0 @@
-.doubleToLongBits(other.lowerSpeed))
-return false;
-if (Double.doubleToLongBits(upperMovement) != Double
-.doubleToLongBits(other.upperMovement))
-return false;
-if (Double.doubleToLongBits(upperPitchZone) != Double
-

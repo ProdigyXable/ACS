@@ -1,7 +1,0 @@
-private boolean dense = true;
-private boolean missingValue = false;
-private int numClasses = -1;
-public MLClfDataSetBuilder missingValue(boolean missingValue) {
-this.missingValue = missingValue;
-return this;
-

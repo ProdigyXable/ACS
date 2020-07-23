@@ -1,8 +1,0 @@
-for (String line : lines) {
-int seriesIndex = Integer.valueOf(line);
-System.out.println(fibonacciValueAtIndex(seriesIndex));
-}
-}
-
-private static int fibonacciValueAtIndex(int seriesIndex) {
-

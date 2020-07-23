@@ -1,7 +1,0 @@
-Period period = PeriodType.getPeriodFromIsoString( isoPeriod );
-
-if ( period != null )
-public boolean retain( Period object )
-{
-return identifiers.contains( object.getId() );
-

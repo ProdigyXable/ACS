@@ -1,8 +1,0 @@
-annotation.assignedBy = annotationDocument.assignedBy;
-
-if(annotationDocument.withFrom != null) {
-annotation.withFrom = new ArrayList<>(annotationDocument.withFrom);
-}
-
-if(annotationDocument.extensions != null) {
-

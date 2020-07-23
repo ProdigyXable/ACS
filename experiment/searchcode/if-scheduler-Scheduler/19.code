@@ -1,8 +1,0 @@
-public static SchedulerThread getInstance() {
-if (instance == null) {
-instance = new SchedulerThread();
-instance.reloadScheduler();
-Scheduler scheduler = getScheduler();
-if (scheduler != null &amp;&amp; scheduleFile != null) {
-scheduler.descheduleFile(scheduleFile);
-

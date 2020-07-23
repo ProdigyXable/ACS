@@ -1,9 +1,0 @@
-public class RollKey extends Object{
-public int[] values;
-public int die;
-public int turn;
-
-public RollKey(int[] values, int die, int turn){
-this.values = values;
-this.die = die;
-

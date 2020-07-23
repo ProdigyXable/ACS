@@ -1,8 +1,0 @@
-return null;
-}
-
-//Check to see if it is a project
-boolean hasQuery = false;
-BooleanQuery query = new BooleanQuery();
-if (&quot;Project&quot;.equals(entity.getEntityName()))
-

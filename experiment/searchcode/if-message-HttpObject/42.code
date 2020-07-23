@@ -1,7 +1,0 @@
-public class ServerHandler extends SimpleChannelInboundHandler<HttpObject> {
-
-@Override
-protected void messageReceived(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
-System.out.println(&quot;re2----&quot;);
-if (msg instanceof HttpRequest) {
-

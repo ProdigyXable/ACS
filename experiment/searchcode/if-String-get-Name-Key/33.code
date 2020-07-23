@@ -1,7 +1,0 @@
-String key = searchKey;
-if (key.isEmpty()) return &quot;&quot;;
-for (Candidate committed : committeds) {
-String name = committed.getName();
-int index = name.length();
-key = key.substring(index);
-

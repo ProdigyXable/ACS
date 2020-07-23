@@ -1,5 +1,0 @@
-import com.intellij.psi.util.PsiTreeUtil;
-import com.intellij.refactoring.introduce.inplace.AbstractInplaceIntroducer;
-import com.intellij.refactoring.introduceField.IntroduceConstantHandler;
-import org.jetbrains.annotations.NotNull;
-

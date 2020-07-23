@@ -1,8 +1,0 @@
-* @see org.activebpel.rt.bpel.def.visitors.IAeDefVisitor#visit(org.activebpel.rt.bpel.def.activity.AeActivityIfDef)
-*/
-public void visit(AeActivityIfDef def) {
-throw new UnsupportedOperationException();
-* @see org.activebpel.rt.bpel.def.visitors.IAeDefVisitor#visit(org.activebpel.rt.bpel.def.activity.support.AeElseIfDef)
-*/
-public void visit(AeElseIfDef def) {
-

@@ -1,7 +1,0 @@
-package org.elasticsearch.action.search.type;
-
-import com.carrotsearch.hppc.IntArrayList;
-import org.apache.lucene.search.ScoreDoc;
-final AtomicArray<FetchSearchResult> fetchResults;
-final AtomicArray<IntArrayList> docIdsToLoad;
-

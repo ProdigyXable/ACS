@@ -1,9 +1,0 @@
-ypoints = new int[4];
-}
-
-public boolean contains(int x, int y) {
-if (npoints <= 2 || !bounds.contains(x, y)) {
-public Rect getBounds() {
-if (bounds == null) {
-calculateBounds(xpoints, ypoints, npoints);
-

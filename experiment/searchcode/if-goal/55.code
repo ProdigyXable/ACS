@@ -1,7 +1,0 @@
-activate(entity);
-if (subGoalsAreEmpty()) {
-return COMPLETED;
-}
-GoalState subGoalState = currentGoal().process(entity);
-if (subGoalState.equals(COMPLETED)) {
-

@@ -1,7 +1,0 @@
-protected TomDeclaredConfigurationHolder(EnvironmentContext<TransferObjectProcessingEnvironment> environmentContext, ConfigurationContext configurationContext) {
-this.configurationContext = configurationContext;
-}
-
-protected ConfigurationContext ensureConfigurationContext() {
-if (configurationContext == null) {
-

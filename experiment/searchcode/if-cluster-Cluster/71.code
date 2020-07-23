@@ -1,7 +1,0 @@
-final ClusterNumberFormat cnf = new ClusterNumberFormat();
-final ClusterTestData ctd = new ClusterTestData();
-
-Cluster tempClusterI = null;
-Cluster tempClusterJ = null;
-Cluster minClusterA = null;
-

@@ -1,8 +1,0 @@
-long thisEnd = getEndMillis();
-if (interval == null) {
-long now = DateTimeUtils.currentTimeMillis();
-@Override
-public boolean isAfter(ReadableInterval interval) {
-long endMillis;
-if (interval == null) {
-

@@ -1,8 +1,0 @@
-/**
-* @param sortColumn
-*            The sortColumn to set.
-*/
-public void setSortColumn(int sortColumn) {
-if (this.sortColumn != sortColumn) {
-lastSortColumn = this.sortColumn;
-

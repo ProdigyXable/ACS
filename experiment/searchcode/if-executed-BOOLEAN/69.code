@@ -1,9 +1,0 @@
-import hillbillies.program.Program;
-
-public class Void extends Statement {
-
-private boolean toBeExecuted = true;
-public void perform(Program program) {
-if (isToBeExecuted() &amp;&amp; !program.hasStopped()) {
-setToBeExecuted(false);
-

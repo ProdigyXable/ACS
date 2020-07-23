@@ -1,9 +1,0 @@
-* <pre>
-* ============================================
-*     ownerType              ownerId
-* --------------------------------------------
-*   1xx   系统　
-else if (!ownerId.equals(other.ownerId)) return false;
-if (ownerType!=other.ownerType) return false;
-return true;
-

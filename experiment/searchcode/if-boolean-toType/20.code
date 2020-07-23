@@ -1,5 +1,0 @@
-return new Double(toDouble(value));
-if ((toType == Boolean.class) || (toType == Boolean.TYPE))
-return toBoolean(value) ? Boolean.TRUE : Boolean.FALSE;
-if ((toType == Byte.class) || (toType == Byte.TYPE))
-

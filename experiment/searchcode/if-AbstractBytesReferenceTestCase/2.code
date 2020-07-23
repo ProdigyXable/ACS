@@ -1,5 +1,0 @@
-import org.elasticsearch.common.bytes.AbstractBytesReferenceTestCase;
-import org.elasticsearch.common.bytes.BytesArray;
-assertEquals(channelBuffer, ((ChannelBufferBytesReference) ref).toChannelBuffer());
-} else if (AbstractBytesReferenceTestCase.getNumPages(ref) > 1) { // we gather the buffers into a channel buffer
-

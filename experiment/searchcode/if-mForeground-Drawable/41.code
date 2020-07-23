@@ -1,9 +1,0 @@
-a.recycle();
-}
-
-public void dispatchOnDraw(final Canvas canvas) {
-if (mForeground != null) {
-final Drawable foreground = mForeground;
-if (mForeground != null) {
-final Drawable foreground = mForeground;
-

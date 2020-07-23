@@ -1,9 +1,0 @@
-public void init() throws CoreException {
-if (canCache()) {
-locationCache = buildLocationTree(null);
-}
-}
-
-public Location getLocationTree() throws CoreException {
-if (canCache() &amp;&amp; locationCache != null) {
-

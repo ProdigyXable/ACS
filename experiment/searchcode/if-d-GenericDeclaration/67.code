@@ -1,6 +1,0 @@
-import java.lang.reflect.Constructor;
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.Method;
-private static GenericDeclaration nextLayer(GenericDeclaration decl) {
-if (decl instanceof Class) {
-

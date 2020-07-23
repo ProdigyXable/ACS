@@ -1,8 +1,0 @@
-validateOrder(order,orderResponse);
-if (isOrderOK(orderResponse)) {
-orderRepository.save(order);
-OrderResponse orderResponse = new OrderResponse();
-orderResponse.setOrderID(orderID);
-if (orderID!=null) {
-orderRepository.delete(orderID);
-

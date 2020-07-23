@@ -1,4 +1,0 @@
-sorter = new InsertionSort();
-int[] sortedArray = sorter.sort(RANDOM_ARRAY);
-boolean isSorted = isSorted(sortedArray);
-

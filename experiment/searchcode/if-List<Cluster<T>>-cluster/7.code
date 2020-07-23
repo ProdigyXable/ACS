@@ -1,5 +1,0 @@
-public List<ClusterDto> getAllCluster() throws ServiceApplicationException {
-logger.info(&quot;ClusterManager  getAllCluster!!!!!!!!!!!!!!&quot;);
-List<ClusterDto> clusterDtoList = new ArrayList<>();
-List<Cluster> cluster = clusterDao.getAllCluster();
-

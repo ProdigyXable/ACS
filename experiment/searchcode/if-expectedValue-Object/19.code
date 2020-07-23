@@ -1,9 +1,0 @@
-public class ValidateByteArray extends Validator {
-
-
-public void validate(int key, Object value) throws Exception {
-
-Object expectedValue = mapKeyToValue(key);
-
-if ( ! Arrays.equals( (byte[]) expectedValue, (byte[]) value ) ){
-

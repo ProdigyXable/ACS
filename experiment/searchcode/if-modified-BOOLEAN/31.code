@@ -1,7 +1,0 @@
-private boolean assigned;
-private boolean modified;
-private DbFieldAttribute dbFieldAttribute;
-
-public DbFieldData(Object value, boolean assigned, boolean modified, DbFieldAttribute dbFieldAttribute) {
-this.value = value;
-

@@ -1,8 +1,0 @@
-char ch2;
-boolean usedSecret [] = new boolean[secret.length()];
-boolean usedGuess [] = new boolean[guess.length()];
-for (i = 0; i < guess.length(); i++){
-
-ch1 = guess.charAt(i);
-if (ch1 == secret.charAt(i)){
-

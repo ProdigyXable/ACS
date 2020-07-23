@@ -1,9 +1,0 @@
-public String read() {
-if(getMode() == OpenMode.READ) { return contents; }
-else { return null; }
-}
-
-@Override
-public boolean write(String c) {
-if(getMode() == OpenMode.WRITE) { contents = c; return true; }
-

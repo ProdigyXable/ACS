@@ -1,6 +1,0 @@
-public String fractionToDecimal(int numerator1, int denominator1) {
-boolean negative = false;
-long numerator = numerator1;
-long denominator = denominator1;
-if ((numerator > 0 &amp;&amp; denominator < 0) || (numerator < 0 &amp;&amp; denominator > 0)) {
-

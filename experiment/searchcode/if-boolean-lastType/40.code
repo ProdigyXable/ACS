@@ -1,8 +1,0 @@
-if (hubType != null) {
-if (hubType != lastType) {
-getComponent().update(hubType.getEvents());
-}
-} else {
-if (lastType != null) {
-getComponent().update(new ArrayList<>());
-

@@ -1,9 +1,0 @@
-/*     */ final class CharSequenceReader extends Reader
-/*     */ {
-/*     */   private CharSequence seq;
-/*     */   private int pos;
-/* 112 */     return true;
-/*     */   }
-/*     */
-/*     */   public synchronized void mark(int readAheadLimit) throws IOException
-

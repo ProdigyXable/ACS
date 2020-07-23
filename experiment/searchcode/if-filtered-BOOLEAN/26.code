@@ -1,7 +1,0 @@
-public interface IParsingFilter {
-/*
-* if node is to be filtered, return true
-*/
-public boolean isFiltered(Node node);
-}
-

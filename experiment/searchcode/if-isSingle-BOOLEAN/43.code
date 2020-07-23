@@ -1,3 +1,0 @@
-public static IHtmlElementExpression getExpression(String expression, boolean isSingle) {
-if (isSingle) {
-

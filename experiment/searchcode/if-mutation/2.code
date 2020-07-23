@@ -1,7 +1,0 @@
-package nl.rubenernst.loyalty_cards.mutation_service.events.mutation_persistence_service.responses;
-public MutationCreatedEvent(Mutation mutation) {
-this.mutation = mutation;
-
-if (mutation != null) {
-setSucceeded(true);
-

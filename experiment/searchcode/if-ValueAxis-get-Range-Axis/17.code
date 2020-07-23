@@ -1,8 +1,0 @@
-categoryPlot.getDomainAxis().setMaximumCategoryLabelWidthRatio(1.5f);
-ValueAxis valueAxis = categoryPlot.getRangeAxis();
-
-valueAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
-
-}
-}
-

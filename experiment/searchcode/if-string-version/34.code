@@ -1,9 +1,0 @@
-UNDEFINED(&quot;&quot;);
-
-private final String version;
-
-HTTPVersion(String version) {
-this.version = version;
-for (HTTPVersion aVersion : versions) {
-if (aVersion.toString().equals(version)) {
-

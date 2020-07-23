@@ -1,9 +1,0 @@
-int iterations = (int) Math.round(n.getDouble());
-if (iterations < 0) {
-result.setUndefined();
-return;
-}
-
-// perform iteration f(f(f(...(startValue))))
-double val = startValue.getDouble();
-

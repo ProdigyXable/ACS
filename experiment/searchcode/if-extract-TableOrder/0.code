@@ -1,6 +1,0 @@
-if (this.source == null) return n2;
-if (this.extract == TableOrder.BY_ROW) {
-return this.source.getColumnCount();
-}
-if (this.extract != TableOrder.BY_COLUMN) return n2;
-

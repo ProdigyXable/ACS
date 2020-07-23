@@ -1,9 +1,0 @@
-if (ul != null) ul.UpperRight = this;
-LowerLeft = ll;
-if (ll != null) ll.LowerRight = this;
-public void UpdateRight(Trapezoid ur, Trapezoid lr)
-{
-UpperRight = ur;
-if (ur != null) ur.UpperLeft = this;
-LowerRight = lr;
-

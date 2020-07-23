@@ -1,5 +1,0 @@
-for (int j = start + gap; j < n; j += gap) {
-if (a[j] < a[j - gap]) {
-for (int j = start + gap; j < n; j += gap) {
-if (a[j].compareTo(a[j-gap]) < 0) {
-

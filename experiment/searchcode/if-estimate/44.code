@@ -1,8 +1,0 @@
-package org.baharan.amad.service.impl.mohemat.estimate.tactic;
-
-import java.util.ArrayList;
-import java.util.Date;
-tacticEstimate = iTacticEstimateRepository.getTacticEstimateByStartYear(ModelEntity.getStartYear(),ModelEntity.getForce().getId());
-
-if(tacticEstimate !=null) {
-

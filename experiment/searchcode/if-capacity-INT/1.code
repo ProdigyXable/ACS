@@ -1,9 +1,0 @@
-public void add(int capacity) {
-if (currentCapacity + capacity <= maxCapacity) {
-currentCapacity += capacity;
-}
-}
-
-public void subtract(int capacity) {
-if (currentCapacity - capacity >= 0) {
-

@@ -1,5 +1,0 @@
-public void testReadUnsignedInt32() throws Exception {
-long toread = 0x00000000AABBCCDDL;
-
-// check BigEndian
-

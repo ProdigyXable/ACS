@@ -1,9 +1,0 @@
-import com.google.gson.reflect.TypeToken;
-
-import org.apache.http.message.BasicNameValuePair;
-
-import java.util.List;
-import team.nobugs.powerfulmvp.core.remote.GsonPostRequest;
-import team.nobugs.powerfulmvp.core.remote.phraser.HttpObject;
-import team.nobugs.powerfulmvp.core.remote.phraser.HttpObjectDeserializer;
-

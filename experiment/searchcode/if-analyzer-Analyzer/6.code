@@ -1,7 +1,0 @@
-String type = metaData.getAnalyzerType();
-if (isCJKType(type)) {
-analyzer.addAnalyzer(metaData.getFieldName(), cjkAnalyzer);
-}
-if (isStandardType(type)) {
-analyzer.addAnalyzer(metaData.getFieldName(), standardAnalyzer);
-

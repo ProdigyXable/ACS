@@ -1,6 +1,0 @@
-public class IntRangeWrapper extends AbstractNumberRangeWrapper<Integer> {
-
-public IntRangeWrapper(int stopAt) {
-public IntRangeWrapper(int startFrom, int stopAt) {
-super((startFrom > stopAt) ? startFrom - 1 : startFrom,
-

@@ -1,9 +1,0 @@
-return category;
-}
-
-@Override
-public boolean evaluate(Constituent constituent) {
-boolean result = false;
-
-if (category.equals(constituent.getCategory())) {
-

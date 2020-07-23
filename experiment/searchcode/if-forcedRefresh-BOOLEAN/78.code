@@ -1,6 +1,0 @@
-@Override
-protected JSONObject doInBackground(Boolean... forcedRefresh)
-{
-JSONObject json = new JSONObject();
-if(forcedRefresh[0] || this.refreshDataNeeded()) {
-

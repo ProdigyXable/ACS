@@ -1,6 +1,0 @@
-Timestamp existingTimestamp = timestampDAO.findTimestampByPrimaryKey(timestamp.getId());
-
-if (existingTimestamp != null) {
-if (existingTimestamp != timestamp) {
-existingTimestamp.setId(timestamp.getId());
-

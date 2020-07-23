@@ -1,8 +1,0 @@
-private double max;
-private double increment;
-
-public Heater(double minimum, double maximum)
-public boolean setIncrement(double incre){
-if (incre > 0){
-increment = incre;
-

@@ -1,9 +1,0 @@
-private long ttl;
-private boolean preload;
-
-private CacheConfig(CacheId cacheId, String cacheName,
-Class<? extends Cache> cacheClass,
-long ttl, boolean preload)
-{
-this.cacheId = cacheId;
-

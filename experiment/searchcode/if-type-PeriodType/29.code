@@ -1,7 +1,0 @@
-PeriodType periodType = PeriodType.millis();
-
-if (SECONDS.equals(timeUnit)) {
-periodType = PeriodType.seconds();
-} else if (MINUTES.equals(timeUnit)) {
-periodType = PeriodType.minutes();
-

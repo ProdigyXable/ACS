@@ -1,6 +1,0 @@
-public DelayMeasurement(String eventName, String actionName, MessageAddress source, long timestamp, long localTime ) {
-super(eventName, actionName, source, timestamp);
-this.localTime = localTime ;
-//        if ( localTime < timestamp ) {
-//            throw new IllegalArgumentException(
-

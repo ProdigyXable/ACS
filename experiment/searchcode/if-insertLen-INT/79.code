@@ -1,5 +1,0 @@
-final byte[] insertStr;
-final int insertP;
-final int insertLen;
-if (caseInsensitiveEquals(insertEncoding, strEncoding)) {
-

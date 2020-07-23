@@ -1,6 +1,0 @@
-value = new Boolean(settingBusiness.isHourReportingEnabled()).toString();
-rangeLowValue = new Integer(settingBusiness.getRangeLow()).toString();
-criticalLowValue = new Integer(settingBusiness.getCriticalLow()).toString();
-projectBurndown = new Boolean(settingBusiness.isProjectBurndownEnabled()).toString();
-return super.execute();
-

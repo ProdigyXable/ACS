@@ -1,9 +1,0 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
-import bootstrap.service.oauth.ProviderType;
-private static OAuthServiceConfigHelper _instance;
-private Properties properties;
-private Map<ProviderType, OAuthServiceConfig> serviceList = new HashMap<ProviderType, OAuthServiceConfig>();
-

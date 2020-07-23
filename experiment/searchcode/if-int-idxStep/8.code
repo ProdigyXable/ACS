@@ -1,6 +1,0 @@
-/* 120:    */     private double interpolateXAtY(WeightedObservedPoint[] points, int startIdx, int idxStep, double y)
-/* 121:    */       throws OutOfRangeException
-/* 122:    */     {
-/* 123:224 */       if (idxStep == 0) {
-/* 124:225 */         throw new ZeroException();
-

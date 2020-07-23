@@ -1,8 +1,0 @@
-package org.securegraph.event;
-
-import org.securegraph.Graph;
-import org.securegraph.Vertex;
-public boolean equals(Object obj) {
-if (!(obj instanceof MarkHiddenVertexEvent)) {
-return false;
-

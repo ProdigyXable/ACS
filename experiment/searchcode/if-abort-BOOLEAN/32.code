@@ -1,8 +1,0 @@
-public LockGrantType getLockGrant() {
-return grant;
-}
-
-public void setAbortLsn(long abortLsn, boolean abortKnownDeleted) {
-public void setAbortLsn(long abortLsn,
-boolean abortKnownDeleted,
-

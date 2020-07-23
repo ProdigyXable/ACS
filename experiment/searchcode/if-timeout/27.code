@@ -1,9 +1,0 @@
-package failureDetection;
-
-public class FailureTimeouts {
-
-public final int memberTimeout;
-this.leaderTimeout = leaderTimeout;
-this.detectionCycleTimer = detectionCycleTimer;
-//		if (memberTimeout < (leaderTimeout * 2)) {
-

@@ -1,5 +1,0 @@
-public void onTestFailure(ITestResult testResult) {
-Throwable exceptionThrowable = testResult.getThrowable();
-if (exceptionThrowable!=null) {
-Log.getInstance().handleException(exceptionThrowable);
-

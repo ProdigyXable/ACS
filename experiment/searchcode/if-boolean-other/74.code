@@ -1,5 +1,0 @@
-public boolean equals(Object other) {
-if (other instanceof ListObject) {
-ListObject obj = (ListObject) other;
-if (obj.booleanStore.mValue != this.booleanStore.mValue) return false;
-

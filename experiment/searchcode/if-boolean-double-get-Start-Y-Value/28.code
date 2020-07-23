@@ -1,8 +1,0 @@
-public Interval(float x, float y) {
-super();
-if(x > y) {
-this.start = Double.valueOf(String.valueOf(y));
-this.finish =  Double.valueOf(String.valueOf(x));
-}else {
-this.start = Double.valueOf(String.valueOf(x));
-

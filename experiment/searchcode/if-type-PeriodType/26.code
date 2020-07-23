@@ -1,7 +1,0 @@
-} else if (!marketTypeId.equals(other.marketTypeId))
-return false;
-if (periodType == null) {
-if (other.periodType != null)
-return false;
-} else if (!periodType.equals(other.periodType))
-

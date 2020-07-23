@@ -1,8 +1,0 @@
-List<GoodsClass> goodsclasslist = new ArrayList<GoodsClass>();
-
-try {
-httpurl = new URL(BaseUrl.queryclassurl);
-try {
-httpurl = new URL(BaseUrl.querygoodbyclassurl + &quot;?GoodsClassId=&quot;
-+ classid);
-

@@ -1,6 +1,0 @@
-protected AnyValuesSourceParser(boolean scriptable, boolean formattable) {
-super(scriptable, formattable, false, ValuesSourceType.ANY, null);
-*            {@link #createFactory(String, ValuesSourceType, ValueType, Map)}
-*            method
-* @return <code>true</code> if the current token was correctly parsed,
-

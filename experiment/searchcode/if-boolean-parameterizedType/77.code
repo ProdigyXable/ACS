@@ -1,6 +1,0 @@
-while (contentType == null &amp;&amp; iterator.hasNext()) {
-Type nextType = iterator.next();
-if (nextType instanceof ParameterizedType) {
-ParameterizedType pType = (ParameterizedType) nextType;
-if (pType.getActualTypeArguments()[0] instanceof Class) {
-

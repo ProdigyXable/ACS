@@ -1,5 +1,0 @@
-public static Serializer getInstance(String serialize) {
-if (serialize != null &amp;&amp; serialize.trim().length() > 0) {
-Serializer serializer = serializerMap.get(serialize);
-if (serializer != null) {
-

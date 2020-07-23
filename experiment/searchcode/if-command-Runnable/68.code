@@ -1,9 +1,0 @@
-public class SecurityTestCommand implements Command {
-
-private Runnable test;
-
-public CommandResponse getEmptyCommandResponse() {
-public void execute(CommandRequest request, CommandResponse response) throws Exception {
-if (test != null) {
-test.run();
-

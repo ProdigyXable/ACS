@@ -1,6 +1,0 @@
-RealMatrix zmean = bestArz.multiply(weights);
-boolean hsig = updateEvolutionPaths(zmean, xold);
-if (diagonalOnly <= 0) {
-private void updateCovarianceDiagonalOnly(boolean hsig, final RealMatrix bestArz,
-final RealMatrix xold) {
-

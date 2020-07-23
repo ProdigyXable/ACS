@@ -1,7 +1,0 @@
-public void setUp() {
-File file = new File(file1Str);
-if (file.exists() == true)
-file.delete();
-file = new File(file2Str);
-if (file.exists() == true)
-

@@ -1,9 +1,0 @@
-double cauchy = Double.NaN;
-double alpha = Double.NaN;
-double dsq = Double.NaN;
-double crvmin = Double.NaN;
-double biglsq = ZERO;
-double distsq = ZERO;
-
-// Update GOPT if necessary before the first iteration and after each
-

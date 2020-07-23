@@ -1,10 +1,8 @@
 package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 
-import org.eclipse.jdt.core.dom.*;
-
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
+import org.eclipse.jdt.core.dom.*;
 
 /**
  * Created by yjxxtd on 4/24/16.
@@ -70,7 +68,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
     @Override
     public boolean visit(ParenthesizedExpression node) {
         expressionSet.add(node.toString());
@@ -107,8 +104,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
-
     @Override
     public boolean visit(Initializer node) {
         expressionSet.add(node.toString());
@@ -121,19 +116,16 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
     @Override
     public boolean visit(SingleVariableDeclaration node) {
         expressionSet.add(node.toString());
         return true;
     }
 
-
     @Override
     public boolean visit(ExpressionStatement node) {
         return true;
     }
-
 
     @Override
     public boolean visit(SuperMethodInvocation node) {
@@ -185,8 +177,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
-
     @Override
     public boolean visit(Modifier node) {
         return true;
@@ -196,8 +186,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
     public boolean visit(TypeDeclaration node) {
         return true;
     }
-
-
 
     @Override
     public boolean visit(CompilationUnit node) {
@@ -228,7 +216,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
     public boolean visit(ClassInstanceCreation node) {
         return true;
     }
-
 
     @Override
     public boolean visit(SimpleType node) {
@@ -400,14 +387,10 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
     @Override
     public boolean visit(SingleMemberAnnotation node) {
         return true;
     }
-
-
-
 
     @Override
     public boolean visit(ForStatement node) {
@@ -449,7 +432,6 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 
-
     @Override
     public boolean visit(FieldAccess node) {
         return true;
@@ -470,4 +452,3 @@ public class ExpressionCollectVisitor extends ASTVisitor {
         return true;
     }
 }
-

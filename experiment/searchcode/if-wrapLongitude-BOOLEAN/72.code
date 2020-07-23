@@ -1,6 +1,0 @@
-ValuesSource.GeoPoint valuesSource, boolean wrapLongitude, List<PipelineAggregator> pipelineAggregators,
-Map<String, Object> metaData) throws IOException {
-this.wrapLongitude = wrapLongitude;
-if (valuesSource != null) {
-final BigArrays bigArrays = context.bigArrays();
-

@@ -5,16 +5,16 @@ import cn.edu.pku.sei.plde.ACS.jdtVisitor.ConstructorDeclarationCollectVisitor;
 import cn.edu.pku.sei.plde.ACS.jdtVisitor.ConstructorInvocationInTestCollectVisitor;
 import cn.edu.pku.sei.plde.ACS.localizationInConstructor.model.ConstructorDeclarationInfo;
 import cn.edu.pku.sei.plde.ACS.utils.JDTUtils;
-import org.eclipse.jdt.core.dom.ASTNode;
-import org.eclipse.jdt.core.dom.ASTParser;
-
 import java.io.File;
 import java.util.*;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.ASTParser;
 
 /**
  * Created by yjxxtd on 2/29/16.
  */
 public class LocalizationInConstructor {
+
     private String projectPath;
     private String testFilePath;
     private String testMethodName;
@@ -31,22 +31,22 @@ public class LocalizationInConstructor {
         locateConstructor();
     }
 
-    public HashMap<String, ArrayList<ConstructorDeclarationInfo>> getConstructorMap(){
+    public HashMap<String, ArrayList<ConstructorDeclarationInfo>> getConstructorMap() {
         return constructorMap;
     }
 
-    private void locateConstructor(){
+    private void locateConstructor() {
         ArrayList<String> constructorInvocationList = getConstructorInvocationListInTest();
-        for(String constructorInvocation : constructorInvocationList){
+        for (String constructorInvocation : constructorInvocationList) {
             String classPath = getClassPath(constructorInvocation);
-            if(classPath == null){
+            if (classPath == null) {
                 continue;
             }
             constructorMap.put(classPath, getConstructorDeclarationList(classPath));
         }
     }
 
-    private ArrayList<String> getConstructorInvocationListInTest(){
+    private ArrayList<String> getConstructorInvocationListInTest() {
         ASTNode root = JDTUtils.createASTForSource(new ReadFile(testFilePath).getSource(), ASTParser.K_COMPILATION_UNIT);
         ConstructorInvocationInTestCollectVisitor constructorInvocationInTestCollectVisitor = new ConstructorInvocationInTestCollectVisitor(testMethodName);
         root.accept(constructorInvocationInTestCollectVisitor);
@@ -54,7 +54,7 @@ public class LocalizationInConstructor {
         return constructorInvocationList;
     }
 
-    private ArrayList<ConstructorDeclarationInfo> getConstructorDeclarationList(String classPath){
+    private ArrayList<ConstructorDeclarationInfo> getConstructorDeclarationList(String classPath) {
         String source = new ReadFile(classPath).getSource();
         ASTNode root = JDTUtils.createASTForSource(source, ASTParser.K_COMPILATION_UNIT);
         int[] lineCounter = JDTUtils.getLineCounter(source);
@@ -65,19 +65,18 @@ public class LocalizationInConstructor {
         return constructorDeclarationList;
     }
 
-    private String getClassPath(String className){
+    private String getClassPath(String className) {
         File file = new File(this.projectPath);
         LinkedList<File> fileList = new LinkedList<File>();
         fileList.add(file);
-        while (!fileList.isEmpty()){
+        while (!fileList.isEmpty()) {
             File firstFile = fileList.removeFirst();
-            File [] subFiles = firstFile.listFiles();
-            for (File subFile : subFiles){
+            File[] subFiles = firstFile.listFiles();
+            for (File subFile : subFiles) {
                 String name = subFile.getName();
                 if (subFile.isDirectory()) {
                     fileList.add(subFile);
-                }
-                else if (subFile.getName().equals(className + ".java")){
+                } else if (subFile.getName().equals(className + ".java")) {
                     return subFile.getAbsolutePath();
                 }
             }

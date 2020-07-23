@@ -1,8 +1,0 @@
-private String nameSingular; //always stored in lower case
-private boolean common;
-private int cachedHashCode = 0;
-
-public Ingredient(String nameSingular, String namePlural, boolean common){
-this.namePlural = namePlural.toLowerCase();
-this.nameSingular = nameSingular.toLowerCase();
-

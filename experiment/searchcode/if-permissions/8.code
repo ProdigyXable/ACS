@@ -1,8 +1,0 @@
-import java.util.Objects;
-import java.util.Set;
-
-public class Permissions {
-
-public static Permissions permissions(String... permissions) {
-return new Permissions(Sets.newHashSet(permissions));
-

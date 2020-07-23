@@ -1,8 +1,0 @@
-&quot;depth = &quot; + depth + &quot; (mm)&quot;;
-
-if (cnr != Util.missingValue)
-Action += &quot;, cnr = &quot; + String.valueOf(cnr);
-
-else if (amount != Util.missingValue) {
-if (carbon != Util.missingValue) {
-

@@ -1,8 +1,0 @@
-private void buildIfStatement(IfStatementTree ifStatementTree) {
-Block next = currentBlock;
-// process else-branch
-currentBlock = createBlock(next);
-build(ifStatementTree.thenStatement());
-Block thenBlock = currentBlock;
-// process condition
-

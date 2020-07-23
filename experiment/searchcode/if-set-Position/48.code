@@ -1,3 +1,0 @@
-// testing the i > 7 part of the if-clause in getRightDiagonalPositions
-positionSet = BoardPosition.getRightDiagonalPositions(BoardPosition.D3);
-

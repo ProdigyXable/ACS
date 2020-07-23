@@ -1,7 +1,0 @@
-validate(instance, errors, partial);
-if (errors.hasError())
-throw new ValidationException(errors.errors);
-}
-
-void validate(Object instance, ValidationErrors errors, boolean partial) {
-

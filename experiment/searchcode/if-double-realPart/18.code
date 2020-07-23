@@ -1,8 +1,0 @@
-package org.sourceit.ComplexFraction;
-
-public class ComplexNumber {
-private double imaginaryPart;
-private double realPart;
-
-public ComplexNumber(double imaginaryPart, double realPart) {
-

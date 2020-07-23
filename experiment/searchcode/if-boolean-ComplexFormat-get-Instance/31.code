@@ -1,7 +1,0 @@
-Map<String, ComplexFormat> complexOutputFormats ) {
-
-FacesContext fc = FacesContext.getCurrentInstance();
-InputType input = inputDescription[i];
-String id = input.getId().toString();
-if ( input instanceof LiteralInputType ) {
-

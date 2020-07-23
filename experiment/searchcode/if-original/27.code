@@ -1,5 +1,0 @@
-public int update(int original, int update) {
-if (original != update) {
-mUpdated = true;
-original = update;
-

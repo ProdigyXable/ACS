@@ -1,9 +1,0 @@
-append((float[]) lhs, (float[]) rhs);
-else if ((lhs instanceof boolean[])) {
-append((boolean[]) lhs, (boolean[]) rhs);
-public EqualsBuilder append(boolean lhs, boolean rhs) {
-if (!this.isEquals) {
-return this;
-}
-this.isEquals = (lhs == rhs);
-

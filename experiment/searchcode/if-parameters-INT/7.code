@@ -1,9 +1,0 @@
-@SuppressWarnings(&quot;unchecked&quot;)
-public <T extends Serializable> T get(int i) {
-return (T) parameters[i];
-QueryParameters that = (QueryParameters) o;
-
-if (!Arrays.equals(parameters, that.parameters)) return false;
-
-return true;
-

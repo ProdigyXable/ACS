@@ -1,5 +1,0 @@
-int numGeometries = intersection.getNumGeometries();
-if (numGeometries < 3) {
-Point end2 = otherLine.getEndPoint();
-if (numGeometries == 1) {
-

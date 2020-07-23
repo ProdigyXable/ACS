@@ -1,14 +1,14 @@
 package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 
 import cn.edu.pku.sei.plde.ACS.localizationInConstructor.model.ConstructorDeclarationInfo;
-import org.eclipse.jdt.core.dom.*;
-
 import java.util.ArrayList;
+import org.eclipse.jdt.core.dom.*;
 
 /**
  * Created by yjxxtd on 3/1/16.
  */
 public class ConstructorDeclarationCollectVisitor extends ASTVisitor {
+
     private int[] lineCounter;
     private ArrayList<ConstructorDeclarationInfo> constructorDeclarationList;
 
@@ -41,7 +41,6 @@ public class ConstructorDeclarationCollectVisitor extends ASTVisitor {
 
         return true;
     }
-
 
     @Override
     public boolean visit(VariableDeclarationStatement node) {

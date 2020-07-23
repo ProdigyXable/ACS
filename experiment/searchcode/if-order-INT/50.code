@@ -1,7 +1,0 @@
-package main.Moderate.Six;
-
-public class Sort {
-public int[] exec(int[] unOrder) {
-int smallestUnOrder = findSmallestUnOder(unOrder);
-int m = findMPosition(unOrder, smallestUnOrder);
-

@@ -1,9 +1,0 @@
-return ParameterHandler.applyClass(description, this.run, ParameterHandler.VIEW_CLASS);
-}
-
-public String getExpectedResultHTML() {
-return ParameterHandler.applyClass(expectedResult, this.run, ParameterHandler.VIEW_CLASS);
-}
-
-public String getExpectedResultText() {
-

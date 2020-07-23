@@ -1,7 +1,0 @@
-this.identifier=identifier;
-this.factory4Selection=analyzerFactory;
-if(analyzerFactory.hasCAnalyzerCreated()){
-cAnalyzer=analyzerFactory.getCAnalyzer();
-}
-if(analyzerFactory.hasComponentAnalyzerCreated()){
-

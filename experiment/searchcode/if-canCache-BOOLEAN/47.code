@@ -1,8 +1,0 @@
-Object rubric = null;
-RubricContentType rubricContentType = RubricContentType.Uri;
-boolean canCache = true;
-if (rubricElement.getAttributeValue (&quot;cancache&quot;) != null) {
-canCache = Boolean.parseBoolean (rubricElement.getAttributeValue (&quot;cancache&quot;));
-}
-if (rubricElement.getAttributeValue (&quot;encrypted&quot;) != null) {
-

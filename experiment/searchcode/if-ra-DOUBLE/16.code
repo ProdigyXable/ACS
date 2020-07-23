@@ -1,5 +1,0 @@
-private static RADec FkXXz(double ra, double dec, int targetSystem) {
-RADec raDec = null;
-double raInRadians = Math.toRadians(ra);
-double decInRadians = Math.toRadians(dec);
-

@@ -1,6 +1,0 @@
-private final DifferentiableMultivariateVectorOptimizer optimizer;
-/** Observed points. */
-private final List<WeightedObservedPoint> observations;
-this.optimizer = optimizer;
-observations = new ArrayList<WeightedObservedPoint>();
-

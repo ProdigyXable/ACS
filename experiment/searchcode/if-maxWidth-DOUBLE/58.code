@@ -1,6 +1,0 @@
-and height. */
-Rescale(double xSlope, double xMargin, double maxWidth,
-double ySlope, double yMargin, double maxHeight) {
-double x = (maxWidth - xMargin) / xSlope;
-double y = (maxHeight - yMargin) / ySlope;
-

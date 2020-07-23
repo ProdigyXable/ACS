@@ -1,9 +1,0 @@
-g2.drawLine((int) cursor, dataArea.y, (int) cursor, dataArea.y
-+ dataArea.height);
-}
-
-boolean drawUpOrRight = false;
-boolean drawDownOrLeft = false;
-if (this.positiveArrowVisible) {
-if (this.inverted) {
-

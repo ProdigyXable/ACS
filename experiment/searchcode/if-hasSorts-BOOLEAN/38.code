@@ -1,8 +1,0 @@
-public SearchSourceBuilder fetchSource(boolean fetch) {
-if (this.fetchSourceContext == null) {
-this.fetchSourceContext = new FetchSourceContext(fetch);
-out.writeBoolean(hasSorts);
-if (hasSorts) {
-out.writeVInt(sorts.size());
-for (BytesReference sort : sorts) {
-

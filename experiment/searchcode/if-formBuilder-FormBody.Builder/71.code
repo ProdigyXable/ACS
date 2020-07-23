@@ -1,4 +1,0 @@
-private RequestBody getFormBodyFromParams(Map<String, List<String>> queryParams) {
-FormBody.Builder formBuilder = new FormBody.Builder();
-for (Map.Entry<String, List<String>> paramEntry : queryParams.entrySet()) {
-

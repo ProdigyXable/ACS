@@ -1,8 +1,0 @@
-public class SameValidator extends AbstractValidator {
-
-private AbstractField myOtherField;
-
-public SameValidator(AbstractField otherField, String errorMessage) {
-super(errorMessage);
-myOtherField = otherField;
-

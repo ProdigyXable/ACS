@@ -1,8 +1,0 @@
-private volatile JSONClassInfo classInfo;
-
-private ObjectSupport objectSupport;
-
-public ClassInfoHolder(ObjectSupport objectSupport, Class<?> cls)
-{
-this.objectSupport = objectSupport;
-

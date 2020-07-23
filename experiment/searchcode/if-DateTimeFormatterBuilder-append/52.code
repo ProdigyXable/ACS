@@ -1,5 +1,0 @@
-public static DateTime parseDDMMYYYYhhmmss(String date) {
-if (date != null) {
-DateTimeFormatterBuilder dtfb = new DateTimeFormatterBuilder();
-DateTimeFormatterBuilder dtfb = new DateTimeFormatterBuilder();
-

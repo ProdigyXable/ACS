@@ -1,9 +1,0 @@
-if (index < 0) {
-if (this.defaultGroup.equals(comparable)) {
-index = 0;
-return index;
-}
-
-public Comparable getGroup(final Comparable comparable) {
-if (comparable == null) {
-

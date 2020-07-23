@@ -1,8 +1,0 @@
-return key;
-}
-public void setLocalDateTime(LocalDateTime LocalDateTime){
-this.LocalDateTime=LocalDateTime;
-}
-public LocalDateTime getLocalDateTime(){
-return this.LocalDateTime;
-

@@ -1,9 +1,0 @@
-private Chronology selectChronology(Chronology paramChronology)
-{
-paramChronology = DateTimeUtils.getChronology(paramChronology);
-if (iChrono != null) {
-paramChronology = iChrono;
-}
-Chronology localChronology = paramChronology;
-if (iZone != null) {
-

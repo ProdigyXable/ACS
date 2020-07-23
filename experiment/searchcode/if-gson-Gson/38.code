@@ -1,6 +1,0 @@
-Gson gsonInstance = GsonSingleton.uniqueGsonInstance;
-if (gsonInstance == null) {
-synchronized (GsonSingleton.class) {
-gsonInstance = GsonSingleton.uniqueGsonInstance;
-if (gsonInstance == null) {
-

@@ -1,7 +1,0 @@
-package core.common.model.varinterval;
-
-public class VarInterval {
-private String name;
-public boolean equals(Object obj){
-if(this.name.equals(((VarInterval)obj).getName()) &amp;&amp; this.interval.equals(((VarInterval)obj).getInterval()))
-

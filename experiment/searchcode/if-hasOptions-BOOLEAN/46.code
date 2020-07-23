@@ -1,9 +1,0 @@
-* One of the successors gets called (randomly if hasOptions is false or
-* player chosen if hasOptions if true) if the action is over
-return null;
-}
-
-if (hasOptions()) {
-printOptions();
-successor = chooseOptions();
-

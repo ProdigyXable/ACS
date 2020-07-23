@@ -1,8 +1,0 @@
-public DynIntervalBoolean(boolean onValue, double start, double end)
-{
-super(onValue, start, end);
-* @param start
-* @param end
-*/
-public DynIntervalBoolean(boolean onValue,  boolean offValue, double start, double end)
-

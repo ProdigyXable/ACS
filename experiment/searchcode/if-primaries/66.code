@@ -1,8 +1,0 @@
-private List<Ingredient> abstractPrimaries;
-private Glasses.Glassware glassware;
-private String name;
-private String served;
-public CocktailGenerator(AbstractCocktailFactory factory, List<String> primaryParameter)
-{
-if(factory == null || primaryParameter == null)
-

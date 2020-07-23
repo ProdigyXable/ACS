@@ -1,5 +1,0 @@
-Class<?> rawObservableType = Utils.getRawType(observableType);
-if (rawObservableType == Response.class) {
-if (!(observableType instanceof ParameterizedType)) {
-throw new IllegalStateException(&quot;Response must be parameterized&quot;
-

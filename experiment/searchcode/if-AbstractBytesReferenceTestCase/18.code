@@ -1,8 +1,0 @@
-import java.io.IOException;
-import java.util.Arrays;
-
-public abstract class AbstractBytesReferenceTestCase extends ESTestCase {
-BytesRef singlePageOrNull = getSinglePageOrNull(slice);
-if (singlePageOrNull != null) {
-assertEquals(sliceOffset, singlePageOrNull.offset);
-

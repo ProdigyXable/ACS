@@ -1,8 +1,0 @@
-checkTime(startMs, timeoutMs);
-}
-
-private void checkTime(long start, long timeoutMs) throws IOException{
-if (timeoutMs>0){
-long current = System.currentTimeMillis();
-if (current - start >= timeoutMs){
-

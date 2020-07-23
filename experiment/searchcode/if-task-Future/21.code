@@ -1,7 +1,0 @@
-import java.util.concurrent.ScheduledFuture;
-
-public class ScheduledTask implements Task {
-private static final boolean INTERRUPT_IF_RUNNING = true;
-private final ScheduledFuture<?> future;
-private final Task task;
-

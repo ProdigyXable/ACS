@@ -1,9 +1,0 @@
-public void registerDrawable(Drawable draw) {
-if (draw != null &amp;&amp; !drawables.contains(draw))
-drawables.add(draw);
-}
-
-public void registerBackgroundItem(Drawable draw) {
-if (draw != null &amp;&amp; !backgrounds.contains(draw))
-backgrounds.add(draw);
-

@@ -1,3 +1,0 @@
-public void addContact(IContactModelPartial modelPartial) {
-if ( modelPartial == null ) throw new IllegalArgumentException(&quot;modelPartial == null&quot;);
-

@@ -1,9 +1,0 @@
-* Returns whether a problem occured while parsing the constraint.
-* @return true if a problem occured, otherwise false
-*/
-public boolean problemsOccured()
-{
-if (problem == null)
-return false;
-return true;
-

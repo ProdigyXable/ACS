@@ -1,8 +1,0 @@
-package week1;
-
-public class LongHandMultiplyService implements MultiplyService {
-
-public int multiply(Integer x, Integer y) {
-private int recMultiply(int multiplier, int multiplicand, int placeValue) {
-int digit = extractDigitAtPlaceValue(multiplier, placeValue);
-

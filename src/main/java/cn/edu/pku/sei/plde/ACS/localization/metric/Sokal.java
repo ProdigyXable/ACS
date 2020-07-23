@@ -6,6 +6,6 @@ package cn.edu.pku.sei.plde.ACS.localization.metric;
 public class Sokal implements Metric {
 
     public double value(int ef, int ep, int nf, int np) {
-        return 2 * (ef + np) / ( 2 * (ef + np) + nf + ep);
+        return 2 * (ef + np) / (2 * (ef + np) + nf + ep);
     }
 }

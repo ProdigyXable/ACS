@@ -1,5 +1,0 @@
-public static SearchApplicationsParam convert(ListQueryObject query) {
-SearchApplicationsParam retVal = new SearchApplicationsParam();
-retVal.setName(query.getNameString());
-if (!StringUtils.isBlank(query.getStateString())) {
-

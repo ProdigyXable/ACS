@@ -1,9 +1,0 @@
-Set<ConstraintViolation<Object>> violations = validator.validate(obj);
-
-String error = &quot;&quot;;
-if (!violations.isEmpty()) {
-
-boolean firstIteration = true;
-for (ConstraintViolation<Object> violation : violations) {
-if (firstIteration)
-

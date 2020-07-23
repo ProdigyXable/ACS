@@ -1,5 +1,0 @@
-/** Whether to restrict the variables to non-negative values. */
-private final boolean restrictToNonNegative;
-final Collection<LinearConstraint> constraints,
-final GoalType goalType, final boolean restrictToNonNegative,
-

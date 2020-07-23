@@ -1,8 +1,0 @@
-int categoryCount = getColumnCount();
-if (seriesCount > 1) {
-double seriesGap = dataArea.getHeight() * getItemMargin()
-double lclip = rangeAxis.getLowerBound();
-double uclip = rangeAxis.getUpperBound();
-
-if (uclip <= 0.0) {
-

@@ -1,6 +1,0 @@
-static boolean setAccessibleWorkaround(final AccessibleObject o) {
-if (o == null || o.isAccessible()) {
-static boolean isAssignable(Class<?> cls, final Class<?> toClass, final boolean autoboxing) {
-if (toClass == null) {
-return false;
-

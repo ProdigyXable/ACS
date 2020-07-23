@@ -1,5 +1,0 @@
-public static void assertIt(boolean b) {
-if (!b) throw new AssertionFailure();
-}
-}
-

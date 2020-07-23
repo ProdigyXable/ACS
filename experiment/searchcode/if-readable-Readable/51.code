@@ -1,9 +1,0 @@
-package graph;
-
-public class Edge<T> {// for directed graphs if we do that
-
-private final ReadableNode<T> start;
-private final ReadableNode<T> end;
-
-public Edge(ReadableNode<T> a, ReadableNode<T> b) {
-

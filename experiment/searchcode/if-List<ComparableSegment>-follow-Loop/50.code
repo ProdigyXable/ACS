@@ -1,8 +1,0 @@
-int i = 0;
-
-for (final List<ComparableSegment> loop : loops) {
-if (loop.size() < 2 ||
-* {@code node}
-*/
-private List<ComparableSegment> followLoop(final AVLTree<ComparableSegment>.Node node,
-

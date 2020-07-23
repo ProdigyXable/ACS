@@ -1,8 +1,0 @@
-public class AnalysisAxisFactory {
-
-public static AnalysisAxis createAnalysisAxis(Object object) {
-AnalysisAxis analysisAxis = null;
-if(object!=null){
-if(object instanceof AnalysisAxisDTO){
-analysisAxis = new AnalysisAxis();
-

@@ -1,9 +1,0 @@
-factory.field(INT_FIELD_NAME);
-if (randomBoolean()) {
-factory.format(&quot;###.##&quot;);
-}
-if (randomBoolean()) {
-factory.keyed(randomBoolean());
-}
-if (randomBoolean()) {
-

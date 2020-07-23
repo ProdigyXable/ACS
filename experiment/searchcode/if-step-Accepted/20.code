@@ -1,6 +1,0 @@
-public void beforeDeciding(StepScope stepScope) {
-acceptedMoveScopeComparator = new AcceptedMoveScopeComparator(stepScope.getDeciderScoreComparator());
-protected MoveScope pickMaxScoreMoveScopeFromAcceptedList(StepScope stepScope) {
-if (acceptedList.isEmpty()) {
-return null;
-

@@ -1,8 +1,0 @@
-public class Solution {
-public int divide(int dividend, int divisor) {
-/*
-if (dividend == 0) {
-return 0;
-}
-long value = (long)dividend / divisor;
-

@@ -1,9 +1,0 @@
-public void stop() {
-if(startTime < 0) {
-throw new RuntimeException(&quot;Stop watch must be started first!&quot;);
-}
-elapsed = System.nanoTime() - startTime;
-}
-
-public long getTimeInMillis() {
-

@@ -1,8 +1,0 @@
-if (this == o) {
-return true;
-}
-if (!(o instanceof RectangleEdge)) {
-return false;
-}
-if (this.name.equals(((RectangleEdge) o).name)) {
-

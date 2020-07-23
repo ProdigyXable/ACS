@@ -1,6 +1,0 @@
-assertEquals(newValue, doubleGlobalParameter.getValue(), eps);
-
-newValue = 1100.345;
-doubleGlobalParameter.setOnlyIfChange(newValue, &quot;setting&quot;);
-doubleGlobalParameter.setOnlyIfChange(newValue, &quot;setting&quot;);
-

@@ -1,7 +1,0 @@
-expectedList.add(&quot;Estonia&quot;);
-expectedList.add(&quot;Hiszpania&quot;);
-
-boolean reachedVal = reachedList.containsAll(expectedList);
-boolean expectedVal = true;
-boolean expectedLogic = true;
-

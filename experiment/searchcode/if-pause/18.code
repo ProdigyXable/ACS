@@ -1,9 +1,0 @@
-public PauseType findByValue(String value){
-for (PauseType pauseType : this){
-if (pauseType.getName().equalsIgnoreCase(value)) return pauseType;
-public PauseType findById(int id){
-for (PauseType pauseType : this){
-if (pauseType.getId()==id) return pauseType;
-}
-return null;
-

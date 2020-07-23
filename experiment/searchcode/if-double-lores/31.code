@@ -1,9 +1,0 @@
-plugin = instance;
-}
-
-
-public static boolean sellItem(ItemStack item,int amount, double price, String playerName, String playerUUID){
-List<String> lores = new ArrayList<String>();
-lores = item.getItemMeta().getLore();
-if(!(item.getItemMeta().getLore() == null)){
-

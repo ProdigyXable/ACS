@@ -1,8 +1,0 @@
-protected int numberOfReplicas;
-protected final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
-
-public ConsistentHash() {
-}
-
-public ConsistentHash(HashFunction hashFunction, int numberOfReplicas,
-

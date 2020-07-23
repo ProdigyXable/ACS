@@ -1,8 +1,0 @@
-public IncludeExclude(StreamInput in) throws IOException {
-if (in.readBoolean()) {
-includeValues = null;
-boolean regexBased = isRegexBased();
-out.writeBoolean(regexBased);
-if (regexBased) {
-out.writeOptionalString(include == null ? null : include.getOriginalString());
-

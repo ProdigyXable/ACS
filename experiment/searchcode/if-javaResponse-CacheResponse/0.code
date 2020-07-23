@@ -1,7 +1,0 @@
-import java.net.CacheResponse;
-import java.net.ResponseCache;
-
-public final class CacheAdapter implements InternalCache {
-CacheResponse javaResponse = getJavaCachedResponse(request);
-if (javaResponse == null) {
-

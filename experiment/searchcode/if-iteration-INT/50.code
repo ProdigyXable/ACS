@@ -1,9 +1,0 @@
-import net.sourceforge.cilib.algorithm.AbstractAlgorithm;
-
-public class IterationBasedChangeDetectionStrategy extends ChangeDetectionStrategy{
-int iterationModulus;
-int nextIterationOfChange;
-
-/*
-* Default constructor for the IterationBasedChangeDetectionStrategy
-

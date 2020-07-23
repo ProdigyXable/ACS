@@ -1,9 +1,0 @@
-private boolean mStarted = false;
-
-private boolean mResolving = false;
-
-private static  boolean sCanShowSignInUI = true;
-mStarted = true;
-if (mResolving) {
-// if resolving, don&#39;t reconnect the plus client
-

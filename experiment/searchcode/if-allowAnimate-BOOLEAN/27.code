@@ -1,9 +1,0 @@
-public void setOrAnimatePlusCheckIcon(final ImageView imageView, boolean isCheck,
-boolean allowAnimate) {
-compatSetOrAnimatePlusCheckIcon(imageView, isCheck, allowAnimate);
-return;
-}
-
-Drawable drawable = imageView.getDrawable();
-if (!(drawable instanceof AnimatedStateListDrawable)) {
-

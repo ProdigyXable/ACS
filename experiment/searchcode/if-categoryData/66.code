@@ -1,8 +1,0 @@
-JSONObject categoryData = categoriesData.optJSONObject(i);
-Category category = Category.parseCategory(categoryData);
-if (category != null)
-final static Category parseCategory(JSONObject categoryData) {
-if (categoryData == null)
-return null;
-Category ret = new Category();
-

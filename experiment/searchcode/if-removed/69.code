@@ -1,6 +1,0 @@
-protected boolean internalRemoveWorkingSet(IWorkingSet workingSet) {
-boolean workingSetRemoved = workingSets.remove(workingSet);
-boolean recentWorkingSetRemoved = recentWorkingSets.remove(workingSet);
-if (workingSetRemoved) {
-((AbstractWorkingSet) workingSet).disconnect();
-

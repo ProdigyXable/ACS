@@ -1,9 +1,0 @@
-public FileInputStream vid;
-public Saving.MediaType mediaType;
-
-
-public Snap(Bitmap b, boolean overlay) {
-img = b;
-if (overlay)
-mediaType = Saving.MediaType.IMAGE_OVERLAY;
-

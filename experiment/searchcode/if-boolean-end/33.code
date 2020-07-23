@@ -1,3 +1,0 @@
-int i = Booleans.access$000(this.array, ((Boolean)paramObject).booleanValue(), this.start, this.end);
-if (i >= 0)
-

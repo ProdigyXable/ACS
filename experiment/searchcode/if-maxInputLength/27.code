@@ -1,6 +1,0 @@
-public Builder maxInputLength(int maxInputLength) {
-if (maxInputLength <= 0) {
-builder.field(Fields.MAX_INPUT_LENGTH.getPreferredName(), this.maxInputLength);
-
-if (fieldType().hasContextMappings()) {
-

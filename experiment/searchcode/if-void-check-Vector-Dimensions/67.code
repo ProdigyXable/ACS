@@ -1,9 +1,0 @@
-@Override
-public void setDimensions(int[] newDimensions) {
-// should only be used on materialized sequence
-return createVector();
-}
-
-@Override
-public final RAbstractVector copyWithNewDimensions(int[] newDimensions) {
-

@@ -1,6 +1,0 @@
-private final CostFunction costFunction;
-private final List<Pair<RealVector, RealVector>> savedExamples;
-private final int batchSize;
-public Pair<RealVector[], RealVector[]> feedForward(RealVector input) {
-RealVector[] weightedInputs = new RealVector[neurons.length];
-

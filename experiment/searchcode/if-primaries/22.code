@@ -1,5 +1,0 @@
-public static long toNative(List<CVImageBufferColorPrimaries> l, long flags) {
-if (l == null) {
-for (/*<name>*/CVImageBufferColorPrimaries/*</name>*/ v : values) {
-if (v.value().equals(value)) {
-

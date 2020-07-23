@@ -1,9 +1,0 @@
-public void add(Vector p) {
-checkDimensionality(p);
-
-for (int i = 0; i < vec.length; i++) {
-// HELPERS
-
-private void checkDimensionality(Vector other) {
-if (other.vec.length != this.vec.length) {
-

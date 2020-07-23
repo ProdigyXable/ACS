@@ -1,8 +1,0 @@
-String x1String = &quot;Step = 1.0&quot;;
-
-double initialStep;
-
-StepControl(double initialStep) {
-this.initialStep = initialStep;
-Double initialStepObj = new Double(initialStep);
-

@@ -1,9 +1,0 @@
-import java.util.Objects;
-
-public class RenamedPathResource implements Resource.Readable, Serializable {
-
-private final String path;
-private final Resource.Readable readable;
-
-public RenamedPathResource(String path, Readable readable) {
-

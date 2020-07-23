@@ -1,6 +1,0 @@
-import de.unisb.cs.st.javalanche.mutation.results.Mutation;
-import de.unisb.cs.st.javalanche.mutation.results.Mutation.MutationType;
-for (Mutation mutation : list) {
-if(mutation.getLineNumber() == lineNumber){
-result.add(mutation);
-

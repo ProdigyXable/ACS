@@ -1,9 +1,0 @@
-/* package private */ final class IntelliJExtensionProvider<T> implements Provider<T> {
-
-@InjectLogger
-private ILogger logger;
-private final Class<T> extensionClass;
-for (final Object candidate : candidates) {
-if (candidate.getClass().equals(this.extensionClass)) {
-return (T)candidate;
-

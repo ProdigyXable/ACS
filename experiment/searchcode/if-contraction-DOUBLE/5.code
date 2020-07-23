@@ -1,7 +1,0 @@
-String averages = null;
-if (data != null &amp;&amp; data.moveToFirst()) {
-double averageDuration = 0;
-String backupLabel;
-if (contractionOngoing) {
-tile.setState(Tile.STATE_ACTIVE);
-

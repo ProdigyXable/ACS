@@ -1,9 +1,0 @@
-public Messager(Transport transport) {
-this.transport = transport;
-
-registerDefaultHandlers();
-}
-
-private void registerDefaultHandlers() {
-transport.registerHandler(HttpStatus.SC_CONFLICT,
-

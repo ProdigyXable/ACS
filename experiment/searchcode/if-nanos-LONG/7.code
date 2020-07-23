@@ -1,9 +1,0 @@
-public class Delay {
-private long delayNanos;
-private long passedNanos;
-
-public Delay(long delayMillis) {
-public boolean updateAndCheck(long deltaNanos) {
-passedNanos += deltaNanos;
-if (passedNanos > delayNanos) {
-

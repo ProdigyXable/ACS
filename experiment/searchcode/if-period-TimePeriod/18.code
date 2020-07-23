@@ -1,9 +1,0 @@
-import srl.core.sketch.TimePeriod;
-
-public class TimePeriodComparator implements Comparator<TimePeriod>{
-
-@Override
-public int compare(TimePeriod first, TimePeriod second) {
-
-if(first.getTimeStart() < second.getTimeStart())
-

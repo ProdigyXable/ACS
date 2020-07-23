@@ -1,8 +1,0 @@
-* @param useLong
-* @return
-*/
-public String getI18String(final boolean useLong) {
-String result = &quot;&quot;;
-if (useLong) {
-result = Internationalizer.getI18String(PREFIX + this.name() + &quot;.long&quot;);
-

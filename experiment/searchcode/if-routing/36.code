@@ -1,8 +1,0 @@
-RoutingVo routingResult = null;
-for(RoutingVo routing : routingList){
-if(overview.equals(routing.getOverview())){
-routingResult =  routing;
-}
-}
-if(routingResult == null){
-

@@ -1,8 +1,0 @@
-int countBytes = in.read(msg);
-if (countBytes > 0) {
-msg = ByteHelper.getPartByteArray(msg, 0, countBytes);
-Receiver.getInstance().receiveMessage(msg);
-}
-if(countBytes == -1)
-break;
-

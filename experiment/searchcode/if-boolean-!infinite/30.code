@@ -1,9 +1,0 @@
-private String infiniteEnding;
-
-private VerbTemplate(String root, String infiniteEnding) {
-this.root = root;
-this.infiniteEnding = infiniteEnding;
-}
-
-public static VerbTemplate fromString(String verbTemplateAsString) {
-

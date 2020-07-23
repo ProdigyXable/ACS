@@ -1,7 +1,0 @@
-Shape copyableVersion = null;
-if (shape instanceof Circle)
-copyableVersion = copyCircle();
-else if (shape instanceof Rectangle)
-copyableVersion = copyRect();
-else if (shape instanceof Line)
-

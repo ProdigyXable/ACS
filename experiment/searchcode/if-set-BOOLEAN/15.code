@@ -1,5 +1,0 @@
-public Boolean convert(ResultSet resultSet) throws SQLException {
-if (columnName == null){
-boolean aBoolean = resultSet.getBoolean(pos);
-if (resultSet.wasNull()) return null;
-

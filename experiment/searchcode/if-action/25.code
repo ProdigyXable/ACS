@@ -1,8 +1,0 @@
-public Action getAction(String actionName) {
-Action action = null;
-
-if(&quot;insert&quot;.equals(actionName)){
-action = new InsertAction();
-}else if(&quot;delete&quot;.equals(actionName)){
-action = new DeleteAction();
-

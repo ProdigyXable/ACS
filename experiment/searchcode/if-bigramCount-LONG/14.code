@@ -1,9 +1,0 @@
-public class BigramCount extends Configured implements Tool {
-
-private static final Logger LOG = Logger.getLogger(BigramCount.class);
-
-private BigramCount() {
-}
-
-private static final String INPUT = &quot;input&quot;;
-

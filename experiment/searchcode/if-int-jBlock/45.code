@@ -1,9 +1,0 @@
-* @return return block
-*/
-public JBlock getBlockById(int id){
-for(JBlock b: blocks)
-if(id==b.ID)
-getManager().historyArchive=false;
-for(int i=0; i<selected.size(); i++){
-if(selected.get(i).type==JBlock.Type.START)
-

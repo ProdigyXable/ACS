@@ -1,9 +1,0 @@
-public void set(FilterCropRepresentation r) {
-mCrop.set(r.mCrop);
-}
-
-@Override
-public boolean equals(FilterRepresentation rep) {
-if (!(rep instanceof FilterCropRepresentation)) {
-return false;
-

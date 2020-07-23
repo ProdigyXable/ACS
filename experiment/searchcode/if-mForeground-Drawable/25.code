@@ -1,9 +1,0 @@
-public void draw(Canvas canvas) {
-super.draw(canvas);
-if (mForeground != null) {
-final Drawable foreground = mForeground;
-@Override
-protected void drawableStateChanged() {
-super.drawableStateChanged();
-if (mForeground != null &amp;&amp; mForeground.isStateful()) {
-

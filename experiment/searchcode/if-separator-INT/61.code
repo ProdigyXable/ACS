@@ -1,7 +1,0 @@
-return null;
-}
-
-// the NameTruncation always truncate the first nameSeparator!!!
-if (line.contains(nameSeparator)){
-int indexOfSeparator = line.indexOf(nameSeparator);
-

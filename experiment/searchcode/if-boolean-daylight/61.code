@@ -1,7 +1,0 @@
-int currentWindStr = wind.windStrength();
-
-if (currentLuminary){
-if(currentDaylight == DaylightType.Morning){
-if(currentWindStr <= 2){
-return new Creature(CreatureType.Puppy);
-

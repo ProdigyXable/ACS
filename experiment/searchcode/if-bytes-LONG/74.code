@@ -1,8 +1,0 @@
-protected long _bytes;
-
-public TotalTimeAndBytes(long nanoSecsRaw, long nanoSecsWithWait,
-long nanoSecsRaw, long nanoSecsWithWait, long bytes)
-{
-if (old == null) {
-return new TotalTimeAndBytes(nanoSecsRaw, nanoSecsWithWait, bytes);
-

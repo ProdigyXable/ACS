@@ -1,8 +1,0 @@
-return false;
-}
-PolarAxisLocation location = (PolarAxisLocation) obj;
-if (!this.name.equals(location.toString())) {
-private Object readResolve() throws ObjectStreamException {
-if (this.equals(PolarAxisLocation.NORTH_RIGHT)) {
-return PolarAxisLocation.NORTH_RIGHT;
-

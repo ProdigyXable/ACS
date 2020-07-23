@@ -1,8 +1,0 @@
-return null;
-}
-
-@Override
-public void merge(Mapper mergeWith, MergeResult mergeResult) throws MergeMappingException {
-if (!(mergeWith instanceof ExternalRootMapper)) {
-mergeResult.addConflict(&quot;Trying to merge &quot; + mergeWith + &quot; with &quot; + this);
-

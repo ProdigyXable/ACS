@@ -1,9 +1,0 @@
-return Depth(root, 0);
-}
-
-private int Depth(TreeNode node, int currentDepth){
-if (node == null)
-return currentDepth;
-
-if (node.LeftNode() == null &amp;&amp; node.RightNode() == null)
-

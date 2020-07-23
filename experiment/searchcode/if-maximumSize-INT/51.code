@@ -1,9 +1,0 @@
-private FixedArrayList(int maximumSize) {
-super(maximumSize);
-mMaximumSize = maximumSize;
-}
-
-private FixedArrayList(Collection<? extends E> collection, int maximumSize) {
-super(collection);
-ensureCapacity(maximumSize);
-

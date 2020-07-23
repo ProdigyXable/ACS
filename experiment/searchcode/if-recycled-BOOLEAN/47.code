@@ -1,8 +1,0 @@
-private int recycledMaterial;
-private boolean  usar;
-
-public Garbage(String id, String description, int recycledMaterial) {
-public boolean use(RobotEngine r, Place p) {
-// TODO Auto-generated method stub
-if (this.canBeUsed()){
-

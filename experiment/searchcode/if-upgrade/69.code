@@ -1,7 +1,0 @@
-public class ReflectiveUpgrader<T> {
-
-private final String upgradeMethodsNamePrefix;
-private final Object instanceWithUpgradeMethods;
-
-public ReflectiveUpgrader(String upgradeMethodsNamePrefix, Object instanceWithUpgradeMethods) {
-

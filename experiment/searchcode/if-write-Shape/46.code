@@ -1,9 +1,0 @@
-public void unGroup()
-{
-if(selectedShape.size() == 1)
-if(selectedShape.get(0) instanceof Group)
-public ArrayList<IShape> selectTheShape(int x,
-int y, boolean isJustClick)
-{
-if(selectedShape.size() >  0 &amp;&amp; isJustClick)
-

@@ -1,8 +1,0 @@
-* @param
-* @return
-*/
-public SpriteEx(String fileName, boolean flipHorizontal, boolean hasAnimation, byte[] spriteFrames, boolean animLoops, boolean animPlaysOnce)
-* @return
-*/
-public SpriteEx(String[] fileNames, boolean flipHorizontal, boolean hasAnimation, byte[] spriteFrames, boolean animLoops, boolean animPlaysOnce)
-

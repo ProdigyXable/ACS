@@ -1,7 +1,0 @@
-final double unwrappedEnd     = arcRelativeStart - FastMath.PI;
-
-// build the sub-edges
-if (arcRelativeStart < length) {
-if (unwrappedEnd > 0) {
-// the edge starts inside the circle, then goes outside, then comes back inside
-

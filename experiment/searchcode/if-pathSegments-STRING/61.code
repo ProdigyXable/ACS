@@ -1,5 +1,0 @@
-List<String> pathSegments = uri.getPathSegments();
-if (pathSegments != null) {
-for (String segment : pathSegments) {
-if (segment.equals(pathSegments.get(pathSegments.size() - 1))) {
-

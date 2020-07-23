@@ -1,7 +1,0 @@
-this.pathSegments = StringUtils.split(path, DELIM);
-if (this.pathSegments == null) {
-throw new NullPointerException();
-this.pathSegments = StringUtils.split(contextRemovedPath, DELIM);
-if (this.pathSegments == null) {
-throw new NullPointerException();
-

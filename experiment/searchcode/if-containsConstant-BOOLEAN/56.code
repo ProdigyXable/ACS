@@ -1,8 +1,0 @@
-final boolean containsConstant,
-final boolean copyData) {
-if (copyData) {
-Arrays.fill(this.globalFitInfo, Double.NaN);
-
-if (rank > 0) {
-this.globalFitInfo[SST_IDX] = containsConstant ?
-

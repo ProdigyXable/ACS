@@ -1,7 +1,0 @@
-// is an IF conditional step
-callback.preIf(step.getIf(), step.hashCode());
-Boolean condition = callback.evaluateIf(step.getIf(), step.hashCode());
-
-// Run THEN?
-if (condition == null || condition == true) {
-

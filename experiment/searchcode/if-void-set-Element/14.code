@@ -1,8 +1,0 @@
-public TravelExpenseTollElement getPrevious() {
-return previousElement;
-}
-public void setNext(TravelExpenseTollElement next) {
-nextElement = next;
-}
-public void setPrevious(TravelExpenseTollElement previous) {
-

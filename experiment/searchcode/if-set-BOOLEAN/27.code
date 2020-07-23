@@ -1,9 +1,0 @@
-public void raiseAuto();
-public void raiseBreak();
-public boolean getCase();
-public void setCase(boolean value);
-public boolean getGoto();
-public void setGoto(boolean value);
-public boolean getIf();
-public void setIf(boolean value);
-

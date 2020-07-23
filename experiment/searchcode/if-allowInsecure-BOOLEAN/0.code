@@ -1,7 +1,0 @@
-String user = null;
-char [] password = null;
-boolean allowInsecure = false;
-//
-if (ep != null) {
-allowInsecure = RDFUtils.getBooleanValue(ep, ELDA_API.authAllowInsecure, false);
-

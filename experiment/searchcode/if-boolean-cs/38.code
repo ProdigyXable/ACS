@@ -1,9 +1,0 @@
-class Dekker implements Lock {
-boolean wantCS[] = {false, false};
-int turn = 1;
-public void requestCS(int i) { // entry protocol
-wantCS[i] = true;
-while (wantCS[j]) {
-if (turn == j) {
-wantCS[i] = false;
-

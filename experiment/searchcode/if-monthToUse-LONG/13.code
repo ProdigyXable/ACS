@@ -1,7 +1,0 @@
-int monthToUse = thisMonth - 1 + months;
-if (monthToUse >= 0) {
-yearToUse = thisYear + (monthToUse / iMax);
-long yearToUse;
-long monthToUse = thisMonth - 1 + months;
-if (monthToUse >= 0) {
-

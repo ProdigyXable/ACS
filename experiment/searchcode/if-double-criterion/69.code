@@ -1,8 +1,0 @@
-protected final int position;
-protected final String name;
-protected double criterionValue;
-protected final CRITERION selectionCriterion;
-siteIndex = site;
-this.selectionCriterion = selectionCriterion;
-if (selectionCriterion == CRITERION.pval)
-

@@ -1,8 +1,0 @@
-public com.silanis.esl.sdk.SupportConfiguration toSDKSupportConfiguration() {
-if (apiSupportConfiguration == null) {
-return result;
-}
-
-public com.silanis.esl.api.model.SupportConfiguration toAPISupportConfiguration() {
-if (sdkSupportConfiguration == null) {
-

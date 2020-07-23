@@ -1,9 +1,0 @@
-//Debugger.message(&quot;URL : &quot; + newUrl);
-return urlEncoded;
-}
-protected HttpObject request(HttpObject httpObject)
-data.result = RESPONSE_RESULT.failed;
-data.resultMsg = MessageConstants.No_Data_Found;
-
-switch (httpObject.getStatus())
-

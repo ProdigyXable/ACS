@@ -1,7 +1,0 @@
-public void setStartdate(final LocalDateTime startdate, final boolean withTime) {
-this.startdate = startdate;
-return enddate;
-}
-
-public void setEnddate(final LocalDateTime enddate, final boolean withTime) {
-

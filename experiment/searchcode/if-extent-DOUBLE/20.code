@@ -1,6 +1,0 @@
-private java.awt.geom.Rectangle2D.Double spatialFilterExtent;
-private java.awt.geom.Rectangle2D.Double manualSpatialFilterExtent;
-public void setSpatialFilterExtent(java.awt.geom.Rectangle2D.Double extent) {
-this.spatialFilterExtent = extent;
-if (isSpatialFilterLockedToViewer()) {
-

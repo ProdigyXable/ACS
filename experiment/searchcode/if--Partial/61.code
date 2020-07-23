@@ -1,9 +1,0 @@
-private String partialClass;
-private int level;
-
-public int getLevel() {
-return level;
-public void apply(Logger logger) {
-if(logger.getName().contains(partialClass)) {
-logger.setLevel(level);
-

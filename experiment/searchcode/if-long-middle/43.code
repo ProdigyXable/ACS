@@ -1,7 +1,0 @@
-long value = x;
-while (start <= end) {
-long middle = (end - start) / 2 + start;
-long square = middle * middle;
-if (square == value) {
-return (int)middle;
-

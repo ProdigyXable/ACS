@@ -1,9 +1,0 @@
-package com.evo;
-
-public class BasicMutator implements Mutator {
-private MutationSet mutationSet;
-private Selector selector;
-
-public MutationSet mutationSet() {
-if(null == this.mutationSet)
-

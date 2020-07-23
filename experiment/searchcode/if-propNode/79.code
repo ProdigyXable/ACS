@@ -1,8 +1,0 @@
-List<String> groupList = property.getGroupList();
-if (groupList != null) {
-propNode.propGroupSet.addAll(groupList);
-// TODO: just redundant
-
-if (property.getRawValue() == null) {
-propNode.propValue_bytes = null;
-

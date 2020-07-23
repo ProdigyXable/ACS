@@ -1,5 +1,0 @@
-public  RoundEndInfo(Map<String, Object> roundEndInfoAsJson)
-{
-gameWinnerIndex = Converter.toInt(roundEndInfoAsJson.get(&quot;gameWinnerIndex&quot;));
-roundWinnerIndex = Converter.toInt(roundEndInfoAsJson.get(&quot;roundWinnerIndex&quot;));
-

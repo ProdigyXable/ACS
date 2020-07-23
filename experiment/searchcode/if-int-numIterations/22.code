@@ -1,7 +1,0 @@
-private final GeneSelector geneSelector;
-private final int numIterations;
-
-public GeneticAlgorithm(GenePool pool, GeneSelector geneSelector, int numIterations) {
-this.pool = pool;
-this.geneSelector = geneSelector;
-

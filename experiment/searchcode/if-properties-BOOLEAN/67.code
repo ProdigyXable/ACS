@@ -1,7 +1,0 @@
-this.fullscreen = getBooleanProperty(properties, &quot;fullscreen&quot;);
-}
-if (isDefined(properties, &quot;window&quot;)) {
-this.window = getBooleanProperty(properties, &quot;window&quot;);
-}
-if (isDefined(properties, &quot;sound&quot;)) {
-

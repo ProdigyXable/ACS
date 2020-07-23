@@ -1,9 +1,0 @@
-package se.ericsson.jcat.fw;
-
-public class StopHolder  {
-private boolean stopOnFailure;
-private boolean fail;
-private static StopHolder instance = null;
-
-public synchronized static StopHolder getInstance(){
-

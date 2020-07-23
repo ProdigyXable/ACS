@@ -1,3 +1,0 @@
-Map<String, EventReceiver> tenantSpecificEventReceiverMap = this.tenantSpecificEventReceiverConfigurationMap.get(tenantId);
-if (tenantSpecificEventReceiverMap != null &amp;&amp; tenantSpecificEventReceiverMap.size() > 0) {
-

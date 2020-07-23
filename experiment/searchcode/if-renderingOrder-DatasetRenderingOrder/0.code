@@ -1,4 +1,0 @@
-int numberOfDatasets = _plot.getDatasetCount();
-DatasetRenderingOrder renderingOrder = _plot.getDatasetRenderingOrder();
-if ( renderingOrder == DatasetRenderingOrder.FORWARD ) {
-

@@ -1,7 +1,0 @@
-NumberAxis valueAxis = new NumberAxis(&quot;Anzahl&quot;);
-valueAxis.setAutoRangeIncludesZero(false);
-valueAxis.setTickLabelFont(font);
-valueAxis.setLabelFont(font);
-// valueAxis.setAutoRange(true);
-// valueAxis.setFixedAutoRange(10000D);
-

@@ -1,8 +1,0 @@
-======================= not =======================
-*/
-public static <T> T notNull(T a, String message) {
-if (a != null) {
-public static String notEmptyString(String a, String message) {
-if (a != null &amp;&amp; a.trim().isEmpty()) {
-throw new IllegalArgumentException(message);
-

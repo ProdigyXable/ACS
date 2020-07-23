@@ -1,9 +1,0 @@
-return getTypeArguments((Class<?>) type, toClass, subtypeVarAssigns);
-}
-
-if (type instanceof ParameterizedType) {
-return getTypeArguments((ParameterizedType) type, toClass, subtypeVarAssigns);
-}
-
-if (type instanceof GenericArrayType) {
-

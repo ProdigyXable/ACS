@@ -1,9 +1,0 @@
-WaitReason waitReason = null;
-Resource resource = manager.findResourceByBuildTypeId(buildTypeId);
-if (resource != null) {
-ResourceBuildCount resourceBuildCount = getResourceBuildCount(resource.getId());
-
-int buildLimit = resource.getBuildLimit();
-if (buildLimit > 0) {
-int currentBuilds = resourceBuildCount.size();
-

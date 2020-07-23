@@ -1,8 +1,0 @@
-} else if (object instanceof Double) {
-rtn = ((Double) object).intValue();
-} else if (object instanceof Long) {
-rtn = ((Long) object).intValue();
-rtn = ((Short) object).shortValue();
-} else if (object instanceof Double) {
-rtn = ((Double) object).shortValue();
-

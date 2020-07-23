@@ -1,9 +1,0 @@
-* @see org.fenggui.io.EnumFormat#encodeName(java.lang.String)
-*/
-
-@Override
-protected String encodeName(String name) throws EncodingException
-protected String decodeName(String encodedName)
-{
-if (!encodedName.contains(&quot;_&quot;))
-

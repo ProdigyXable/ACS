@@ -1,9 +1,0 @@
-return null;
-}
-StringBuilder sb = new StringBuilder();
-if (minDuration != null) {
-sb.append(minDuration.toFormattedString(flags));
-}
-sb.append(&quot;/&quot;);
-if (maxDuration != null) {
-

@@ -1,9 +1,0 @@
-public class MethodCreationResult
-{
-private static enum MethodType
-{
-EXISTING, JUST_CREATED, NOT_APPLICABLE;
-public static MethodCreationResult from(IMethod maybeCreatedMethod)
-{
-if(maybeCreatedMethod == null)
-

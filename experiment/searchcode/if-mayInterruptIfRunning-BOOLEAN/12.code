@@ -1,9 +1,0 @@
-public interface EMFuture {
-
-boolean isCancelled();
-
-boolean cancel(boolean mayInterruptIfRunning);
-
-boolean isFinished();
-}
-

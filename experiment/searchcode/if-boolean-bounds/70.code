@@ -1,8 +1,0 @@
-* by the bounds during resizing.
-*/
-protected void ensureTextInBounds(boolean needValidate) {
-if (textBounds == null)
-protected boolean isTextPicked(Point p) {
-if (textBounds == null)
-return false;
-

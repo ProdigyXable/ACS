@@ -1,7 +1,0 @@
-public MemberType createMemberType(String userType){
-
-MemberType memberType = null;
-if(userType.equalsIgnoreCase(&quot;Member&quot;)){
-memberType = new Member();
-} else if(userType.equalsIgnoreCase(&quot;Non-Member&quot;)){
-

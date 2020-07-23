@@ -1,7 +1,0 @@
-private final FollowRow mRow;
-private final String mSiteId;
-private final boolean mShouldFollow;
-
-FollowResponseHandler(FollowRow row, String siteId, boolean shouldFollow) {
-mRow = row;
-

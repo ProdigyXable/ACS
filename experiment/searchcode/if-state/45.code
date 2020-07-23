@@ -1,8 +1,0 @@
-fState--;
-if (fState++ == 0)    return;
-if (fState-- == 0)    return;
-if (this.fState++ == 0)    return;
-if (this.fState-- == 0)    return;
-}
-}
-

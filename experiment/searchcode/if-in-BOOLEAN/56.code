@@ -1,8 +1,0 @@
-assertFalse(BooleanUtils.toBoolean((Boolean) null));
-}
-
-@Test
-public void test_toBooleanDefaultIfNull_Boolean_boolean() {
-assertTrue(BooleanUtils.toBooleanDefaultIfNull(Boolean.TRUE, true));
-assertTrue(BooleanUtils.toBooleanDefaultIfNull(Boolean.TRUE, false));
-

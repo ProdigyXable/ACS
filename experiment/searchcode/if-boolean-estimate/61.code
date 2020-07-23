@@ -1,9 +1,0 @@
-//        void onReady();
-//    }
-//
-//    public static class Estimate {
-//        public final double mean, median;
-//    private Estimate estimate(List<Estimator> list, double[] sample) {
-//        int len = list.size();
-//        if (len == 0) return new Estimate(0,0);
-

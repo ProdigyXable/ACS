@@ -1,6 +1,0 @@
-public WordConsumed(int startPos, int endPos, final Word sourceWord,
-final WordConsumed prevWordsConsumed) {
-public final boolean less(final WordConsumed compare) {
-if (isNonTerminal() != compare.isNonTerminal())
-return true;
-

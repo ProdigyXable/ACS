@@ -1,8 +1,0 @@
-Map<String, String> parsedArguments = new HashMap<>();
-if (arguments.length == 0) {
-parsedArguments = defaultArguments();
-}
-
-if (arguments.length == 2) {
-Map<String, String> firstArguments = addFirst();
-

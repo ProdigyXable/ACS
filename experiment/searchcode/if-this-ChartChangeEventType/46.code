@@ -1,9 +1,0 @@
-return false;
-}
-ChartChangeEventType that = (ChartChangeEventType) obj;
-if (!this.name.equals(that.toString())) {
-return ChartChangeEventType.GENERAL;
-}
-else if (this.equals(ChartChangeEventType.NEW_DATASET)) {
-return ChartChangeEventType.NEW_DATASET;
-

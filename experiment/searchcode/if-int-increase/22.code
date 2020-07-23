@@ -1,9 +1,0 @@
-throws ServletException {
-
-priceIncreaseValidator.validate(priceIncrease, result);
-if (result.hasErrors()) {
-return &quot;priceIncrease&quot;;
-}
-else {
-int increase = priceIncrease.getPercentage();
-

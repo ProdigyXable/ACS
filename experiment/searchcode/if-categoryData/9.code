@@ -1,7 +1,0 @@
-public void saveCategory(CategoryData categoryData) {
-if (categoryData.getParentCategory() == null)
-categoryService.addCategory(categoryData.getCategoryEntity());
-public void updateCategory(CategoryData categoryData) {
-Category category = categoryService.find(UUIDHelper.stringToUUID(categoryData.getUuid()));
-if(categoryData.getParentCategory() != null) {
-

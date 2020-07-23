@@ -3,9 +3,9 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
 /**
  * Created by yjxxtd on 2/24/16.
  */
-
 import cn.edu.pku.sei.plde.ACS.file.WriteFile;
-import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
+import java.io.IOException;
+import java.util.List;
 import net.sf.json.JSONObject;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -16,9 +16,6 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
-
-import java.io.IOException;
-import java.util.List;
 
 public class ThreadPoolHttpClient {
 
@@ -36,7 +33,7 @@ public class ThreadPoolHttpClient {
             GetThread[] getThreads = new GetThread[urlList.size()];
             for (int i = 0; i < urlList.size(); i++) {
                 HttpGet get = new HttpGet(urlList.get(i));
-                getThreads[i] = new GetThread(httpclient, get, project,packageName, i + 1);
+                getThreads[i] = new GetThread(httpclient, get, project, packageName, i + 1);
             }
             //执行线程
             for (GetThread gt : getThreads) {
@@ -67,7 +64,7 @@ public class ThreadPoolHttpClient {
         private final String packageName;
         private final int id;
 
-        public GetThread(CloseableHttpClient httpClient, HttpGet httpget, String project,String packageName, int id) {
+        public GetThread(CloseableHttpClient httpClient, HttpGet httpget, String project, String packageName, int id) {
             this.httpClient = httpClient;
             this.context = new BasicHttpContext();
             this.httpget = httpget;
@@ -90,10 +87,10 @@ public class ThreadPoolHttpClient {
                     HttpEntity entity = response.getEntity();
                     if (entity != null) {
                         html = EntityUtils.toString(entity);
-                        if(html.equals("<h1>Server Error (500)</h1>")){
+                        if (html.equals("<h1>Server Error (500)</h1>")) {
                             return;
                         }
-                          JSONObject jsonObj = JSONObject.fromObject(html);
+                        JSONObject jsonObj = JSONObject.fromObject(html);
                         String code = jsonObj.get("code").toString();
                         WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + id + ".java", code);
                     }

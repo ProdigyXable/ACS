@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by yjxxtd on 2/29/16.
  */
 public class ConstructorDeclarationInfo implements Comparable<ConstructorDeclarationInfo>, Serializable {
+
     public String methodName;
     public int parameterNum;
     public int startPos;
@@ -20,13 +21,14 @@ public class ConstructorDeclarationInfo implements Comparable<ConstructorDeclara
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof ConstructorDeclarationInfo))
+        if (!(obj instanceof ConstructorDeclarationInfo)) {
             return false;
+        }
         ConstructorDeclarationInfo other = (ConstructorDeclarationInfo) obj;
-        return methodName.equals(other.methodName) &&
-                parameterNum == other.parameterNum &&
-                startPos == other.startPos &&
-                endPos == other.endPos;
+        return methodName.equals(other.methodName)
+                && parameterNum == other.parameterNum
+                && startPos == other.startPos
+                && endPos == other.endPos;
     }
 
     public int compareTo(ConstructorDeclarationInfo constructorDeclarationInfo) {

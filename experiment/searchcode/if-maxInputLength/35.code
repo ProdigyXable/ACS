@@ -1,8 +1,0 @@
-* The protocol does <code>maxInputLength + log(divisor)</code> shifts, and this
-* being the heaviest operation, keeping these numbers small will improve
-private SInt result, remainder;
-private int maxInputLength;
-
-// Factories
-private final BasicNumericFactory basicNumericFactory;
-

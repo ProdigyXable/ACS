@@ -1,8 +1,0 @@
-public ArrayType(Type elementType, Expression initialSize, boolean isNullable, int startOffset, int endOffset) {
-super(startOffset, endOffset);
-
-this.elementType = elementType;
-elementType.setParent(this);
-
-if( initialSize != null ) {
-

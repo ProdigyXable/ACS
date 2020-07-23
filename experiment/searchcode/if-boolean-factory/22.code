@@ -1,9 +1,0 @@
-package com.constellio.data.utils;
-
-public class FactoryWithCache<T> implements Factory
-<T> {
-private boolean calculated;
-private T cachedValue;
-
-private Factory<T> nestedFactory;
-

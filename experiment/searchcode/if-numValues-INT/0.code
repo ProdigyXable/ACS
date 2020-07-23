@@ -1,9 +1,0 @@
-Integer max=null;
-if (numValues.endsWith(&quot;+&quot;)) {
-int idx=numValues.indexOf(&quot;+&quot;);
-min=Integer.parseInt(num);
-max=null;
-}
-else if (numValues.contains(&quot;..&quot;)) {
-int idx=numValues.indexOf(&quot;..&quot;);
-

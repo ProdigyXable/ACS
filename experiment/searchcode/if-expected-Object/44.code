@@ -1,6 +1,0 @@
-status = EXPECTED_OBJECT_END | EXPECTED_COMA;
-} else if (isStatus(EXPECTED_VALUE_IN_ARRAY, status)) {
-case NULL:
-if (isStatus(EXPECTED_SINGLE, status)) {
-Object value = tokenReader.readNull();
-

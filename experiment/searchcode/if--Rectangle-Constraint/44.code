@@ -1,5 +1,0 @@
-import spatial.rectangleAlgebra_OLD.AugmentedRectangleConstraint;
-import spatial.rectangleAlgebra_OLD.AugmentedRectangleConstraintSolver;
-AugmentedRectangleConstraint[] allConstraintsArray = allConstraints.toArray(new AugmentedRectangleConstraint[allConstraints.size()]);
-if (!solver.addConstraints(allConstraintsArray)) {
-

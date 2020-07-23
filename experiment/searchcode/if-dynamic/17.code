@@ -1,7 +1,0 @@
-@Override
-public void update() {
-if (loadedDynamicContribution != null) {
-loadedDynamicContribution.update();
-}
-}
-

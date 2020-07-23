@@ -1,8 +1,0 @@
-* value of the statisic.  True means that bias is corrected.
-*/
-private boolean biasCorrected = true;
-* constructor
-*/
-public SemiVariance(final boolean biasCorrected) {
-this.biasCorrected = biasCorrected;
-

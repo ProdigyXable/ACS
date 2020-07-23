@@ -1,7 +1,0 @@
-super(startInstant, endInstant, chronology);
-}
-public MutableInterval(ReadableInstant start, ReadableInstant end) {
-super(start, end);
-}
-public MutableInterval(ReadableInstant start, ReadableDuration duration) {
-

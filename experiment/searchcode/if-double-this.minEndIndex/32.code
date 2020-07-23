@@ -1,9 +1,0 @@
-this.maxMiddleIndex = index;
-}
-
-if (this.minEndIndex >= 0) {
-long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd()
-.getTime();
-if (end < minEnd) {
-this.minEndIndex = index;
-

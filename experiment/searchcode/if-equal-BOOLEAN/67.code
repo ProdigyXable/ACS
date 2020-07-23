@@ -1,6 +1,0 @@
-// Referenced classes of package com.oxymedical.component.rulesComponent.rete.evaluator:
-//            PrimitiveBooleanEqualEvaluator, PrimitiveBooleanNotEqualEvaluator
-return PrimitiveBooleanEqualEvaluator.INSTANCE;
-if(operator.equals(&quot;!=&quot;))
-return PrimitiveBooleanNotEqualEvaluator.INSTANCE;
-

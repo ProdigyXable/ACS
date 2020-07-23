@@ -1,9 +1,0 @@
-public float receiveElectricity(ElectricityPack receive, boolean doReceive)
-{
-if (receive != null)
-float newStoredEnergy = Math.min(this.getEnergyStored() + receive.getWatts(), this.getMaxEnergyStored());
-
-if (doReceive)
-{
-this.setEnergyStored(newStoredEnergy);
-

@@ -1,9 +1,0 @@
-return new MoshiConverterFactory(moshi, false);
-}
-
-private final Moshi moshi;
-private final boolean lenient;
-
-private MoshiConverterFactory(Moshi moshi, boolean lenient) {
-if (moshi == null) throw new NullPointerException(&quot;moshi == null&quot;);
-

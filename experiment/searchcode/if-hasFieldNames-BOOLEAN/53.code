@@ -1,8 +1,0 @@
-fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
-if (in.readBoolean()) {
-int size = in.readVInt();
-fieldDataFields = new ArrayList<>(size);
-boolean hasFieldNames = fieldNames != null;
-out.writeBoolean(hasFieldNames);
-if (hasFieldNames) {
-

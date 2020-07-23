@@ -1,7 +1,0 @@
-//        mSwipeRefreshLayout = (MultiSwipeRefreshLayout) root.findViewById(R.id.swipe_refresh_layout);
-if (mSwipeRefreshLayout != null) {
-if (mSwipeRefreshLayout == null) {
-return;
-}
-if (!refreshing) {
-

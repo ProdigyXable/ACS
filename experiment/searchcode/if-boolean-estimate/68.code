@@ -1,3 +1,0 @@
-for (EstimateFormLineItem dto : ListUtil.emptyIfNull(estimateForm.getEstimateLineItems())) {
-for (AnnualFacilityEstimateEntry estimate : ListUtil.emptyIfNull(dto.getFacilityEstimates())) {
-

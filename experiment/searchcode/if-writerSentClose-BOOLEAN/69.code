@@ -1,9 +1,0 @@
-private volatile boolean writerSentClose;
-private boolean writerWantsClose;
-
-/* renamed from: okhttp3.internal.ws.RealWebSocket.1 */
-private void peerClose(int i, String str) {
-if (!this.writerSentClose) {
-try {
-this.writer.writeClose(i, str);
-

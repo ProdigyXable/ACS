@@ -1,7 +1,0 @@
-return concurrentSearches;
-}
-public synchronized void setMaxConcurrentSearches(int maxConcurrentSearches) {
-log.debug(String.format(&quot;setMaxConcurrentSearches(%d) called&quot;, maxConcurrentSearches));
-concurrentSearches = maxConcurrentSearches;
-if (slots.getOverallPermits() != 0) { // Race-condition here?
-

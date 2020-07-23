@@ -1,6 +1,0 @@
-return IntegerAttributeSerializeProcessor.instance;
-else if(value instanceof java.lang.Float)
-return FloatAttributeSerializeProcessor.instance;
-else if(value instanceof java.lang.Long)
-return LongAttributeSerializeProcessor.instance;
-

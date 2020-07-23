@@ -1,5 +1,0 @@
-List<IntentFilter> filters = mReceiverFiltersMap.get(receiver);
-if (filters == null) {
-List<ReceiverRecord> receiverRecords = mActionReceiversMap.get(action);
-if (receiverRecords == null) {
-

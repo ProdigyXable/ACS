@@ -1,7 +1,0 @@
-final class AutoFocusManager$AutoFocusTask
-extends AsyncTask<Object, Object, Object>
-{
-private AutoFocusManager$AutoFocusTask(AutoFocusManager paramAutoFocusManager) {}
-
-protected Object doInBackground(Object... arg1)
-

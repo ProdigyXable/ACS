@@ -1,8 +1,0 @@
-* @see java.lang.Comparable#compareTo(java.lang.Object)
-*/
-public int compareTo(PluginContentComparable o) {
-if ((o instanceof StringPluginContentComparable) &amp;&amp;  comparable != null) {
-final StringPluginContentComparable stringPluginContentComparable = (StringPluginContentComparable)o;
-
-if (stringPluginContentComparable.comparable != null) {
-

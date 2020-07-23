@@ -1,7 +1,0 @@
-Intent intent = getIntent();
-isHost = intent.getBooleanExtra(&quot;isHost&quot;, false);
-
-IntentIntegrator integrator = new IntentIntegrator(this);
-if (isHost) {
-integrator.addExtra(&quot;ENCODE_SHOW_CONTENTS&quot;, false);
-

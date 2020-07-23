@@ -1,6 +1,0 @@
-public class WrappedFragmentInflater extends LifecycleFragment {
-public static final String FRAGMENT_TYPE = &quot;WrappedFragmentInflater.FragmentType&quot;;
-protected ILifecycleFragment getLifecycleFragment() {
-if(mFragment == null){
-Class<? extends ILifecycleFragment> fragmentClazz = (Class<? extends ILifecycleFragment>) getArguments().getSerializable(FRAGMENT_TYPE);
-

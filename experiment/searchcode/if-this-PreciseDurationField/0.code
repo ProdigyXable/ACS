@@ -1,9 +1,0 @@
-return FieldUtils.safeAdd(j, FieldUtils.safeMultiply(j2, this.iUnitMillis));
-}
-
-public boolean equals(Object obj) {
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof PreciseDurationField)) {
-

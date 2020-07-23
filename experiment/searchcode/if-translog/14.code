@@ -1,8 +1,0 @@
-super.afterIfSuccessful();
-
-if (translog.isOpen()) {
-if (translog.currentFileGeneration() > 1) {
-super.setUp();
-// if a previous test failed we clean up things here
-translogDir = createTempDir();
-

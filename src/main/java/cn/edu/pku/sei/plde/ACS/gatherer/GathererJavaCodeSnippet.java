@@ -3,9 +3,13 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
 /**
  * Created by wangjie on 2016/5/21.
  */
-
 import cn.edu.pku.sei.plde.ACS.file.WriteFile;
-import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
@@ -16,15 +20,8 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class GathererJavaCodeSnippet {
+
     private static final int API_PAGE_NUM = 1;
     private static final int API_PER_PAGE = 100;
     private static final int API_CODE_LANGUAGE = 23;// java
@@ -56,9 +53,8 @@ public class GathererJavaCodeSnippet {
         codeSnippets = new ArrayList<String>();
     }
 
-
     public void searchCode() {
-        for (List<String> keyWords: keyWordsList){
+        for (List<String> keyWords : keyWordsList) {
             String question = keyWords.get(0);
             for (int i = 1; i < keyWords.size(); i++) {
                 question = question + "+" + keyWords.get(i);
@@ -80,7 +76,7 @@ public class GathererJavaCodeSnippet {
         }
         try {
             // get the response body as an array of bytes
-            for(int i = 0; i < codeSnippets.size(); i ++) {
+            for (int i = 0; i < codeSnippets.size(); i++) {
                 System.out.println("i = " + i);
                 System.out.println(codeSnippets.get(i));
                 WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + i + ".java", codeSnippets.get(i));
@@ -91,9 +87,6 @@ public class GathererJavaCodeSnippet {
         //new ThreadPoolHttpClient().fetch(project, packageName, codeUrlList);
     }
 
-
-
-
     public String getHtml(String url) {
         String html = null;
         GetMethod getMethod = new GetMethod(url);
@@ -102,8 +95,9 @@ public class GathererJavaCodeSnippet {
                 new DefaultHttpMethodRetryHandler());
         try {
             int statusCode = httpClient.executeMethod(getMethod);
-            if (statusCode != HttpStatus.SC_OK)
+            if (statusCode != HttpStatus.SC_OK) {
                 System.err.println("Method failed: " + getMethod.getStatusLine());
+            }
             InputStream bodyIs = getMethod.getResponseBodyAsStream();
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(bodyIs));
@@ -139,7 +133,7 @@ public class GathererJavaCodeSnippet {
                     continue;
                 }
                 String code = processCodeSnippet(jsonArray.getJSONObject(i).getString("lines"));
-                if(code != null) {
+                if (code != null) {
                     codeSnippets.add(code);
                 }
             }
@@ -147,29 +141,29 @@ public class GathererJavaCodeSnippet {
         }
     }
 
-    private String processCodeSnippet(String codeSnippet){
-        if(codeSnippet == null){
+    private String processCodeSnippet(String codeSnippet) {
+        if (codeSnippet == null) {
             return null;
         }
         //System.out.println("codeSnippet1 : " + codeSnippet);
-        while(codeSnippet.contains("\\t")){
+        while (codeSnippet.contains("\\t")) {
             codeSnippet = codeSnippet.replace("\\t", "");
         }
         //System.out.println("codeSnippet2 : " + codeSnippet);
         String code = "";
         String[] lines = codeSnippet.split(",\"");
-        for(int i = 0; i < lines.length; i ++){
+        for (int i = 0; i < lines.length; i++) {
             String line = lines[i];
             int index1 = line.indexOf(":\"");
             int index2 = line.lastIndexOf("\"");
             //System.out.println("line : " + line);
             //System.out.println("index1 : " + index1);
             //System.out.println("index2 : " + index2);
-            if(index1 + 2 < index2) {
+            if (index1 + 2 < index2) {
                 code = code + line.substring(index1 + 2, index2) + "\n";
             }
         }
-       // System.out.println("code : " + code);
+        // System.out.println("code : " + code);
         return code;
     }
 }

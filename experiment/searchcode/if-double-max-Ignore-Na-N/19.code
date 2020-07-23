@@ -1,8 +1,0 @@
-data = new FlightData(branches.toArray(new FlightDataBranch[0]));
-} else {
-double maxAltitude = Double.NaN;
-double maxVelocity = Double.NaN;
-double maxAcceleration = Double.NaN;
-double maxMach = Double.NaN;
-double timeToApogee = Double.NaN;
-

@@ -1,9 +1,0 @@
-return seriesRenderingOrder;
-}
-
-public void setSeriesRenderingOrder(SeriesRenderingOrder order)
-{
-if(order == null)
-SeriesRenderingOrder seriesOrder = getSeriesRenderingOrder();
-if(seriesOrder == SeriesRenderingOrder.REVERSE)
-

@@ -1,5 +1,0 @@
-public void addNumericTimeSeries(NumericTimeSeries numericTimeSeries) {
-if (numericTimeSeriesCollection == null)
-public void addDiscreteTimeSeries(DiscreteTimeSeries discreteTimeSeries) {
-if (discreteTimeSeriesCollection == null)
-

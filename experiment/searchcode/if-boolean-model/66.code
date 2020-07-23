@@ -1,4 +1,0 @@
-Model context) {
-if (elem.getModelKind() != context.getModelKind()) {
-return Boolean.FALSE;
-

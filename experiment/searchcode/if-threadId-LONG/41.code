@@ -1,5 +1,0 @@
-private final long threadId;
-
-public ConnectionPoolWaitQueueEvent(final String clusterId, final ServerAddress serverAddress, final long threadId) {
-super(clusterId, serverAddress);
-

@@ -1,6 +1,0 @@
-* @param shiftAssignment   {@link ShiftAssignment}
-* @param checkConflict		{@link Boolean}
-* @return       			{@link ShiftAssignment}
-*/
-public ShiftAssignment save(ShiftAssignment shiftAssignment, Boolean checkConflict){
-

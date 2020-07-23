@@ -1,9 +1,0 @@
-/**
-*
-*/
-package org.peertrust.demo.servlet.jsptags;
-
-class PropertyValueToSetPair{
-public PropertyValueToSetPair(String property, String valueToSet) throws NullPointerException{
-if( property==null || valueToSet==null){
-

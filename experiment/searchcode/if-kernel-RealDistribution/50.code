@@ -1,8 +1,0 @@
-final double lower = binIndex == 0 ? min : binBounds[binIndex - 1];
-final RealDistribution kernel = k(x);
-while (cumBinP(i) < p) {
-i++;
-}
-
-final RealDistribution kernel = getKernel(binStats.get(i));
-

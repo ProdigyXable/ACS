@@ -1,9 +1,0 @@
-* @return parameters
-*/
-public EstimatedParameter[] getAllParameters() {
-return (EstimatedParameter[]) parameters.toArray(new EstimatedParameter[parameters.size()]);
-}
-
-/**
-* Get the unbound parameters of the problem.
-

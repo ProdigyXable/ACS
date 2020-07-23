@@ -1,7 +1,0 @@
-public static boolean wildcardMatch(ResolvedType toMatch, ResolvedType wildcardType) {
-if (!toMatch.getErasedType().equals(wildcardType.getErasedType())) {
-return false;
-}
-if (!typeBindingsAreOfSameSize(wildcardType, toMatch)) {
-return false;
-

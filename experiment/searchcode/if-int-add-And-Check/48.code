@@ -1,9 +1,0 @@
-public void add(Ingredient ingredient) {
-check.add(ingredient);
-}
-
-public int countSum() {
-int result = 0;
-for (Ingredient ingredient : check) {
-result += ingredient.getPrice();
-

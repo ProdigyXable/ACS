@@ -1,7 +1,0 @@
-private final int numberOfTrials;
-/** The probability of success. */
-private final double probabilityOfSuccess;
-* @throws OutOfRangeException if {@code p < 0} or {@code p > 1}.
-*/
-public BinomialDistribution(int trials, double p) {
-

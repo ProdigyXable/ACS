@@ -1,5 +1,0 @@
-public void storeBooleanField(int fieldNumber, boolean value)
-{
-Object oldValue = sm.getAssociatedValue(&quot;FIELD_VALUE.ORIGINAL.&quot; + fieldNumber);
-if (oldValue != null)
-

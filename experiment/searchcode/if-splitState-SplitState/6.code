@@ -1,7 +1,0 @@
-protected Dispatcher dis;
-protected int state;
-protected int splitstate;
-protected NetWorkIS splittemp;
-else if(splitstate == SIGNALING_STATE_WAITING_FOR_IS){
-dis.split(splittemp, modetemp, nwis);
-

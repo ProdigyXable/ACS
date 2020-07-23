@@ -1,8 +1,0 @@
-private boolean lengthCondition;
-private boolean digitCondition;
-private boolean symbolCondition;
-private boolean upperLowerCaseCondition;
-private boolean nonValidInputCondition;
-
-public PasswordStrengthModel(){
-

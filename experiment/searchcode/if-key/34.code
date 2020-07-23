@@ -1,9 +1,0 @@
-public void keyPressed(KeyEvent key) {
-if (key.getKeyCode() == KeyEvent.VK_ESCAPE) System.exit(0);
-System.out.println(&quot;Key: &quot; + key.getKeyCode());
-}
-
-@Override
-public void keyReleased(KeyEvent key) {
-if (key.getKeyCode() == KeyEvent.VK_ESCAPE) System.exit(0);
-

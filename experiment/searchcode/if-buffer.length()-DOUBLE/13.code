@@ -1,9 +1,0 @@
-public abstract class AbstractFIRBox {
-public double in;
-public double out;
-
-private final double[] buffer;
-private int count;
-double[] coeficients = getCoeficients();
-if (coeficients.length!=buffer.length) throw new IllegalArgumentException();
-

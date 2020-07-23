@@ -1,9 +1,0 @@
-return iblockdata1.get(BlockTripwireHook.FACING) == enumdirection1;
-} else if (block == Blocks.TRIPWIRE) {
-boolean flag = ((Boolean) iblockdata.get(BlockTripwire.SUSPENDED)).booleanValue();
-if (((Boolean) iblockdata.get(BlockTripwire.POWERED)).booleanValue()) {
-i |= 1;
-}
-
-if (((Boolean) iblockdata.get(BlockTripwire.SUSPENDED)).booleanValue()) {
-

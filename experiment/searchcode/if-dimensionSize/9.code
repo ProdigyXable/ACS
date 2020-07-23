@@ -1,9 +1,0 @@
-* @author Edward Raff
-*/
-public class HashedTextVectorCreator implements TextVectorCreator
-{
-private int dimensionSize;
-public HashedTextVectorCreator(int dimensionSize, Tokenizer tokenizer, WordWeighting weighting)
-{
-if(dimensionSize <= 1)
-

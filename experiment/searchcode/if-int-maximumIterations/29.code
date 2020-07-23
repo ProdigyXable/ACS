@@ -1,6 +1,0 @@
-checkForDefaultRoot(simulator);
-ObjectVector solution = null;
-for(int phaseIndex = 0; phaseIndex < plan.phaseCount(); phaseIndex++) {
-int minimumIterations = plan.minimumIterations(phaseIndex);
-int maximumIterations = plan.maximumIterations(phaseIndex);
-

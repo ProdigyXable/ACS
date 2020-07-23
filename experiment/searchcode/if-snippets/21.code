@@ -1,8 +1,0 @@
-while (mySnippetsPage.checkIfDeleteButtonIsPresent())
-mySnippetsPage.clickDeleteButton();
-}
-
-@Step
-public void assertAllSnippetsAreDeleted() {
-boolean check = mySnippetsPage.checkIfDeleteButtonIsPresent();
-

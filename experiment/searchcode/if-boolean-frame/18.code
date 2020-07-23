@@ -1,8 +1,0 @@
-BAMSwingFrame frame = findFrame( BAMSwingMainFrame.class);
-if( frame == null)
-{
-frame = controller.openMainFrame();
-public BAMSwingFrame openUpdateFrame() {
-BAMSwingFrame frame = findFrame( BAMSwingFigoFrame.class);
-if( frame == null)
-

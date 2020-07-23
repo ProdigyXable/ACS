@@ -1,7 +1,0 @@
-List<T> convert(Object maybeList)
-throws NoConversionAvailableException, ConversionFailedException {
-Object from = converter.convert(maybeList, Object.class);
-
-if (from == null) {
-return Arrays.asList((T) null);
-

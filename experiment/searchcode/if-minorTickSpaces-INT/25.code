@@ -1,3 +1,0 @@
-if (count <= ValueAxis.MAXIMUM_TICK_COUNT) {
-int minorTickSpaces = getMinorTickCount();
-

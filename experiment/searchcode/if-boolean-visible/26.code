@@ -1,9 +1,0 @@
-* @author jllort
-*
-*/
-public class GWTProfileToolbar implements IsSerializable {
-private boolean createFolderVisible;
-private boolean findFolderVisible;
-private boolean findDocumentVisible;
-private boolean similarDocumentVisible;
-

@@ -1,8 +1,0 @@
-* @param customDataKey
-* @param declaredBy the declaring class (required)
-* @since 1.2
-*/
-public MidTypeMatcher(
-for (final MemberHoldingTypeDetails memberHoldingTypeDetails : memberHoldingTypeDetailsList) {
-if (memberHoldingTypeDetails.getDeclaredByMetadataId().startsWith(
-

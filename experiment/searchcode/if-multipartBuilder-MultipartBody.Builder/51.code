@@ -1,7 +1,0 @@
-RequestBuilder getResponseOnlyIfCached();
-RequestBuilder getResponseOnlyFromNetwork();
-RequestBuilder setMaxAgeCacheControl(int maxAge, TimeUnit timeUnit);
-@Override
-public MultiPartBuilder addHeaders(HashMap<String, String> headerMap) {
-if (headerMap != null) {
-

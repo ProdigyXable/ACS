@@ -1,8 +1,0 @@
-.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-.validateEagerly(true)
-.build()
-updateCommentIds(new TLongHashSet(transform(comments, FavedComment::id)));
-});
-
-// migrate if not yet done
-

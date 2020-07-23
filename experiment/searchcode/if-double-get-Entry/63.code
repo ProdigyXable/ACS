@@ -1,6 +1,0 @@
-double v = entry.getDoubleValue() - value.get(entry.getIntKey());
-if (v > 0) {
-result.add(entry.getIntKey(), v);
-for (Int2DoubleMap.Entry entry : int2DoubleEntrySet()) {
-if (entry.getDoubleValue() < minvalue) {
-

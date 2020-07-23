@@ -1,7 +1,0 @@
-public Chromosome get(int index) {
-if (index < chromosomeList.size()) {
-return chromosomeList.get(index);
-}
-// throw an exception if nothing found
-throw new InvalidChromosomeException();
-

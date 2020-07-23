@@ -1,7 +1,0 @@
-totalVal+=pointsArray[i][j];
-if(pointsArray[i][j]>maxVal){
-maxVal=pointsArray[i][j];
-}
-
-if(pointsArray[i][j] != 0){
-

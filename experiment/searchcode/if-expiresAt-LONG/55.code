@@ -1,8 +1,0 @@
-parcel.writeInt(monthlyBusCount);
-parcel.writeInt(monthlyMetroCount);
-}
-
-if (expiresAt == null) {
-yctInfo.expiresAt = new Date();
-yctInfo.expiresAt.setTime(parcel.readLong());
-

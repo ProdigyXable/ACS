@@ -1,5 +1,0 @@
-wmsContext.setDisplayProjection(el.getTextTrim());
-} else if (el.getName().contentEquals(&quot;MaxExtent&quot;)) {
-wmsContext.setLon_center(Double.parseDouble(el.getTextTrim()));
-} else if (el.getName().contentEquals(&quot;Lat_center&quot;)) {
-

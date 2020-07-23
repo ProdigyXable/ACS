@@ -1,8 +1,0 @@
-try {
-if (activeWriter == null
-|| !hasDependency(activeWriter.changes, id)) {
-Sync exclusive = writerStateRWLock.writeLock();
-exclusive.acquire();
-try {
-if (activeWriter == null
-

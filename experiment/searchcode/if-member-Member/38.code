@@ -1,9 +1,0 @@
-Member memberDB = memberDao.getMemberInfo(member.getId());
-if (memberDB == null) {
-return null;
-} else {
-if (member.getPasswd() == null) {
-return null;
-} else {
-if (member.getPasswd().equals(memberDB.getPasswd())) {
-

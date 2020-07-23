@@ -1,9 +1,0 @@
-int rand = 4;
-if(offspring.problemInstance.periodCount==1)rand--;
-
-int selectedMutationOperator = Utility.randomIntInclusive(rand);
-
-if(selectedMutationOperator==0)
-{
-offspring.mutatePermutationWithinSingleRouteBySwapping();
-

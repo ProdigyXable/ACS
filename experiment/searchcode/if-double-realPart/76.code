@@ -1,6 +1,0 @@
-return type_error(imagpart, Symbol.REAL);
-if (realpart instanceof DoubleFloat)
-imagpart = DoubleFloat.coerceToFloat(imagpart);
-else if (imagpart instanceof DoubleFloat)
-realpart = DoubleFloat.coerceToFloat(realpart);
-

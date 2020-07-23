@@ -1,8 +1,0 @@
-private CallAdapter<NetworkRequest<?>> getCallAdapter(Type returnType) {
-Type observableType = getSingleParameterUpperBound((ParameterizedType) returnType);
-return new TravelCallAdapter(observableType);
-}
-
-@Override
-public CallAdapter<?> get(Type returnType, Annotation[] annotations, Retrofit retrofit) {
-

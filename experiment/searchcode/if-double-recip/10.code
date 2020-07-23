@@ -1,9 +1,0 @@
-double[]        realData    = null;
-BufferedImage   realImg     = null;
-double[]        recipData   = null;
-//{{{ getRealData
-//##############################################################################
-private double[] getRealData()
-{
-if(realData != null) return realData;
-

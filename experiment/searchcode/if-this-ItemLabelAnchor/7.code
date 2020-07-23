@@ -1,9 +1,0 @@
-return false;
-}
-
-final ItemLabelAnchor order = (ItemLabelAnchor) o;
-if (!this.name.equals(order.toString())) {
-private Object readResolve() throws ObjectStreamException {
-ItemLabelAnchor result = null;
-if (this.equals(ItemLabelAnchor.CENTER)) {
-

@@ -1,3 +1,0 @@
-static boolean isEscapedDelimiter(String messagePattern, int delimiterStartIndex) {
-return delimiterStartIndex != 0 &amp;&amp; messagePattern.charAt(delimiterStartIndex - 1) == ESCAPE_CHAR;
-

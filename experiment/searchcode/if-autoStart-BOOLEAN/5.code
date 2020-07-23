@@ -1,8 +1,0 @@
-public Timer(String markerName, boolean autostart) {
-this.markerName = markerName;
-if(autostart) {
-start();
-}
-}
-}
-

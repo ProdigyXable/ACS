@@ -1,9 +1,0 @@
-meanImpl.increment(value);
-}
-if (varianceImpl != variance) {
-varianceImpl.increment(value);
-meanImpl.clear();
-}
-if (varianceImpl != variance) {
-varianceImpl.clear();
-

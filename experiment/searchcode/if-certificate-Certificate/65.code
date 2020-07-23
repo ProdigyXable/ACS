@@ -1,9 +1,0 @@
-public class CertificateAdapter {
-
-public static CertificateClient adapter(CertificateListVo Certificate) {
-if (null == Certificate) {
-result.setIndate(Certificate.getIndate());
-
-if (Certificate.getStatus() != null) {
-result.setStatus(CertificateStatus.valueOf(Certificate.getStatus().toString()));
-

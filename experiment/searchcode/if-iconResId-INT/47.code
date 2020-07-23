@@ -1,5 +1,0 @@
-public Builder getNotificationBuilder(UpsightContext upsight, String title, String message, String imageUrl) {
-int iconResId = upsight.getResources().getIdentifier(NOTIFICATION_ICON_RES_NAME, NOTIFICATION_ICON_RES_TYPE, upsight.getPackageName());
-if (iconResId == 0) {
-iconResId = upsight.getApplicationInfo().icon;
-

@@ -1,5 +1,0 @@
-public void requestSuccessful(Message reply) throws Exception {
-boolean result = (boolean) JMSManagementHelper.getResult(reply, Boolean.class);
-if (result) {
-if (result) {
-

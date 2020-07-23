@@ -1,4 +1,0 @@
-* @param remainingEstimate remaining estimate
-* @param timeSpent         time spent
-* @return accuracy, null if not possible to calclate (ie. original estimate is null)
-

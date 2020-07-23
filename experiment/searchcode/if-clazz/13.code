@@ -1,9 +1,0 @@
-return false;
-}
-final ViewCacheDTO other = (ViewCacheDTO) obj;
-if (this.clazzReturn == null) {
-if (other.clazzReturn != null) {
-return false;
-}
-} else if (!this.clazzReturn.equals(other.clazzReturn)) {
-

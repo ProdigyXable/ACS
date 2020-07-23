@@ -1,5 +1,0 @@
-pilha.push( executaOperador(op.charAt(0), lhs, rhs) );
-private static double executaOperador(char op, double lhs, double rhs) throws OperadorInvalido
-{
-switch (op) {
-

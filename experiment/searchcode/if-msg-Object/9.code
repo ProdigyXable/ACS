@@ -1,9 +1,0 @@
-msgRecord.setMsgContent(jsonObject.getString(&quot;MsgContent&quot;));
-if(jsonObject.has(&quot;MsgID&quot;))
-else
-{
-msgRecord.setMsgID(UUID.randomUUID().toString());
-}
-
-if(jsonObject.has(&quot;MsgRecipientGroupID&quot;))
-

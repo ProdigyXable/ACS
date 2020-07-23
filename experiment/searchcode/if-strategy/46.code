@@ -1,9 +1,0 @@
-nextRenderStrategy.executeRender();
-}
-
-public void addRenderStrategy(BTAbstractRenderStrategy renderStrategy) {
-if (nextRenderStrategy != null) {
-public void removeRenderStrategy(BTAbstractRenderStrategy renderStrategy) {
-if (equals(renderStrategy)) {
-previousRenderStrategy.nextRenderStrategy = nextRenderStrategy;
-

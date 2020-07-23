@@ -1,9 +1,0 @@
-return new DateTime(zone);
-}
-public static DateTime now(Chronology chronology) {
-if (chronology == null)
-public DateTime toDateTimeISO() {
-if (getChronology() == ISOChronology.getInstance())
-{
-return this;
-

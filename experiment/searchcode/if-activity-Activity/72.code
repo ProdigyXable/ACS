@@ -1,8 +1,0 @@
-public static ActivityManagerUtil getInstance() {
-if (instance == null) {
-instance = new ActivityManagerUtil();
-}
-
-if (activityStack == null) {
-activityStack = new Stack<Activity>();
-

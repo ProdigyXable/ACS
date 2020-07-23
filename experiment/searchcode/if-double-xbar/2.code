@@ -1,9 +1,0 @@
-sumx += (double)x[xbar];
-}
-
-for(xbar = 0; xbar < this.N; ++xbar) {
-sumx2 += (double)(x[xbar] * x[xbar]);
-}
-
-for(xbar = 0; xbar < this.N; ++xbar) {
-

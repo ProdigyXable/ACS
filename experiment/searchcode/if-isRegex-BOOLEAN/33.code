@@ -1,9 +1,0 @@
-private WildcardMatcher wildcard;
-
-public WildcardOrRegexMatcher(String pattern, boolean isRegex) {
-if (isRegex) {
-public boolean matches(String string) {
-boolean matches;
-if (string == null) {
-matches = false;
-

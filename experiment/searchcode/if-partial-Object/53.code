@@ -1,6 +1,0 @@
-NSMutableArray<Class<ERXPartial>> partialsForEntity = _partialsForEntity.objectForKey(partialEntity);
-if (partialsForEntity == null) {
-EOEntity destinationEntity = relationship.destinationEntity();
-EOEntity baseEntity = baseForPartial.objectForKey(destinationEntity);
-if (baseEntity != null) {
-

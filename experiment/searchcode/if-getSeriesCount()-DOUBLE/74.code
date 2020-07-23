@@ -1,9 +1,0 @@
-*     specified range.
-*/
-public Comparable getSeriesKey(int series) {
-if ((series < 0) || (series >= getSeriesCount())) {
-*     specified range.
-*/
-public int getItemCount(int series) {
-if ((series < 0) || (series >= getSeriesCount())) {
-

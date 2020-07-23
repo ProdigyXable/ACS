@@ -1,9 +1,0 @@
-package zhou.colorpalette;
-
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-public void onClick(DialogInterface dialog, int which) {
-if (onColorSelectListener != null) {
-color=colorPalette.getSelectColor();
-

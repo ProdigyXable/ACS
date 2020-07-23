@@ -1,8 +1,0 @@
-package utils.textClassifier.lucene;
-
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-private static StandardAnalyzer analyzer;
-public static StandardAnalyzer getAnalyzer() {
-if (analyzer == null) {
-analyzer = new StandardAnalyzer(LuceneVersion.VERSION);
-

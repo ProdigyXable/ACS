@@ -1,8 +1,0 @@
-m_logCategory.error(&quot;Error in mail file &quot; + mailFile.getPath(), e);
-} finally {
-try {
-if(indexOutput != null)
-indexOutput.close();
-if(mailInput != null)
-mailInput.close();
-

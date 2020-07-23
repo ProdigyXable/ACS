@@ -1,8 +1,0 @@
-ArrayList<BuildInfo> builds = new ArrayList<BuildInfo>();
-for(BuildInfo build : this.builds){
-if(build.status == status){
-builds.add(build);
-for(BuildInfo build : builds){
-if(build.identifier.equals(identifier)){
-return build;
-

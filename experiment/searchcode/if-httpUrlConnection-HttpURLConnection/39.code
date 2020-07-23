@@ -1,8 +1,0 @@
-return contentLength;
-}
-
-if (null == httpURLConnection) {
-initHttpUrlConnection();
-protected HttpURLConnection getUrlConnection() {
-if (null == httpURLConnection) {
-

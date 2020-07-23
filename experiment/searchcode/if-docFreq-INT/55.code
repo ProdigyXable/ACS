@@ -1,8 +1,0 @@
-private int count;
-//    private Double weight;
-private int docFreq;
-private String tokens;
-private String inverted;
-private ConcurrentHashMap<String, UrlDocEntity> url;
-//private int docFreq;
-

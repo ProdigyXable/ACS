@@ -1,6 +1,0 @@
-} else if (currentLanguage.equals(&quot;EN&quot;)) {
-Locale english = new Locale(&quot;us&quot;);
-Locale.setDefault(english);
-for (Kedutaan e : listOfEmbassies) {
-if (e.getCountry().equalsIgnoreCase(negaraTerdekat)) {
-

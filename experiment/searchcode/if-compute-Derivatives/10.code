@@ -1,9 +1,0 @@
-//~ Instance fields --------------------------------------------------------
-
-/** The derivatives values */
-private SortedMap<Integer, Double> derivatives;
-public SortedMap<Integer, Double> getDerivatives ()
-{
-if (derivatives == null) {
-derivatives = new TreeMap<>();
-

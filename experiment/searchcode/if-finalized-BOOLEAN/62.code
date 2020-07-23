@@ -1,8 +1,0 @@
-return finalized.getFirst();
-}
-return null;
-}
-
-public boolean removeTop() {
-if (!finalized.isEmpty()) {
-

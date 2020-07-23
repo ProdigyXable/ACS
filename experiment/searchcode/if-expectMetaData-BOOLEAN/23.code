@@ -1,8 +1,0 @@
-inMemoryMetaData, event.state().metaData()).iterator();
-
-if (expectMetaData) {
-assertThat(indices.hasNext(), equalTo(true));
-boolean masterEligible = randomBoolean();
-boolean expectMetaData = true;
-ClusterChangedEvent event = generateEvent(initializing, versionChanged, masterEligible);
-

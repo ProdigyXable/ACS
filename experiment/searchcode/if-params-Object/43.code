@@ -1,9 +1,0 @@
-synchronized (SwitchParams.class) {
-if (switchParams == null) {
-switchParams = new SwitchParams();
-}
-}
-return switchParams;
-}
-public Map<Object,Object> getHomeParams(){
-

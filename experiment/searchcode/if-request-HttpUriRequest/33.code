@@ -1,9 +1,0 @@
-LOGGER.debug(&quot;creating request to: &quot; + request.getUrl());
-}
-
-HttpUriRequest httpUriRequest;
-if (GET_METHOD.equals(request.getMethod())) {
-httpUriRequest = new HttpGet(request.getUrl());
-} else if (POST_METHOD.equals(request.getMethod())) {
-httpUriRequest = new HttpPost(request.getUrl());
-

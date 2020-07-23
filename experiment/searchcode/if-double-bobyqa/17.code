@@ -1,9 +1,0 @@
-final double[][] dm = new double[size][n];
-if (function instanceof AFunction) {
-afn = (AFunction) function;
-it = CoordinatesIterator.createIterator(data == null ? null : data.getShapeRef(), coords);
-final double[] dv ;
-if (afn != null) {
-dv = vd.getData();
-AFunction afn = (AFunction) function;
-

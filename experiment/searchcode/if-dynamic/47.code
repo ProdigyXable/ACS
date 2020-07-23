@@ -1,5 +1,0 @@
-@Override
-public boolean select(Object object) {
-if (object instanceof DynamicTestsTreeNode) {
-DynamicTestsElement element = ((DynamicTestsTreeNode) object).getDynamicTestsElement();
-

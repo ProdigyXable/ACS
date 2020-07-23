@@ -1,9 +1,0 @@
-field = cCache.get(type);
-}
-if (field == null) {
-field = new UnsupportedDurationField(type);
-public boolean equals(Object obj) {
-if (this == obj) {
-return true;
-} else if (obj instanceof UnsupportedDurationField) {
-

@@ -1,5 +1,0 @@
-public void translateBounds(double pDomain, double pRange) {
-Double domainLowerBound = getDomainLowerBound();
-Double domainUpperBound = getDomainUpperBound();
-Double domainUpperBound = getDomainUpperBound();
-

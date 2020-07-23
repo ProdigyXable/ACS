@@ -1,8 +1,0 @@
-return false;
-}
-PlotOrientation plotOrientation = (PlotOrientation)object;
-if (this.name.equals(plotOrientation.toString())) return true;
-private Object readResolve() {
-PlotOrientation plotOrientation = null;
-if (this.equals(HORIZONTAL)) {
-

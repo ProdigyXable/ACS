@@ -1,6 +1,0 @@
-Class rendererClass = params.getClass(ChartParams.RENDERER);
-if (rendererClass == null || CategoryItemRenderer.class.isAssignableFrom(rendererClass)) {
-CategoryItemRenderer renderer;
-if (rendererClass != null) {
-try {
-

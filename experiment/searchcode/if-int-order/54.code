@@ -1,9 +1,0 @@
-public void addOrder(CookieOrder cookieOrder) {
-orderList.add(cookieOrder);
-}
-
-public int getTotalBoxes() {
-int boxes = 0;
-for (int i = 0; i < orderList.size(); i++) {
-boxes += orderList.get(i).getNumBoxes();
-

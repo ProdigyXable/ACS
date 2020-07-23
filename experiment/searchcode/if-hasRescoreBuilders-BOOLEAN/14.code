@@ -1,7 +1,0 @@
-public SearchSourceBuilder fetchSource(boolean fetch) {
-if (this.fetchSourceContext == null) {
-this.fetchSourceContext = new FetchSourceContext(fetch);
-boolean hasRescoreBuilders = rescoreBuilders != null;
-out.writeBoolean(hasRescoreBuilders);
-if (hasRescoreBuilders) {
-

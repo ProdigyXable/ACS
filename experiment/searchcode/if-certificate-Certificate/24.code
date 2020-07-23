@@ -1,8 +1,0 @@
-* along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-package se.inera.intyg.intygstjanst.web.integration.converter;
-certificate.setDeletedByCareGiver(certificateHolder.isDeletedByCareGiver());
-certificate.setAdditionalInfo(certificateHolder.getAdditionalInfo());
-if (certificateHolder.getCertificateStates() != null) {
-

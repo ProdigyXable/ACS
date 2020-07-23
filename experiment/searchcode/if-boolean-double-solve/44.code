@@ -1,9 +1,0 @@
-public void setBinary(int i, boolean set) throws ProMLpSolveException {
-try {
-if (presolved) {
-i = org2new[i];
-public void setLowbo(int i, double low) throws ProMLpSolveException {
-try {
-if (presolved) {
-i = org2new[i];
-

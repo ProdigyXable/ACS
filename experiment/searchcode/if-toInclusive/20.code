@@ -1,8 +1,0 @@
-if (toExists &amp;&amp; orig.comparator().compare(e, toElement) >= 0) {
-if (toInclusive) {
-out = orig.floor(toElement);
-} else {
-if (toExists &amp;&amp; orig.comparator().compare(e, toElement) > 0) {
-if (toInclusive) {
-out = orig.floor(toElement);
-

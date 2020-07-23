@@ -1,8 +1,0 @@
-String plural = st.nextToken().toLowerCase();
-if (singular.startsWith(&quot;#&quot;))
-continue;
-public static String makeSingular(String word)
-{
-init();
-if (mPluralToSingular.containsKey(word))
-

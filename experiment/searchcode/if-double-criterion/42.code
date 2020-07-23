@@ -1,5 +1,0 @@
-final long value = this.m_left.getLongValue(criterionUser, criterionTarget, criterionContent, criterionContext) * this.m_right.getLongValue(criterionUser, criterionTarget, criterionContent, criterionContext);
-if (this.isOpposite()) {
-final double value = this.m_left.getDoubleValue(criterionUser, criterionTarget, criterionContent, criterionContext) * this.m_right.getDoubleValue(criterionUser, criterionTarget, criterionContent, criterionContext);
-if (this.isOpposite()) {
-

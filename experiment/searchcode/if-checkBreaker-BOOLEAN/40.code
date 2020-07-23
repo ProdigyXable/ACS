@@ -1,7 +1,0 @@
-final CircuitBreakerService breakerService;
-final boolean checkBreaker;
-
-@Inject
-public BigArrays(PageCacheRecycler recycler, @Nullable final CircuitBreakerService breakerService) {
-public BigArrays(PageCacheRecycler recycler, @Nullable final CircuitBreakerService breakerService, boolean checkBreaker) {
-

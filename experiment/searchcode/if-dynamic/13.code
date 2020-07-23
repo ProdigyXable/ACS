@@ -1,6 +1,0 @@
-for (i = 0; i < size; i++) {
-
-dynamicGameObject = dynamicGameObjectList.get(i);
-
-if (dynamicGameObject.body != null) {
-

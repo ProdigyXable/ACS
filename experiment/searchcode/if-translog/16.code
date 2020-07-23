@@ -1,7 +1,0 @@
-protected void afterIfSuccessful() throws Exception {
-super.afterIfSuccessful();
-
-if (translog.isOpen()) {
-if (translog.currentFileGeneration() > 1) {
-translog.commit();
-

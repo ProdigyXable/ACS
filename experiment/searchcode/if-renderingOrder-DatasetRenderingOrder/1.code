@@ -1,7 +1,0 @@
-private ObjectList renderers = new ObjectList();
-private DatasetRenderingOrder renderingOrder = DatasetRenderingOrder.REVERSE;
-return this.renderingOrder;
-}
-
-public void setDatasetRenderingOrder(DatasetRenderingOrder datasetRenderingOrder) {
-

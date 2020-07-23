@@ -1,8 +1,0 @@
-useCaseDrawBehavior=new UseCaseDrawBehavior(null);
-}
-public void paint(UMLObject object, Context2d context2d) {
-if(!isObjectNull(object)){
-DrawBehavior drawBehavior=chooseDrawBehavior(object.getType());
-if(drawBehavior!=null){
-drawObject(drawBehavior,object,context2d);
-

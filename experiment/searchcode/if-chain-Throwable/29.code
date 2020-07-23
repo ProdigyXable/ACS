@@ -1,7 +1,0 @@
-* @throws NullPointerException if {@code suppressor == null}.
-*/
-public static void close(CloseableChain<?, ?> chain, Throwable suppressor) {
-while (chain != null) {
-if (chain.output != null &amp;&amp; chain.destructor != null) {
-try {
-

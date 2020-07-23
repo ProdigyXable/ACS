@@ -1,9 +1,0 @@
-* @return {@inheritDoc}
-*/
-@Override
-public PointValuePair optimize(OptimizationData... optData) {
-// Retrieve settings
-protected PointValuePair doOptimize() {
-if (simplex == null) {
-throw new NullArgumentException();
-

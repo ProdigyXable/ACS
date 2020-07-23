@@ -1,3 +1,0 @@
-EventIncrementCache localEventIncrementCache = (EventIncrementCache)this.aaw.get();
-if (localEventIncrementCache != null) {
-

@@ -1,7 +1,0 @@
-return extensions;
-}
-
-@Override
-public FinalSize generateThumbnail(VFSLeaf file, VFSLeaf thumbnailFile, int maxWidth, int maxHeight) {
-Size finalSize = imageHelper.scaleImage(file, thumbnailFile, maxWidth, maxHeight);
-

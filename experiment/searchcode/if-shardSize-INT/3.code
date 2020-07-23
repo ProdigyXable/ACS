@@ -1,8 +1,0 @@
-* Set the max num docs to be returned from each shard.
-*/
-public SamplerAggregationBuilder shardSize(int shardSize) {
-* Get the max num docs to be returned from each shard.
-*/
-public int shardSize() {
-return shardSize;
-

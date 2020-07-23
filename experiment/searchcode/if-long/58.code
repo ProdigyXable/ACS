@@ -1,8 +1,0 @@
-
-public class collatz{
-public long count(long i){
-long counter = 0;
-
-while(i != 1){
-if(i % 2 == 0){
-

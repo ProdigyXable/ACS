@@ -1,5 +1,0 @@
-public double getNumericalMean() {
-final double denominatorDF = getDenominatorDegreesOfFreedom();
-
-if (denominatorDF > 2) {
-

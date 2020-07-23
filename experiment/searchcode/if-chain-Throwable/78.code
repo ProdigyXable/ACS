@@ -1,8 +1,0 @@
-private void scanForCause() {
-Throwable throwable = getCause();
-
-/* user attention is required if the certificate was deemed invalid */
-if (throwable != null) {
-mNeedsUserAttention = true;
-if (throwable instanceof CertificateChainException) {
-

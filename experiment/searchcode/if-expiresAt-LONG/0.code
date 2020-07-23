@@ -1,7 +1,0 @@
-public class AccessToken implements Serializable {
-private final String accessToken;
-private final long expiresAt;
-
-public AccessToken(String accessToken, long expiresAt) {
-this.accessToken = accessToken;
-

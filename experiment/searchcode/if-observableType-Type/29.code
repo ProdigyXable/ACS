@@ -1,4 +1,0 @@
-CurveObservable curve = (CurveObservable) obs;
-if (curve.getObservableType().equals(AbstractObservable.ObservableType.IR_CURVE)) {
-} else if (curve.getObservableType().equals(AbstractObservable.ObservableType.CREDIT_CURVE)) {
-

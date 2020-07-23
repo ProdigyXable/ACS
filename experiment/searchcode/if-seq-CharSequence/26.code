@@ -1,8 +1,0 @@
-(Rule[] rules, CharSequence prev, CharSequence what, CharSequence next, boolean isSingle) {
-if (what.length() < 1)
-return Engine.EMPTY;
-CharSequence[] sr = null;
-@NotNull final Split split = rule.split(what);
-if (split != Split.NONE) {
-final CharSequence[] rights =
-

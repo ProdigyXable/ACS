@@ -1,7 +1,0 @@
-package jacob.subtitleCombine.parse;
-
-import jacob.subtitleCombine.SimpleSubtitle;
-
-import java.time.Duration;
-public static boolean match(SimpleSubtitle simpleSubtitle1, SimpleSubtitle simpleSubtitle2, Duration fixedStartTime) {
-

@@ -1,9 +1,0 @@
-double selectedNodeAllocated = selectedNode == null ? 0 : selectedNode.allocatedRam();
-
-if (selectedNode == null &amp;&amp; node.availableRam() >= requiredRam) {
-selectedNode = node;
-continue;
-}
-
-if (selectedNode == null) {
-

@@ -1,6 +1,0 @@
-super(function);
-}
-
-public SolutionContainer solveStep(double[] state, double stepSize) {
-SolutionContainer k1 = function.function(state);
-

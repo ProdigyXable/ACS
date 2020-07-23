@@ -1,6 +1,0 @@
-/** Whether or not the numerical variance has been calculated */
-private boolean numericalVarianceIsCalculated = false;
-public double getNumericalVariance() {
-if (!numericalVarianceIsCalculated) {
-numericalVariance = calculateNumericalVariance();
-

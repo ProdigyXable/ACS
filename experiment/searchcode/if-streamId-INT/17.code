@@ -1,8 +1,0 @@
-* @param remoteID worker ID.
-* */
-public StreamIOChannelID(final long streamID, final int remoteID) {
-this.remoteID = remoteID;
-@Override
-public final int compareTo(final StreamIOChannelID o) {
-if (streamID != o.streamID) {
-

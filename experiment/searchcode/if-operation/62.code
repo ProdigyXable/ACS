@@ -1,9 +1,0 @@
-private OperationFactory() {
-}
-
-public Operation getOperation(String operationName) {
-if (operationName.equals(&quot;+&quot;)) {
-return new AddOperation();
-} else if (operationName.equals(&quot;-&quot;)) {
-return new SubstractOperation();
-

@@ -1,8 +1,0 @@
-Member selectedMember = null;
-selectedMember = memberDao.selectMemberByEmail(memberID);
-if (selectedMember == null) {
-selectedMember.setCheck(Member.INVALID_ID);
-} else {
-if (selectedMember.getPassword().equals(password)) {
-selectedMember.setCheck(Member.VALID_MEMBER);
-

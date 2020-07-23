@@ -1,7 +1,0 @@
-return currentStage.getTimeToComplete() / currentStage.getEndingSpeed();
-}
-
-public void tick(int currentTime) {
-if(currentTime >= currentStage.getTimeToComplete()) {
-if(allStages.length > currentStage.getStageID()) {
-

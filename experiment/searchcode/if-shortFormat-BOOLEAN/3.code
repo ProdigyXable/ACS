@@ -1,7 +1,0 @@
-String longFormat = url;
-String shortFormat = longFormat;
-
-if (shortFormat.lastIndexOf(&quot;/&quot;) > 0) {
-if ((shortFormat.lastIndexOf(&quot;/&quot;) + 1 < shortFormat.length())) {
-shortFormat = shortFormat.substring(shortFormat.lastIndexOf(&quot;/&quot;) + 1);
-

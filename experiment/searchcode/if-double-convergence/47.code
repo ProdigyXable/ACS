@@ -1,9 +1,0 @@
-protected double gradientConvergenceValue;
-
-
-public GradientL2Norm(double gradientConvergenceValue){
-this.gradientConvergenceValue = gradientConvergenceValue;
-public boolean stopOptimization(Objective obj){
-double norm = MathUtils.L2Norm(obj.gradient);
-if(norm < gradientConvergenceValue){
-

@@ -1,6 +1,0 @@
-public static ObjectMapper getMapper() {
-if (objectMapper == null) {
-synchronized (JacksonJsonUtil.class) {
-if (objectMapper == null) {
-objectMapper = new ObjectMapper();
-

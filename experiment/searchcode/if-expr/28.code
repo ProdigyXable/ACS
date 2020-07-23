@@ -1,8 +1,0 @@
-Expr n = args[0];
-if (n instanceof ExprEvaluatable) {
-n = ((ExprEvaluatable) n).evaluate();
-}
-if (n instanceof ExprArray) {
-ExprArray a = (ExprArray) n;
-if (a.rows() > 1) {
-

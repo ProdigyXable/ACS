@@ -1,7 +1,0 @@
-public abstract class ShapeModifiedListener extends ShapeEventListener {
-
-public ShapeModifiedListener() {
-public final void onShapeEvent(ShapeEvent shapeEvent) {
-if (shapeEvent instanceof ShapeModifiedEvent) {
-onShapeModified((ShapeModifiedEvent) shapeEvent);
-

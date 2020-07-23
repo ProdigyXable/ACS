@@ -1,5 +1,0 @@
-} else if (parser.booleanValue()) {
-// cache without conditions on how many times the filter has been
-public void setMapUnmappedFieldAsString(boolean mapUnmappedFieldAsString) {
-this.mapUnmappedFieldAsString = mapUnmappedFieldAsString;
-

@@ -1,6 +1,0 @@
-siddhiContext.addEternalReferencedHolder(outputAttributeAggregator);
-distributedAggregatorMap.putIfAbsent(elementId, outputAttributeAggregator);
-OutputAttributeAggregator currentOutputAttributeAggregator = null;
-if (!lockedAcquired) {
-distributedAggregatorMap.lock(elementId);
-

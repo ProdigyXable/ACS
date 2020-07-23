@@ -1,7 +1,0 @@
-if (right instanceof PyBoolean) {
-return Py.newBoolean(value &amp; ((PyBoolean)right).value);
-} else if (right instanceof PyInteger) {
-if (right instanceof PyBoolean) {
-return Py.newBoolean(value ^ ((PyBoolean)right).value);
-} else if (right instanceof PyInteger) {
-

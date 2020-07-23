@@ -1,8 +1,0 @@
-max = h[i];
-}
-if (max == 0) return null;
-// normalize
-double[] hn = new double[h.length];
-// normalize
-double[] hn = new double[h.length];
-

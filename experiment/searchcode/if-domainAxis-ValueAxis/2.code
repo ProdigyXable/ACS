@@ -1,5 +1,0 @@
-DateAxis domainaxis = (DateAxis) categoryPlot.getDomainAxis();
-if (domainaxis.getMaximumDate().getTime() - domainaxis.getMinimumDate().getTime() > longerThanDayInMiliseconds)
-{
-if (domainaxis.getMaximumDate().getTime() - domainaxis.getMinimumDate().getTime() < longerThanMonthInMiliseconds)
-

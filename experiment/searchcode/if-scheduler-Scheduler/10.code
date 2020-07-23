@@ -1,8 +1,0 @@
-package cn.com.bestpay.scheduler.core.common.factory;
-
-import org.quartz.Scheduler;
-import org.quartz.SchedulerException;
-public synchronized Scheduler getScheduler() throws SchedulerException {
-if (scheduler == null) {
-SchedulerFactory schedulerFactory = new StdSchedulerFactory();
-

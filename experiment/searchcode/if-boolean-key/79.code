@@ -1,8 +1,0 @@
-public void handleKeyDown(KeyboardEvent FlashEvent)
-{
-KeyState object = _map.get(FlashEvent.keyCode);
-
-if(object == null)
-return;
-
-

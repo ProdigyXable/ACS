@@ -1,7 +1,0 @@
-findMin(deNormalizedValues);
-}
-
-public ArrayList<Double> normalizeValues() {
-ArrayList<Double> normalizedValues = new ArrayList<>();
-for (double value : deNormalizedValues) {
-

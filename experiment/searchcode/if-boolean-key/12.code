@@ -1,8 +1,0 @@
-public class keyboard {
-public static boolean keyW;
-public static boolean keyA;
-public static boolean keyS;
-public static boolean keyD;
-public static boolean keyLShift;
-public static boolean keyUp;
-

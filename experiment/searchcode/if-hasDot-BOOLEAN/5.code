@@ -1,7 +1,0 @@
-public class Solution {
-public boolean isNumber(String s) {
-if (s == null ) return false;
-s = s.trim();
-boolean hasFirst, hasDot, hasDigit, hasE;
-hasDigit = hasFirst = hasDot = hasE = false;
-

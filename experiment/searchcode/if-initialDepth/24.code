@@ -1,5 +1,0 @@
-public AdaptiveAlphaBetaPlayer(Color color, IBoardEvaluationStrategy boardEvaluationStrategy, int initialDepth,
-long calculationTimeLowerBound, long calculationTimeUpperBound) {
-super(color, boardEvaluationStrategy, initialDepth);
-this.calculationTimeLowerBound = calculationTimeLowerBound;
-

@@ -1,7 +1,0 @@
-final RoutingAllocation allocation;
-if (randomBoolean()) {
-allocation = routingAllocationWithOnePrimaryNoReplicas(yesAllocationDeciders(), randomBoolean(), Version.CURRENT);
-final RoutingAllocation allocation;
-boolean useAllocationIds = randomBoolean();
-if (useAllocationIds) {
-

@@ -1,7 +1,0 @@
-try {
-Long count = (Long) freqTable.get(obj);
-if (count == null) {
-Long count =  (Long) freqTable.get(v);
-if (count != null) {
-result = count.longValue();
-

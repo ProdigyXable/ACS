@@ -1,8 +1,0 @@
-private String mRedirectUrl;
-private long mRequestBirthTime;
-private RequestQueue mRequestQueue;
-private boolean mResponseDelivered;
-public Request(int paramInt, String paramString, Response.ErrorListener paramErrorListener)
-{
-if (VolleyLog.MarkerLog.ENABLED);
-

@@ -1,5 +1,0 @@
-for(AxisLine a:DrawTools.drawInfo.getxLines()){
-if((a.getMarker()<graphArea.x)||(a.getMarker()>graphArea.x+graphArea.width)){
-for(AxisLine a:DrawTools.drawInfo.getyLines()){
-if((a.getMarker()<graphArea.y)||(a.getMarker()>graphArea.y+graphArea.height)){
-

@@ -1,6 +1,0 @@
-private final Class<?> rawType;
-private final Class<?> typeParameter;
-private final CollectionElementConverter elementConverter;
-
-public CollectionTypeConverterKey(Class<?> rawType, Class<?> typeParameter,
-

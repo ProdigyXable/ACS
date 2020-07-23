@@ -1,8 +1,0 @@
-throws PhaseExecutionException
-{
-if ( object instanceof Configurable )
-{
-PlexusConfiguration plexusConfiguration = manager.getComponentDescriptor().getConfiguration();
-
-if ( plexusConfiguration == null )
-

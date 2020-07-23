@@ -1,6 +1,0 @@
-public class ContainerStrecthDoneEvent extends ContainerSqueezerBaseEvent {
-
-private final boolean ifDone;
-
-public ContainerStrecthDoneEvent(boolean ifDone,
-

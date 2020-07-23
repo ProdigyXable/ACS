@@ -1,5 +1,0 @@
-public double[] location(double x, double y, Floor currFloor)
-{
-double[] location = new double[2];
-if (&quot;ul&quot;.equals(currFloor.getCoordinate()))// 左上为原点
-

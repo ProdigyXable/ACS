@@ -1,6 +1,0 @@
-return npExpressionItem instanceof NpOperationExpressionItem;
-}
-
-private boolean isGroupOpen(NpExpressionItem npExpressionItem) {
-if (npExpressionItem instanceof NpGroupExpressionItem)
-

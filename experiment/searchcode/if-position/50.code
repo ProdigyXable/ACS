@@ -1,9 +1,0 @@
-boolean flag = verifyPositionData(position);
-if (flag){
-positionMapper.insert(position);
-boolean flag = verifyPositionData(position);
-if(flag){
-positionMapper.update(position);
-}
-return flag;
-

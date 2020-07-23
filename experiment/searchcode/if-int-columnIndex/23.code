@@ -1,6 +1,0 @@
-for (int columnIndex = 0; columnIndex < arrayOfInt[rowIndex].length; columnIndex++) {
-if (rowIndex == columnIndex) {
-System.out.print(arrayOfInt[rowIndex][columnIndex] + &quot; &quot;);
-for (int columnIndex = 0; columnIndex < arrayOfInt[rowIndex].length; columnIndex++) {
-if ((rowIndex + columnIndex) == (arrayOfInt.length-1)) {
-

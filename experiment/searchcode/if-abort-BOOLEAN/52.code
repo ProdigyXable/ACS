@@ -1,9 +1,0 @@
-return grant;
-}
-
-public void setAbortLsn(long abortLsn, boolean abortKnownDeleted) {
-setAbortLsnInternal(abortLsn, abortKnownDeleted, false);
-}
-
-public void setAbortLsn(long abortLsn, boolean abortKnownDeleted,
-

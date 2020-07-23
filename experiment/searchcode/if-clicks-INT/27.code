@@ -1,8 +1,0 @@
-public void updataUserClicks(String username) {
-UserClicksToday existing =  userClicksTodayRepository.findOne(username);
-if (existing == null) {
-@Override
-@Transactional
-public int getUserClicks(String username) {
-UserClicksToday existing =  userClicksTodayRepository.findOne(username);
-

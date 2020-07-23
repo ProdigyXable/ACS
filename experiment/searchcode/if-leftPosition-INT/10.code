@@ -1,6 +1,0 @@
-final class EventCounterUtils {
-
-static int calculateCount(long leftPosition, long rightPosition, long[] values, int size) {
-if (values == null) {
-throw new IllegalArgumentException(&quot;values is null&quot;);
-

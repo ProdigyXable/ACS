@@ -1,6 +1,0 @@
-public void testEscapePositionIfTyped() {
-doTestStopEditing(new Pass<AbstractInplaceIntroducer>() {
-((MyIntroduceVariableHandler)handler).setChoice(choice);
-final AbstractInplaceIntroducer introducer = invokeRefactoring(handler);
-if (pass != null) {
-

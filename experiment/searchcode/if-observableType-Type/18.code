@@ -1,3 +1,0 @@
-final Class<?> observable = GenericsUtil.guessClazz(observableType);
-if (!this.cachedListeners.containsKey(observable)) {
-

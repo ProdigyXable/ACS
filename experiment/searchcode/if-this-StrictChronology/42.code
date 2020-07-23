@@ -1,8 +1,0 @@
-* @throws IllegalArgumentException if chronology is null
-*/
-public static StrictChronology getInstance(Chronology base) {
-if (iWithUTC == null) {
-if (getZone() == DateTimeZone.UTC) {
-iWithUTC = this;
-} else {
-

@@ -1,7 +1,0 @@
-* @param chronology  the chronology, null means ISO
-* @throws IllegalArgumentException if the types or values are invalid
-newChronology = newChronology.withUTC();
-if (newChronology == getChronology()) {
-return this;
-} else {
-

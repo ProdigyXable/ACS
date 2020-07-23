@@ -1,8 +1,0 @@
-public boolean addJobToPackage(Job job) throws InterruptedException
-{
-if (jobsList.size() < maximumSize) {
-jobsList.add(job);
-public synchronized boolean isPackageFull()
-{
-if(this.maximumSize.equals(this.jobsList.size()))
-

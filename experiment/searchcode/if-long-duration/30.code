@@ -1,6 +1,0 @@
-public DurationStringModel(IModel<Duration> durationModel) {
-if (durationModel == null) {
-public String getObject() {
-Duration duration = durationModel.getObject();
-if (duration == null)
-

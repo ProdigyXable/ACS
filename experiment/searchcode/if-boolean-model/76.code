@@ -1,9 +1,0 @@
-public Boolean isPublished(){
-if(this == published)
-return Boolean.TRUE;
-return Boolean.FALSE;
-}
-public Boolean isDrafts(){
-if(this == drafts)
-return Boolean.TRUE;
-

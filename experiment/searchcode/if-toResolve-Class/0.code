@@ -1,8 +1,0 @@
-package collision;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-public class ContactRegister {
-private HashMap<ContactPair, ContactPair> contacts;
-private ArrayList<ContactPair> toResolve;
-

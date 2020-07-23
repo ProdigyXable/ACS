@@ -1,5 +1,0 @@
-final AtomicReference<State> localState = this.state;
-do {
-oldState = localState.get();
-if (oldState.isUnsubscribed) {
-

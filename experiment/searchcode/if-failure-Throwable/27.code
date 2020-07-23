@@ -1,7 +1,0 @@
-public final void onSuccess(ApplicationResponse resp) {
-Throwable throwable = resp.getThrowable();
-if (throwable != null) {
-onFailure(throwable);
-// throw new RuntimeException(throwable);
-} else {
-

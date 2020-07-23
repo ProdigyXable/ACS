@@ -1,8 +1,0 @@
-private int prefixLength;
-
-private void init(InetAddress address, int prefixLength) {
-if (address == null || prefixLength < 0 ||
-InetAddress address = null;
-int prefixLength = 0;
-if (in.readByte() == 1) {
-

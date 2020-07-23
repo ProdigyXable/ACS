@@ -1,8 +1,0 @@
-public class MaximumLengthConstraint implements Constraint<String> {
-
-public static MaximumLengthConstraint maximumLength(int maximumLength) {
-return new MaximumLengthConstraint(maximumLength);
-}
-
-public MaximumLengthConstraint(int maximumLength) {
-

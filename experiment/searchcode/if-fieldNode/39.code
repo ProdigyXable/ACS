@@ -1,7 +1,0 @@
-FieldNode fieldNode = (FieldNode) node;
-
-if (fieldNode._fieldAgentNode != null) {
-
-QueueMutationList<FieldNode> fieldAgentNodes = agentsByGamer.get(fieldNode.playerUnitPtr.v);
-if (fieldAgentNodes == null) {
-

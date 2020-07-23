@@ -1,7 +1,0 @@
-public class GeoBoundsBuilder extends ValuesSourceAggregationBuilder<GeoBoundsBuilder> {
-
-private Boolean wrapLongitude;
-* Set whether to wrap longitudes. Defaults to true.
-*/
-public GeoBoundsBuilder wrapLongitude(boolean wrapLongitude) {
-

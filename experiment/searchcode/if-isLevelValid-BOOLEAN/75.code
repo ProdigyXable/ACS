@@ -1,8 +1,0 @@
-public void readFrom(StreamInput in) throws IOException {
-stats = CommonStats.readCommonStats(in);
-if (in.readBoolean()) {
-stats.writeTo(out);
-out.writeBoolean(statsByShard != null);
-if (statsByShard != null) {
-out.writeVInt(statsByShard.size());
-

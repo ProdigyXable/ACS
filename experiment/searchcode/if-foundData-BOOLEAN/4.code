@@ -1,6 +1,0 @@
-DatabaseEntry foundKey = new DatabaseEntry();
-DatabaseEntry foundData = new DatabaseEntry();
-
-assertEquals(OperationStatus.SUCCESS,
-cursor.getFirst(foundKey, foundData,
-

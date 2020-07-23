@@ -1,8 +1,0 @@
-package Proxy.src;
-
-public class PrivacyProperties implements Properties {
-private boolean fileRead;
-private boolean propertiesDisplayed;
-
-public PrivacyProperties()  {
-

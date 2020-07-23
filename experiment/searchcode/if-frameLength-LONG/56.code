@@ -1,8 +1,0 @@
-AudioFormat audioFormat = null;
-Long frameLength = null;
-
-for (String sourceFile : sourceFiles) {
-audioInputStream = AudioSystem.getAudioInputStream(new File(sourceFile));
-
-if (audioFormat == null) {
-

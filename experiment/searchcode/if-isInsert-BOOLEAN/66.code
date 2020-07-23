@@ -1,5 +1,0 @@
-List<TrieTreeNode> temp = new ArrayList<>();
-boolean isInsert = false;
-for (int i = 0; i < nodes.size(); i++) {
-if (nodes.get(i).getWord() > word &amp;&amp; !isInsert) {
-

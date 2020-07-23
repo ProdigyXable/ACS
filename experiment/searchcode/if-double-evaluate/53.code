@@ -1,5 +1,0 @@
-ASSIGNMENT (&quot;=&quot;),
-PLUS (&quot;\\+&quot;) {public Object evaluate(double x, double y) { return x + y;}},
-SUBTRACT (&quot;-&quot;) {public Object evaluate(double x, double y) { return x - y;}},
-TIMES (&quot;\\*&quot;) {public Object evaluate(double x, double y) { return x * y;}},
-

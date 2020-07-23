@@ -1,7 +1,0 @@
-TagOutput parent = output;
-boolean hasParentWithGroup=false;
-boolean hasParentWithQuery=false;
-boolean hasQuery=tag.containsAttribute(&quot;query&quot;);
-if(!hasParentWithQuery)hasParentWithQuery=parent.hasQuery();
-if(!hasParentWithGroup)hasParentWithGroup=parent.hasGroup();
-

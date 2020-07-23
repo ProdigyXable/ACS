@@ -1,7 +1,0 @@
-dataSet.getPattern(i), centroids[j]);
-
-if (minCluster == -1
-thisDistance = AlgorithmUtil.getDistanceInFeatureSpace(kernel,
-dataSet, featureRegions, featureCentroids, j);
-if (minCluster == -1
-

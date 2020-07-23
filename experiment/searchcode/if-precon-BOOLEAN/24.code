@@ -1,9 +1,0 @@
-* @return True if released, false if not in prison.
-*/
-public boolean release(Object player) {
-PreCon.notNull(player);
-* @param player  The player to check.
-*/
-public boolean isImprisoned(Object player) {
-PreCon.notNull(player);
-

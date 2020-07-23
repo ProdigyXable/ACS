@@ -1,9 +1,0 @@
-return this.columnRenderingOrder;
-}
-
-public void setColumnRenderingOrder(SortOrder var1) {
-if(var1 == null) {
-int var16;
-int var17;
-if(this.columnRenderingOrder == SortOrder.ASCENDING) {
-

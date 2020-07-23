@@ -1,8 +1,0 @@
-public void startApp() {
-Manager manager = (Manager) getManager();
-try {
-if (manager == null) {
-try {
-clientConfiguration.getCommonManager().logout();
-//            clientConfiguration.setBaseConfiguration(null);
-

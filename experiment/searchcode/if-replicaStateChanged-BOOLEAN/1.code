@@ -1,6 +1,0 @@
-ClusterStateHealth maybeSerialize(ClusterStateHealth clusterStateHealth) throws IOException {
-if (randomBoolean()) {
-BytesStreamOutput out = new BytesStreamOutput();
-for (int i = 0; i < numberOfShards; i++) {
-if (atLeastOne == false || randomBoolean()) {
-

@@ -1,4 +1,0 @@
-AT prototype = searchFirstPrototypeInClassHierarchy(objectToTest);
-if (prototype!=null) {
-int optionalIndex = getFirstOptionalValueIndex(PrototypeScope.INPUT, prototype);
-

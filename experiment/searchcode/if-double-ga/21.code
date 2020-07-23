@@ -1,6 +1,0 @@
-data.setDateTime(dateTime);
-data.setSite(site);
-data.setBounceRate(Double.parseDouble(map.get(&quot;ga:bounceRate&quot;)));
-data.setTimeOnPage((int)Double.parseDouble(map.get(&quot;ga:avgTimeOnPage&quot;)));
-return data;
-

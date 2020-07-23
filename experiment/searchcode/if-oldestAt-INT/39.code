@@ -1,8 +1,0 @@
-* @return The translated index.
-*/
-protected int translateGet(int toFetch) {
-if (this.oldestAt == 0) {
-// else  [implicit here]
-int newIndex = toFetch + this.oldestAt;
-if (newIndex >= this.historyCount) {
-

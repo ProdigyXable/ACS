@@ -1,9 +1,0 @@
-import org.apache.commons.math.optimization.VectorialPointValuePair;
-import org.apache.commons.math.optimization.ConvergenceChecker;
-this.useLU = useLU;
-}
-
-/** {@inheritDoc} */
-@Override
-public VectorialPointValuePair doOptimize() throws MathUserException {
-

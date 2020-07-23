@@ -1,8 +1,0 @@
-final long totalBytes;
-final long freeBytes;
-
-/**
-* Create a new DiskUsage, if {@code totalBytes} is 0, {@get getFreeDiskAsPercentage}
-public DiskUsage(String nodeId, String nodeName, long totalBytes, long freeBytes) {
-this.nodeId = nodeId;
-

@@ -1,5 +1,0 @@
-public MillerUpdatingRegression(int numberOfVariables, boolean includeConstant, double errorTolerance)
-throw new ModelSpecificationException(LocalizedFormats.NO_REGRESSORS);
-}
-if (includeConstant) {
-

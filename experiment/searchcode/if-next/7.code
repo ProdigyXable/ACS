@@ -1,9 +1,0 @@
-ListNode next = head.next;
-
-while(current != null &amp;&amp; next != null){
-if (current.val <= next.val){
-current = next;
-next = next.next;
-}else{
-if (head.val >= next.val){
-

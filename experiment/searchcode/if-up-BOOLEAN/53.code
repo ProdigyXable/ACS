@@ -1,8 +1,0 @@
-private boolean loginChoice;
-private boolean signUpChoice;
-
-//getters
-public int getUserType() { return userType; }
-public boolean getLoginChoice() { return loginChoice; }
-public boolean getSignUpChoice() { return signUpChoice; }
-

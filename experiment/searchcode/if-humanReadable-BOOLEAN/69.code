@@ -1,5 +1,0 @@
-public static CharSequence getHumanReadableMessage(Throwable throwable) {
-while (throwable != null) {
-if (throwable instanceof HumanReadable) {
-if (StringUtils.isNotEmpty(((HumanReadable) throwable).getHumanReadableMessage())) {
-

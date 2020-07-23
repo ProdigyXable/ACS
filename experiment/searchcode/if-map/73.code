@@ -1,8 +1,0 @@
-Map<K, V> map = classMapperMap.get(keyA);
-if (map == null) {
-map = classMapperMap.get(keyB);
-if (map == null) {
-map = new HashMap<>();
-}
-map.put(keyA, value);
-

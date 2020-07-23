@@ -1,8 +1,0 @@
-protected boolean removeEnabled = true;
-protected boolean refreshEnabled = true;
-protected boolean showNew = true;
-protected boolean showRemove = true;
-protected boolean showRefresh = true;
-
-public ClassicListBean() {
-

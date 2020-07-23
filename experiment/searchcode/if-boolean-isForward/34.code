@@ -1,8 +1,0 @@
-Iterator<Quad> meets;
-if (analysis.isForward()){
-meets = qit.predecessors();
-} else {
-if (q1 != null) {
-if (analysis.isForward()) {
-d_obj.copy(analysis.getOut(q1));
-

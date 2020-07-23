@@ -1,9 +1,0 @@
-ConfigurationSection section = yamlFile.getConfig().getConfigurationSection(&quot;pads&quot;);
-if (section != null) {
-for (String key : section.getKeys(false)) {
-super.checkExceptions();
-
-//Check how many valid pads there are
-int validPads = pads.size();
-for (Pad pad : pads) {
-

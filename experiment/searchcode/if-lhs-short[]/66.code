@@ -1,6 +1,0 @@
-} else if (lhs instanceof short[]) {
-append((short[]) lhs, (short[]) rhs);
-public SGPCompareToBuilder append(short lhs, short rhs) {
-if (comparison != 0) {
-return this;
-

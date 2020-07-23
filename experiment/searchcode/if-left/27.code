@@ -1,8 +1,0 @@
-return result;
-}
-
-/*public static void dfs(String left, String right, int countLeft, int maxLeft) {
-if(left.length()==0){
-if(countLeft==0 &amp;&amp; right.length()!=0){
-if(maxLeft > max){
-

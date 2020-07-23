@@ -1,8 +1,0 @@
-} else {
-HttpResponseCache = Class.forName(preICSCache);
-}// if-else
-Method getInstalled = HttpResponseCache.getMethod(&quot;getInstalled&quot;,
-(Class<?>[])null);
-
-if (getInstalled.invoke(null, (Object[]) null) == null) {
-

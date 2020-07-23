@@ -1,9 +1,0 @@
-public PannableXYPlot(XYDataset dataset, ValueAxis domainAxis, ValueAxis rangeAxis,
-XYItemRenderer renderer)
-{
-super(dataset, domainAxis, rangeAxis, renderer);
-}
-
-/**
-* Returns if the domain axis is pannable.
-

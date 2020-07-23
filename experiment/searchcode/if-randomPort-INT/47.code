@@ -1,9 +1,0 @@
-public void startZooKeeper(String path) {
-startZooKeeper(true, path, false);
-}
-
-public void startZooKeeper(String path, boolean randomPort) {
-InetSocketAddress clientPortAddress = super.getClientPortAddress();
-if (randomPort) {
-return randomPort(clientPortAddress);
-

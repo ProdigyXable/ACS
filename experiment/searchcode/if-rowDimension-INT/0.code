@@ -1,7 +1,0 @@
-class MatrixVariable extends Variable {
-private final int rowDimension;
-private final int columnDimension;
-
-MatrixVariable(int id, int rowDimension, int columnDimension) {
-super(id, rowDimension * columnDimension);
-

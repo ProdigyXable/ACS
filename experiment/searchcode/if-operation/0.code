@@ -1,7 +1,0 @@
-@Override
-public void operationChanged(IUndoableOperation operation) {
-if (undoList.contains(operation) || redoList.contains(operation)) {
-notifyChanged(operation);
-}
-}
-

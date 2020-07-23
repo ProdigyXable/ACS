@@ -1,7 +1,0 @@
-public class IntegerToBooleanSVAdapter extends DmcTypeIntegerToBooleanSV implements DmcAdapterIF {
-
-transient DmcTypeIntegerToBooleanSV existingValue;
-public void setExisting(DmcAttribute<?> attr) {
-existingValue = (DmcTypeIntegerToBooleanSV) attr;
-if (existingValue != null)
-

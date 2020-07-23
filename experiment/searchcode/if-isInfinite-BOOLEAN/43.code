@@ -1,9 +1,0 @@
-return true;
-}
-if (Double.isInfinite(value1) &amp;&amp; Double.isInfinite(value2)) {
-return true;
-if (!Double.isInfinite(value1) &amp;&amp; Double.isInfinite(value2)) {
-return false;
-}
-if (Double.isInfinite(value1) &amp;&amp; !Double.isInfinite(value2)) {
-

@@ -1,6 +1,0 @@
-public ConcurrentSkipListMap<String, Double> factorStringMap = new ConcurrentSkipListMap<String, Double>();
-
-public void putIfMax(String key, double value) {
-if (factorStringMap.containsKey(key)) {
-double existingValue = factorStringMap.get(key);
-

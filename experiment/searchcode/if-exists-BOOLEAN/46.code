@@ -1,9 +1,0 @@
-public void create(T e, boolean ignoreIfExists);
-
-public void update(T e);
-
-public void delete(T e, boolean ignoreIfNotExists);
-
-public List<T> fetch(T e, boolean byId);
-}
-

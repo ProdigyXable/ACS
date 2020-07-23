@@ -1,9 +1,0 @@
-* @param prefixSave prefixe of save file
-*
-* @throws IOException if error
-*/
-void load(String cfgFile, String prefixSave)
-* @throws IOException if error
-*/
-void load(FileAbstractByte cfgFile, String prefixSave)
-

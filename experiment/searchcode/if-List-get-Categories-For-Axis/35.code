@@ -1,7 +1,0 @@
-final List<Text> categoriesAxisTitles = getXYChart().getCategoriesAxisTitle();
-final List<Text> valuesAxisTitles = getXYChart().getValuesAxisTitle();
-clearValues(chartWidth, chartHeight);
-
-// Create axis titles&#39; animations.
-if (!getXYChart().getCategoriesAxisTitle().isEmpty()) add((Node<?>) getXYChart().getCategoriesAxisTitle().get(0), buildAnimationProperties(null, null, 0d, 0d));
-

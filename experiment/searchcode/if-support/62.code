@@ -1,5 +1,0 @@
-public static ServiceSupport getServiceSupport(Class classz) throws Exception{
-if(AppServiceSupportUtils.serviceSupport == null){
-synchronized (AppJsonUtils.class){
-if(AppServiceSupportUtils.serviceSupport ==null) {
-

@@ -1,9 +1,0 @@
-// the original file format only leaves us room
-// for an int.
-// TODO: Fix in file format rewrite
-if(YInt.readInt(bytes) != ((int)_opentime) ){
-if(lockFile()){
-YapWriter bytes = openTimeIO();
-bytes.read();
-if(YLong.readLong(bytes) != _opentime){
-

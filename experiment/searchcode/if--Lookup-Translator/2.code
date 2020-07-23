@@ -1,9 +1,0 @@
-import com.mongodb.DBObject;
-
-
-public class LookupRefTranslator implements ModelTranslator<LookupRef> {
-
-@Override
-public DBObject toDBObject(DBObject dbObject, LookupRef model) {
-if (dbObject == null) {
-

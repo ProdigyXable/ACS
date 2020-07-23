@@ -1,6 +1,0 @@
-public int getOrientation() {
-if(defaultOrientation == 1) {
-//Portrait (native)
-int quadrant = getQuadrantNumber(angle);
-int quadrant = getQuadrantNumber(angle);
-

@@ -1,9 +1,0 @@
-public Locale locale() {
-return locale;
-}
-
-@Override public String toString() {
-String result = locale.toString();
-if (locale.equals(Locale.getDefault())) {
-result += &quot; (default)&quot;;
-

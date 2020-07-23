@@ -1,9 +1,0 @@
-if (incr) {
-for (long i = min;; i += delta) {
-
-boolean expectCached = false;
-for (long i = max;; i -= delta) {
-
-boolean expectCached = false;
-if (cache != 0) {
-

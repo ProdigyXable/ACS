@@ -1,5 +1,0 @@
-public ClassOrInterfaceTypeDetailsBuilder(final String declaredbyMetadataId) {
-super(declaredbyMetadataId);
-public ClassOrInterfaceTypeDetailsBuilder(final String declaredbyMetadataId,
-final ClassOrInterfaceTypeDetails existing) {
-

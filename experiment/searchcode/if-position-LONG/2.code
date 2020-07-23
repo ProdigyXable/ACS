@@ -1,9 +1,0 @@
-public class ChunkProxy extends Chunk {
-private long startPosition = 0;
-private long endPosition = 0;
-public void setEndPosition(long position) {
-endPosition = position;
-
-if(chunk != null) {
-if(endPosition > chunk.getEndPosition()) {
-

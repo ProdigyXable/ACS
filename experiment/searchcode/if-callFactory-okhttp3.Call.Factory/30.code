@@ -1,5 +1,0 @@
-public RestServiceFactory provideRestServiceFactory(Call.Factory callFactory) {
-return new RestServiceFactory.Impl(callFactory);
-public UserServices provideUserServices(Call.Factory callFactory) {
-return new UserServicesClient(callFactory);
-

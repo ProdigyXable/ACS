@@ -1,7 +1,0 @@
-private final boolean allowEmpty;
-
-public DateTimeEditor(List<SimpleDateFormat> dateFormat, boolean allowEmpty) {
-public DateTimeEditor(List<SimpleDateFormat> dateFormat,
-boolean allowEmpty, int exactDateLength) {
-this.formats = dateFormat;
-

@@ -1,9 +1,0 @@
-private String subject;
-private boolean shouldFail = false;
-
-public GrouperUpdateMembershipRequestStep(String group, String subject, String endpoint) {
-public GrouperUpdateMembershipRequestStep(String group, String subject, boolean shouldFail, String endpoint) {
-super();
-
-this.endpoint = endpoint;
-

@@ -1,9 +1,0 @@
-public void setCurrentValuesGivenZeroToOnes(double[] zeroToOnes)
-{
-if (zeroToOnes.length != parametersToOptimize.size())
-public double[] getCurrentValuesAsZeroToOnes()
-{
-double[] ret = new double[parametersToOptimize.size()];
-
-for (int i=0; i<parametersToOptimize.size(); i++)
-

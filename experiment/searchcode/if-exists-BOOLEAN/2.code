@@ -1,9 +1,0 @@
-boolean a = false;
-boolean aExists;
-boolean b = false;
-boolean bExists;
-boolean c = false;
-boolean cExists;
-boolean d = false;
-boolean dExists;
-

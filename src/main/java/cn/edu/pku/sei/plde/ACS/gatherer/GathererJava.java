@@ -1,5 +1,10 @@
 package cn.edu.pku.sei.plde.ACS.gatherer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
@@ -10,14 +15,8 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.SocketTimeoutException;
-import java.util.ArrayList;
-
 public class GathererJava {
+
     private static final int API_PAGE_NUM = 2;
     private static final int API_PER_PAGE = 100;
     private static final int API_CODE_LANGUAGE = 23;// java
@@ -59,7 +58,7 @@ public class GathererJava {
 
             try {
                 codeUrlList.addAll(getCodeUrlList(url));
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
@@ -81,8 +80,9 @@ public class GathererJava {
         BufferedReader br = null;
         try {
             int statusCode = httpClient.executeMethod(getMethod);
-            if (statusCode != HttpStatus.SC_OK)
+            if (statusCode != HttpStatus.SC_OK) {
                 System.err.println("Method failed: " + getMethod.getStatusLine());
+            }
             bodyIs = getMethod.getResponseBodyAsStream();
             br = new BufferedReader(
                     new InputStreamReader(bodyIs));
@@ -100,19 +100,18 @@ public class GathererJava {
         } catch (IOException e) {
             e.printStackTrace();
             return null;
-        }
-        finally {
+        } finally {
             getMethod.releaseConnection();
-            if (bodyIs != null){
+            if (bodyIs != null) {
                 try {
                     bodyIs.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                 }
             }
-            if (br != null){
+            if (br != null) {
                 try {
                     br.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                 }
             }
 
@@ -128,7 +127,7 @@ public class GathererJava {
             for (int i = 0; i < jsonArray.size(); i++) {
                 String repo = jsonArray.getJSONObject(i).getString("repo");
                 System.out.println("repo " + repo);
-                if(repo.contains(project)){
+                if (repo.contains(project)) {
                     continue;
                 }
                 String id = jsonArray.getJSONObject(i).getString("id");
@@ -136,7 +135,7 @@ public class GathererJava {
                 System.out.println("result : " + codeUrl);
                 codeUrlList.add(codeUrl);
             }
-        } catch (JSONException e){
+        } catch (JSONException e) {
         }
         return codeUrlList;
     }

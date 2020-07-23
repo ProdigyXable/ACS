@@ -1,5 +1,0 @@
-ParameterizedType toParameterizedType = expectArgument(ParameterizedType.class, to);
-if (!fromParameterizedType.getRawType().equals(toParameterizedType.getRawType())) {
-Type[] toArgs = toParameterizedType.getActualTypeArguments();
-if (fromArgs.length != toArgs.length) {
-

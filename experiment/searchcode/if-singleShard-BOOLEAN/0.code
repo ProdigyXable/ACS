@@ -1,8 +1,0 @@
-singleShard = orderedDocCollectors.size() == 1;
-
-boolean needsRepeat = rowReceiver.requirements().contains(Requirement.REPEAT);
-if (singleShard) {
-flatProjectorChain.prepare();
-if (singleShard) {
-runWithoutThreads(orderedDocCollectors.get(0));
-

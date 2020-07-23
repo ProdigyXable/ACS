@@ -1,7 +1,0 @@
-public void updateSettingBySettingDto(SettingDto settingDto) throws AppException {
-Setting setting = settingDao.get(settingDto.getSettingId());
-if (settingDto.getName() != null) {
-setting.setName(settingDto.getName());
-}
-if (settingDto.getDescription() != null) {
-

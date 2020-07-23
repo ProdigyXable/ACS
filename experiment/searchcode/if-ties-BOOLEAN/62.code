@@ -1,9 +1,0 @@
-* @return true if wins > losses, false if losses > wins, coin flip otherwise
-*/
-public boolean isWin( Random rand ) {
-boolean result = false;
-if ( wins > losses )
-result = true;
-else if ( wins < losses )
-result = false;
-

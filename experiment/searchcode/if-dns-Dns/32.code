@@ -1,8 +1,0 @@
-DnsConfig hostNode = (DnsConfig) baseVoList.get(j);
-if (node.getId() == hostNode.getId()) {
-flag = true;
-dns.setType(&quot;dns&quot;);
-
-Node node = PollingEngine.getInstance().getDnsByID(dns.getId());
-if (node != null) {
-

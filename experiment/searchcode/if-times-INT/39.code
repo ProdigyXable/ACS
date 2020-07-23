@@ -1,7 +1,0 @@
-public class RemainingTelChangeTimesCalculator {
-private boolean infiniteTimes = false;
-private int totalTimes = 0;
-public RemainingTelChangeTimesCalculator(int userId) {
-if (userId <= 0) {
-infiniteTimes = true;
-

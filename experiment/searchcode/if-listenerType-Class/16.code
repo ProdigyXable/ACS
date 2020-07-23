@@ -1,8 +1,0 @@
-public abstract class Eventsender<ListenerType extends EventListener, EventType extends DefaultEvent> {
-this.weakListener = newWeakListener;
-}
-}
-
-public boolean containsListener(final ListenerType t) {
-if (t == null) { return false; }
-

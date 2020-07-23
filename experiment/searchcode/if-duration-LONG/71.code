@@ -1,5 +1,0 @@
-public void setMaxDurationIfLonger(Long maxDurationIfLonger) {
-if (maxDuration == null || maxDuration < maxDurationIfLonger) {
-public void setMinDurationIfShorter(Long minDurationIfShorter) {
-if (minDuration == null || minDuration > minDurationIfShorter) {
-

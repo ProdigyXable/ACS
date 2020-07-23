@@ -1,8 +1,0 @@
-private Histogram.Order order;
-private Long minDocCount;
-private Long extendedBoundsMin;
-private Long extendedBoundsMax;
-public HistogramBuilder minDocCount(long minDocCount) {
-this.minDocCount = minDocCount;
-return this;
-

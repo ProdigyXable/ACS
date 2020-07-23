@@ -1,6 +1,0 @@
-protected String generateLabelString(final CategoryDataset categoryDataset, final int n, final int n2) {
-if (categoryDataset == null) {
-final Number value = categoryDataset.getValue(n, n2);
-if (value != null) {
-if (this.numberFormat != null) {
-

@@ -1,8 +1,0 @@
-private static ApiServer apiServer = null;
-
-private static Retrofit getRetrofit() {
-if (retrofit == null) {
-public static ApiServer getApiServer() {
-if (apiServer == null) {
-if (retrofit == null) {
-

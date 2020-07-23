@@ -1,8 +1,0 @@
-while (true)
-{
-State localState = (State)localAtomicReference.get();
-if (localState.isUnsubscribed)
-State localState = (State)localAtomicReference.get();
-if (localState.isUnsubscribed);
-while (true)
-

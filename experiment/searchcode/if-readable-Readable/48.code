@@ -1,6 +1,0 @@
-public static JSONObject readableMapToJsonObject(@Nullable ReadableMap readableMap) throws JSONException {
-if (readableMap == null) {
-ReadableMapKeySetIterator iterator = readableMap.keySetIterator();
-if (!iterator.hasNextKey()) {
-return null;
-

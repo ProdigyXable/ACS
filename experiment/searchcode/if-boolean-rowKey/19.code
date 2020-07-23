@@ -1,7 +1,0 @@
-package com.appleframework.data.hbase.client.rowkey;
-
-import com.appleframework.data.hbase.client.RowKey;
-byte[] rowkeyBytes = prefixRowKey.toBytes();
-boolean isAllByteIsFF = true;
-for (byte b : rowkeyBytes) {
-

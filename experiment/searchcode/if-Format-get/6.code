@@ -1,8 +1,0 @@
-this.setType(other.getType());
-}
-if (this.getViewFormat() == null)
-{
-this.setViewFormat(other.viewFormat);
-}
-if (this.getFileAddedFormat() == null)
-

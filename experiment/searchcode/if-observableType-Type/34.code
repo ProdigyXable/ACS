@@ -1,6 +1,0 @@
-Class<?> rawObservableType = getRawType(observableType);
-if (rawObservableType == Response.class) {
-if (!(observableType instanceof ParameterizedType)) {
-responseType = getParameterUpperBound(0, (ParameterizedType) observableType);
-} else if (rawObservableType == Result.class) {
-

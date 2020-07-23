@@ -1,8 +1,0 @@
-V valueA = mapEntry.getValue();
-if (!mapB.containsKey(mapEntry.getKey())){
-return false;
-}
-V valueB = mapB.get(mapEntry.getKey());
-
-if(null == valueA &amp;&amp; null == valueB){
-

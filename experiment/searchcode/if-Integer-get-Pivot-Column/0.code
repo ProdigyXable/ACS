@@ -1,8 +1,0 @@
-return -1;
-}
-Integer pivotColumn = getPivotColumn2();
-if (pivotColumn == -1) {
-return pivotColumn;
-}
-Integer pivotRow = getPivotRow(pivotColumn);
-

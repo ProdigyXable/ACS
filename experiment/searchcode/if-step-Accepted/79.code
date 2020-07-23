@@ -1,7 +1,0 @@
-public void addMove(LocalSearchMoveScope moveScope) {
-boolean accepted = moveScope.getAccepted();
-if (finalistIsAccepted &amp;&amp; !accepted) {
-return;
-}
-if (accepted &amp;&amp; !finalistIsAccepted) {
-

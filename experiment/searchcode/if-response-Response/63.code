@@ -1,9 +1,0 @@
-package supplies;
-
-import resources.ResponseData;
-import resources.resource_system.ResourceFactory;
-private static ResponseData responseData = null;
-
-private static void instantiateResponseData() {
-if (responseData == null) {
-

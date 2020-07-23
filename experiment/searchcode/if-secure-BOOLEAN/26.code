@@ -1,9 +1,0 @@
-return methodFilterAttribute != null;
-}
-
-public boolean isMethodSecureAttributeDefined() {
-return methodSecureAttribute != null;
-}
-
-public boolean isAnyParameterSecureAttributeDefined() {
-

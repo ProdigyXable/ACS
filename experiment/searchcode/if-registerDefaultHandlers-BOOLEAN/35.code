@@ -1,5 +1,0 @@
-protected RestGetIndexedScriptAction(Settings settings, RestController controller, boolean registerDefaultHandlers, Client client) {
-super(settings, controller, client);
-if (registerDefaultHandlers) {
-controller.registerHandler(GET, &quot;/_scripts/{lang}/{id}&quot;, this);
-

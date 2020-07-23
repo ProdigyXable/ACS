@@ -5,15 +5,15 @@ import cn.edu.pku.sei.plde.ACS.jdtVisitor.MethodCollectVisitor;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.utils.JDTUtils;
 import cn.edu.pku.sei.plde.ACS.visible.model.MethodInfo;
-import org.eclipse.jdt.core.dom.ASTNode;
-import org.eclipse.jdt.core.dom.ASTParser;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.ASTParser;
 
 public class MethodCollect {
+
     private static MethodCollect instance;
     private static LinkedHashMap<String, ArrayList<MethodInfo>> methodsInClassMap;
     public String projectPath;
@@ -27,8 +27,7 @@ public class MethodCollect {
             synchronized (MethodCollect.class) {
                 instance = new MethodCollect(projectPath);
             }
-        }
-        else if (!projectPath.equals(instance.projectPath)) {
+        } else if (!projectPath.equals(instance.projectPath)) {
             synchronized (VariableCollect.class) {
                 instance = new MethodCollect(projectPath);
             }
@@ -36,7 +35,6 @@ public class MethodCollect {
         instance.projectPath = projectPath;
         return instance;
     }
-
 
     public static void getAllVisibleMethod(String projectPath) {
         methodsInClassMap = new LinkedHashMap<String, ArrayList<MethodInfo>>();
@@ -53,7 +51,7 @@ public class MethodCollect {
     }
 
     public static boolean checkIsStaticMethod(String sourcePath, String methodName) {
-        if (methodsInClassMap == null){
+        if (methodsInClassMap == null) {
             MethodCollect methodCollect = MethodCollect.GetInstance(sourcePath);
             methodCollect.getVisibleMethodWithoutParametersInAllClassMap(sourcePath);
         }
@@ -77,7 +75,7 @@ public class MethodCollect {
             String filePath = entry.getKey();
             ArrayList<MethodInfo> methodsInClassList = entry.getValue();
             for (Iterator<MethodInfo> it = methodsInClassList.iterator(); it
-                    .hasNext(); ) {
+                    .hasNext();) {
                 MethodInfo methodInfo = it.next();
                 if (methodInfo.hasParameter || (methodInfo.otherType != null && methodInfo.otherType.equals("void"))) {
                     it.remove();

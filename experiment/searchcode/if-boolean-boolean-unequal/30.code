@@ -1,9 +1,0 @@
-return UNEQUAL;
-}
-
-private static boolean customComparison(int[] input1,int[] input2)
-private static boolean isNegativePresent(int[] input)
-{
-for(int i : input)
-if(i<0)
-

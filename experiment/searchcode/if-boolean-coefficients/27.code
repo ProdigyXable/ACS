@@ -1,5 +1,0 @@
-public IOctagonCoefficients add(IOctagonCoefficients other) {
-if (other instanceof OctagonSimpleCoefficients) {
-return add((OctagonSimpleCoefficients)other);
-} else if (other instanceof OctagonIntervalCoefficients) {
-

@@ -1,9 +1,0 @@
-private Failure failure;
-private boolean assumptionFailure = true;
-private boolean success = true;
-private boolean ignored = false;
-if (!success)
-{
-json.put(&quot;assumptionFailure&quot;,assumptionFailure);
-if (failure != null)
-

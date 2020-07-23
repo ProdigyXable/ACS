@@ -1,4 +1,0 @@
-private static String testRequestCommonPropertiesRunId = LocalStringsUtils.generateRandomId(false);
-private static String testPageNotFoundResponseCodeRunId = LocalStringsUtils.generateRandomId(false);
-private static String testRequestCorrelationRunId = LocalStringsUtils.generateRandomId(false);
-

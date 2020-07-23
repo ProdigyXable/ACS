@@ -1,6 +1,0 @@
-package com.amalto.core.server.routing;
-
-import com.amalto.core.objects.routing.RoutingRulePOJO;
-for (String routingRulePOJOPK : pkList) {
-if (routingRulePOJOPK.matches(regex)) {
-

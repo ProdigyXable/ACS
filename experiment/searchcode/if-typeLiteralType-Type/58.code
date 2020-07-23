@@ -1,9 +1,0 @@
-Set<GenericBinding> results = new HashSet<GenericBinding>();
-
-private void locateParams(Type t, String label) {
-
-if(t.isSimpleType()){
-SimpleType st = (SimpleType)t;
-IBinding b = st.getName().resolveBinding();
-if(b instanceof ITypeBinding &amp;&amp; ((ITypeBinding)b).isTypeVariable()){
-

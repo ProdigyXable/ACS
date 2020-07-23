@@ -1,6 +1,0 @@
-public static PrimaryStageHolder getInstance(){
-if(stageHolder==null){
-synchronized (PrimaryStageHolder.class){
-if (stageHolder == null) {
-stageHolder = new PrimaryStageHolder();
-

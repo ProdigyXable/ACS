@@ -1,7 +1,0 @@
-String[] shortWeekDays = new DateFormatSymbols().getShortWeekdays();
-String[] longWeekDays  = new DateFormatSymbols().getWeekdays();
-shortWeekDays[Calendar.SUNDAY]
-};
-String[] arrayOfLongWeekdays = new String[] {
-longWeekDays[Calendar.MONDAY],
-

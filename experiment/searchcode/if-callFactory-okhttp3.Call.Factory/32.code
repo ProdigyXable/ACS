@@ -1,6 +1,0 @@
-@Override public synchronized Request request() {
-okhttp3.Call call = rawCall;
-if (call != null) {
-Request request = serviceMethod.toRequest(args);
-okhttp3.Call call = serviceMethod.callFactory.newCall(request);
-

@@ -1,8 +1,0 @@
-accountStatus.returnContext(account.getContext());
-
-LinkedList<RemoteAccountTask<?>> backlogs = pickyBacklog.get(accountId);
-if (backlogs != null) {
-if (tryBacklog(backlogs)) {
-if (backlogs.isEmpty()) {
-pickyBacklog.remove(accountId);
-

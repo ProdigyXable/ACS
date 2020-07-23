@@ -1,6 +1,0 @@
-ClusterStateHealth maybeSerialize(ClusterStateHealth clusterStateHealth) throws IOException {
-if (randomBoolean()) {
-BytesStreamOutput out = new BytesStreamOutput();
-private List<ClusterState> simulateClusterRecoveryStates(final String indexName,
-final boolean withPreviousAllocationIds,
-

@@ -1,8 +1,0 @@
-for (Pattern scriptPattern : patterns) {
-if (scriptPattern.matcher(str).matches()) {
-hasscript++;
-}
-}
-if (hasscript > 0) {
-System.out.println(&quot;script:&quot; + hasscript);
-

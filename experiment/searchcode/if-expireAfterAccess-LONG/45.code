@@ -1,5 +1,0 @@
-.maximumSize(1000000).expireAfterAccess(1, TimeUnit.HOURS).build();
-private Cache<String, AtomicLong> userDayCache = CacheBuilder.newBuilder()
-public void updateCount(Cache<String, AtomicLong> cache, String key) {
-AtomicLong uHits = cache.getIfPresent(key);
-

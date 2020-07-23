@@ -1,7 +1,0 @@
-private final int dimensionSize;
-private Tokenizer tokenizer;
-private WordWeighting weighting;
-public HashedTextDataLoader(int dimensionSize, Tokenizer tokenizer, WordWeighting weighting)
-{
-this.dimensionSize = dimensionSize;
-

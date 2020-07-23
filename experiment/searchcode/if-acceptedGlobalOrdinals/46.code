@@ -1,7 +1,0 @@
-long ord = globalOrdinals.lookupTerm(term);
-if (ord >= 0) {
-acceptedGlobalOrdinals.set(ord);
-}
-}
-} else if (acceptedGlobalOrdinals.length() > 0) {
-

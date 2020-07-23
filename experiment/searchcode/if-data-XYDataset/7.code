@@ -1,8 +1,0 @@
-import org.jfree.data.time.TimeTableXYDataset;
-import org.jfree.data.xy.XYDataset;
-
-import java.util.Collection;
-protected XYDataset createXYDataset(Collection<Comparable<?>> rowKeys) {
-DataModule dataModule = this.getDataModule();
-TimeTableXYDataset timeTableXYDataset = new TimeTableXYDataset();
-

@@ -1,5 +1,0 @@
-// add parenthese around every variable
-for(int i = 0; i < symbols.size(); i++){
-if(!symbols.get(i).matches(&quot;[/|^|*|+|[-]|(|)]&quot;)) { // if not an operator
-symbols.add(i, &quot;(&quot;);
-

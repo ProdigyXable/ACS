@@ -1,9 +1,0 @@
-return new Sum(new Product(mLhs.diff(x), mRhs), new Product(mLhs, mRhs.diff(x)));
-}
-public Boolean equals(Expr rhs) {
-if (!(rhs instanceof Product)) {
-return false;
-}
-Product r = (Product) rhs;
-if(!mLhs.equals(r.mLhs)) {
-

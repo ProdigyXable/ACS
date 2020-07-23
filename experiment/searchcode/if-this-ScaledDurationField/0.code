@@ -1,9 +1,0 @@
-return getWrappedField().add(j, FieldUtils.safeMultiply(j2, this.iScalar));
-}
-
-public boolean equals(Object obj) {
-if (this == obj) {
-return true;
-}
-if (!(obj instanceof ScaledDurationField)) {
-

@@ -1,9 +1,0 @@
-import jepperscore.dao.model.Round;
-
-/**
-* This interface tracks the current round across all scraping methods (Log file,
-Round provideRoundRecord(@Nonnull Round round);
-
-/**
-* Provides the latest round record, null if none has been provided.
-

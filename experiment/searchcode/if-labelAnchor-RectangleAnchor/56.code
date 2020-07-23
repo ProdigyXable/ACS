@@ -1,5 +1,0 @@
-public CategoryLabelPosition(RectangleAnchor categoryAnchor,
-TextBlockAnchor labelAnchor) {
-public CategoryLabelPosition(RectangleAnchor categoryAnchor,
-TextBlockAnchor labelAnchor, CategoryLabelWidthType widthType,
-

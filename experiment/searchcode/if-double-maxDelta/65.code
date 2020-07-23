@@ -1,8 +1,0 @@
-public SensorValueAdapter(final double maxDelta, final double minWeight) {
-mMaxDelta = maxDelta;
-mMinWeight = minWeight;
-}
-
-public void put(final double value) {
-if (mMean == null) {
-

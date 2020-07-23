@@ -1,9 +1,0 @@
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
-public Class<TransportClient> getObjectType() {
-return TransportClient.class;
-}
-
-@Override
-public boolean isSingleton() {
-

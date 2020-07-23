@@ -1,8 +1,0 @@
-private boolean[] wasHit;
-private boolean isVertical;
-private Cell[] cellsOccupied;
-
-public Ship(BattleshipUtils.ShipSpecs specs, boolean isVertical) {
-this.specs = specs;
-this.isVertical = isVertical;
-

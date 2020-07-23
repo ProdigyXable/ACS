@@ -1,7 +1,0 @@
-public boolean contains(Object method) {
-if (method instanceof Method) {
-Method aMethod = (Method) method;
-Method otherMethod = this.get(i);
-if (areMethodsEqual(aMethod, otherMethod)) {
-return true;
-

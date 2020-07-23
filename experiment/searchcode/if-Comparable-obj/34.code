@@ -1,9 +1,0 @@
-public int compareTo(Object another)
-{
-if (another instanceof ComparableObject)
-{
-ComparableObject obj = (ComparableObject) another;
-if (this.i > obj.i)
-{
-return 1;
-

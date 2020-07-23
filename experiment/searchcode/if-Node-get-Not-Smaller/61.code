@@ -1,9 +1,0 @@
-* @param value The value for which to search.
-* @return The node; or <code>null</code> if not found.
-Node node = search(value);
-if (node == null) {
-return null;
-}
-
-Node deleted = node.getSmaller() != null &amp;&amp; node.getLarger() != null ? node.successor() : node;
-

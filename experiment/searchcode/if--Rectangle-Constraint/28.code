@@ -1,6 +1,0 @@
-final LengthConstraintType heightConstraintType = rectangleConstraint.getHeightConstraintType();
-if (widthConstraintType == LengthConstraintType.NONE) {
-return this.arrangeNF(blockContainer, graphics2D, rectangleConstraint);
-}
-if (heightConstraintType == LengthConstraintType.RANGE) {
-

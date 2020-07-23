@@ -1,8 +1,0 @@
-import org.fao.fi.pivot.model.ColumnField;
-import org.fao.fi.pivot.model.PivotTable;
-import org.fao.fi.pivot.model.Row;
-pt.setFactConceptName(FACT_CONCEPT_NAME);
-
-int rowFieldIndex = 1;
-pt.getColumnSection().setConceptName(COLUMN_DIMENSION_NAME);
-

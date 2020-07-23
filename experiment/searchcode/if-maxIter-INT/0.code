@@ -1,9 +1,0 @@
-public class IterHeightStrategy implements HeightStrategy<Integer> {
-
-private final int maxHeight;
-private int maxiter;
-private double factor;
-
-public IterHeightStrategy(int maxHeight, int maxiter) {
-this.maxHeight = maxHeight;
-

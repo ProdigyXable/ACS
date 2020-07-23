@@ -1,8 +1,0 @@
-Toolbar toolbar;
-@Bind(R.id.recyclerView)
-RecyclerView recyclerView;
-@Bind(R.id.plusList)
-FloatingActionButton plusList;
-@Bind(R.id.main_list_content)
-CoordinatorLayout mainListContent;
-

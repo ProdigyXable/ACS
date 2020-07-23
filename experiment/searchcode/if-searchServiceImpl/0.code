@@ -1,6 +1,0 @@
-public class SearchServiceImpl extends IntentService implements SearchService {
-private static SearchServiceImpl service = null;
-
-public static SearchServiceImpl getInstance() {
-if (service == null)
-

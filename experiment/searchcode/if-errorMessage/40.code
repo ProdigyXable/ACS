@@ -1,9 +1,0 @@
-public static String getRootErrorMessage(Exception e) {
-String errorMessage = &quot;Erro&quot;;
-if (e == null) {
-return errorMessage;
-}
-Throwable t = e;
-while (t != null) {
-errorMessage = t.getLocalizedMessage();
-

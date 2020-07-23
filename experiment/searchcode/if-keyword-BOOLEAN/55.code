@@ -1,9 +1,0 @@
-@Override
-public String toString() { return  keyword; }
-
-@Override
-public boolean equals(Object o) {
-if(!(o instanceof Keyword))
-return false;
-return keyword.equals(((Keyword) o).keyword);
-

@@ -1,8 +1,0 @@
-for (TimeRange range : values()) {
-if (range.toString().equals(rangeStr)) {
-return range;
-private HashMap<TimeRange, StatisticsSet> statistics = new HashMap<>();
-
-public void add(StatisticsSet set) {
-statistics.put(set.getRange(), set);
-

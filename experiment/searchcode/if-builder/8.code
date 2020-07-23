@@ -1,8 +1,0 @@
-_builder_1.append(&quot;if (o instanceof Integer) {&quot;);
-_builder_1.newLine();
-_builder_1.append(&quot;      &quot;);
-_builder_1.append(&quot;    &quot;);
-_builder_1.append(&quot;} else if (o instanceof Number) {&quot;);
-_builder_1.newLine();
-_builder_1.append(&quot;      &quot;);
-

@@ -1,6 +1,0 @@
-private LeastSquaresOptimizer leastSquaresOptimizer;
-private LeastSquaresProblem leastSquaresProblem;
-protected int maximumEvaluations;
-protected int maximumIterations;
-protected int numberOfParameters;
-

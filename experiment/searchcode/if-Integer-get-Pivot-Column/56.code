@@ -1,9 +1,0 @@
-setParameters(dataSetConfig.getParameters());
-
-setTransformerId(dataSetConfig.getTransformerId());
-setPivotColumnName(dataSetConfig.getPivotColumnName());
-setDsMetadata(dataSetConfig.getDsMetadata());
-
-if(this.getPivotColumnName() != null
-&amp;&amp; this.getPivotColumnValue() != null
-

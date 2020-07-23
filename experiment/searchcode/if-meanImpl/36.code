@@ -1,9 +1,0 @@
-if (meanImpl != mean) {
-meanImpl.increment(value);
-}
-if (varianceImpl != variance) {
-sumsqImpl.clear();
-geoMeanImpl.clear();
-secondMoment.clear();
-if (meanImpl != mean) {
-

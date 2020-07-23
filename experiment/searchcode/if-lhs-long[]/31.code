@@ -1,7 +1,0 @@
-public class DateComparator implements Comparator<Todo> {
-
-@Override
-public int compare(Todo lhs, Todo rhs) {
-long now = Calendar.getInstance().getTimeInMillis();
-long lhsTime = lhs.getDoneUntil().getTimeInMillis() - now;
-

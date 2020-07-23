@@ -1,8 +1,0 @@
-public class AttributeFilter implements KeyValueFilter<String, Tuple>, Serializable {
-String columnValue;
-String columnKey;
-
-public AttributeFilter(String columnKey, String columnValue) {
-this.columnKey = columnKey;
-this.columnValue = columnValue;
-

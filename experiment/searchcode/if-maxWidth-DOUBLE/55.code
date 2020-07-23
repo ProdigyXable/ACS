@@ -1,8 +1,0 @@
-return measureDialog(display.getWidth(), display.getHeight(), baseRate, hwRate);
-}
-
-public static LayoutParams measureDialog(int maxWidth, int maxHeight, double baseRate, double hwRate){
-int width = -1, height = -1;
-if(maxWidth > maxHeight){
-width = (int) (maxWidth * baseRate);
-

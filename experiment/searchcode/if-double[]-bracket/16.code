@@ -1,5 +1,0 @@
-(bracket.getOtherPoint() != null) &amp;&amp;
-(!Double.isInfinite(bracket.getLowerBound().getOutput())) &amp;&amp;
-(!Double.isInfinite(bracket.getUpperBound().getOutput())) &amp;&amp;
-(!Double.isInfinite(bracket.getOtherPoint().getOutput()));
-

@@ -1,6 +1,0 @@
-resultTransport.setEnergySource(inPojo.getEnergySource());
-
-if (resultTransport instanceof PassengerTransport) {
-((PassengerTransport) resultTransport).setPassengersCount(inPojo.getPassengersCount());
-if (resultTransport instanceof PassengerCar) {
-

@@ -1,8 +1,0 @@
-final WelcomeInterface wi = new WelcomeInterface();
-wi.show();
-Runtime.getRuntime().addShutdownHook(new Thread()
-System.out.println(&quot;Trying to logout....&quot;);
-boolean done = Connection.logout(wi.ui.userName);
-if(done){
-System.out.println(&quot;Logged out.&quot;);
-

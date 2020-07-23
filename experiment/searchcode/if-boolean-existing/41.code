@@ -1,5 +1,0 @@
-public interface ISessionManager {
-ISession getCurrentSession(boolean createIfNotExisting);
-void destroySession(ISession session);
-}
-

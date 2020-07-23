@@ -1,9 +1,0 @@
-public void writeBit(boolean bit) throws IOException {
-if(bitPosition < 0) {
-flush();
-public void flush() throws IOException {
-if(bitPosition < 7) {
-outputStream.write(currentByte);
-
-currentByte = 0;
-

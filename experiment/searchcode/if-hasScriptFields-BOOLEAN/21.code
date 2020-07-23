@@ -1,9 +1,0 @@
-return parseElements.build();
-}
-
-@Override public boolean executionNeeded(SearchContext context) {
-return context.hasScriptFields();
-value = scriptField.script().unwrap(value);
-} catch (RuntimeException e) {
-if (scriptField.ignoreException()) {
-

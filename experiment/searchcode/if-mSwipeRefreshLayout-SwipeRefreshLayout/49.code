@@ -1,8 +1,0 @@
-void trySetupSwipeRefresh() {
-if (mSwipeRefreshLayout != null) {
-mSwipeRefreshLayout.setColorSchemeResources(
-if (mSwipeRefreshLayout == null) {
-return;
-}
-if (!refreshing) {
-

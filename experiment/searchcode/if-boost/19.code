@@ -1,7 +1,0 @@
-public abstract SearchBoostDataProvider newDataProvider();
-
-public void addButtonClicked(SearchBoostVO searchBoostVO, String value) {
-if (!validate(searchBoostVO, value)) {
-public void editButtonClicked(SearchBoostVO searchBoostVO, String value, SearchBoostVO oldSearchBoostVO) {
-if (!validate(searchBoostVO, value)) {
-

@@ -1,8 +1,0 @@
-this(new BorderArrangement());
-}
-
-public BlockContainer(final Arrangement arrangement) {
-if (arrangement == null) {
-public void setArrangement(final Arrangement arrangement) {
-if (arrangement == null) {
-

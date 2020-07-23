@@ -1,7 +1,0 @@
-public void setFilterProvider( FilterProvider filterProvider ) {
-mFilterProvider = filterProvider;
-if ( null != mFilterListener ) {
-mFilterProvider.setFilterListener( mFilterListener );
-
-if ( null != mFilterSet ) {
-

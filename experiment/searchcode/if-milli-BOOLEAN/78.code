@@ -1,9 +1,0 @@
-milli_duration = units.toMillis(duration);
-next_expiration_milli = System.currentTimeMillis() + milli_duration;
-}
-
-public boolean expired()
-{
-final long now = System.currentTimeMillis();
-if (now >= next_expiration_milli)
-

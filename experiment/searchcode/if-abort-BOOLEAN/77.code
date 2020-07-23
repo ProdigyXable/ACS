@@ -1,6 +1,0 @@
-@RealObject BroadcastReceiver receiver;
-
-private AtomicBoolean abort; // The abort state of the currently processed broadcast
-public void onReceive(Context context, Intent intent) {
-if (abort == null || !abort.get()) {
-

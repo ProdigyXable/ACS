@@ -1,7 +1,0 @@
-return new HelloResponse(channelHandlerContext,httpRequest);
-}
-if (uri.matches(Consts.REDIRECT_REGEXP)) {
-return new RedirectResponse(channelHandlerContext,httpRequest);
-}
-if (uri.equals(Consts.STATUS)) {
-

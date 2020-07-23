@@ -1,8 +1,0 @@
-GET, POST, PUT, DELETE;
-
-public static HttpMethod fromHttpExchange(HttpExchange httpExchange) {
-String requestMethod = httpExchange.getRequestMethod();
-for (HttpMethod httpMethod : values()) {
-if (httpMethod.toString().equals(requestMethod)) {
-return httpMethod;
-

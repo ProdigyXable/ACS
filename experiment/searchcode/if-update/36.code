@@ -1,6 +1,0 @@
-} else if(Session.Habbo.rot == 1) {
-ServerMessage UserUpdate = new ServerMessage(Outconming.UserUpdate);
-UserUpdate.writeUTF(&quot;/flatctrl 4//&quot;);
-UserUpdate.Send(Session);
-} else if(Session.Habbo.rot == 2){
-

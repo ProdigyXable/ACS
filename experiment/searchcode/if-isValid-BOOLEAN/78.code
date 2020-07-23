@@ -1,9 +1,0 @@
-@SuppressWarnings({&quot;rawtypes&quot;, &quot;serial&quot;})
-public class MathValidator extends utilities.validation.Validator
-{
-public boolean isValid(Object o)
-{
-boolean isValid = false;
-
-if(o instanceof Set || o instanceof HashSet)
-

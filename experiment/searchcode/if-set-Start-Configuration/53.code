@@ -1,8 +1,0 @@
-public ConfigurationService(StreamManager streamManager) {
-super(&quot;ConfigurationService&quot;);
-if (streamManager != null) {
-this.monitorProducer = streamManager;
-StoreManager storeManager = streamManager.getStoreManager();
-if (storeManager != null) {
-this.configurationStore = streamManager.getStoreManager().getConfigurationStore();
-

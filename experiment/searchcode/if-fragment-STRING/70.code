@@ -1,8 +1,0 @@
-public FragmentTransaction beginTransaction() {
-return mManager.beginTransaction();
-}
-
-public Fragment findFragmentByTag(String tag) {
-public BaseFragmentManager remove(Fragment... fragments) {
-if (fragments != null &amp;&amp; fragments.length > 0) {
-

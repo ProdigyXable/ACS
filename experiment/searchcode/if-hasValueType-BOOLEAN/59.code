@@ -1,7 +1,0 @@
-private void read(StreamInput in) throws IOException {
-field = in.readOptionalString();
-if (in.readBoolean()) {
-script = new Script(in);
-}
-if (in.readBoolean()) {
-

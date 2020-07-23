@@ -1,9 +1,0 @@
-public int compareTo(Enumerated o) {
-return (int)(currentValue-o.currentValue);
-}
-
-@Override
-public boolean equals(Object obj) {
-if (obj instanceof Enumerated) {
-return currentValue == ((Enumerated) obj).getCurrentValue();
-

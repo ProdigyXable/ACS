@@ -1,9 +1,0 @@
-protected Object getRealObject(Class<?> returnType, String value) throws IllegalArgumentException {
-if (returnType == byte.class) {
-return Byte.parseByte(value);
-}
-if (returnType == Integer.class || returnType == int.class) {
-return Integer.parseInt(value);
-}
-if (returnType == String.class) {
-

@@ -1,9 +1,0 @@
-if (meanImpl != mean) {
-meanImpl.increment(value);
-}
-if (varianceImpl != variance) {
-varianceImpl.increment(value);
-}
-if (geoMeanImpl != geoMean) {
-geoMeanImpl.increment(value);
-

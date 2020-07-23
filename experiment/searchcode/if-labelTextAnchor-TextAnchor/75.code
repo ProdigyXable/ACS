@@ -1,7 +1,0 @@
-this.labelOffsetType = LengthAdjustmentType.CONTRACT;
-this.labelTextAnchor = TextAnchor.CENTER;
-if (this.labelAnchor != that.labelAnchor) {
-return false;
-}
-if (this.labelTextAnchor != that.labelTextAnchor) {
-

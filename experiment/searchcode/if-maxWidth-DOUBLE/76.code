@@ -1,6 +1,0 @@
-private List<Rectangle> rectangles;
-
-public RectangleRow(List<Rectangle> rectangleRow, double rowY, double maxWidth){
-private void packRectanglesWithoutSpace(List<Rectangle> rectangleRow, double rectangleY, double maxWidth){
-double rectangleX = 0;
-

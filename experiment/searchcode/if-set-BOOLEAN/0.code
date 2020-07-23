@@ -1,7 +1,0 @@
-public void setValue(Boolean value) {
-if (value == null) throw new IllegalArgumentException();
-this.setValue(value.booleanValue());
-}
-
-public void setValue(boolean bool) {
-

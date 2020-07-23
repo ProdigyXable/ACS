@@ -1,8 +1,0 @@
-ButterKnife.bind(this);
-trySetupSwipeRefresh();
-}
-void trySetupSwipeRefresh() {
-if (mSwipeRefreshLayout != null) {
-setScrollUpChild();
-mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-

@@ -1,7 +1,0 @@
-public static Fuzziness build(Object fuzziness) {
-if (fuzziness instanceof Fuzziness) {
-return (Fuzziness) fuzziness;
-}
-String string = fuzziness.toString();
-if (AUTO.asString().equalsIgnoreCase(string)) {
-

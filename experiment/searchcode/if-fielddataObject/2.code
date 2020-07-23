@@ -1,7 +1,0 @@
-for(Field fieldDataObject : fieldsDataObject){
-fieldDataObject.setAccessible(true);
-if(fieldModelo.getName().equals(fieldDataObject.getName())){
-for(Field fieldDataObject : fieldsDataObject){
-fieldDataObject.setAccessible(true);
-if(fieldDataObject.getName().equals(simpleClassNome)){
-

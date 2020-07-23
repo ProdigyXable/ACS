@@ -1,7 +1,0 @@
-private final int seriesCount;
-private final int itemCount;
-private String[] seriesKeys;
-public XYArrayDataset(int seriesNum, int itemNum) {
-this.seriesCount = seriesNum;
-this.itemCount = itemNum;
-

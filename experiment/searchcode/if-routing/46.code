@@ -1,8 +1,0 @@
-MessageRouting messageRouting = messageRoutingDao.findByThirdPartyName(thirdPartyName);
-
-if (messageRouting == null) {
-MessageRoutingDTO messageRoutingDTO = null;
-
-if (messageRouting != null) {
-messageRoutingDTO = new MessageRoutingDTO();
-

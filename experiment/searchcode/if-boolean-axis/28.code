@@ -1,8 +1,0 @@
-public class MouseAxisTrigger implements Trigger {
-
-private int mouseAxis;
-private boolean negative;
-
-public MouseAxisTrigger(int mouseAxis, boolean negative){
-if (mouseAxis < 0 || mouseAxis > 2)
-

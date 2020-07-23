@@ -1,7 +1,0 @@
-Set<ChildOrder> children = OrderUtils.getSortedOpenChildOrders(childOrders.values());
-ChildOrder prev = null;
-for(ChildOrder child: children) {
-if(prev == null) {
-for(ChildOrder child: children) {
-if(prev == null) {
-

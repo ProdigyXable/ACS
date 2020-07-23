@@ -1,9 +1,0 @@
-private QueryBuilder positiveQuery;
-
-private QueryBuilder negativeQuery;
-
-private float negativeBoost = -1;
-public BoostingQueryBuilder negativeBoost(float negativeBoost) {
-this.negativeBoost = negativeBoost;
-return this;
-

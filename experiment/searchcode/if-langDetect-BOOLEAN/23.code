@@ -1,7 +1,0 @@
-package upa;
-
-import java.sql.SQLException;
-import com.cybozu.labs.langdetect.Detector;
-import com.cybozu.labs.langdetect.DetectorFactory;
-import com.cybozu.labs.langdetect.LangDetectException;
-

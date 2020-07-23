@@ -1,6 +1,0 @@
-format.setVerticalAlignment(VerticalAlignment.CENTRE) ;
-}else if(valign.equals(&quot;top&quot;)){
-format.setVerticalAlignment(VerticalAlignment.TOP) ;
-}else if(valign.equals(&quot;bottom&quot;)){
-format.setVerticalAlignment(VerticalAlignment.BOTTOM) ;
-

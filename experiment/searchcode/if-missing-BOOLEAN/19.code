@@ -1,7 +1,0 @@
-public int missingReturn(boolean a, boolean b, boolean c, boolean d) {
-if (a) {
-if (b) {
-if (c) {
-if (d) {
-return 1;
-

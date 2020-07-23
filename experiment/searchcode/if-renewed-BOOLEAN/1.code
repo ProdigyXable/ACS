@@ -1,7 +1,0 @@
-public Subscription(boolean subscribable, int term, int cancellationPeriod, boolean autoRenewed) {
-this.subscribable = subscribable;
-this.term = term;
-* Flag indicating if the product subscription is auto renewed.
-*
-* @return boolean indicating if the product subscription is auto renewed
-

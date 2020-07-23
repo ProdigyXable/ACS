@@ -1,7 +1,0 @@
-public class UndoAvailability implements Observable.OnSubscribe<Boolean> {
-AtomicBoolean isUndoAvailable;
-Subscriber<? super Boolean> subscriber;
-
-UndoAvailability(boolean isUndoAvailable) {
-this.isUndoAvailable = new AtomicBoolean(isUndoAvailable);
-

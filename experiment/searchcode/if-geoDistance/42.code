@@ -1,8 +1,0 @@
-builder.field(&quot;unit&quot;, unit);
-}
-if (geoDistance != null) {
-builder.field(&quot;distance_type&quot;, geoDistance.name().toLowerCase());
-}
-if (order == SortOrder.DESC) {
-builder.field(&quot;reverse&quot;, true);
-

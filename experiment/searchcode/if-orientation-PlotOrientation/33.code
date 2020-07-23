@@ -1,8 +1,0 @@
-return true;
-}
-if (!(obj instanceof PlotOrientation)) {
-return false;
-}
-if (this.name.equals(((PlotOrientation) obj).toString())) {
-return true;
-

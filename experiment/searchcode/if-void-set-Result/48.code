@@ -1,9 +1,0 @@
-public void close(ResultSet resultSet) throws SQLException {
-if (resultSet != null) {
-resultSet.close();
-}
-}
-
-public void close(ResultSet resultSet, PreparedStatement preparedStatement)
-throws SQLException {
-

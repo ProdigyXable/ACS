@@ -1,8 +1,0 @@
-Bitmap newBitmap = null;
-
-int finalSize = aSize;
-if (finalSize > aBitmap.getWidth()) {
-finalSize = aBitmap.getWidth();
-}
-if (finalSize > aBitmap.getHeight()) {
-

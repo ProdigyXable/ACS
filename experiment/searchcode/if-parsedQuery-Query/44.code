@@ -1,5 +1,0 @@
-Query parsedQuery = queryParser.parse(queryString(&quot;test&quot;).defaultField(&quot;content&quot;).phraseSlop(1)).query();
-
-assertThat(parsedQuery, instanceOf(TermQuery.class));
-TermQuery termQuery = (TermQuery) parsedQuery;
-

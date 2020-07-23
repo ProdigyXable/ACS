@@ -1,8 +1,0 @@
-package FutureTaskCore;
-
-import FutureTasks.FutureTask;
-import FutureTasks.FutureTaskPairImpl;
-public class FutureTaskLauncherTest {
-private FutureTaskLauncher futureTaskLauncher;
-private static int fiveSeconds = 5;
-

@@ -1,8 +1,0 @@
-mContext = context;
-
-//noinspection ConstantConditions,PointlessBooleanExpression
-if (!BuildConfig.DEBUG) {
-final boolean initialize = extras.getBoolean(ContentResolver.SYNC_EXTRAS_INITIALIZE, false);
-
-if (uploadOnly) {
-

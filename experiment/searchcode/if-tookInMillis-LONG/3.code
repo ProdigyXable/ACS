@@ -1,9 +1,0 @@
-private BulkItemResponse[] responses;
-private long tookInMillis;
-
-BulkResponse() {
-}
-
-public BulkResponse(BulkItemResponse[] responses, long tookInMillis) {
-this.responses = responses;
-

@@ -1,4 +1,0 @@
-boolean vernacularNameBlank = StringUtils.isBlank(attribute.getVernacularName());
-boolean langCodeBlank = StringUtils.isBlank(attribute.getLanguageCode());
-boolean langVarietyBlank = StringUtils.isBlank(attribute.getLanguageVariety());
-

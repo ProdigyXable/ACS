@@ -1,9 +1,0 @@
-return ((Double) this.message.getReading(&quot;damage&quot;)).doubleValue();
-}
-
-public double getDistanceFromStartLine() {
-return ((Double) this.message.getReading(&quot;distFromStart&quot;)).doubleValue();
-}
-
-public double getDistanceRaced() {
-

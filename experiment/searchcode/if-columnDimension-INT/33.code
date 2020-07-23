@@ -1,5 +1,0 @@
-public static Matrix getCol(Matrix matrix, int colNumber) {
-int columnDimension = matrix.getColumnDimension();
-if (columnDimension > colNumber) {
-if (columnDimension > colNumber) {
-

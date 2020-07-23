@@ -1,8 +1,0 @@
-Imgproc.isContourConvex(approx_mapofpoint)) {
-double maxCosine = 0;
-double cosine = Math.abs(angle(approx.toArray()[j % 4], approx.toArray()[j - 2], approx.toArray()[j - 1]));
-maxCosine = Math.max(maxCosine, cosine);
-}
-
-if (maxCosine < 0.3) {
-

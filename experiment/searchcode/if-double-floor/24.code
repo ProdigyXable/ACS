@@ -1,6 +1,0 @@
-int firstDouble = reader.nextInt();
-int secondDouble = reader.nextInt();
-
-if (firstDouble >= secondDouble) {
-System.out.println(Math.floor(firstDouble / secondDouble) +  &quot;\n&quot; + firstDouble % secondDouble);
-

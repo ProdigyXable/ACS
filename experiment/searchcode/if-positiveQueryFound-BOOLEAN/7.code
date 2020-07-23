@@ -1,7 +1,0 @@
-Query positiveQuery = null;
-boolean positiveQueryFound = false;
-Query negativeQuery = null;
-positiveQuery = parseContext.parseInnerQuery();
-positiveQueryFound = true;
-} else if (&quot;negative&quot;.equals(currentFieldName)) {
-

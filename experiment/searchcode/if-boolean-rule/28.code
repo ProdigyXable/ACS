@@ -1,7 +1,0 @@
-package org.openhab.domain.rule.operators;
-
-import org.openhab.domain.rule.LogicBoolean;
-import org.openhab.domain.rule.RuleOperatorType;
-public class OrLogicBooleanRuleOperator extends BooleanRuleOperator<LogicBoolean> {
-public OrLogicBooleanRuleOperator() {
-

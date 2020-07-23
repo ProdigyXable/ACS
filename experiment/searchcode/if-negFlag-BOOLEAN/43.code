@@ -1,8 +1,0 @@
-* https://leetcode.com/problems/valid-parentheses/
-**/
-public boolean isValid(String s) {
-if (s == null || s.isEmpty()) return false;
-while(p <str.length() &amp;&amp; Character.isWhitespace(str.charAt(p))) ++p;
-if(p == str.length()) return 0;
-boolean negFlag = (str.charAt(p) == &#39;-&#39;);
-

@@ -1,8 +1,0 @@
-package com.wifihandler.internal;
-
-import com.wifihandler.WifiOperationType;
-import com.wifihandler.WifiRequestCallbacks;
-Operation operation = new Operation(processId, operationType, callback);
-Operation lastOperation = operationQueue.getLast();
-if(lastOperation.equals(operation)){
-

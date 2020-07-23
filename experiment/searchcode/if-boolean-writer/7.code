@@ -1,9 +1,0 @@
-writeDelimiter(writer);
-}
-
-public void beginSelect(StringWriter writer, boolean topLevel) {
-if (topLevel) {
-private void writeDelimiter(StringWriter writer, boolean topLevel) {
-if (delimiter != null) {
-if (!topLevel) {
-

@@ -1,8 +1,0 @@
-public void removePendingService(PendingWebService pendingWebService)
-{
-if (pendingWebServices.containsValue(pendingWebService)) {
-public void removeAllInstances(WebServiceInterface webService)
-{
-if (pendingWebServices != null) {
-Set<String> ids = pendingWebServices.keySet();
-

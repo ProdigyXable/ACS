@@ -1,14 +1,14 @@
 package cn.edu.pku.sei.plde.ACS.jdtVisitor;
 
-import org.eclipse.jdt.core.dom.*;
-
 import java.util.HashSet;
 import java.util.Set;
+import org.eclipse.jdt.core.dom.*;
 
 /**
  * Created by yjxxtd on 4/23/16.
  */
 public class EqualExpressionVisitor extends ASTVisitor {
+
     private Set<String> equalVariable;
 
     public EqualExpressionVisitor() {
@@ -29,7 +29,6 @@ public class EqualExpressionVisitor extends ASTVisitor {
         return true;
     }
 
-
     @Override
     public boolean visit(VariableDeclarationStatement node) {
         return true;
@@ -38,9 +37,9 @@ public class EqualExpressionVisitor extends ASTVisitor {
     @Override
     public boolean visit(InfixExpression node) {
         if (node.getOperator().equals(InfixExpression.Operator.EQUALS) || node.getOperator().equals(
-                InfixExpression.Operator.NOT_EQUALS)){
+                InfixExpression.Operator.NOT_EQUALS)) {
             String leftOperand = node.getLeftOperand().toString();
-            if(leftOperand.contains(".")){
+            if (leftOperand.contains(".")) {
                 int index = leftOperand.lastIndexOf(".");
                 leftOperand = leftOperand.substring(index + 1);
             }

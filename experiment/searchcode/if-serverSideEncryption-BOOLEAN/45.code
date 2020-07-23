@@ -1,9 +1,0 @@
-public void setServerSideEncryption(FileSystemOptions opts, boolean serverSideEncryption)
-{
-setParam(opts, SERVER_SIDE_ENCRYPTION, serverSideEncryption);
-}
-
-/**
-* @param opts The FileSystemOptions.
-* @return true if server-side encryption is being used.
-

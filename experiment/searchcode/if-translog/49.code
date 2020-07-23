@@ -1,6 +1,0 @@
-* {@link ElasticSearchIllegalStateException} if {@link #newTranslogCreated()} is <tt>true</tt>, so
-* always check that first.
-*/
-public boolean sameTranslogNewOperations() {
-if (newTranslogCreated()) {
-

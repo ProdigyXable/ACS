@@ -1,6 +1,0 @@
-JulianChronology julianChronology;
-if (dateTimeZone == null) {
-dateTimeZone = DateTimeZone.getDefault();
-JulianChronology[] julianChronologyArr = (JulianChronology[]) cCache.get(dateTimeZone);
-if (julianChronologyArr == null) {
-

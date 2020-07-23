@@ -1,6 +1,0 @@
-private LoadingCache<String, T> cache;
-
-public GuavaCache(int maximumSize) {
-cache = CacheBuilder.newBuilder().maximumSize(maximumSize).build(
-new CacheLoader<String, T>() {
-

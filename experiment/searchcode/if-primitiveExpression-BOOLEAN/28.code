@@ -1,8 +1,0 @@
-final boolean minus = operator == UnaryOperatorType.MINUS;
-
-if (node.getExpression() instanceof PrimitiveExpression) {
-final PrimitiveExpression operand = (PrimitiveExpression) node.getExpression();
-final boolean isNegative;
-
-if (operand.getValue() instanceof Number) {
-

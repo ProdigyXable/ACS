@@ -16,7 +16,6 @@
 package cn.edu.pku.sei.plde.ACS.localization.common;
 
 import cn.edu.pku.sei.plde.ACS.localization.common.library.FileLibrary;
-
 import java.io.File;
 
 /**
@@ -84,12 +83,18 @@ public final class SourceLocation {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         SourceLocation that = (SourceLocation) o;
 
-        if (lineNumber != that.lineNumber) return false;
+        if (lineNumber != that.lineNumber) {
+            return false;
+        }
         return !(containingClassName != null ? !containingClassName.equals(that.containingClassName) : that.containingClassName != null);
     }
 }

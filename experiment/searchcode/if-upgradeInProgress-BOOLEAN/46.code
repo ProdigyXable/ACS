@@ -1,8 +1,0 @@
-.impl(new BrooklynClusterUpgradeEffectorBody()).build();
-
-private final AtomicBoolean upgradeInProgress = new AtomicBoolean();
-
-@Override
-public Void call(ConfigBag parameters) {
-if (!upgradeInProgress.compareAndSet(false, true)) {
-

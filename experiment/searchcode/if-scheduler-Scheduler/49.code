@@ -1,6 +1,0 @@
-Scheduler localScheduler = RxJavaPlugins.getInstance().getSchedulersHook().getComputationScheduler();
-if (localScheduler != null)
-localScheduler = RxJavaPlugins.getInstance().getSchedulersHook().getIOScheduler();
-if (localScheduler == null) {
-break label76;
-

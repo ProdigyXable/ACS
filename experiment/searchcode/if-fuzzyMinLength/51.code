@@ -1,8 +1,0 @@
-private boolean transpositions = FuzzyCompletionQuery.DEFAULT_TRANSPOSITIONS;
-private int fuzzyMinLength = FuzzyCompletionQuery.DEFAULT_MIN_FUZZY_LENGTH;
-return this;
-}
-
-/**
-* Sets if transpositions (swapping one character for another) counts as one character
-

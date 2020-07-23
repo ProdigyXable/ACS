@@ -1,6 +1,0 @@
-scope.exit();
-fail(&quot;scope.exit() should throw exception if scope.enter() never called.&quot;);
-} catch (RuntimeException expected) {}
-fail(&quot;scope.enter() should throw exception if scope.enter() already called.&quot;);
-} catch (RuntimeException expected) {}
-

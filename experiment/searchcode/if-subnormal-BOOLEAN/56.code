@@ -1,3 +1,0 @@
-// Scale down a large number into subnormal range such that if
-// scalb is being implemented with multiple floating-point
-

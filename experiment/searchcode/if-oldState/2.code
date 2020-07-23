@@ -1,6 +1,0 @@
-public State doMove(State otherState) {
-if (otherState instanceof BridgeState) {
-BridgeState oldState = (BridgeState) otherState;
-if (&quot;P1 crosses alone&quot;.equals(getMoveName())) {
-if (oldState.getP1Position() == oldState.getFlashlightPosition()) {
-

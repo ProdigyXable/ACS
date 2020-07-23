@@ -1,6 +1,0 @@
-public synchronized DynamicMeta save(DynamicMeta dynamicMeta) {
-DynamicMeta existing=this.findByDynamic(dynamicMeta.getDynamic());
-if(existing!=null){
-if(!existing.identityEquals(dynamicMeta)){
-throw new SurvtowerRuntimeException(&quot;This record will cause a duplicate::&quot;);
-

@@ -1,9 +1,0 @@
-* @author Aleksandar Milicevic <aca.milicevic@gmail.com>
-*
-*/
-public class LongSet extends PrimitiveTypeSet implements ILongSet {
-
-LongSet(long min, long diff, long max) {
-super(long.class);
-addRange(min, diff, max);
-

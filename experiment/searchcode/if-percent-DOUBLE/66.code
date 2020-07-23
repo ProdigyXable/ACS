@@ -1,8 +1,0 @@
-public class QtyDiscount implements DiscountStrategy{
-private double percent =.10 ;
-private double minQuatity =5;
-
-public QtyDiscount(double percent, double qty) {
-setPercent(percent);
-setMinQuatity(minQuatity);
-

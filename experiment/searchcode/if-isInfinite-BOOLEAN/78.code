@@ -1,9 +1,0 @@
-* @return the maximum (not infinity) value of the function,
-* warning
-*/
-@Override
-public double getMax() {
-if (Double.isInfinite(d)) {
-if (Double.isInfinite(c)) {
-if (Double.isInfinite(b)) {
-

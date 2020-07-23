@@ -1,9 +1,0 @@
-optionsObject = new OptionsObject();
-}
-
-public static OptionsHandler getInstance() {
-if (instance == null) {
-synchronized (OptionsObject.class) {
-if (instance == null) {
-instance = new OptionsHandler();
-

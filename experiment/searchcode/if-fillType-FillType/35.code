@@ -1,5 +1,0 @@
-if (totalDigit > precision) {
-if (fillType == FillType.FILL_ZERO)
-pattern.append(&quot;0&quot;);
-else if (fillType == FillType.ALGIN_LEFT)
-

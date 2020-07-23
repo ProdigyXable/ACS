@@ -1,6 +1,0 @@
-}else if(Boolean.FALSE.equals(firstValue) &amp;&amp; !Boolean.TRUE.equals(secondValue)){
-second.setValue(Boolean.FALSE);
-}else if(Boolean.TRUE.equals(secondValue) &amp;&amp; !Boolean.FALSE.equals(firstValue)){
-first.setValue(Boolean.TRUE);
-}else if(Boolean.FALSE.equals(secondValue) &amp;&amp; !Boolean.TRUE.equals(firstValue)){
-

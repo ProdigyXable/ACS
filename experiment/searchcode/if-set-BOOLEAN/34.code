@@ -1,9 +1,0 @@
-/*    */     throws OptionException
-/*    */   {
-/* 33 */     setBooleanValue(Boolean.getBoolean(paramString));
-/*    */   }
-/*    */
-/*    */   public void setBooleanValue(boolean paramBoolean)
-/*    */   {
-/* 38 */     this.booleanValue = paramBoolean;
-

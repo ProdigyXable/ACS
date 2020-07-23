@@ -1,9 +1,0 @@
-public Type getType() {
-Type superClass = aClass.getGenericSuperclass();
-while (superClass instanceof  Class &amp;&amp;  superClass != Object.class) {
-superClass =((Class) superClass).getGenericSuperclass();
-}
-
-if(superClass instanceof Class) {
-return null;
-

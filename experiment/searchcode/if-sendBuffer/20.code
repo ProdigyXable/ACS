@@ -1,8 +1,0 @@
-private ServiceId testServiceId = ServiceId.fromName(&quot;TEST&quot;);
-
-@After
-public void after() {
-if(router != null)
-Sender sender = testService.getServiceSender();
-ByteBuffer sendBuffer = sender.nextMessage().asWritableByteBuffer(40);
-

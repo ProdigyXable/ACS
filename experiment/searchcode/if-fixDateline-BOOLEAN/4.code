@@ -1,8 +1,0 @@
-return builder;
-}
-
-public Geometry buildGeometry(GeometryFactory factory, boolean fixDateline) {
-if(fixDateline) {
-Coordinate[][][] polygons = coordinates();
-return polygons.length == 1
-

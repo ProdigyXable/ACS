@@ -1,5 +1,0 @@
-double res = this.getConcDoubleRetVal();
-RealValue realExpression = this.getSymbRealArgument(0);
-RealValue ulpExpr;
-if (realExpression.containsSymbolicVariable()) {
-

@@ -1,9 +1,0 @@
-package org.apache.commons.math.distribution;
-
-
-public class PoissonDistributionImpl extends org.apache.commons.math.distribution.AbstractIntegerDistribution implements java.io.Serializable , org.apache.commons.math.distribution.PoissonDistribution {
-private double epsilon = DEFAULT_EPSILON;
-
-public PoissonDistributionImpl(double p) {
-this(p, new org.apache.commons.math.distribution.NormalDistributionImpl());
-

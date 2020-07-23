@@ -1,9 +1,0 @@
-LinkedList<DataPoint> filteredOnes = new LinkedList<DataPoint>();
-for(DataPoint dp:data){
-if(dp.searchEngine == SearchEngine.Bing)
-filteredOnes.add(dp);
-LinkedList<DataPoint> filteredOnes = new LinkedList<DataPoint>();
-for(DataPoint dp:data){
-if(dp.searchEngine == SearchEngine.Google)
-filteredOnes.add(dp);
-

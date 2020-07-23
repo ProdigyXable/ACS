@@ -1,6 +1,0 @@
-private boolean accessOrder = true;
-
-public LRUCache(int capacity) {
-this.capacity = capacity;
-cache = new LinkedHashMap<Integer, Integer>(capacity, loadFactor, accessOrder);
-

@@ -1,8 +1,0 @@
-if (append == null) {
-return;
-}
-synchronized (appendLock) {
-if (appendingTo == null) {
-while (true) {
-boolean appended = appendingTo.append(timestamp, append.array());
-

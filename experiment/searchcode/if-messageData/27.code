@@ -1,6 +1,0 @@
-public TriggerType getTriggerType() {
-if (messageData == null) {
-return null;
-if (messageData == null) {
-return null;
-

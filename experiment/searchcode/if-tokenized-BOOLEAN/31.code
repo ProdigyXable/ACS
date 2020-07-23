@@ -1,8 +1,0 @@
-public class FullTextCriteria implements Serializable {
-
-private String value;
-private boolean tokenized;
-private FullTextIndexField indexField;
-
-public FullTextCriteria(FullTextIndexField indexField, boolean tokenized, Term term, boolean quote) {
-

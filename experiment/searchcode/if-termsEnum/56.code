@@ -1,8 +1,0 @@
-isEnd = termsEnum.next() == null;
-upto++;
-if (isEnd) {
-if (VERBOSE) {
-final boolean result = termsEnum.seekExact(target, false);
-if (VERBOSE) {
-System.out.println(&quot;  got &quot; + result);
-

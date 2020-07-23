@@ -1,8 +1,0 @@
-public boolean equals(Object o) {
-if (this == o) return true;
-if (!(o instanceof SettingJson)) return false;
-
-SettingJson that = (SettingJson) o;
-
-if (blockSetting != null ? !blockSetting.equals(that.blockSetting) : that.blockSetting != null) return false;
-

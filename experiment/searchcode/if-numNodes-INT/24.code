@@ -1,5 +1,0 @@
-IloLinearNumExpr chemins = cplex.linearNumExpr();
-for(int i = 0; i < numNodes; i++){
-if(i!=j){
-chemins.addTerm(1, x[j][i]);
-

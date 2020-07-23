@@ -1,8 +1,0 @@
-private String[] patterns = {&quot;public&quot;, &quot;private&quot;, &quot;protected&quot;};
-
-public boolean isConditionType(String line) {
-return (isPatternCondition(line)) ? true : false;
-}
-
-public boolean isPatternCondition(String line) {
-

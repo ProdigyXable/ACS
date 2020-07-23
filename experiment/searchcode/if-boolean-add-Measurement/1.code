@@ -1,9 +1,0 @@
-return  new Measurement(newValue,unit);
-}
-
-public boolean isEqual ( Measurement measurement) {
-return  equals(measurement);
-}
-
-public  Measurement add (Measurement measurement) {
-

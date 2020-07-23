@@ -1,9 +1,0 @@
-return new Shader(shader.type, out);
-}
-
-public Decl optimize(Decl decl) {
-if (decl instanceof Decl.Function) {
-return optimize((Decl.Function) decl);
-} else if (decl instanceof Decl.Global) {
-return optimize((Decl.Global) decl);
-

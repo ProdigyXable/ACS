@@ -1,8 +1,0 @@
-final UncaughtExceptionHandler unspecificHandler = Thread.getDefaultUncaughtExceptionHandler();
-boolean defaultResetted = unspecificHandler != null;
-return defaultResetted;
-}
-
-private boolean reset() {
-final boolean resetted = defaultReplaced;
-

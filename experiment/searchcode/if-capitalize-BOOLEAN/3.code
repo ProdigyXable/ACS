@@ -1,9 +1,0 @@
-import java.util.Scanner;
-
-public class NounCapitalize {
-
-private static Scanner read = new Scanner(System.in);
-
-public static void main(String[] args) {
-String ToCapitalize = readString(&quot;Minkä sanan haluat? &quot;);
-

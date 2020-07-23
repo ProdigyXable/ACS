@@ -1,8 +1,0 @@
-* @see net.sf.javailp.Result#getObjective()
-*/
-public Number getObjective() {
-if (objectiveValue != null) {
-return objectiveValue;
-} else if (objectiveFunction != null) {
-objectiveValue = objectiveFunction.evaluate(this.primalValues);
-

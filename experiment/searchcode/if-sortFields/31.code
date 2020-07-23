@@ -1,7 +1,0 @@
-selectedPos = -1;
-if (sortFields != null) {
-selection = new boolean[sortFields.length];
-if (sortFields.length > 0) {
-selection[0] = true;
-selectedPos = 0;
-

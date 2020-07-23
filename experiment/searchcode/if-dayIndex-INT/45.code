@@ -1,9 +1,0 @@
-private int dayIndex;
-
-public LectionGap(Time start, Time end, int dayIndex) {
-this.start = start;
-return false;
-}
-int lectionLength = student.getLectionLengthInFields();
-if (gapLength < lectionLength) {
-

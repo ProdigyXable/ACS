@@ -1,8 +1,0 @@
-public UserDepandantDirectedSpreadingAgentPopulator(long maxDistance, String userIDKey){
-super(maxDistance);
-if(userIDKey!=null){
-public UserDepandantDirectedSpreadingAgentPopulator(long queriedVertexId, long maxDistance, String userIDKey) {
-super(queriedVertexId, maxDistance);
-if(userIDKey!=null){
-UserDepandantDirectedSpreadingAgent.setuserIdKey(userIDKey);
-

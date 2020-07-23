@@ -1,8 +1,0 @@
-public void setAllowStale(boolean allowStale) {
-this.allowStale = allowStale;
-}
-
-private boolean forceRefresh = false;
-public void setForceRefresh(boolean forceRefresh) {
-this.forceRefresh = forceRefresh;
-

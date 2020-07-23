@@ -1,8 +1,0 @@
-private Activity mActivity;
-
-public ActivityModule(Activity activity) {
-mActivity = activity;
-@Provides @ActivityContext Context provideContext() {
-if (mActivity == null) {
-throw new IllegalStateException(&quot;ActivityModule had not initialized!&quot;);
-

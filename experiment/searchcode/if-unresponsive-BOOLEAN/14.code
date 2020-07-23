@@ -1,8 +1,0 @@
-final String threshold = System.getProperty(&quot;performance.watcher.threshold&quot;);
-if (threshold != null) {
-try {
-UNRESPONSIVE_THRESHOLD = Integer.parseInt(threshold);
-while(true) {
-try {
-if (myShutdownSemaphore.tryAcquire(UNRESPONSIVE_INTERVAL, TimeUnit.SECONDS)) {
-

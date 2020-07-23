@@ -1,6 +1,0 @@
-public class IntegerToBooleanMAPAdapter extends DmcTypeIntegerToBooleanMAP implements DmcAdapterIF {
-
-transient DmcTypeIntegerToBooleanMAP existingValue;
-
-public IntegerToBooleanMAPAdapter(DmcAttributeInfo ai){
-

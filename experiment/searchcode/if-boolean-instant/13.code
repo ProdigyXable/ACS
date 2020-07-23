@@ -1,6 +1,0 @@
-private String instantMessagingTitle;
-private InstantMessagingPosition instantMessagingPosition;
-private Boolean isInstantMessagingEnabled;
-List<InstantMessaging> allInstantMessagingList = instantMessagingService.getAllList();
-if (allInstantMessagingList != null) {
-

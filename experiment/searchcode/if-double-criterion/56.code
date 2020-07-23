@@ -1,7 +1,0 @@
-for (Criterion criterion : getCriteria()) {
-Performance result = criterion.evalCriterion(source, goal);
-if (result == null) {
-buffer.append(criteria.get(i).toString());
-Double weight = getWeights().get(i);
-if (weight != 1) {
-

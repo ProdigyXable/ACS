@@ -1,4 +1,0 @@
-xyplot.setRangeCrosshairVisible(true);
-org.jfree.chart.renderer.xy.XYItemRenderer xyitemrenderer = xyplot.getRenderer();
-if (xyitemrenderer instanceof XYLineAndShapeRenderer) {
-

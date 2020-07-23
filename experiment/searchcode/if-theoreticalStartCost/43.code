@@ -1,4 +1,0 @@
-super(11, startParams, theoreticalMinCost,
-theoreticalMinParams);
-if (theoreticalStartCost > 20.0) {
-

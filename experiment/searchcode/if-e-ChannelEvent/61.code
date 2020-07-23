@@ -1,9 +1,0 @@
-import org.jboss.netty.channel.ChannelEvent;
-import org.jboss.netty.channel.ChannelPipelineCoverage;
-import org.jboss.netty.channel.MessageEvent;
-public void log(ChannelEvent e)
-{
-if (e instanceof MessageEvent)
-{
-MessageEvent msg = (MessageEvent) e;
-

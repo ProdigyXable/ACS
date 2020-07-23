@@ -1,8 +1,0 @@
-/** Constant term of the linear equation. */
-private final double constantTerm;
-
-/**
-* @param coefficients The coefficients for the linear equation being optimized
-public LinearObjectiveFunction(double[] coefficients, double constantTerm) {
-this(new ArrayRealVector(coefficients), constantTerm);
-

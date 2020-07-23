@@ -1,9 +1,0 @@
-final ZmlLink linkedTimeseries = element.getLinkedTimeseries();
-
-if( linkedTimeseries.isLinkSet() )
-{
-final IStatus status = executeMappingElement( linkedTimeseries, modelElement );
-private IObservationFilter createTimeseriesFilter( )
-{
-// TODO: check if always good like this
-

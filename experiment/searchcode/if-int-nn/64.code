@@ -1,4 +1,0 @@
-//        final int[] nnOutputIndices = sensorContext.getNnOutputIndices();
-int nlam = rtosa_nn.length; // if n == 11, then iteration for LM fit, if > 11, then computation for full spectrum
-//int nlam = nnOutputIndices.length; // if n == 11, then iteration for LM fit, if > 11, then computation for full spectrum
-

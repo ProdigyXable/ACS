@@ -1,5 +1,9 @@
 package cn.edu.pku.sei.plde.ACS.utils;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.xpath.*;
 import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
@@ -10,16 +14,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.helper.W3CDom;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.*;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by yanrunfa on 8/8/16.
@@ -35,12 +29,12 @@ public class RequestUtils {
         BufferedReader br = null;
         try {
             int statusCode = httpClient.executeMethod(getMethod);
-            if (statusCode != HttpStatus.SC_OK){
+            if (statusCode != HttpStatus.SC_OK) {
                 System.err.println("Method failed: " + getMethod.getStatusLine());
-                while (statusCode == 429){
+                while (statusCode == 429) {
                     try {
                         Thread.sleep(10000);
-                    } catch (InterruptedException e){
+                    } catch (InterruptedException e) {
                         getMethod.releaseConnection();
                         e.printStackTrace();
                         break;
@@ -70,24 +64,24 @@ public class RequestUtils {
             return null;
         } finally {
             getMethod.releaseConnection();
-            if (bodyIs != null){
+            if (bodyIs != null) {
                 try {
                     bodyIs.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (br != null){
+            if (br != null) {
                 try {
                     br.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
     }
 
-    public static File download(String url, String filePath, HttpClient httpClient){
+    public static File download(String url, String filePath, HttpClient httpClient) {
         GetMethod getMethod = new GetMethod(url);
         getMethod.getParams().setParameter(HttpMethodParams.RETRY_HANDLER,
                 new DefaultHttpMethodRetryHandler());
@@ -96,12 +90,12 @@ public class RequestUtils {
         try {
             int statusCode = httpClient.executeMethod(getMethod);
 
-            if (statusCode != HttpStatus.SC_OK){
+            if (statusCode != HttpStatus.SC_OK) {
                 System.err.println("Method failed: " + getMethod.getStatusLine());
-                while (statusCode == 429){
+                while (statusCode == 429) {
                     try {
                         Thread.sleep(10000);
-                    } catch (InterruptedException e){
+                    } catch (InterruptedException e) {
                         getMethod.releaseConnection();
                         e.printStackTrace();
                         break;
@@ -115,8 +109,8 @@ public class RequestUtils {
                     new InputStreamReader(bodyIs));
             byte[] b = new byte[1024];
             int len = 0;
-            while((len=bodyIs.read(b))!= -1){
-                out.write(b,0,len);
+            while ((len = bodyIs.read(b)) != -1) {
+                out.write(b, 0, len);
             }
             bodyIs.close();
             out.close();
@@ -130,25 +124,24 @@ public class RequestUtils {
             return null;
         } finally {
             getMethod.releaseConnection();
-            if (bodyIs != null){
+            if (bodyIs != null) {
                 try {
                     bodyIs.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (br != null){
+            if (br != null) {
                 try {
                     br.close();
-                } catch (IOException e){
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
     }
 
-
-    public static List<String> xpath(String html, String xpathString){
+    public static List<String> xpath(String html, String xpathString) {
         List<String> result = new ArrayList<>();
         try {
 
@@ -159,10 +152,10 @@ public class RequestUtils {
             W3CDom helper = new W3CDom();
             Document document = helper.fromJsoup(Jsoup.parse(html));
             NodeList list = (NodeList) expression.evaluate(document, XPathConstants.NODESET);
-            for (int i=0; i< list.getLength(); i++){
+            for (int i = 0; i < list.getLength(); i++) {
                 result.add(list.item(i).getNodeValue());
             }
-        } catch (XPathExpressionException e){
+        } catch (XPathExpressionException e) {
             e.printStackTrace();
         }
         return result;

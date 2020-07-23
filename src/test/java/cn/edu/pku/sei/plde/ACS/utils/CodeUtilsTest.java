@@ -1,8 +1,7 @@
 package cn.edu.pku.sei.plde.ACS.utils;
 
-import org.junit.Test;
-
 import java.io.File;
+import org.junit.Test;
 
 /**
  * Created by yjxxtd on 4/26/16.
@@ -10,19 +9,18 @@ import java.io.File;
 public class CodeUtilsTest {
 
     @Test
-    public void testGetMethodAnnotation(){
-        String code = FileUtils.getCodeFromFile(new File(System.getProperty("user.dir")+"/filesfortest/CodeTest.code"));
+    public void testGetMethodAnnotation() {
+        String code = FileUtils.getCodeFromFile(new File(System.getProperty("user.dir") + "/filesfortest/CodeTest.code"));
         String methodName = "solve";
         int line = 164;
-        String exceptionAnnotation = AnnotationUtils.getExceptionAnnotation(code, methodName, line,"IllegalArgumentException");
+        String exceptionAnnotation = AnnotationUtils.getExceptionAnnotation(code, methodName, line, "IllegalArgumentException");
         System.out.println(exceptionAnnotation);
         String returnAnnotation = AnnotationUtils.getReturnAnnotation(code, methodName, line);
         System.out.println(returnAnnotation);
     }
 
-
     @Test
-    public void testGetVariableInMethod(){
+    public void testGetVariableInMethod() {
 //        String methodSrc = "\tpublic int method(int c){\n" +
 //                "\t\tint a = f(d);\n" +
 //                "\t\treturn b.e;\n" +
@@ -71,7 +69,7 @@ public class CodeUtilsTest {
     }
 
     @Test
-    public void testSpreadFor(){
+    public void testSpreadFor() {
         String code = "public void testFactorial() {" + "for (int i = 1; i < 21; i++) {"
                 + "assertEquals(i + \"! \", factorial(i), MathUtils.factorial(i));"
                 + "assertEquals(i + \"! \", (double)factorial(i), MathUtils.factorialDouble(i), Double.MIN_VALUE);"
@@ -82,8 +80,5 @@ public class CodeUtilsTest {
         String spreadCode = CodeUtils.spreadFor(code);
         System.out.println(spreadCode);
     }
-
-    
-
 
 }

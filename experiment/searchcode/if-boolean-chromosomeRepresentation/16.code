@@ -1,5 +1,0 @@
-protected void checkValidity(final List<Integer> chromosomeRepresentation) throws InvalidRepresentationException {
-// Not important.
-public AbstractListChromosome<Integer> newFixedLengthChromosome(final List<Integer> chromosomeRepresentation) {
-return new DummyListChromosome(chromosomeRepresentation);
-

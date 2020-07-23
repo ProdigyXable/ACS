@@ -1,9 +1,0 @@
-@Transactional(rollbackOn = {AxelorException.class, Exception.class})
-public void start(ManufOrder manufOrder)  {
-
-if(manufOrder.getOperationOrderList() != null)  {
-@Transactional(rollbackOn = {AxelorException.class, Exception.class})
-public void pause(ManufOrder manufOrder)  {
-
-if(manufOrder.getOperationOrderList() != null)  {
-

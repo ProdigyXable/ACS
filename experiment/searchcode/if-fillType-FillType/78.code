@@ -1,9 +1,0 @@
-public BranchBean getFixture()
-throws Exception {
-if (fixture == null) {
-fixture = new BranchBean();
-try {
-BranchBean fixture = getFixture();
-String fillType = &quot;&quot;;
-BranchDetails branchDetails = new BranchDetails();
-

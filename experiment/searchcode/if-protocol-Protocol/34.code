@@ -1,6 +1,0 @@
-public static ProtocolFactory getInstance(){
-if (instance == null){
-synchronized(ProtocolFactory.class){
-if (instance == null){
-instance = new ProtocolFactory();
-

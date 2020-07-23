@@ -1,9 +1,0 @@
-atomicSyncMain.threadTwo.start();
-atomicSyncMain.threadThree.start();
-
-boolean noSyncMainRunning = true;
-boolean syncMainRunning = true;
-boolean atomicSyncMainRunning = true;
-
-while(noSyncMainRunning || syncMainRunning || atomicSyncMainRunning){
-

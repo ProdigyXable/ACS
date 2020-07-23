@@ -1,9 +1,0 @@
-@Override
-protected void lastListenerRemoved() {
-super.lastListenerRemoved();
-if (listChangeListener != null) {
-decorated.removeListChangeListener(listChangeListener);
-listChangeListener = null;
-}
-}
-

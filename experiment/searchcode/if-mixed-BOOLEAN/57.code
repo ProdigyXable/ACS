@@ -1,9 +1,0 @@
-return myMixedContentEntryList;
-}
-
-// hash functions
-public boolean equals(Object o)
-{
-if (this == o) return true;
-if (!(o instanceof MixedContent)) return false;
-

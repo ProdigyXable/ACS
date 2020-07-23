@@ -1,5 +1,0 @@
-public CanFindThreshold.ThresholdInfo thresholdByPvalue(double pvalue, BoundaryType boundaryType) {
-if (boundaryType == BoundaryType.LOWER) {
-CanFindThreshold.ThresholdInfo[] result = new CanFindThreshold.ThresholdInfo[pvalues.length];
-for (int i = 0; i < pvalues.length; ++i) {
-

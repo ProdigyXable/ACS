@@ -1,7 +1,0 @@
-
-public Accessible getAccessibleParent() {
-if (accessibleParent != null) {
-Container parent = getParent();
-if (parent instanceof Accessible) {
-return (Accessible) parent;
-

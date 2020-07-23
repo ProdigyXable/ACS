@@ -1,6 +1,0 @@
-LispSymbol historySymbol = ourMinibufferHistory;
-int historyPosition = 0;
-if (!Predicate.isNil(historyObject)) {
-if (historyObject instanceof LispSymbol) {
-historySymbol = (LispSymbol) historyObject;
-
