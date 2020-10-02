@@ -19,6 +19,7 @@ import java.util.*;
 public class SuspiciousFixer {
 
     public static int FAILED_TEST_NUM = 0;
+    public static Map<String, Integer> originallyFailingTests = null;
 
     public Map<ExceptionVariable, List<String>> boundarysMap = new HashMap<>();
     private Map<VariableInfo, List<String>> trueValues;
@@ -41,6 +42,7 @@ public class SuspiciousFixer {
         falseValues = AbandanTrueValueFilter.getFalseValue(traceResults, suspicious.getAllInfo());
         if (FAILED_TEST_NUM == 0) {
             Map<String, Integer> m = TestUtils.getFailTestNumInProject(project);
+            
             if (m.isEmpty()) {
                 FAILED_TEST_NUM = Integer.MAX_VALUE;
             } else {

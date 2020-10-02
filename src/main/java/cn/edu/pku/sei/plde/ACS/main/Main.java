@@ -1,5 +1,6 @@
 package cn.edu.pku.sei.plde.ACS.main;
 
+import cn.edu.pku.sei.plde.ACS.utils.TestUtils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Hello world [Profl]");
+            System.out.println("Zero arguments found, exiting program");
             System.exit(0);
         }
         new File(Config.TEMP_FILES_PATH).mkdirs();
@@ -52,6 +53,15 @@ public class Main {
                 }
                 System.exit(0);
             } else if (!args[1].contains(":")) {
+                TestUtils.proflPathMethodLineCoverage = args[2];
+                System.out.println(String.format("Profl MethodLine Path = \"%s\"", TestUtils.proflPathMethodLineCoverage));
+                
+                TestUtils.proflPathTestLineCoverage = args[3];
+                System.out.println(String.format("Profl TestLine Path = \"%s\"", TestUtils.proflPathTestLineCoverage));
+                
+                TestUtils.proflPathFailingTest = args[4];
+                System.out.println(String.format("Profl FailingTest = \"%s\"", TestUtils.proflPathFailingTest));
+                
                 String projectName = args[1];
                 try {
                     fixProject(projectName, path);

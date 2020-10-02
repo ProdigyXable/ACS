@@ -5,7 +5,9 @@ import cn.edu.pku.sei.plde.ACS.junit.JunitRunner;
 import cn.edu.pku.sei.plde.ACS.localization.Suspicious;
 import cn.edu.pku.sei.plde.ACS.type.TypeUtils;
 import cn.edu.pku.sei.plde.ACS.utils.*;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
@@ -116,6 +118,7 @@ public class MethodTwoFixer {
                                 correctEndLine = endLine;
                                 correctPatch = ifStatement;
                                 triedPatch.add(ifStatement);
+                                savePatch(ifStatement, project, correctStartLine, correctEndLine);
                                 return true;
                             } else {
                                 ifStatement = lastLineString + "||" + getIfStringFromStatement(ifString) + ifEnd;
@@ -129,6 +132,7 @@ public class MethodTwoFixer {
                                     correctEndLine = endLine;
                                     correctPatch = ifStatement;
                                     triedPatch.add(ifStatement);
+                                    savePatch(ifStatement, project, correctStartLine, correctEndLine);
                                     return true;
                                 }
                             }
@@ -139,6 +143,29 @@ public class MethodTwoFixer {
             }
         }
         return false;
+    }
+
+    private void savePatch(String patchString, String project, int startLine, int endLine) {
+        TestUtils.patchAttempts += 1;
+
+        File outputFile = new File(String.format("acs-output/%s/patches/MethodTwoFixer/%d.patch", project, TestUtils.patchAttempts));
+        outputFile.getParentFile().mkdirs();
+
+        try (BufferedWriter bw_gen = new BufferedWriter(new FileWriter(outputFile, false))) {
+            System.out.println(String.format("Saving patch information to %s", outputFile.getAbsolutePath()));
+
+            bw_gen.write(String.format("Modified class: %s%n", this._className));
+            bw_gen.write(String.format("Modified method: %s%n", this._methodName));
+            bw_gen.write(String.format("Modified lines: %d - %d%n", startLine, endLine));
+            bw_gen.write("-------------------------------\n");
+
+            bw_gen.write(patchString);
+            bw_gen.newLine();
+
+        } catch (IOException ex) {
+            System.out.println("Could not save patch information to " + outputFile.getAbsolutePath());
+            System.out.println(ex.getMessage());
+        }
     }
 
     private boolean ifFilter(String ifBefore, String newIf) {
@@ -265,7 +292,20 @@ public class MethodTwoFixer {
         if (errAssertAfterFix < errAssertBeforeFix || errAssertAfterFix == 0) {
             //
             int errorTestNumAfterFix = 0;
+
+            String methodSig = "";
+            try {
+                methodSig = TestUtils.prr.getMethodCoverage().getMethodFromPackageNumber(_className, ifEndLine);
+                TestUtils.prr_map.put(methodSig, TestUtils.prr.getGeneralMethodSusValues().get(methodSig));
+            } catch (Exception e) {
+                System.out.println(String.format("Could not find method signature for %s at %s", _className, ifEndLine));
+                System.out.println(e.getMessage());
+            }
+
+            System.out.println(String.format("--- Information for MethodTwoFixer Patch %d --- [START]", TestUtils.patchAttempts));
             Map<String, Integer> m = TestUtils.getFailTestNumInProject(project);
+            System.out.println(String.format("--- Information for MethodTwoFixer Patch %d --- [END]", TestUtils.patchAttempts));
+
             if (m.isEmpty()) {
                 errorTestNumAfterFix = Integer.MAX_VALUE;
             } else {
@@ -275,6 +315,7 @@ public class MethodTwoFixer {
                 }
                 errorTestNumAfterFix = accumulator;
             }
+
             //
             if (errorTestNumAfterFix == Integer.MAX_VALUE) {
                 comment.uncomment();
